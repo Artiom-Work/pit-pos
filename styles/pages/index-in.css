@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet');
+
+@import "tailwindcss";
+
+/* :root {
+	--test: #828386;
+	--gray-50: #f7f7f8;
+	--gray-75: #f3eff8;
+	--gray-100: #eeedf3;
+	--gray-150: #e3e3e3;
+	--gray-200: #e9e7eb;
+	--gray-300: #dad8e0;
+	--gray-400: #b9b6bc;
+	--gray-500: #a199ab;
+	--gray-600: #817f87;
+	--gray-700: #5e5a67;
+	--gray-800: #2a2831;
+	--gray-900: #131216;
+	--gray-error: #ba1414;
+	--gray-success: #139128;
+	--pitpos-50: #fefefd;
+	--pitpos-100: #f5f2f9;
+	--pitpos-200: #e9e1f2;
+	--pitpos-300: #ddbdff;
+	--pitpos-400: #bf9dfe;
+	--pitpos-500: #9d67ff;
+	--pitpos-600: #7d47db;
+	--pitpos-700: #6a33cf;
+	--pitpos-800: #4807b8;
+	--pitpos-900: #39066b;
+	--pitpos-950: #131216;
+} */
+
+@theme {
+	--font-sans: 'Inter', sans-serif;
+	--font-second: Poppins, sans-serif;
+	--font-third: Rubik, sans-serif;
+
+	--color-black: #131216;
+	--color-gray-50: #f7f7f8;
+	--color-gray-75: #f3eff8;
+	--color-gray-100: #eeedf3;
+	--color-gray-150: #e3e3e3;
+	--color-gray-200: #e9e7eb;
+	--color-gray-300: #dad8e0;
+	--color-gray-400: #b9b6bc;
+	--color-gray-500: #a199ab;
+	--color-gray-600: #817f87;
+	--color-gray-700: #5e5a67;
+	--color-gray-800: #2a2831;
+	--color-error: #ba1414;
+	--color-success: #139128;
+	--color-accent: #FE4F02;
+	--color-pitpos-50: #fefefd;
+	--color-pitpos-100: #f5f2f9;
+	--color-pitpos-200: #e9e1f2;
+	--color-pitpos-300: #ddbdff;
+	--color-pitpos-400: #bf9dfe;
+	--color-pitpos-500: #9d67ff;
+	--color-pitpos-600: #7d47db;
+	--color-pitpos-700: #6a33cf;
+	--color-pitpos-800: #4807b8;
+	--color-pitpos-900: #39066b;
+}
+
+@utility container {
+	padding-inline: 0.75rem;
+	margin-inline: auto;
+
+	@variant sm {
+		padding-inline: 2rem;
+	}
+}
