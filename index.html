@@ -24,11 +24,21 @@
 			</a>
 
 			<div class="flex items-center gap-x-10">
-				<a href="#!"
-					class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row">
+				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
+					href="#!">
 					<div
 						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
 						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-boy.webp" alt="Мужчина">
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-girl.webp" alt="Женщина">
 					</div>
 
 					<div class="flex flex-col">
@@ -42,62 +52,463 @@
 			</div>
 		</div>
 	</header>
-	<div class=" flex flex-col  gap-y-5 container border border-black min-h-screen fle x items-center justify-center">
+
+	<aside>
+		<div class="container">
+			<div class="max-w-80 relative">
+				<input class="hidden peer" id="menu-toggle" type="checkbox">
+
+				<div class="absolute w-12 min-h-12 bg-white overflow-hidden duration-300 peer-checked:w-80"></div>
+
+				<div class="size-12 absolute left-0 py-3 px-3 duration-300 peer-checked:opacity-0 ">
+					<svg class="size-6 fill-black " viewBox="0 0 26 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
+					</svg>
+				</div>
+
+				<div
+					class="size-12 opacity-0 rotate-90 absolute right-0 py-3 px-3 duration-300  peer-checked:block peer-checked:opacity-100">
+					<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+				</div>
+
+				<label
+					class="relative z-1 w-12 flex items-center justify-center min-h-12 cursor-pointer duration-300 peer-checked:justify-end peer-checked:left-68 border-3 border-white rounded-md duration-300 hover:border-black active:opacity-40"
+					for="menu-toggle">
+				</label>
+
+				<nav class="w-12 bg-white shadow-lg min-h-screen peer-checked:w-80 overflow-hidden duration-300">
+					<ul class="">
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Дашборд">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Дашборд</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Оперативный контроль">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Оперативный контроль</a>
 
 
+							<input class="hidden peer" id="menu-item-toggle-1" type="checkbox">
 
-		<svg class="fill-black" viewBox="0 0 26 24" width="26" height="24">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
-		</svg>
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-1">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
 
-		<svg class="stroke-black fill-transparent" viewBox="0 0 24 24" width="24" height="24">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-		</svg>
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Покраска дисков</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Гарантии</a>
+								</li>
+							</ul>
+						</li>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
-		</svg>
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Ключевые показатели эффективности">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
+								</svg>
+							</a>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
-		</svg>
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">KPI</a>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
-		</svg>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
-		</svg>
+							<input class="hidden peer" id="menu-item-toggle-2" type="checkbox">
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
-		</svg>
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-2">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
-		</svg>
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Финансовые планы</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Ночные смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Отчеты по мотивации</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Средние чеки</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Выгрузка услуг</a>
+								</li>
+							</ul>
+						</li>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
-		</svg>
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Кабинет бухгалтера">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
+								</svg>
+							</a>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
-		</svg>
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Кабинет бухгалтера</a>
 
-		<svg class="stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
-		</svg>
 
-		<svg class="stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
-		</svg>
+							<input class="hidden peer" id="menu-item-toggle-3" type="checkbox">
 
-		<svg class="stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24" width="48" height="48">
-			<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
-		</svg>
-	</div>
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-3">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Зарплаты</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дополнительные начисления</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Баланс</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Инкассации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Клиенты">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Клиенты</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-4" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-4">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Физ.лица</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Юр.лица</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Пользователи">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Пользователи</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-5" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-5">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-36 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Владельцы</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сотрудники</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Помощники</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Справочники">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
+								</svg>
+
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Справочники</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-6" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-6">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-108 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Услуги</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Причины обращений</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Марки и модели</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы для отзывов</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы при открытии смены</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Роли</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Рекомендации клиенту</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мотивации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Лояльность">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Лояльность</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-7" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-7">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дисконтные карты</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Промокоды</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Настройки">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Настройки</a>
+
+							<input class="hidden peer" id="menu-item-toggle-8" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-8">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Уведомления</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сайт</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Обучение">
+
+								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Обучение</a>
+
+							<input class="hidden peer" id="menu-item-toggle-9" type="checkbox">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-9">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вики</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Материалы</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Логи">
+								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Логи</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</aside>
+
+	<main>
+
+
+	</main>
+
 
 </body>
 

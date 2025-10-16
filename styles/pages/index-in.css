@@ -5,7 +5,8 @@
 @import "tailwindcss";
 
 /* :root {
-	--test: #828386;
+	--test: #ffa7a7;
+	--test: #FE4F02;
 	--gray-50: #f7f7f8;
 	--gray-75: #f3eff8;
 	--gray-100: #eeedf3;
@@ -52,6 +53,7 @@
 	--color-gray-800: #2a2831;
 	--color-error: #ba1414;
 	--color-success: #139128;
+	--color-pink: #ffa7a7;
 	--color-accent: #FE4F02;
 	--color-pitpos-50: #fefefd;
 	--color-pitpos-100: #f5f2f9;
