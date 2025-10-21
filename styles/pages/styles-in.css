@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet');
 
 @import "preline/variants.css";
+@source "./node_modules/preline/dist/*.js";
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 

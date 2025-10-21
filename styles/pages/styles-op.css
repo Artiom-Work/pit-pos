@@ -9,28 +9,15 @@
     --font-sans: 'Inter', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-blue-400: oklch(70.7% 0.165 254.624);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-50: #f7f7f8;
-    --color-gray-100: #eeedf3;
     --color-gray-200: #e9e7eb;
     --color-gray-300: #dad8e0;
     --color-gray-400: #b9b6bc;
     --color-gray-500: #a199ab;
     --color-gray-600: #817f87;
-    --color-gray-800: #2a2831;
-    --color-neutral-200: oklch(92.2% 0 0);
-    --color-neutral-500: oklch(55.6% 0 0);
-    --color-neutral-700: oklch(37.1% 0 0);
-    --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #131216;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
@@ -62,7 +49,6 @@
     --color-pitpos-500: #9d67ff;
     --color-pitpos-700: #6a33cf;
     --color-pitpos-800: #4807b8;
-    --color-pitpos-900: #39066b;
   }
 }
 @layer base {
