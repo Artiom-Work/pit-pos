@@ -5,7 +5,7 @@
 @import "tailwindcss";
 @source "preline/dist/*.js";
 @import "preline/variants.css";
-@plugin "@tailwindcss/forms";
+/* @plugin "@tailwindcss/forms"; */
 @plugin "@tailwindcss/typography";
 
 :root {
