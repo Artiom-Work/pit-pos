@@ -74,6 +74,8 @@
 	--color-pitpos-700: #6a33cf;
 	--color-pitpos-800: #4807b8;
 	--color-pitpos-900: #39066b;
+
+	--breakpoint-xs: 29.99rem;
 }
 
 @utility container {
@@ -99,4 +101,8 @@
 	}
 }
 
-@custom-variant hover (&:hover);
+@variant has-active {
+	&.active {
+		@slot;
+	}
+}
