@@ -9,7 +9,7 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-	--test: #262947;
+	--gray-black-opacity-50: #0000004d;
 	--gray-50: #f7f7f8;
 	--gray-75: #f3eff8;
 	--gray-100: #eeedf3;
@@ -25,6 +25,9 @@
 	--gray-900: #131216;
 	--gray-error: #ba1414;
 	--gray-success: #139128;
+	--gray-ready: #edB335;
+	--gray-receipt: #B635CA;
+	--in-progress: #2296DD;
 	--blue-focus-input: #5171ff;
 	--pitpos-50: #fefefd;
 	--pitpos-100: #f5f2f9;
@@ -45,6 +48,7 @@
 	--font-third: Rubik, sans-serif;
 
 	--color-black: #131216;
+	--color-black-opacity-30: #0000004d;
 	--color-gray-50: #f7f7f8;
 	--color-gray-75: #f3eff8;
 	--color-gray-100: #eeedf3;
@@ -57,9 +61,12 @@
 	--color-gray-600: #817f87;
 	--color-gray-700: #5e5a67;
 	--color-gray-800: #2a2831;
-	--color-table-text: #303336;
+	--color-dark-text: #303336;
 	--color-error: #ba1414;
 	--color-success: #139128;
+	--color-ready: #EDB335;
+	--color-receipt: #B635CA;
+	--color-in-progress: #2296DD;
 	--color-pink: #ffa7a7;
 	--color-dark-red: #a4302d;
 	--color-accent: #FE4F02;
@@ -76,6 +83,19 @@
 	--color-pitpos-900: #39066b;
 
 	--breakpoint-xs: 29.99rem;
+	--breakpoint-3xl: 102.44rem;
+}
+
+@layer base {
+	html {
+		height: 100%;
+		scrollbar-gutter: stable;
+	}
+
+	html,
+	:has(:target) {
+		scroll-behavior: smooth;
+	}
 }
 
 @utility container {

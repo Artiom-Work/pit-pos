@@ -562,7 +562,7 @@
 
 					<li>
 						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control.html">
+							href="./op-control-shifts.html">
 							Смены
 						</a>
 					</li>
@@ -580,7 +580,7 @@
 			</h1>
 			<!-- End page name -->
 			<form class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-6 md:grid-cols-3 lg:grid-cols-4"
-				action="https://backend.dev.2atm.ru/backoffice/shifts" nethod="get">
+				action="https://backend.dev.2atm.ru/backoffice/shifts">
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="workshop_id">Мастерская</label>
 					<select
@@ -1022,7 +1022,6 @@
 					<input
 						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner placeholder:text-black invalid:ring-error invalid:focus:ring-error"
 						id="shift_id" name="shift_id" type="number" min="1" placeholder="#...">
-					</input>
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -1030,7 +1029,6 @@
 					<input
 						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner placeholder:text-black invalid:ring-error invalid:focus:ring-error"
 						id="order_id" name="order_id" type="number" min="1" placeholder="#...">
-					</input>
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -1075,7 +1073,6 @@
 					<input class="px-3 py-2.5  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
 						type="datetime-local" id="opened_after" name="opened_after">
-					</input>
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -1083,7 +1080,6 @@
 					<input class="px-3 py-2.5  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
 						type="datetime-local" id="opened_before" name="opened_before">
-					</input>
 				</div>
 
 				<div class="w-full flex justify-end gap-x-6 sm:col-span-2 md:col-span-3 lg:col-span-4">
@@ -1131,8 +1127,26 @@
 			</div>
 			<!-- End shifts аdditional filter -->
 			<div class="overflow-x-auto xl:w-full mb-6">
-				<table
-					class="prose max-w-screen w-full whitespace-nowrap text-table-text prose-th:p-2.5 prose-th:first:p-0.5 prose-th:bg-gray-50 prose-tr:even:bg-gray-50 prose-td:px-2.5 prose-td:py-[0.5rem]  prose-td:text-[0.938rem] prose-td:align-middle prose-td:has-[a]:py-0 prose-td:[&>a]:min-h-11 prose-td:[&>a]:w-full prose-td:[&>a]:hover:border-1 prose-td:[&>a]:active:bg-pitpos-200 prose-td:[&>a]:hover:rounded-md prose-td:[&>a]:hover:border-pitpos-400 prose-td:[&>span]:w-full prose-td:[&>a]:flex prose-td:[&>a]:justify-center prose-td:[&>a]:items-center prose-td:[&>span]:flex prose-td:[&>span]:justify-center prose-td:[&>span]:items-center prose-th:text-[13px] prose-th:font-semibold prose-tr:min-w-6 prose-tr:h-9.5  prose-thead:border-0 prose-tr:border-white prose-tr:border-b-2">
+				<table class="prose max-w-screen w-full whitespace-nowrap text-dark-text prose-th:p-2.5 prose-th:first:p-0.5 prose-th:bg-gray-50 prose-tr:even:bg-gray-50 prose-td:px-2.5 prose-td:py-[0.5rem]  prose-td:text-[0.938rem] prose-td:align-middle prose-td:has-[a]:py-0 prose-td:[&>span]:w-full prose-td:[&>span]:flex prose-td:[&>span]:justify-center prose-td:[&>span]:items-center prose-th:text-[13px] prose-th:font-semibold prose-tr:min-w-6 prose-tr:h-9.5  prose-thead:border-0 prose-tr:border-white prose-tr:border-b-2 
+					prose-td:[&>a[data-checklist]]:min-h-11
+					prose-td:[&>a[data-checklist]]:w-full 
+					prose-td:[&>a[data-checklist]]:hover:border-1 
+					prose-td:[&>a[data-checklist]]:active:bg-pitpos-200 
+					prose-td:[&>a[data-checklist]]:hover:rounded-md 
+					prose-td:[&>a[data-checklist]]:hover:border-pitpos-400 
+					prose-td:[&>a[data-checklist]]:flex 
+					prose-td:[&>a[data-checklist]]:justify-center 
+					prose-td:[&>a[data-checklist]]:items-center
+					prose-td:[&>a[data-shift]]:no-underline
+					prose-td:[&>a[data-shift]]:flex
+					prose-td:[&>a[data-shift]]:items-center
+					prose-td:[&>a[data-shift]]:gap-x-1
+					prose-td:[&>a[data-shift]]:duration-300
+					prose-td:[&>a[data-shift]]:hover:text-pitpos-400
+					prose-td:[&>a[data-shift]]:active:brightness-80
+					prose-td:[&>a[data-shift]>svg]:opacity-0
+					prose-td:[&>a[data-shift]]:hover:[&>svg]:opacity-100
+					">
 					<thead>
 						<tr>
 							<th></th>
@@ -1174,17 +1188,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-30135">
 									<input type="checkbox" class="sr-only peer" id="shift-30135">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								30135
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>30135</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Ленина, д 15
@@ -1219,8 +1239,8 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
-									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent" viewBox="0 0 24 24">
+								<a href="#!" data-checklist>
+									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
 								</a>
@@ -1231,17 +1251,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-24680">
 									<input type="checkbox" class="sr-only peer" id="shift-24680">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								24680
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>24680</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Солнечная, д 42
@@ -1276,7 +1302,7 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
+								<a href="#!" data-checklist>
 									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
@@ -1288,17 +1314,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-54321">
 									<input type="checkbox" class="sr-only peer" id="shift-54321">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								54321
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>54321</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Ленина, д 15
@@ -1333,8 +1365,8 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
-									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent" viewBox="0 0 24 24">
+								<a href="#!" data-checklist>
+									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
 								</a>
@@ -1345,17 +1377,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-98765">
 									<input type="checkbox" class="sr-only peer" id="shift-98765">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								98765
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>67890</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Солнечная, д 42
@@ -1390,7 +1428,7 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
+								<a href="#!" data-checklist>
 									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
@@ -1402,17 +1440,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-67890">
 									<input type="checkbox" class="sr-only peer" id="shift-67890">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								67890
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>67890</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Ленина, д 15
@@ -1447,7 +1491,7 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
+								<a href="#!" data-checklist>
 									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
@@ -1459,17 +1503,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-12345">
 									<input type="checkbox" class="sr-only peer" id="shift-12345">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								12345
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>12345</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Солнечная, д 42
@@ -1504,8 +1554,8 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
-									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent" viewBox="0 0 24 24">
+								<a href="#!" data-checklist>
+									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
 								</a>
@@ -1516,17 +1566,23 @@
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="shift-13579">
 									<input type="checkbox" class="sr-only peer" id="shift-13579">
-									<div class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
 														peer-checked:bg-pitpos-700 
 														flex items-center justify-center">
 										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
-									</div>
+									</span>
 								</label>
 							</td>
 							<td>
-								13579
+								<a href="./op-control-shift-details.html" data-shift title="Смотреть подробности смены">
+									<span>13579</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 							<td>
 								ул. Ленина, д 15
@@ -1561,7 +1617,7 @@
 								</span>
 							</td>
 							<td>
-								<a href="#!">
+								<a href="#!" data-checklist>
 									<svg class="inline-block size-3 stroke-pitpos-400 fill-transparent shrink-0" viewBox="0 0 24 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#clip-icon"></use>
 									</svg>
