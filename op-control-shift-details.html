@@ -547,7 +547,7 @@
 		<!-- End sidebar -->
 		<div class="w-full mb-6 ">
 			<nav class="xl:container">
-				<ul class="flex">
+				<ul class="flex flex-wrap">
 					<li>
 						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
 							href="./index.html">Главная&nbsp;-&nbsp;</a>
@@ -726,7 +726,8 @@
 				</div>
 				<!-- End page name -->
 				<div>
-					<nav class="flex flex-col gap-2.5 sm:flex-row" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+					<nav class="mb-3 flex flex-col gap-2.5 sm:flex-row lg:mb-6" aria-label="Tabs" role="tablist"
+						aria-orientation="horizontal">
 						<button type="button"
 							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white  active"
 							id="shift-desc-item-1" aria-selected="true" data-hs-tab="#shift-desc-1" aria-controls="shift-desc-1"
@@ -801,6 +802,15 @@
 								prose-td:[&>a[data-checklist]]:flex 
 								prose-td:[&>a[data-checklist]]:justify-center 
 								prose-td:[&>a[data-checklist]]:items-center
+								prose-td:[&>a[data-work-order]]:no-underline
+								prose-td:[&>a[data-work-order]]:flex
+								prose-td:[&>a[data-work-order]]:items-center
+								prose-td:[&>a[data-work-order]]:gap-x-1
+								prose-td:[&>a[data-work-order]]:duration-300
+								prose-td:[&>a[data-work-order]]:hover:text-pitpos-400
+								prose-td:[&>a[data-work-order]]:active:brightness-80
+								prose-td:[&>a[data-work-order]>svg]:opacity-0
+								prose-td:[&>a[data-work-order]]:hover:[&>svg]:opacity-100
 								">
 
 									<thead>
@@ -843,7 +853,14 @@
 									<tbody>
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="ready">Готов</span>
@@ -897,7 +914,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="paid">Оплачен</span>
@@ -950,7 +974,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="receipt">Расписка</span>
@@ -1003,7 +1034,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="ready">Готов</span>
@@ -1057,7 +1095,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="in-progress">В&nbsp;работе</span>
@@ -1111,7 +1156,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="ready">Готов</span>
@@ -1164,7 +1216,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="ready">Готов</span>
@@ -1218,7 +1277,14 @@
 
 										<tr>
 											<td>
-												30135
+												<a href="./op-control-work-order.html" data-work-order
+													title="Смотреть подробности заказ-наряда">
+													<span>30135</span>
+
+													<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+													</svg>
+												</a>
 											</td>
 											<td>
 												<span data-outfit-status="ready">Готов</span>
