@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Заказ-наряд №30899 </title>
+	<title>PitPos | Сезонные хранения </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -562,693 +562,533 @@
 
 					<li>
 						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-shifts.html">
-							Смены&nbsp;/&nbsp;
-						</a>
-					</li>
-
-					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-shift-details.html">
-							Смена &#8470;&nbsp;30899&nbsp;/&nbsp;
-						</a>
-					</li>
-
-					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-work-order.html">
-							Заказ-наряд &#8470;&nbsp;30899
+							href="./op-control-seasonal-storage.html">
+							Сезонные хранения
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<div class="flex flex-col gap-6 xl:container h-full 3xl:grid 3xl:grid-cols-5">
-			<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg
-			3xl:col-span-4">
-				<div class="mb-6 flex gap-3 items-center flex-wrap lg:gap-6 3xl:flex-nowrap 3xl: justify-end">
-					<h1 class="flex items-center grow-1 gap-x-2.5 font-semibold py-2 3xl:w-full">
-						<svg class="size-6 stroke-pitpos-700 fill-transparent shrink-0" viewBox="0 0 24 24">
-							<use xlink:href="./public/images/icons/sprite-icons.svg#tool-icon"></use>
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+			<h1 class="flex font-semibold mb-6 py-2">
+				<svg class="size-6 stroke-pitpos-700 mr-3.5" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
+				</svg>
+
+				<span class="text-pitpos-700">Сезонные хранения</span>
+			</h1>
+			<!-- End page name -->
+			<form class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-3"
+				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="seal" name="seal" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="phone">Телефон</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="phone" name="phone" type="tel" placeholder="+7(111) 111-11-11"
+						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="plate">Госномер</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="plate" name="plate" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="name">ФИО</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="name" name="name" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_id">Мастерская</label>
+					<select
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="workshop_id" name="workshop_id">
+						<option selected="selected" value="" disabled>Выберите</option>
+						<option value="18">ПО</option>
+						<option value="19">ТЕСТ</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_status">Статус</label>
+					<select
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="workshop_status" name="workshop_status">
+						<option selected="selected" value="" disabled>Выберите</option>
+						<option value="open">Открыта</option>
+						<option value="close">Закрыта</option>
+					</select>
+				</div>
+
+				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-3">
+					<button
+						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+						type="submit" disabled>Сохранить</button>
+					<button
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+						type="reset">
+						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 						</svg>
 
-						<span class="text-pitpos-700 whitespace-nowrap">Заказ-наряд <span>30899</span>
-						</span>
-					</h1>
-
-					<ul
-						class="w-full flex flex-wrap gap-3 order-2 items-center justify-start  whitespace-nowrap lg:gap-6 lg:justify-between lg:flex-nowrap 3xl:order-0 3xl:justify-start ">
-
-						<li class="flex items-center gap-x-1 font-semibold text-[0.81rem]">
-							<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
-								<use xlink:href="./public/images/icons/sprite-icons.svg#pin-icon"></use>
-							</svg>
-
-							<address class="not-italic">Мойка, Пулковское шоссе, д. 19А</address>
-						</li>
-
-						<li class="flex items-center gap-x-1 font-semibold text-[0.81rem]">
-							<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
-								<use xlink:href="./public/images/icons/sprite-icons.svg#person-icon"></use>
-							</svg>
-
-							<span>Сергеенко Владлен (Кассир)</span>
-						</li>
-
-						<li class="flex items-center gap-x-1 font-semibold text-[0.81rem]">
-							<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
-								<use xlink:href="./public/images/icons/sprite-icons.svg#finish-icon"></use>
-							</svg>
-
-							<time datetime="2025-08-13T09:53">13.08.2025 09:56</time>
-						</li>
-
-						<li class="-order-1 w-full min-w-24 flex items-center lg:justify-end 3xl:justify-center lg:order-0">
-							<span class="px-1.5 text-white text-[0.81rem] rounded-xs 
-								[&[data-outfit-status='paid']]:bg-success 
-								[&[data-outfit-status='ready']]:bg-ready 
-								[&[data-outfit-status='receipt']]:bg-receipt
-								[&[data-outfit-status='in-progress']]:bg-in-progress" data-outfit-status="paid">Оплачен</span>
-						</li>
-					</ul>
-
-					<button
-						class="cursor-pointer whitespace-nowrap min-h-9.5 px-5 py-2 outline-1 rounded-sm outline-pitpos-700 bg-transparent text-sm font-bold duration-300 will-change-transform tracking-[0.01em] hover:bg-pitpos-700 hover:text-white active:brightness-80 active:scale-98 disabled:pointer-events-none  disabled:opacity-50"
-						aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-work-order-check-modal"
-						data-hs-overlay="#hs-work-order-check-modal">
-						Чек&nbsp;ЗН
+						<span class="text-dark-red text-sm font-medium">Сбросить</span>
 					</button>
+				</div>
+			</form>
+			<!-- End MAIN filter of seosonal storage -->
+			<div class="mb-6 w-full flex justify-between items-center">
+				<form class="flex flex-col gap-3 sm:flex-row">
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-shifts-all" checked>
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-shifts-all">Все</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-shifts-active">
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-shifts-active">Активные</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-shifts-finished">
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-shifts-finished">Завершенные</label>
+					</div>
+				</form>
 
-					<div id="hs-work-order-check-modal"
-						class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none bg-black-opacity-30"
-						role="dialog" tabindex="-1" aria-labelledby="hs-work-order-check-modal-label">
-						<div
-							class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-56px)] min-h-[calc(100%-56px)] flex items-center">
-							<div
-								class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
-								<div class="flex justify-between items-center p-2.5 border-b border-gray-200 ">
-									<h3 id="hs-work-order-check-modal-label" class="font-bold text-dark-text">
-										Чек заказ-наряда
-									</h3>
-									<button type="button"
-										class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-200 active:scale-95 active:bg-gray-300"
-										aria-label="Close" data-hs-overlay="#hs-work-order-check-modal">
-										<svg class="inline-block size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 25 24">
-											<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
+				<button
+					class="font-bold underline text-sm text-pitpos-700 cursor-pointer duration-300 will-change-transform hover:text-pitpos-800 hover:no-underline active:scale-98"
+					type="button">Отправить
+					на&nbsp;проверку</button>
+			</div>
+			<!-- End dditional filter of seosonal storage (tables filter) -->
+			<div class="overflow-x-auto xl:w-full mb-6">
+				<table class="prose max-w-screen min-w-301 w-full  text-dark-text 
+				prose-thead:border-0 
+				prose-th:p-2.5 
+				prose-th:first:p-0.5 
+				prose-th:bg-gray-50 
+				prose-th:align-middle 
+				prose-tr:even:bg-gray-50 
+				prose-td:px-2.5 
+				prose-td:py-[0.5rem] 
+				prose-td:align-middle 
+				prose-td:has-[a]:py-0 
+				prose-tr:[&>td>div]:w-full 
+				prose-tr:[&>td>div]:flex 
+				prose-tr:[&>td>div]:justify-center 
+				prose-tr:[&>td>div]:items-center 
+				prose-tr:[&>td>div]:gap-x-2.5
+				prose-th:text-[0.81rem] 
+				prose-th:font-semibold 
+				prose-tr:min-w-6 
+				prose-tr:h-9.5 
+				prose-tr:border-white 
+				prose-tr:border-b-2 
+					prose-td:[&>a]:text-pitpos-700
+					prose-td:[&>a]:duration-300
+					prose-td:[&>a]:hover:text-pitpos-500
+					prose-td:[&>a]:active:no-underline
+					prose-td:[&>div>a]:text-pitpos-700
+					prose-td:[&>div>a]:duration-300
+					prose-td:[&>div>a]:hover:text-pitpos-500
+					prose-td:[&>div>a]:active:no-underline
+					prose-td:[&>div>button]:underline
+					prose-td:[&>div>button]:text-pitpos-700
+					prose-td:[&>div>button]:duration-300
+					prose-td:[&>div>button]:hover:text-pitpos-500
+					prose-td:[&>div>button]:active:no-underline
+					">
+					<thead>
+						<tr>
+							<th></th>
+							<th>
+								&#8470;
+							</th>
+							<th>
+								<span>&#8470;&nbsp;пломбы</span>
+							</th>
+							<th>
+								Статус
+							</th>
+							<th>
+								Номер а/м
+							</th>
+							<th>
+								Мастерская
+							</th>
+							<th>
+								Дата оформления
+							</th>
+							<th>
+								Детали
+							</th>
+							<th>
+								Заказана клиентом
+							</th>
+							<th>
+								Заказана доставка
+							</th>
+							<th>
+								Действия
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								<label class="inline-flex items-center cursor-pointer" for="shift-30135">
+									<input type="checkbox" class="sr-only peer" id="shift-30135">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
+									</span>
+								</label>
+							</td>
+							<td>
+								<a href="./op-control-storage-card.html" data-storage title="Смотреть подробности хранения">
+									30135
+								</a>
+							</td>
+							<td>
+								865774
+							</td>
+							<td>
+								На&nbsp;складе
+							</td>
+							<td>
+								М678ИМ799
+							</td>
+							<td>
+								Кудрово
+							</td>
+							<td>
+								2025-06-27
+								19:08:33
+							</td>
+							<td>
+								R14. резина зимняя Nokian, состояние хорошее, ширина 165 мм, высота 35, протектор 2 мм. Без дисков.
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								<div>
+									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv">
+										CSV
+									</a>
+
+									<button type="submit">
+										Отправить
 									</button>
 								</div>
+							</td>
+						</tr>
 
-								<div class="p-2.5 overflow-y-auto">
-									<div class="space-y-4">
-										<div>
-											<pre class="text-center font-bold text-xl leading-[1.5]">ДВЕ АТМОСФЕРЫ</pre>
-											<pre class="text-center">ШИНОМОНТАЖНЫЕ МАСТЕРСКИЕ</pre>
-											<pre class="text-center">8 (812) 385-50-54
-Круглосуточная многоканальная линия
-WWW.2ATM.RU
-											</pre>
-											<pre class="text-center">
-ЗАКАЗ-НАРЯД
-											</pre>
-											<pre class="text-center">
-№358400 от 26.06.2025
-											</pre>
-											<pre class="text-left">
-Мастерская по адресу:
-ул. Савушкина, д. 116 лит. А
-Заказ принял мастер: Левицкий Никита
-Заказ выполнен в 17:40
-Вид оплаты: Карта
-Авто: Honda
-Гос номер:
-Пилот: Анатолий Боровой
-											</pre>
-											<pre class="text-left">
-Снятие и установка колеса 4x258.10 =1,032.40
-R16 легковой а/м (седан, хэтчбэк, кроссовер, джип)
-Скидка на услугу составила =127.60
-------------------------------------------------
-ИТОГО К ОПЛАТЕ =1,032.40
-Ваша скидка по карте, руб =127.60
-Оплачено по карте =1,032.00
-
-
-
-В чеке применена карта ДВЕ АТМОСФЕРЫ *****75
-------------------------------------------------
---- Условия гарантии: ---
-Гарантия на все виды работ 2 недели при предъявлении 
-заказ-наряда. На ремонт с горячей
-вулканизацией действует пожизненная гарантия 
-при условии соблюдения правил эксплуатации шины и
-сохранении заказ-наряда.
-------------------------------------------------
-Контроль затяжки Ваших колес произвел мастер:
-Левицкий Никита
-
-Подписывая настоящий документ, клиент подтверждает:
-- Согласие на обработку персональных данных 
-(ФИО, телефон, авто и др.) в соответствии с законом
-№152-ФЗ.
-- Ознакомлен с условиями политики конфиденциальности 
-(доступна на 2atm.ru или по запросу).
-- К внешнему виду автомобиля, дисков, 
-объему и стоимости работ, затяжке колес на автомобиле
-претензий не имею.
-
-
-Дата Подпись клиента
-
-
-26.06.2025 _________(Анатолий Боровой)
-
-
-ЖДЕМ ВАС В НАШИХ МАСТЕРСКИХ!
-
-ОН-ЛАЙН запись на обслуживание 
-на нашем сайте 
-WWW.2ATM.RU 
-или по 
-тел. 385-50-54
-Ознакомиться с нашими скидками 
-вы можете в разделе &amp;quot;АКЦИИ&amp;quot;
-											</pre>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End page name -->
-				<div>
-					<nav class="mb-3 flex flex-col gap-2.5 sm:flex-row lg:mb-6" aria-label="Tabs" role="tablist"
-						aria-orientation="horizontal">
-						<button type="button"
-							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white  active"
-							id="work-order-desc-item-1" aria-selected="true" data-hs-tab="#work-order-desc-1"
-							aria-controls="work-order-desc-1" role="tab">
-							Детали заказа
-						</button>
-						<button type="button"
-							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
-							id="work-order-desc-item-2" aria-selected="false" data-hs-tab="#work-order-desc-2"
-							aria-controls="work-order-desc-2" role="tab">
-							Рекомендации
-						</button>
-						<button type="button"
-							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
-							id="work-order-desc-item-3" aria-selected="false" data-hs-tab="#work-order-desc-3"
-							aria-controls="work-order-desc-3" role="tab">
-							Опросник
-						</button>
-						<button type="button"
-							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
-							id="work-order-desc-item-3" aria-selected="false" data-hs-tab="#work-order-desc-4"
-							aria-controls="work-order-desc-4" role="tab">
-							Лог заказа
-						</button>
-					</nav>
-					<!-- End tab navigation -->
-					<div class="mt-3">
-						<div id="work-order-desc-1" role="tabpanel" aria-labelledby="work-order-desc-item-1">
-							<div class="overflow-x-auto xl:w-full mb-6">
-								<table class="prose mb-1.5 max-w-screen min-w-287.5 w-full text-dark-text
-								[&>caption]:mb-1.5
-								[&>caption]:font-semibold 
-								[&>caption]:text-[0.81rem] 
-								[&>caption]:leading-[1.545]
-								[&>caption]:bg-gray-200 
-								[&>caption]:text-left 
-								prose-thead:border-0 
-								prose-thead:whitespace-nowrap
-								prose-th:py-2.5 
-								prose-th:font-semibold 
-								prose-th:bg-gray-50  
-								prose-th:text-[0.81rem] 
-								prose-th:px-1 
-								prose-th:align-middle 
-								prose-th:leading-[1.2]
-								prose-td:text-[0.938rem] 
-								prose-td:align-middle 
-								prose-td:px-1 
-								prose-td:py-2.5  
-								prose-tr:h-9.5  
-								prose-tr:border-white 
-								prose-tr:border-b-2 
-								prose-tr:[&>td:first-child]:max-w-28 
-								prose-tr:[&>td:nth-child(2)]:max-w-28
-								">
-
-									<caption>Услуги</caption>
-
-									<thead>
-										<tr>
-											<th>
-												Наименование
-											</th>
-											<th>
-												Детали
-											</th>
-											<th>
-												кол-во
-											</th>
-											<th>
-												Цена
-											</th>
-											<th>
-												Сумма
-											</th>
-											<th>
-												Скидка
-											</th>
-											<th>
-												ЗП&nbsp;мастера
-											</th>
-											<th>
-												ЗП&nbsp;админ-ра
-											</th>
-											<th>
-												Бонус мастера
-											</th>
-											<th>
-												Копилка
-											</th>
-											<th>
-												ЗП&nbsp;кассира
-											</th>
-										</tr>
-									</thead>
-
-									<tbody>
-										<tr>
-											<td>
-												Мойка автомобиля
-												«Люкс» (4 кат)
-											</td>
-											<td>
-												Мойка автомобиля
-												«Люкс» (4 кат)
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												0%
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-										</tr>
-
-										<tr>
-											<td>
-												Снятие и установка колеса
-											</td>
-											<td>
-												Снятие и установка колеса R18 легковой а/м (седан, хэтчбэк, кроссовер, джип)
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												0%
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-										</tr>
-									</tbody>
-								</table>
-
-								<table class="prose max-w-screen min-w-287.5 w-full text-dark-text
-								[&>caption]:mb-1.5
-								[&>caption]:font-semibold 
-								[&>caption]:text-[0.81rem] 
-								[&>caption]:leading-[1.545]
-								[&>caption]:bg-gray-200 
-								[&>caption]:text-left 
-								prose-thead:border-0 
-								prose-thead:whitespace-nowrap
-								prose-th:py-2.5 
-								prose-th:font-semibold 
-								prose-th:bg-gray-50  
-								prose-th:text-[0.81rem] 
-								prose-th:px-1 
-								prose-th:align-middle 
-								prose-th:leading-[1.2]
-								prose-td:text-[0.938rem] 
-								prose-td:align-middle 
-								prose-td:px-1 
-								prose-td:py-2.5  
-								prose-tr:h-9.5  
-								prose-tr:border-white 
-								prose-tr:border-b-2 
-								prose-tr:[&>td:first-child]:max-w-28 
-								prose-tr:[&>td:nth-child(2)]:max-w-28
-								">
-
-									<caption>Товары</caption>
-
-									<thead>
-										<tr>
-											<th>
-												Наименование
-											</th>
-											<th>
-												Детали
-											</th>
-											<th>
-												кол-во
-											</th>
-											<th>
-												Цена
-											</th>
-											<th>
-												Сумма
-											</th>
-											<th>
-												Скидка
-											</th>
-											<th>
-												ЗП&nbsp;мастера
-											</th>
-											<th>
-												ЗП&nbsp;админ-ра
-											</th>
-											<th>
-												Бонус мастера
-											</th>
-											<th>
-												Копилка
-											</th>
-											<th>
-												ЗП&nbsp;кассира
-											</th>
-										</tr>
-									</thead>
-
-									<tbody>
-										<tr>
-											<td>
-												Поставка запчастей
-											</td>
-											<td>
-
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												8 050₽
-											</td>
-											<td>
-												8 050₽
-											</td>
-											<td>
-												0%
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-											<td>
-												1 050₽
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!-- End table of shift details -->
-							<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
-								<div>
-									Записи
-									<span>1</span>-<span>10</span>
-									из
-									<span>256</span>
-								</div>
-
-								<label class="relative inline-block z-0 h-8 self-start" for="shifts-lists-select">
-									<svg class="absolute right-2.5 top-1 -z-1 size-6 stroke-pitpos-700 fill-transparent"
-										viewBox="0 0 24 24">
-										<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-									</svg>
-
-									<select
-										class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-pitpos-950 font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-pitpos-700  focus:outline-0 focus:outline-0 no-number-spinner"
-										id="shifts-lists-select">
-										<option value="shifts-list-1-10" selected>10</option>
-										<option value="shifts-list-10-20">20</option>
-										<option value="shifts-list-20-30">30</option>
-										<option value="shifts-list-30-40">40</option>
-										<option value="shifts-list-40-50">50</option>
-										<option value="shifts-list-50-60">60</option>
-										<option value="shifts-list-60-70">70</option>
-										<option value="shifts-list-70-80">80</option>
-										<option value="shifts-list-80-90">90</option>
-										<option value="shifts-list-90-100">100</option>
-										<option value="shifts-list-100-110">110</option>
-										<option value="shifts-list-110-120">120</option>
-										<option value="shifts-list-120-130">130</option>
-										<option value="shifts-list-130-140">140</option>
-										<option value="shifts-list-140-150">150</option>
-										<option value="shifts-list-150-160">160</option>
-										<option value="shifts-list-160-170">170</option>
-										<option value="shifts-list-170-180">180</option>
-										<option value="shifts-list-180-190">190</option>
-										<option value="shifts-list-190-200">200</option>
-										<option value="shifts-list-200-210">210</option>
-										<option value="shifts-list-210-220">220</option>
-										<option value="shifts-list-220-230">230</option>
-										<option value="shifts-list-230-240">240</option>
-										<option value="shifts-list-240-250">250</option>
-										<option value="shifts-list-250-256">256</option>
-									</select>
+						<tr>
+							<td>
+								<label class="inline-flex items-center cursor-pointer" for="shift-30135">
+									<input type="checkbox" class="sr-only peer" id="shift-30135">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 								</label>
+							</td>
+							<td>
+								<a href="./op-control-storage-card.html" data-storage title="Смотреть подробности хранения">
+									30135
+								</a>
+							</td>
+							<td>
+								865774
+							</td>
+							<td>
+								На&nbsp;складе
+							</td>
+							<td>
+								М678ИМ799
+							</td>
+							<td>
+								Кудрово
+							</td>
+							<td>
+								2025-06-27
+								19:08:33
+							</td>
+							<td>
+								R14. резина зимняя Nokian, состояние хорошее, ширина 165 мм, высота 35, протектор 2 мм. Без дисков.
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								<div>
+									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv">
+										CSV
+									</a>
 
-								<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
-									<ul class="flex gap-x-1.5 sm:gap-x-2.5">
-										<li class="shrink-0 h-8 w-8">
-											<a class="flex items-center justify-center rounded-full w-full h-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95"
-												href="#!" rel="prev" aria-label="« Назад">
-												<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent rotate-90" viewBox="0 0 24 24">
-													<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-												</svg>
-											</a>
-										</li>
+									<button type="submit">
+										Отправить
+									</button>
+								</div>
+							</td>
+						</tr>
 
-										<li class="group-has:active:bg-pitpos-700 active">
-											<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
-												href="#!">1</a>
-										</li>
+						<tr>
+							<td>
+								<label class="inline-flex items-center cursor-pointer" for="shift-30135">
+									<input type="checkbox" class="sr-only peer" id="shift-30135">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+							<td>
+								<a href="./op-control-storage-card.html" data-storage title="Смотреть подробности хранения">
+									30135
+								</a>
+							</td>
+							<td>
+								865774
+							</td>
+							<td>
+								В пути
+							</td>
+							<td>
+								М678ИМ799
+							</td>
+							<td>
+								Кудрово
+							</td>
+							<td>
+								2025-06-27
+								19:08:33
+							</td>
+							<td>
+								R14. резина зимняя Nokian, состояние хорошее, ширина 165 мм, высота 35, протектор 2 мм. Без дисков.
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								<div>
+									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv">
+										CSV
+									</a>
 
-										<li>
-											<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-												href="#!">2</a>
-										</li>
+									<button type="submit">
+										Отправить
+									</button>
+								</div>
+							</td>
+						</tr>
 
-										<li>
-											<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-												href="#!">3</a>
-										</li>
+						<tr>
+							<td>
+								<label class="inline-flex items-center cursor-pointer" for="shift-30135">
+									<input type="checkbox" class="sr-only peer" id="shift-30135">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+							<td>
+								<a href="./op-control-storage-card.html" data-storage title="Смотреть подробности хранения">
+									30135
+								</a>
+							</td>
+							<td>
+								865774
+							</td>
+							<td>
+								В мастерской
+							</td>
+							<td>
+								М678ИМ799
+							</td>
+							<td>
+								Кудрово
+							</td>
+							<td>
+								2025-06-27
+								19:08:33
+							</td>
+							<td>
+								R14. резина зимняя Nokian, состояние хорошее, ширина 165 мм, высота 35, протектор 2 мм. Без дисков.
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								Нет
+							</td>
+							<td>
+								<div>
+									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv">
+										CSV
+									</a>
 
-										<li class="hidden sm:block">
-											<a class=" h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-												href="#!">4</a>
-										</li>
-
-										<li class="hidden sm:block">
-											<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-												href="#!">5</a>
-										</li>
-
-										<li aria-disabled="true">
-											<span class="cursor-default">...</span>
-										</li>
-
-										<li>
-											<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-												href="https://backend.dev.2atm.ru/backoffice/shifts?page=8">8</a>
-										</li>
-
-										<li class=" h-8">
-											<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80"
-												href="#!" rel="next" aria-label="Вперёд »">
-												<span class="hidden xs:block">Дальше</span>
-
-												<svg class="duration-300 rounded-full -rotate-90 size-6 stroke-pitpos-700 fill-transparent"
-													viewBox="0 0 24 24">
-													<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<!-- End table of shift details pages nagigation -->
-						</div>
-
-						<div id="work-order-desc-2" class="hidden" role="tabpanel" aria-labelledby="work-order-desc-item-2">
-							<p class="text-xl font-semibold text-gray-500">Рекомендации</p>
-						</div>
-
-						<div id="work-order-desc-3" class="hidden" role="tabpanel" aria-labelledby="work-order-desc-item-3">
-							<p class="text-xl font-semibold text-gray-500">Опросник</p>
-						</div>
-
-						<div id="work-order-desc-4" class="hidden" role="tabpanel" aria-labelledby="work-order-desc-item-3">
-							<p class="text-xl font-semibold text-gray-500">Лог заказа</p>
-						</div>
-					</div>
-				</div>
-				<!-- End shift description tabs -->
+									<button type="submit">
+										Отправить
+									</button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<!-- End middle content -->
-
-			<div class="bg-white h-full rounded-md pt-2.5 px-0 shadow-lg 3xl:pt-10 3xl:pb-2 3xl:w-75">
-				<div class="w-full hs-accordion-group">
-					<div class="hs-accordion hs-accordion-active: duration-300" id="hs-active-heading-1">
-						<button
-							class="hs-accordion-toggle cursor-pointer duration-300 flex items-center gap-x-2.5 w-full font-semibold text-start mb-2.5 py-2 px-2.5 text-pitpos-700 disabled:opacity-50 disabled:pointer-events-none"
-							aria-expanded="false" aria-controls="hs-basic-active-collapse-1">
-
-							<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
-								<use xlink:href="./public/images/icons/sprite-icons.svg#pie-chart-icon"></use>
-							</svg>
-
-							<span class="grow-1">Детали заказа</span>
-
-							<svg class="duration-300 size-6 stroke-pitpos-700 fill-transparent hs-accordion-active:rotate-180 "
-								viewBox="0 0 24 24">
-								<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-							</svg>
-						</button>
-
-						<div id="hs-basic-active-collapse-1"
-							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 px-2.5"
-							role="region" aria-labelledby="hs-active-heading-1">
-
-							<ul class="flex flex-col gap-y-2.5 py-2 pb-2.5 border-b-1 border-gray-300 text-[0.81rem] font-semibold">
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Автомобиль</span>
-									<span>Mitsubishi ASX</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Повтор печати НФ</span>
-									<span>5шт</span>
-								</li>
-							</ul>
-
-							<ul class="flex flex-col gap-y-2.5 py-2 pb-2.5 border-b-1 border-gray-300 text-[0.81rem] font-semibold">
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Сумма заказа</span>
-									<span>11 200₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Тип оплаты</span>
-									<span>11 Карта</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Скидка заказа</span>
-									<span>0%</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Тел.:</span>
-									<span>+7 911 123 45 67</span>
-								</li>
-							</ul>
-
-							<ul class="flex flex-col gap-y-2.5 py-2 pb-2.5 text-[0.81rem] font-semibold">
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">ЗП&nbsp;мастеров</span>
-									<span>3 042₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">ЗП&nbsp;администратора</span>
-									<span>1 000,05₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">ЗП&nbsp;менеджера</span>
-									<span>-2 473₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Бонус мастера</span>
-									<span>1 473₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">Копилка</span>
-									<span>9 905₽</span>
-								</li>
-
-								<li class="flex justify-between py-1.5">
-									<span class="text-gray-700">ЗП&nbsp;кассира</span>
-									<span>9 905₽</span>
-								</li>
-							</ul>
-						</div>
-					</div>
+			<!-- End table of seosonals storages -->
+			<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
+				<div>
+					Записи
+					<span>1</span>-<span>10</span>
+					из
+					<span>256</span>
 				</div>
+
+				<label class="relative inline-block z-0 h-8 self-start" for="seasonal-storage-lists-select">
+					<svg class="absolute right-2.5 top-1 -z-1 size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+
+					<select
+						class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-pitpos-950 font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-pitpos-700  focus:outline-0 focus:outline-0 no-number-spinner"
+						id="seasonal-storage-lists-select">
+						<option value="shifts-list-1-10" selected>10</option>
+						<option value="shifts-list-10-20">20</option>
+						<option value="shifts-list-20-30">30</option>
+						<option value="shifts-list-30-40">40</option>
+						<option value="shifts-list-40-50">50</option>
+						<option value="shifts-list-50-60">60</option>
+						<option value="shifts-list-60-70">70</option>
+						<option value="shifts-list-70-80">80</option>
+						<option value="shifts-list-80-90">90</option>
+						<option value="shifts-list-90-100">100</option>
+						<option value="shifts-list-100-110">110</option>
+						<option value="shifts-list-110-120">120</option>
+						<option value="shifts-list-120-130">130</option>
+						<option value="shifts-list-130-140">140</option>
+						<option value="shifts-list-140-150">150</option>
+						<option value="shifts-list-150-160">160</option>
+						<option value="shifts-list-160-170">170</option>
+						<option value="shifts-list-170-180">180</option>
+						<option value="shifts-list-180-190">190</option>
+						<option value="shifts-list-190-200">200</option>
+						<option value="shifts-list-200-210">210</option>
+						<option value="shifts-list-210-220">220</option>
+						<option value="shifts-list-220-230">230</option>
+						<option value="shifts-list-230-240">240</option>
+						<option value="shifts-list-240-250">250</option>
+						<option value="shifts-list-250-256">256</option>
+					</select>
+				</label>
+
+				<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
+					<ul class="flex gap-x-1.5 sm:gap-x-2.5">
+						<li class="shrink-0 h-8 w-8">
+							<a class="flex items-center justify-center rounded-full w-full h-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95"
+								href="#!" rel="prev" aria-label="« Назад">
+								<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent rotate-90" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="group-has:active:bg-pitpos-700 active">
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
+								href="#!">1</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">2</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">3</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class=" h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">4</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">5</a>
+						</li>
+
+						<li aria-disabled="true">
+							<span class="cursor-default">...</span>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">8</a>
+						</li>
+
+						<li class=" h-8">
+							<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80"
+								href="#!" rel="next" aria-label="Вперёд »">
+								<span class="hidden xs:block">Дальше</span>
+
+								<svg class="duration-300 rounded-full -rotate-90 size-6 stroke-pitpos-700 fill-transparent"
+									viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<!-- End accordeon (details of order) -->
+			<!-- End pagination block -->
 		</div>
+
 	</main>
 
 	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script> -->
 </body>
 
 </html>
