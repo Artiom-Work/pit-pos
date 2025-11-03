@@ -126,3 +126,9 @@
 		@slot;
 	}
 }
+
+@variant has-disabled {
+	&.disabled {
+		@slot;
+	}
+}

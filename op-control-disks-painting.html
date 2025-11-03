@@ -121,7 +121,7 @@
 							</label>
 
 							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-shifts.html">Смены</a>
@@ -129,6 +129,10 @@
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
@@ -585,14 +589,14 @@
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="paint_work_order">Номер з/н</label>
 					<input
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="paint_work_order" name="paint_work_order" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="completion_status">Cтатус выполнения</label>
 					<select
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error"
 						id="completion_status" name="completion_status">
 						<option selected="selected" value="" disabled>Выберите</option>
 						<option value="receipt">Сохранная расписка</option>
@@ -605,7 +609,7 @@
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="payment">Оплата</label>
 					<select
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error"
 						id="payment" name="payment">
 						<option selected="selected" value="" disabled>Выберите</option>
 						<option value="card">Карта</option>
@@ -616,14 +620,14 @@
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="name">ФИО</label>
 					<input
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error disabled:opacity-40"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:opacity-40"
 						id="name" name="name" type="text" disabled>
 				</div>
 
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="workshop_id">Мастерская</label>
 					<select
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error"
 						id="workshop_id" name="workshop_id">
 						<option selected="selected" value="" disabled>Выберите</option>
 						<option value="18">ПО</option>
@@ -634,7 +638,7 @@
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="workshop_status">Статус</label>
 					<select
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error"
 						id="workshop_status" name="workshop_status">
 						<option selected="selected" value="" disabled>Выберите</option>
 						<option value="open">Открыта</option>
@@ -684,7 +688,7 @@
 					prose-td:[&>a]:text-pitpos-700
 					prose-td:[&>a]:duration-300
 					prose-td:[&>a]:hover:text-pitpos-500
-					prose-td:[&>a]:no-underline
+					prose-td:[&>a]:hover:no-underline
 					prose-td:[&>a]:active:brightness-80
 					prose-td:[&[data-disks-color-1]]:min-w-30
 					prose-td:[&[data-disks-color-2]]:min-w-30
@@ -954,8 +958,8 @@
 
 				<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
 					<ul class="flex gap-x-1.5 sm:gap-x-2.5">
-						<li class="shrink-0 h-8 w-8">
-							<a class="flex items-center justify-center rounded-full w-full h-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95"
+						<li class="shrink-0 h-8 w-8" disabled>
+							<a class="flex items-center justify-center w-full h-full rounded-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95 has-disabled:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none disabled"
 								href="#!" rel="prev" aria-label="« Назад">
 								<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent rotate-90" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -963,7 +967,7 @@
 							</a>
 						</li>
 
-						<li class="group-has:active:bg-pitpos-700 active">
+						<li>
 							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
 								href="#!">1</a>
 						</li>
@@ -998,7 +1002,7 @@
 						</li>
 
 						<li class=" h-8">
-							<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80"
+							<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80 has-disabled:[&>svg]:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none"
 								href="#!" rel="next" aria-label="Вперёд »">
 								<span class="hidden xs:block">Дальше</span>
 

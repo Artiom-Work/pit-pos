@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos</title>
+	<title>PitPos | Заявки на выдачу</title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -53,7 +53,7 @@
 		</div>
 	</header>
 
-	<main class="relative min-h-screen pl-15 pt-18 pr-3 md:pl-18">
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
 		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
 			<div class="max-w-80 h-full relative">
 				<input class="hidden peer" id="menu-toggle" type="checkbox">
@@ -549,85 +549,579 @@
 			</div>
 		</aside>
 		<!-- End sidebar -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
-			<h1 class="text-center text-3xl font-bold">Готовые страницы "PitPos"</h1>
-			<p class="mb-5 text-2xl text-center">
-				(<i>демонстрация вёрстки</i>)
-			</p>
-			<ul class="mx-auto max-w-200">
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shifts.html">
-						Смены(оперативный контроль)
-					</a>
-				</li>
+		<div class="w-full mb-6 ">
+			<nav class="xl:container">
+				<ul class="flex flex-wrap">
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./index.html">Главная&nbsp;-&nbsp;</a>
+					</li>
 
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shift-details.html">
-						Смена детально(оперативный контроль)
-					</a>
-				</li>
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./op-control.html">
+							Оперативный контроль&nbsp;/&nbsp;
+						</a>
+					</li>
 
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-work-order.html">
-						Заказ-наряд(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-seasonal-storage.html">
-						Сезонные хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-storage-applications.html">
-						Заявки на выдачу сезонных хранений(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-application-storage-card.html">
-						Заявка на выдачу сезонного хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-storage-card.html">
-						Сезонное хранение детально(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-disks-painting.html">
-						Покраска дисков(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantees.html">
-						Гарантии(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-pitpos-700">
-					<a class="px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantee.html">
-						Гарантия детально(оперативный контроль)
-					</a>
-				</li>
-			</ul>
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./op-control-storage-applications.html">
+							Заявки на&nbsp;выдачу сезонных хранений
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-	</main>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+			<h1 class="flex font-semibold mb-6 py-2">
+				<svg class="size-6 stroke-pitpos-700 mr-3.5" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
+				</svg>
 
+				<span class="text-pitpos-700">Заявки на&nbsp;выдачу сезонных хранений</span>
+			</h1>
+			<!-- End page name -->
+			<form class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-2"
+				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="seal" name="seal" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="plate">Госномер</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="plate" name="plate" type="text">
+				</div>
+
+				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-2">
+					<button
+						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+						type="submit" disabled>Сохранить</button>
+					<button
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+						type="reset">
+						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+						</svg>
+
+						<span class="text-dark-red text-sm font-medium">Сбросить</span>
+					</button>
+				</div>
+			</form>
+			<!-- End MAIN filter for applications of seosonal storage -->
+
+			<form class="w-full mb-6 grid grid-cols-4 gap-3 md:gap-6">
+
+				<div class="flex flex-col gap-y-1 col-span-4 sm:col-span-2">
+					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="seal" name="seal" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1 col-span-4 sm:col-span-2">
+					<label class="text-sm text-gray-500" for="plate">Госномер (опционально)</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="plate" name="plate" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1 col-span-4 md:col-span-3">
+					<label class="text-sm text-gray-500" for="note">Заметка</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="note" name="note" type="text">
+					</input>
+				</div>
+
+				<button
+					class="col-span-4 inline-flex self-end justify-self-end px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold whitespace-nowrap cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 md:col-span-1"
+					type="submit" disabled>Добавить заявку</button>
+			</form>
+			<!-- End form for create client application  -->
+
+			<div class="overflow-x-auto xl:w-full mb-6">
+				<table class="prose max-w-screen min-w-301 w-full  text-dark-text 
+				prose-thead:border-0 
+				prose-th:p-2.5 
+				prose-th:bg-gray-50 
+				prose-th:align-middle 
+				prose-th:text-[0.81rem] 
+				prose-th:font-semibold 
+				prose-th:last:text-center 
+				prose-th:[&:nth-child(3)]:min-w-28 
+				prose-th:[&:nth-child(5)]:min-w-40 
+				prose-th:[&:nth-child(9)]:min-w-32 
+				prose-td:px-2.5 
+				prose-td:py-0.5 
+				prose-td:align-middle 
+				prose-td:has-[a]:py-0 
+				prose-tr:even:bg-gray-50 
+				prose-tr:min-w-6 
+				prose-tr:h-9.5 
+				prose-tr:border-white 
+				prose-tr:border-b-2 
+				prose-td:[&>div]:w-full 
+				prose-td:[&>div]:flex
+				prose-td:[&>div]:flex-col
+				prose-td:[&>div]:gap-y-1
+				prose-td:[&>div>button]:duration-300
+				prose-td:[&>div>a]:duration-300
+				prose-td:[&>div>button]:text-xs 
+				prose-td:[&>div>a]:text-sm 
+				prose-td:[&>div>a]:no-underline 
+				prose-td:[&>div>button]:px-4.5
+				prose-td:[&>div>a]:px-6
+				prose-td:[&>div>button]:py-2
+				prose-td:[&>div>a]:py-1.5
+				prose-td:[&>div>button]:bg-pitpos-700
+				prose-td:[&>div>a]:bg-white
+				prose-td:[&>div>button]:rounded-md
+				prose-td:[&>div>a]:rounded-md
+				prose-td:[&>div>a]:outline-1
+				prose-td:[&>div>a]:outline-pitpos-700
+				prose-td:[&>div>a]:self-center
+				prose-td:[&>div>button]:border-0
+				prose-td:[&>div>button]:text-white
+				prose-td:[&>div>a]:text-pitpos-700
+				prose-td:[&>div>button]:text-sm
+				prose-td:[&>div>button]:font-bold
+				prose-td:[&>div>a]:font-bold
+				prose-td:[&>div>button]:cursor-pointer
+				prose-td:[&>div>button]:will-change-transform
+				prose-td:[&>div>a]:will-change-transform
+				prose-td:[&>div>button]:hover:brightness-85
+				prose-td:[&>div>button]:shadow-xs
+				prose-td:[&>div>a]:hover:brightness-85
+				prose-td:[&>div>a]:hover:shadow-xs
+				prose-td:[&>div>button]:active:scale-98
+				prose-td:[&>div>a]:active:scale-95
+					">
+
+					<thead>
+						<tr>
+							<th>
+								&#8470;
+							</th>
+							<th>
+								<span>&#8470;&nbsp;пломбы</span>
+							</th>
+							<th>
+								Номер а/м
+							</th>
+							<th>
+								Марка авто
+							</th>
+							<th>
+								Клиент
+							</th>
+							<th>
+								Адрес
+							</th>
+							<th>
+								Комментарий
+							</th>
+							<th>
+								Время записи
+							</th>
+							<th>
+								Когда поступил заказ
+							</th>
+							<th>
+								Заказана
+							</th>
+							<th>
+								Заказ
+							</th>
+							<th>
+								Кем заказана
+							</th>
+							<th>
+								Действия
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								12
+							</td>
+							<td>
+								865774
+							</td>
+							<td>
+								67576576
+							</td>
+							<td>
+								Land Rover
+							</td>
+							<td>
+								Евгений Присяжнюк
+								9117738332 / +7(911) 734-01-64
+							</td>
+							<td>
+								ул. Софьи-Ковалевской, 22
+							</td>
+							<td>
+
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+
+							</td>
+							<td>
+								Заказ #358474
+							</td>
+							<td>
+
+							</td>
+							<td>
+								<div>
+									<a href="./op-control-application-storage-card.html" data-application-storage
+										title="Смотреть подробности заявки на хранение хранения">
+										Отрыть
+									</a>
+
+									<button type="submit">
+										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								13
+							</td>
+							<td>
+								123456
+							</td>
+							<td>
+								AM-1024:3
+							</td>
+							<td>
+								Volkswagen Mustang
+							</td>
+							<td>
+								Олег Фусков
+								9117738332 / +7(911) 734-01-64
+							</td>
+							<td>
+								ул. Олега-Фускова, 22
+							</td>
+							<td>
+								Хранить при свете
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+								Заказана
+							</td>
+							<td>
+								Заказ #123456
+							</td>
+							<td>
+								Иннокентий Жижикин
+							</td>
+							<td>
+								<div>
+									<a href="./op-control-application-storage-card.html" data-application-storage
+										title="Смотреть подробности заявки на хранение хранения">
+										Отрыть
+									</a>
+
+									<button type="submit">
+										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								13
+							</td>
+							<td>
+								123456
+							</td>
+							<td>
+								AM-1024:3
+							</td>
+							<td>
+								Volkswagen Mustang
+							</td>
+							<td>
+								Олег Фусков
+								9117738332 / +7(911) 734-01-64
+							</td>
+							<td>
+								ул. Олега-Фускова, 22
+							</td>
+							<td>
+								Хранить при свете
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+								Заказана
+							</td>
+							<td>
+								Заказ #123456
+							</td>
+							<td>
+								Иннокентий Жижикин
+							</td>
+							<td>
+								<div>
+									<a href="./op-control-application-storage-card.html" data-application-storage
+										title="Смотреть подробности заявки на хранение хранения">
+										Отрыть
+									</a>
+
+									<button type="submit">
+										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								13
+							</td>
+							<td>
+								123456
+							</td>
+							<td>
+								AM-1024:3
+							</td>
+							<td>
+								Volkswagen Mustang
+							</td>
+							<td>
+								Олег Фусков
+								9117738332 / +7(911) 734-01-64
+							</td>
+							<td>
+								ул. Олега-Фускова, 22
+							</td>
+							<td>
+								Хранить при свете
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+								Заказана
+							</td>
+							<td>
+								Заказ #123456
+							</td>
+							<td>
+								Иннокентий Жижикин
+							</td>
+							<td>
+								<div>
+									<a href="./op-control-application-storage-card.html" data-application-storage
+										title="Смотреть подробности заявки на хранение хранения">
+										Отрыть
+									</a>
+
+									<button type="submit">
+										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								13
+							</td>
+							<td>
+								123456
+							</td>
+							<td>
+								AM-1024:3
+							</td>
+							<td>
+								Volkswagen Mustang
+							</td>
+							<td>
+								Олег Фусков
+								9117738332 / +7(911) 734-01-64
+							</td>
+							<td>
+								ул. Олега-Фускова, 22
+							</td>
+							<td>
+								Хранить при свете
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+								Заказана
+							</td>
+							<td>
+								Заказ #123456
+							</td>
+							<td>
+								Иннокентий Жижикин
+							</td>
+							<td>
+								<div>
+									<a href="./op-control-application-storage-card.html" data-application-storage
+										title="Смотреть подробности заявки на хранение хранения">
+										Отрыть
+									</a>
+
+									<button type="submit">
+										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
+									</button>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+			<!-- End table of seosonals storages -->
+			<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
+				<div>
+					Записи
+					<span>1</span>-<span>10</span>
+					из
+					<span>256</span>
+				</div>
+
+				<label class="relative inline-block z-0 h-8 self-start" for="seasonal-storage-lists-select">
+					<svg class="absolute right-2.5 top-1 -z-1 size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+
+					<select
+						class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-pitpos-950 font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-pitpos-700  focus:outline-0 focus:outline-0 no-number-spinner"
+						id="seasonal-storage-lists-select">
+						<option value="shifts-list-1-10" selected>10</option>
+						<option value="shifts-list-10-20">20</option>
+						<option value="shifts-list-20-30">30</option>
+						<option value="shifts-list-30-40">40</option>
+						<option value="shifts-list-40-50">50</option>
+						<option value="shifts-list-50-60">60</option>
+						<option value="shifts-list-60-70">70</option>
+						<option value="shifts-list-70-80">80</option>
+						<option value="shifts-list-80-90">90</option>
+						<option value="shifts-list-90-100">100</option>
+						<option value="shifts-list-100-110">110</option>
+						<option value="shifts-list-110-120">120</option>
+						<option value="shifts-list-120-130">130</option>
+						<option value="shifts-list-130-140">140</option>
+						<option value="shifts-list-140-150">150</option>
+						<option value="shifts-list-150-160">160</option>
+						<option value="shifts-list-160-170">170</option>
+						<option value="shifts-list-170-180">180</option>
+						<option value="shifts-list-180-190">190</option>
+						<option value="shifts-list-190-200">200</option>
+						<option value="shifts-list-200-210">210</option>
+						<option value="shifts-list-210-220">220</option>
+						<option value="shifts-list-220-230">230</option>
+						<option value="shifts-list-230-240">240</option>
+						<option value="shifts-list-240-250">250</option>
+						<option value="shifts-list-250-256">256</option>
+					</select>
+				</label>
+
+				<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
+					<ul class="flex gap-x-1.5 sm:gap-x-2.5">
+						<li class="shrink-0 h-8 w-8" disabled>
+							<a class="flex items-center justify-center w-full h-full rounded-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95 has-disabled:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none disabled"
+								href="#!" rel="prev" aria-label="« Назад">
+								<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent rotate-90" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
+								href="#!">1</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">2</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">3</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class=" h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">4</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">5</a>
+						</li>
+
+						<li aria-disabled="true">
+							<span class="cursor-default">...</span>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">8</a>
+						</li>
+
+						<li class=" h-8">
+							<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80 has-disabled:[&>svg]:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none"
+								href="#!" rel="next" aria-label="Вперёд »">
+								<span class="hidden xs:block">Дальше</span>
+
+								<svg class="duration-300 rounded-full -rotate-90 size-6 stroke-pitpos-700 fill-transparent"
+									viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- End pagination block -->
+		</div>
+
+	</main>
 
 </body>
 
