@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Заявки на выдачу</title>
+	<title>PitPos | Физлица </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -276,7 +276,7 @@
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Физ.лица</a>
+										href="./clients-individuals.html">Физ.лица</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -374,7 +374,7 @@
 
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Мастерские</a>
+										href="./reference-workshops.html">Мастерские</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -558,16 +558,15 @@
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control.html">
-							Оперативный контроль&nbsp;/&nbsp;
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500" href="#!">
+							Клиенты&nbsp;/&nbsp;
 						</a>
 					</li>
 
 					<li>
 						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-storage-applications.html">
-							Заявки на&nbsp;выдачу сезонных хранений
+							href="./op-control-disks-painting.html">
+							Физлица
 						</a>
 					</li>
 				</ul>
@@ -575,37 +574,85 @@
 		</div>
 		<!-- End breadcrumbs -->
 		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
-			<h1 class="flex font-semibold mb-6 py-2">
-				<svg class="size-6 stroke-pitpos-700 mr-3.5" viewBox="0 0 24 24">
-					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
+			<h1 class="flex font-bold mb-6 py-2">
+				<svg class="size-6 stroke-pitpos-700 mr-3.5 fill-pitpos-700" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
 				</svg>
 
-				<span class="text-pitpos-700">Заявки на&nbsp;выдачу сезонных хранений</span>
+				<span class="text-pitpos-700">Физлица</span>
 			</h1>
 			<!-- End page name -->
-			<form class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-2"
-				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
+			<form class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4" action="">
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
+					<label class="text-sm text-gray-500" for="user_id">ID</label>
 					<input
 						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
-						id="seal" name="seal" type="text">
+						id="user_id" name="user_id" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="plate">Госномер</label>
+					<label class="text-sm text-gray-500" for="user_last_name">Фамилия</label>
 					<input
 						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
-						id="plate" name="plate" type="text">
+						id="user_last_name" name="user_last_name" type="text">
 				</div>
 
-				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-2">
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_name">Имя</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="user_name" name="user_name" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_middle_name">Отчество </label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
+						id="user_middle_name" name="user_middle_name" type="text">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_phone">Телефон</label>
+					<input
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
+						id="user_phone" name="user_phone" type="tel" placeholder="+7(111) 111-11-11"
+						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_birthday">Дата рождения</label>
+					<input class="px-3 py-2.5  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
+						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error" type="date"
+						id="user_birthday" name="user_birthday">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_src">Источник</label>
+					<select
+						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error"
+						id="user_src" name="user_src">
+						<option selected="selected" value="" disabled>Выберите</option>
+						<option value="src-yandex">Яндекс.Карты</option>
+						<option value="src-local">На&nbsp;местности</option>
+						<option value="source-search">Поиск</option>
+						<option value="source-advice">Рекомендация</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1 ">
+					<label class="text-sm text-gray-500" for="user_first_svc">Дата первого обращения</label>
+					<input class="px-3 py-2.5  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
+						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error" type="date"
+						id="user_first_svc" name="user_first_svc">
+				</div>
+
+				<div class="w-full flex justify-end items-center gap-x-2 sm:col-span-2 lg:col-span-1 xl:gap-x-6 xl:col-span-4">
 					<button
-						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+						class="px-5 py-3  bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
 						type="submit" disabled>Сохранить</button>
 					<button
-						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+						class="px-2.5 py-1.5 flex items-center  gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98 mb-1.5 self-end xl:self-center xl:mb-0"
 						type="reset">
 						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
@@ -615,136 +662,67 @@
 					</button>
 				</div>
 			</form>
-			<!-- End MAIN filter for applications of seosonal storage -->
-
-			<form class="w-full mb-6 grid grid-cols-4 gap-3 md:gap-6">
-
-				<div class="flex flex-col gap-y-1 col-span-4 sm:col-span-2">
-					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
-					<input
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
-						id="seal" name="seal" type="text">
-				</div>
-
-				<div class="flex flex-col gap-y-1 col-span-4 sm:col-span-2">
-					<label class="text-sm text-gray-500" for="plate">Госномер (опционально)</label>
-					<input
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
-						id="plate" name="plate" type="text">
-				</div>
-
-				<div class="flex flex-col gap-y-1 col-span-4 md:col-span-3">
-					<label class="text-sm text-gray-500" for="note">Заметка</label>
-					<input
-						class="px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
-						id="note" name="note" type="text">
-					</input>
-				</div>
-
-				<button
-					class="col-span-4 inline-flex self-end justify-self-end px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold whitespace-nowrap cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 md:col-span-1"
-					type="submit" disabled>Добавить заявку</button>
-			</form>
-			<!-- End form for create client application  -->
-
+			<!-- End MAIN filter clients -->
 			<div class="overflow-x-auto xl:w-full mb-6">
-				<table class="prose max-w-screen min-w-301 w-full  text-dark-text 
+				<table class="prose max-w-screen min-w-279 w-full  text-dark-text 
 				prose-thead:border-0 
 				prose-th:p-2.5 
 				prose-th:bg-gray-50 
 				prose-th:align-middle 
 				prose-th:text-[0.81rem] 
 				prose-th:font-semibold 
-				prose-th:last:text-center 
-				prose-th:[&:nth-child(3)]:min-w-28 
-				prose-th:[&:nth-child(5)]:min-w-40 
-				prose-th:[&:nth-child(9)]:min-w-32 
+				prose-th:last:max-w-40.5
+				prose-td:text-[0.93rem] 
 				prose-td:px-2.5 
-				prose-td:py-0.5 
+				prose-td:py-2.5  
 				prose-td:align-middle 
 				prose-td:has-[a]:py-0 
-				prose-tr:even:bg-gray-50 
 				prose-tr:min-w-6 
 				prose-tr:h-9.5 
 				prose-tr:border-white 
 				prose-tr:border-b-2 
-				prose-td:[&>div]:w-full 
-				prose-td:[&>div]:flex
-				prose-td:[&>div]:flex-col
-				prose-td:[&>div]:gap-y-1
-				prose-td:[&>div>button]:duration-300
-				prose-td:[&>div>a]:duration-300
-				prose-td:[&>div>button]:text-xs 
-				prose-td:[&>div>a]:text-sm 
-				prose-td:[&>div>a]:no-underline 
-				prose-td:[&>div>button]:px-4.5
-				prose-td:[&>div>a]:px-6
-				prose-td:[&>div>button]:py-2
-				prose-td:[&>div>a]:py-1.5
-				prose-td:[&>div>button]:bg-pitpos-700
-				prose-td:[&>div>a]:bg-white
-				prose-td:[&>div>button]:rounded-md
-				prose-td:[&>div>a]:rounded-md
-				prose-td:[&>div>a]:outline-1
-				prose-td:[&>div>a]:outline-pitpos-700
-				prose-td:[&>div>a]:self-center
-				prose-td:[&>div>button]:border-0
-				prose-td:[&>div>button]:text-white
-				prose-td:[&>div>a]:text-pitpos-700
-				prose-td:[&>div>button]:text-sm
-				prose-td:[&>div>button]:font-bold
-				prose-td:[&>div>a]:font-bold
-				prose-td:[&>div>button]:cursor-pointer
-				prose-td:[&>div>button]:will-change-transform
-				prose-td:[&>div>a]:will-change-transform
-				prose-td:[&>div>button]:hover:brightness-85
-				prose-td:[&>div>button]:shadow-xs
-				prose-td:[&>div>a]:hover:brightness-85
-				prose-td:[&>div>a]:hover:shadow-xs
-				prose-td:[&>div>button]:active:scale-98
-				prose-td:[&>div>a]:active:scale-95
+				prose-tr:[&>td:first-child]:max-w-8.5
+					prose-td:[&>a]:text-pitpos-700
+					prose-td:[&>a]:duration-300
+					prose-td:[&>a]:hover:text-pitpos-500
+					prose-td:[&>a]:hover:no-underline
+					prose-td:[&>a]:active:brightness-80
 					">
-
 					<thead>
 						<tr>
+							<th></th>
 							<th>
-								&#8470;
+								ID
 							</th>
 							<th>
-								<span>&#8470;&nbsp;пломбы</span>
+								Фамилия
 							</th>
 							<th>
-								Номер а/м
+								Имя
 							</th>
 							<th>
-								Марка авто
+								Отчество
 							</th>
 							<th>
-								Клиент
+								Телефон
 							</th>
 							<th>
-								Адрес
+								Телефон&nbsp;2
 							</th>
 							<th>
-								Комментарий
+								Дата рождения
 							</th>
 							<th>
-								Время записи
+								Email
 							</th>
 							<th>
-								Когда поступил заказ
+								Автомобиль
 							</th>
 							<th>
-								Заказана
+								Источник
 							</th>
 							<th>
-								Заказ
-							</th>
-							<th>
-								Кем заказана
-							</th>
-							<th>
-								Действия
+								Дата&nbsp;первого обращения
 							</th>
 						</tr>
 					</thead>
@@ -752,268 +730,374 @@
 					<tbody>
 						<tr>
 							<td>
-								12
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-30135">
+									<input type="checkbox" class="sr-only peer" id="user-30135">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
-							<td>
-								865774
-							</td>
-							<td>
-								67576576
-							</td>
-							<td>
-								Land Rover
-							</td>
-							<td>
-								Евгений Присяжнюк
-								9117738332 / +7(911) 734-01-64
-							</td>
-							<td>
-								ул. Софьи-Ковалевской, 22
-							</td>
-							<td>
 
-							</td>
 							<td>
-								23.10.2025 14:00
+								<a href="#!" data-user title="Подробности">
+									30135
+								</a>
 							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
 
-							</td>
 							<td>
-								Заказ #358474
+								Иванов
 							</td>
-							<td>
 
-							</td>
 							<td>
-								<div>
-									<a href="./op-control-application-storage-card.html" data-application-storage
-										title="Смотреть подробности заявки на хранение хранения">
-										Отрыть
-									</a>
+								Иван
+							</td>
 
-									<button type="submit">
-										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
-									</button>
-								</div>
+							<td>
+								Иванович
+							</td>
+
+							<td>
+								+7(900)1234567
+							</td>
+
+							<td>
+								+7(901)1234567
+							</td>
+
+							<td>
+								07.04.1973
+							</td>
+
+							<td>
+								ivanov@mail.ru
+							</td>
+
+							<td>
+								Volkswagen Polo
+							</td>
+
+							<td>
+								Яндекс.Карты
+							</td>
+
+							<td>
+								19.03.2018
+							</td>
+
+						</tr>
+
+						<tr>
+							<td>
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-12345">
+									<input type="checkbox" class="sr-only peer" id="user-12345">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+
+							<td>
+								<a href="#!" data-user title="Подробности">
+									12345
+								</a>
+							</td>
+
+							<td>
+								Петров
+							</td>
+
+							<td>
+								Алексей
+							</td>
+
+							<td>
+								Сергеевич
+							</td>
+
+							<td>
+								+7(912)3456789
+							</td>
+
+							<td>
+								+7(913)3456789
+							</td>
+
+							<td>
+								15.05.1985
+							</td>
+
+							<td>
+								alexey.sidorov@example.com
+							</td>
+
+							<td>
+								Nissan Micra
+							</td>
+
+							<td>
+								Рекомендация
+							</td>
+
+							<td>
+								15.05.2023
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								13
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-67890">
+									<input type="checkbox" class="sr-only peer" id="user-67890">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
-							<td>
-								123456
-							</td>
-							<td>
-								AM-1024:3
-							</td>
-							<td>
-								Volkswagen Mustang
-							</td>
-							<td>
-								Олег Фусков
-								9117738332 / +7(911) 734-01-64
-							</td>
-							<td>
-								ул. Олега-Фускова, 22
-							</td>
-							<td>
-								Хранить при свете
-							</td>
-							<td>
-								23.10.2025 14:00
-							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
-								Заказана
-							</td>
-							<td>
-								Заказ #123456
-							</td>
-							<td>
-								Иннокентий Жижикин
-							</td>
-							<td>
-								<div>
-									<a href="./op-control-application-storage-card.html" data-application-storage
-										title="Смотреть подробности заявки на хранение хранения">
-										Отрыть
-									</a>
 
-									<button type="submit">
-										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
-									</button>
-								</div>
+							<td>
+								<a href="#!" data-user title="Подробности">
+									67890
+								</a>
+							</td>
+
+							<td>
+								Сидоров
+							</td>
+
+							<td>
+								Дмитрий
+							</td>
+
+							<td>
+								Алексеевич
+							</td>
+
+							<td>
+								+7(914)3456789
+							</td>
+
+							<td>
+								+7(915)3456789
+							</td>
+
+							<td>
+								22.11.1990
+							</td>
+
+							<td>
+								maria.kuznetsova@example.com
+							</td>
+
+							<td>
+								Toyota Yaris
+							</td>
+
+							<td>
+								На местности
+							</td>
+
+							<td>
+								15.07.2024
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								13
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-54321">
+									<input type="checkbox" class="sr-only peer" id="user-54321">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
-							<td>
-								123456
-							</td>
-							<td>
-								AM-1024:3
-							</td>
-							<td>
-								Volkswagen Mustang
-							</td>
-							<td>
-								Олег Фусков
-								9117738332 / +7(911) 734-01-64
-							</td>
-							<td>
-								ул. Олега-Фускова, 22
-							</td>
-							<td>
-								Хранить при свете
-							</td>
-							<td>
-								23.10.2025 14:00
-							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
-								Заказана
-							</td>
-							<td>
-								Заказ #123456
-							</td>
-							<td>
-								Иннокентий Жижикин
-							</td>
-							<td>
-								<div>
-									<a href="./op-control-application-storage-card.html" data-application-storage
-										title="Смотреть подробности заявки на хранение хранения">
-										Отрыть
-									</a>
 
-									<button type="submit">
-										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
-									</button>
-								</div>
+							<td>
+								<a href="#!" data-user title="Подробности">
+									54321
+								</a>
+							</td>
+
+							<td>
+								Кузнецов
+							</td>
+
+							<td>
+								Сергей
+							</td>
+
+							<td>
+								Дмитриевич
+							</td>
+
+							<td>
+								+7(916)3456789
+							</td>
+
+							<td>
+								+7(917)3456789
+							</td>
+
+							<td>
+								30.01.1988
+							</td>
+
+							<td>
+								dmitry.ivanov@example.com
+							</td>
+
+							<td>
+								Ford Fiesta
+							</td>
+
+							<td>
+								Поиск
+							</td>
+
+							<td>
+								01.01.2023
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								13
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-98765">
+									<input type="checkbox" class="sr-only peer" id="user-98765">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
-							<td>
-								123456
-							</td>
-							<td>
-								AM-1024:3
-							</td>
-							<td>
-								Volkswagen Mustang
-							</td>
-							<td>
-								Олег Фусков
-								9117738332 / +7(911) 734-01-64
-							</td>
-							<td>
-								ул. Олега-Фускова, 22
-							</td>
-							<td>
-								Хранить при свете
-							</td>
-							<td>
-								23.10.2025 14:00
-							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
-								Заказана
-							</td>
-							<td>
-								Заказ #123456
-							</td>
-							<td>
-								Иннокентий Жижикин
-							</td>
-							<td>
-								<div>
-									<a href="./op-control-application-storage-card.html" data-application-storage
-										title="Смотреть подробности заявки на хранение хранения">
-										Отрыть
-									</a>
 
-									<button type="submit">
-										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
-									</button>
-								</div>
+							<td>
+								<a href="#!" data-user title="Подробности">
+									98765
+								</a>
+							</td>
+
+							<td>
+								Смирнов
+							</td>
+
+							<td>
+								Максим
+							</td>
+
+							<td>
+								Николаевич
+							</td>
+
+							<td>
+								+7(918)3456789
+							</td>
+
+							<td>
+								+7(919)3456789
+							</td>
+
+							<td>
+								12.06.1995
+							</td>
+
+							<td>
+								olga.petrovna@example.com
+							</td>
+
+							<td>
+								Hyundai i20
+							</td>
+
+							<td>
+								Яндекс.Карты
+							</td>
+
+							<td>
+								09.05.2023
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								13
+								<label class="inline-flex items-center justify-center cursor-pointer" for="user-13579">
+									<input type="checkbox" class="sr-only peer" id="user-13579">
+									<span class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
-							<td>
-								123456
-							</td>
-							<td>
-								AM-1024:3
-							</td>
-							<td>
-								Volkswagen Mustang
-							</td>
-							<td>
-								Олег Фусков
-								9117738332 / +7(911) 734-01-64
-							</td>
-							<td>
-								ул. Олега-Фускова, 22
-							</td>
-							<td>
-								Хранить при свете
-							</td>
-							<td>
-								23.10.2025 14:00
-							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
-								Заказана
-							</td>
-							<td>
-								Заказ #123456
-							</td>
-							<td>
-								Иннокентий Жижикин
-							</td>
-							<td>
-								<div>
-									<a href="./op-control-application-storage-card.html" data-application-storage
-										title="Смотреть подробности заявки на хранение хранения">
-										Отрыть
-									</a>
 
-									<button type="submit">
-										ОТМЕТИТЬ&nbsp;ЗАКАЗАННЫМ
-									</button>
-								</div>
+							<td>
+								<a href="#!" data-user title="Подробности">
+									13579
+								</a>
+							</td>
+
+							<td>
+								Попов
+							</td>
+
+							<td>
+								Николай
+							</td>
+
+							<td>
+								Петрович
+							</td>
+
+							<td>
+								+7(920)3456789
+							</td>
+
+							<td>
+								+7(921)3456789
+							</td>
+
+							<td>
+								04.09.1982
+							</td>
+
+							<td>
+								sergey.popov@example.com
+							</td>
+
+							<td>
+								Kia Rio
+							</td>
+
+							<td>
+								Поиск
+							</td>
+
+							<td>
+								08.07.2025
 							</td>
 						</tr>
-
 					</tbody>
 				</table>
 			</div>
-			<!-- End table of seosonals storages -->
+			<!-- End table of clients -->
 			<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
 				<div>
 					Записи

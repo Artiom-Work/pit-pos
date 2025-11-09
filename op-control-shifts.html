@@ -276,7 +276,7 @@
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Физ.лица</a>
+										href="./clients-individuals.html">Физ.лица</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -374,7 +374,7 @@
 
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Мастерские</a>
+										href="./reference-workshops.html">Мастерские</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -1031,21 +1031,22 @@
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="delays">Задержки</label>
 
-					<select id="delays" multiple="" data-hs-select='{
+					<select id="delays" name="delays" multiple="" data-hs-select='{
 						"placeholder": "Все",
-						"toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
-						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error focus:outline-0",
 						"toggleSeparators": {
 							"betweenItemsAndCounter": "&"
 						},
 						"toggleCountText": "+",
 						"toggleCountTextPlacement": "prefix-no-space",
-						"toggleCountTextMinItems": 3,
+						"toggleCountTextMinItems": 5,
 						"toggleCountTextMode": "nItemsAndCount",
 						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 						"optionTemplate": 
-						"<div class=\"flex justify-start items-center gap-x-1.5 w-full\"><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-4 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>"
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-6 text-gray-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 					}' class="hidden">
 						<option value="">Все</option>
 						<option>Только с&nbsp;задержкой</option>
@@ -1131,7 +1132,32 @@
 			</div>
 			<!-- End shifts аdditional filter -->
 			<div class="overflow-x-auto xl:w-full mb-6">
-				<table class="prose max-w-screen w-full whitespace-nowrap text-dark-text prose-th:p-2.5 prose-th:first:p-0.5 prose-th:bg-gray-50 prose-tr:even:bg-gray-50 prose-td:px-2.5 prose-td:py-[0.5rem]  prose-td:text-[0.938rem] prose-td:align-middle prose-td:has-[a]:py-0 prose-td:[&>span]:w-full prose-td:[&>span]:flex prose-td:[&>span]:justify-center prose-td:[&>span]:items-center prose-th:text-[13px] prose-th:font-semibold prose-tr:min-w-6 prose-tr:h-9.5  prose-thead:border-0 prose-tr:border-white prose-tr:border-b-2 
+				<table class="prose 
+				max-w-screen 
+				w-full 
+				whitespace-nowrap 
+				text-dark-text 
+				prose-thead:border-0 
+				prose-th:p-2.5 
+				prose-th:first:p-0.5 
+				prose-th:bg-gray-50 
+				prose-th:text-[0.81rem] 
+				prose-tr:even:bg-gray-50 
+				prose-th:font-semibold 
+				prose-td:px-2.5 
+				prose-td:py-[0.5rem] 
+				prose-td:text-[0.938rem] 
+				prose-td:align-middle 
+				prose-td:has-[a]:py-0 
+				prose-td:[&>span]:w-full 
+				prose-td:[&>span]:flex 
+				prose-td:[&>span]:justify-center 
+				prose-td:[&>span]:items-center 
+				prose-tr:min-w-6 
+				prose-tr:h-9.5 
+				prose-tr:border-white 
+				prose-tr:border-b-2 
+				prose-tr:[&>td:first-child]:max-w-8.5
 					prose-td:[&>a[data-checklist]]:min-h-11
 					prose-td:[&>a[data-checklist]]:w-full 
 					prose-td:[&>a[data-checklist]]:hover:border-1 

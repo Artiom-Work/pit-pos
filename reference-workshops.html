@@ -1,0 +1,2032 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" sizes="16x16" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
+	<title>PitPos | Мастерские </title>
+	<link href="./styles/pages/styles-op.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 h-full">
+	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
+		<div class="flex items-center justify-between gap-x-4">
+			<a href="./index.html" title="На главную">
+				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+					viewBox="0 0 140 60">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="flex items-center gap-x-10">
+				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
+					href="#!">
+					<div
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
+						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-boy.webp" alt="Мужчина">
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-girl.webp" alt="Женщина">
+					</div>
+
+					<div class="flex flex-col">
+						<span class="text-[15px]">Александр Иванов</span>
+						<span class="text-sm text-gray-600">Собственник</span>
+					</div>
+				</a>
+
+				<time class="hidden text-[15px] sm:block" datetime="2025-09-03">3 сентября 2025 г.</time>
+				<time class="hidden text-xl font-bold md:block" datetime="10:38:22">10:38:22</time>
+			</div>
+		</div>
+	</header>
+
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
+		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
+			<div class="max-w-80 h-full relative">
+				<input class="hidden peer" id="menu-toggle" type="checkbox">
+
+				<div class="absolute w-12 min-h-12 bg-white overflow-hidden duration-300 peer-checked:w-80"></div>
+
+				<div class="size-12 absolute left-0 py-3 px-3 duration-300 peer-checked:opacity-0 ">
+					<svg class="size-6 fill-black " viewBox="0 0 26 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
+					</svg>
+				</div>
+
+				<div
+					class="size-12 opacity-0 rotate-90 absolute right-0 py-3 px-3 duration-300 peer-checked:block peer-checked:opacity-100">
+					<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+				</div>
+
+				<label
+					class="relative  z-1 w-12 flex items-center justify-center min-h-12 cursor-pointer  peer-checked:left-68 border-3 border-white rounded-md hover:border-black active:opacity-40"
+					for="menu-toggle">
+				</label>
+
+				<nav class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80">
+					<ul>
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Дашборд">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Дашборд</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="./op-control.html" title="Оперативный контроль">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./op-control.html">Оперативный контроль</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-1">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-1">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-shifts.html">Смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-disks-painting.html">Покраска дисков</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-guarantees.html">Гарантии</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Ключевые показатели эффективности">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">KPI</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-2">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-2">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Финансовые планы</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Ночные смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Отчеты по мотивации</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Средние чеки</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Выгрузка услуг</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Кабинет бухгалтера">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Кабинет бухгалтера</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-3">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-3">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Зарплаты</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дополнительные начисления</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Баланс</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Инкассации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Клиенты">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Клиенты</a>
+
+							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-4">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-4">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./clients-individuals.html">Физ.лица</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Юр.лица</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Пользователи">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Пользователи</a>
+
+							<input class="hidden peer" id="menu-item-toggle-5" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-5">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-5" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-5">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-36 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Владельцы</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сотрудники</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Помощники</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Справочники">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
+								</svg>
+
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Справочники</a>
+
+							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-6">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-6">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-108 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Услуги</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Причины обращений</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Марки и модели</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы для отзывов</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы при открытии смены</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Роли</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Рекомендации клиенту</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мотивации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Лояльность">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Лояльность</a>
+
+							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-7">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-7">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дисконтные карты</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Промокоды</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Настройки">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Настройки</a>
+
+							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-8">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-8">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Уведомления</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сайт</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Обучение">
+
+								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Обучение</a>
+
+							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-9">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-9">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вики</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Материалы</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Логи">
+								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Логи</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</aside>
+		<!-- End sidebar -->
+		<div class="w-full mb-6 ">
+			<nav class="xl:container">
+				<ul class="flex flex-wrap">
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./index.html">Главная&nbsp;-&nbsp;</a>
+					</li>
+
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500" href="#!">
+							Справочники&nbsp;/&nbsp;
+						</a>
+					</li>
+
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./reference-workshops.html">
+							Мастерские
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+			<h1 class="flex font-bold mb-6 py-2">
+				<svg class="size-6 stroke-pitpos-700 mr-3.5 fill-pitpos-700" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
+				</svg>
+
+				<span class="text-pitpos-700">Мастерские</span>
+			</h1>
+			<!-- End page name -->
+			<form class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-6  xl:grid-cols-4" action="">
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_name">Название</label>
+					<select id="workshop_name" name="workshop_name" data-hs-select='{
+						"hasSearch": true,
+						"searchLimit": 5,
+						"searchPlaceholder": "Конкретная мастерская...",
+						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+						"placeholder": "Все",
+						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6A33CF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+					}' class="hidden">
+						<option value="worshop_all" requared>Все</option>
+						<option value="workshop_1">
+							Пулковское ш., д. 19
+						</option>
+						<option value="workshop_2">
+							ул. Софьи Ковалевской, д. 22
+						</option>
+						<option value="workshop_3">
+							пр. Металлистов, д. 116
+						</option>
+						<option value="workshop_4">
+							НЕсофьяНЕ
+						</option>
+						<option value="workshop_5">
+							Муринка
+						</option>
+						<option value="workshop_6">
+							Шафировский
+						</option>
+						<option value="workshop_7">
+							Кудрово, Ленинградская ул., д. 9/8
+						</option>
+						<option value="workshop_8">
+							Испытателей
+						</option>
+						<option value="workshop_9">
+							Дундича
+						</option>
+						<option value="workshop_10">
+							Фермское
+						</option>
+						<option value="workshop_11">
+
+						</option>
+						<option value="workshop_12">
+							пр. Сизова д. 2
+						</option>
+						<option value="workshop_13">
+							Кудровский
+						</option>
+						<option value="workshop_14">
+							ул. Васенко, д. 12
+						</option>
+						<option value="workshop_15">
+							пр. Просвещения д. 74 корп. 2 лит. А
+						</option>
+						<option value="workshop_16">
+							ул. Руставели д. 43 лит. А
+						</option>
+						<option value="workshop_17">
+							ул. Савушкина д. 116 лит. А
+						</option>
+						<option value="workshop_18">
+							ПО
+						</option>
+						<option value="workshop_19">
+							ТЕСТ
+						</option>
+						<option value="workshop_20">
+							Мурманское
+						</option>
+						<option value="workshop_21">
+							Пулковское ш., д. 43/1
+						</option>
+						<option value="workshop_22">
+							Зеленогорск, пр. Ленина, д. 88
+						</option>
+						<option value="workshop_23">
+							Мойка, Пулковское шоссе, д. 19А
+						</option>
+						<option value="workshop_24">
+							Московское ш., 25/1В
+						</option>
+						<option value="workshop_25">
+							пр. Ветеранов, 167/2
+						</option>
+						<option value="workshop_26">
+							Шушары, Московское ш., д. 16/7
+						</option>
+						<option value="workshop_27">
+							ТО Зеленогорск, пр. Ленина, д. 88И
+						</option>
+						<option value="workshop_28">
+							Парковка
+						</option>
+						<option value="workshop_29">
+							пр. Испытателей, д. 5 корп. 2 лит. А
+						</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_lord">Владелец</label>
+					<select id="workshop_lord" name="workshop_lord" multiple="" data-hs-select='{
+						"placeholder": "Все",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleSeparators": {
+							"betweenItemsAndCounter": "&"
+						},
+						"toggleCountText": "+",
+						"toggleCountTextPlacement": "prefix-no-space",
+						"toggleCountTextMinItems": 5,
+						"toggleCountTextMode": "nItemsAndCount",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": 
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+					}' class="hidden">
+						<option value="">Все</option>
+						<option value="lord_1">Рылова Оксана</option>
+						<option value="lord_2">Бараков Всеволод</option>
+						<option value="lord_3">Рылов Андрей</option>
+						<option value="lord_4">Баракова Юлия</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_register">Запись</label>
+					<select id="workshop_register" name="workshop_register" multiple="" data-hs-select='{
+						"placeholder": "Все",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleSeparators": {
+							"betweenItemsAndCounter": "&"
+						},
+						"toggleCountText": "+",
+						"toggleCountTextPlacement": "prefix-no-space",
+						"toggleCountTextMinItems": 5,
+						"toggleCountTextMode": "nItemsAndCount",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": 
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+					}' class="hidden">
+						<option value="">Все</option>
+						<option value="register_on">Включена</option>
+						<option value="register_off">Выключена</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="workshop_state">Статус</label>
+					<select id="workshop_state" name="workshop_state" multiple="" data-hs-select='{
+						"placeholder": "Все",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:outline-0  focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleSeparators": {
+							"betweenItemsAndCounter": "&"
+						},
+						"toggleCountText": "+",
+						"toggleCountTextPlacement": "prefix-no-space",
+						"toggleCountTextMinItems": 5,
+						"toggleCountTextMode": "nItemsAndCount",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": 
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+					}' class="hidden">
+						<option value="">Все</option>
+						<option value="state-active">Активна</option>
+						<option value="state-test">Тест</option>
+						<option value="state-noactive">Не активна</option>
+					</select>
+				</div>
+
+				<div class="w-full flex justify-end items-center gap-x-2 sm:col-span-2 xl:gap-x-6 xl:col-span-4">
+					<button
+						class="px-5 py-3  bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
+						type="submit">Сохранить</button>
+					<button
+						class="px-2.5 py-1.5 flex items-center  gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98 mb-1.5 self-end xl:self-center xl:mb-0"
+						type="reset">
+						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+						</svg>
+
+						<span class="text-dark-red text-sm font-medium">Сбросить</span>
+					</button>
+				</div>
+			</form>
+			<!-- End MAIN filter of workshops -->
+			<div class="mb-6 w-full flex items-center">
+				<form class="flex flex-col gap-3 sm:flex-row">
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-workshops-all" checked>
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-workshops-all">Все</label>
+					</div>
+
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-workshops-active">
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-workshops-active">Активные</label>
+					</div>
+
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-workshops-finished">
+						<label
+							class="inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-workshops-finished">Завершенные</label>
+					</div>
+				</form>
+			</div>
+			<!-- End workshops аdditional filter -->
+			<div class="overflow-x-auto xl:w-full mb-6">
+				<table class="prose max-w-screen min-w-200 w-full text-dark-text Ё
+				prose-thead:border-0 
+				prose-th:px-2.5 
+				prose-th:py-[0.4rem] 
+				prose-th:bg-gray-50 
+				prose-th:align-middle 
+				prose-th:text-[0.81rem] 
+				prose-th:font-semibold 
+				prose-th:[&:nth-child(4)]:w-27.5 
+				prose-td:text-[0.93rem] 
+				prose-td:px-2.5 
+				prose-td:py-2.5  
+				prose-td:align-middle 
+				prose-td:has-[a]:py-0 
+				prose-tr:h-9 
+				prose-tr:border-white 
+				prose-tr:border-b-2 
+
+					prose-td:[&>span[data-workshop-status]]:text-white
+					prose-td:[&>span[data-workshop-status]]:leading-5
+					prose-td:[&>span[data-workshop-status]]:font-semibold
+					prose-td:[&>span[data-workshop-status]]:whitespace-nowrap
+					prose-td:[&>span[data-workshop-status]]:text-[0.81rem]
+					prose-td:[&>span[data-workshop-status]]:w-min
+					prose-td:[&>span[data-workshop-status]]:px-1.5
+					prose-td:[&>span[data-workshop-status]]:rounded-xs
+					prose-td:[&>span[data-workshop-status]]:justify-start
+					prose-td:[&>span[data-workshop-status='test']]:bg-ready
+					prose-td:[&>span[data-workshop-status='no-active']]:bg-error
+					prose-td:[&>span[data-workshop-status='active']]:bg-success
+					prose-td:[&>a[data-workshop]]:flex
+					prose-td:[&>a[data-workshop]]:items-center
+					prose-td:[&>a[data-workshop]]:gap-x-1
+					prose-td:[&>a[data-workshop]]:font-normal
+					prose-td:[&>a[data-workshop]]:no-underline
+					prose-td:[&>a[data-workshop]]:duration-300
+					prose-td:[&>a[data-workshop]]:hover:text-pitpos-700
+					prose-td:[&>a[data-workshop]]:active:brightness-80
+					prose-td:[&>a[data-workshop]>svg]:opacity-0
+					prose-td:[&>a[data-workshop]]:hover:[&>svg]:opacity-100
+					">
+					<thead>
+						<tr>
+							<th>&#8470;</th>
+
+							<th>
+								Название
+							</th>
+
+							<th>
+								Владелец
+							</th>
+
+							<th>
+								<div class="hs-tooltip [--trigger:click]">
+									<div class="hs-tooltip-toggle inline-block text-center" tabindex="0">
+										<button class="flex items-center gap-x-2.5" type="button" title="Подробнее о состоянии записи">
+											<span class="сursor-pointer">Запись</span>
+											<svg
+												class="size-5 stroke-pitpos-400 fill-transparent will-change-transform duration-300 cursor-pointer hover:brightness-80 active:opacity-70 active:scale-97"
+												viewBox="0 0 24 24">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#help-circle-icon"></use>
+											</svg>
+										</button>
+
+										<div
+											class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs bg-pitpos-100 text-start rounded-xl shadow-lg"
+											role="tooltip">
+											<div class="px-5.5 pb-2.5">
+												<h3 class="font-bold text-center">3 состояния записи</h3>
+
+												<div>
+													<svg class="inline-block w-10 h-5.5 fill-gray-300 opacity-30" viewBox="0 0 40 22">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#fake-switcher-off"></use>
+													</svg>
+													<span>&mdash;&nbsp;запись недоступна</span>
+												</div>
+												<div>
+													<svg class="inline-block w-10 h-5.5 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 40 22">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#fake-switcher-on"></use>
+													</svg>
+													<span>&mdash;&nbsp;включена</span>
+												</div>
+												<div>
+													<svg class="inline-block w-10 h-5.5 fill-gray-300" viewBox="0 0 40 22">
+														<use xlink:href="./public/images/icons/sprite-icons.svg#fake-switcher-off"></use>
+													</svg>
+													<span>&mdash;&nbsp;выключена</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</th>
+
+							<th>
+								<div class="hs-tooltip [--trigger:click]">
+									<div class="hs-tooltip-toggle block text-center" tabindex="0">
+										<button class="flex items-center gap-x-2.5" type="button" title="Подробнее о видах статуса">
+											<span class="сursor-pointer">Статус</span>
+											<svg
+												class="size-5 stroke-pitpos-400 fill-transparent will-change-transform duration-300 cursor-pointer hover:brightness-80 active:opacity-70 active:scale-97"
+												viewBox="0 0 24 24">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#help-circle-icon"></use>
+											</svg>
+										</button>
+
+										<div
+											class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs bg-pitpos-100 text-start rounded-xl shadow-lg">
+											<div class="px-5.5 pb-2.5">
+												<h3 class="font-bold text-center">3 статуса мастерской</h3>
+
+												<div>
+													<span
+														class="bg-success text-white leading-5 font-semibold whitespace-nowrap text-[0.81rem] w-min px-1.5 rounded-xs justify-start">Активна</span>
+												</div>
+												<div>
+													<span
+														class="bg-ready text-white leading-5 font-semibold whitespace-nowrap text-[0.81rem] w-min px-1.5 rounded-xs justify-start">Тест</span>
+												</div>
+												<div>
+													<span
+														class="bg-error text-white leading-5 font-semibold whitespace-nowrap text-[0.81rem] w-min px-1.5 rounded-xs justify-start">Не
+														активна</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>1</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Пулковское ш., д. 19</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-1" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-1" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ул. Софьи Ковалевской, д. 22</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-2" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-2" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>пр. Металлистов, д. 116</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-3" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-3" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>4</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>НЕсофьяНЕ</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-4" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-4" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md"></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>5</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Муринка</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-5" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-5" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>6</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Шафировский</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-6" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-6">
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>7</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Кудрово, Ленинградская ул., д. 9/8</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-7" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-7" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>8</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Испытателей</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-8" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-8" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>9</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Дундича</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-9" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-9" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>10</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Фермское</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-10" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-10" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>11</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>пр. Сизова д. 2</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-11" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-11" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>12</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Кудровский</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-12" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-12" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>13</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ул. Васенко, д. 12</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-13" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-13" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>14</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ул. Карбышева д. 9</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-14" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-14" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>15</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>пр. Просвещения д. 74 корп. 2 лит. А</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-15" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-15" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>16</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ул. Руставели д. 43 лит. А</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-16" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-16" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>17</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ул. Савушкина д. 116 лит. А</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-17" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-17" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>18</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ПО</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-18" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-18" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>19</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ТЕСТ</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-19" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-19" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>20</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Мурманское</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылова Оксана
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-20" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-20" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>21</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Пулковское ш., д. 43/1</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-21" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-21" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>22</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Зеленогорск, пр. Ленина, д. 88</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Баракова Юлия
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-22" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-22" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>23</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Мойка, Пулковское шоссе, д. 19А</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Баракова Юлия
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-23" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-23" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="hidden" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>24</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Московское ш., 25/1В</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-24" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-24" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>25</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>пр. Ветеранов, 167/2</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-25" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-25" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>26</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Шушары, Московское ш., д. 16/7</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Рылов Андрей
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-26" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-26" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>27</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>ТО Зеленогорск, пр. Ленина, д. 88И</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Баракова Юлия
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-27" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-27" checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>28</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>Парковка</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-28" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-28" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>29</td>
+
+							<td>
+								<a href="./workshop.html" data-workshop title="Смотреть подробности мастерской">
+									<span>пр. Испытателей, д. 5 корп. 2 лит. А</span>
+
+									<svg class="inline-block size-6 stroke-pitpos-400 fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Бараков Всеволод
+							</td>
+
+							<td>
+								<div class="flex items-center gap-x-3">
+									<label for="workshop-switcher-29" title="Вкл/откл запись"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="workshop-switcher-29" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-30 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+
+							<td>
+								<span class="hidden" data-workshop-status="active">Активна</span>
+								<span class="hidden" data-workshop-status="test">Тест</span>
+								<span class="" data-workshop-status="no-active">Не активна</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End table of workshops -->
+		</div>
+
+	</main>
+
+	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+</body>
+
+</html>
