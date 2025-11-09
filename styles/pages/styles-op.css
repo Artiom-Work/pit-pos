@@ -9,6 +9,7 @@
     --font-sans: 'Inter', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-50: #f7f7f8;
     --color-gray-100: #eeedf3;
@@ -1387,8 +1388,14 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-\[0\.44rem\] {
+    padding-block: 0.44rem;
+  }
   .py-\[0\.49rem\] {
     padding-block: 0.49rem;
+  }
+  .py-\[0\.439rem\] {
+    padding-block: 0.439rem;
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -1546,12 +1553,6 @@
   }
   .opacity-0 {
     opacity: 0%;
-  }
-  .opacity-3 {
-    opacity: 3%;
-  }
-  .opacity-20 {
-    opacity: 20%;
   }
   .opacity-30 {
     opacity: 30%;
@@ -2829,6 +2830,14 @@
     }
     .disabled & {
       pointer-events: none;
+    }
+  }
+  .hs-select-disabled\:opacity-20 {
+    &.disabled {
+      opacity: 20%;
+    }
+    .disabled & {
+      opacity: 20%;
     }
   }
   .has-active\:bg-pitpos-700 {
