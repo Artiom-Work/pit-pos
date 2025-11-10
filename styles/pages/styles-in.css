@@ -119,6 +119,11 @@
 		-webkit-appearance: none;
 		margin: 0;
 	}
+
+	.date-picker-indicator-violet::-webkit-calendar-picker-indicator {
+		filter: invert(26%) sepia(59%) saturate(2500%) hue-rotate(245deg) brightness(90%) contrast(90%);
+	}
+
 }
 
 @variant has-active {
