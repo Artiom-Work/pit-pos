@@ -582,39 +582,71 @@
 		</div>
 		<!-- End breadcrumbs -->
 		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
-			<h1 class="flex font-semibold mb-6 py-2">
-				<svg class="size-6 stroke-pitpos-700 fill-transparent mr-3.5" viewBox="0 0 24 24">
+			<h1 class="flex items-center font-semibold mb-6 py-2">
+				<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent mr-3.5" viewBox="0 0 24 24">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#file-plus-icon"></use>
 				</svg>
 
-				<span class="text-pitpos-700">Заявка &#8470;&nbsp;12</span>
+				<span class="text-pitpos-700">Заявка на&nbsp;выдачу сезонных хранений &#8470;&nbsp;12</span>
 			</h1>
 			<!-- End page name -->
 			<div class="overflow-x-auto xl:w-full mb-6">
 				<table class="prose max-w-screen min-w-301 w-full text-dark-text 
 				prose-thead:border-0 
-				prose-th:p-2.5 
+				[&>tbody>tr]:h-13
+				prose-th:px-2.5 
+				prose-th:py-1.5
 				prose-th:bg-gray-50 
 				prose-th:align-middle 
 				prose-th:text-[0.81rem] 
-				prose-th:font-semibold 
-				prose-th:[&:nth-child(3)]:min-w-28 
-				prose-th:[&:nth-child(6)]:min-w-40 
-				prose-th:[&:nth-child(9)]:min-w-32 
-				prose-td:[&:nth-child(4)]:min-w-40 
+				prose-th:font-semibold
+				prose-th:[&>span]:text-pitpos-700 
+				prose-td:leading-none
 				prose-td:px-2.5 
 				prose-td:py-0.5 
 				prose-td:align-middle 
 				prose-td:has-[a]:py-0 
 				prose-tr:even:bg-gray-50 
 				prose-tr:min-w-6 
-				prose-tr:h-9.5 
 				prose-tr:border-white 
 				prose-tr:border-b-2 
+				prose-tr:[&>td>div]:w-full 
+				prose-tr:[&>td>div]:flex 
+				prose-tr:[&>td>div]:items-center 
+				prose-tr:[&>td>div]:gap-x-2.5
+				prose-td:[&>div>time]:pl-8.5
+				prose-td:[&>div>time]:relative
+				prose-td:[&>div>time]:after:absolute
+				prose-td:[&>div>time]:after:content-['']
+				prose-td:[&>div>time]:after:left-2.5
+				prose-td:[&>div>time]:after:top-[50%]
+				prose-td:[&>div>time]:after:-translate-y-[50%]
+				prose-td:[&>div>time]:after:w-3.5
+				prose-td:[&>div>time]:after:h-3.5
+				prose-td:[&>div>time]:after:rounded-full
+				prose-td:[&>div>time]:after:bg-success
+				prose-td:[&>div>button]:font-bold
+				prose-td:[&>div>button]:text-sm
+				prose-td:[&>div>button]:leading-[1.71429]
+				prose-td:[&>div>button]:tracking-[0.01em]
+				prose-td:[&>div>button]:py-1
+				prose-td:[&>div>button]:px-2.5
+				prose-td:[&>div>button]:outline-1
+				prose-td:[&>div>button]:outline-pitpos-700
+				prose-td:[&>div>button]:rounded-sm
+				prose-td:[&>div>button]:cursor-pointer
+				prose-td:[&>div>button]:duration-300
+				prose-td:[&>div>button]:will-change-transform
+				prose-td:[&>div>button]:hover:bg-pitpos-700
+				prose-td:[&>div>button]:hover:shadow-sm
+				prose-td:[&>div>button]:hover:text-white
+				prose-td:[&>div>button]:active:brightness-80
+				prose-td:[&>div>button]:active:scale-95
 					">
 
 					<thead>
 						<tr>
+							<th></th>
 							<th>
 								<span>&#8470;&nbsp;пломбы</span>
 							</th>
@@ -628,10 +660,10 @@
 								Телефоны
 							</th>
 							<th>
-								Клиент(<i>хран.</i>)
+								Клиент
 							</th>
 							<th>
-								Адрес
+								Мастерская
 							</th>
 							<th>
 								Комментарий
@@ -640,16 +672,16 @@
 								Время записи
 							</th>
 							<th>
-								Когда поступил заказ
+								Время заказа
 							</th>
 							<th>
-								Заказана
+								Заказ&nbsp;&#8470;
 							</th>
 							<th>
-								Заказ
+								Кем&nbsp;заказана
 							</th>
 							<th>
-								Кем заказана
+								Статус
 							</th>
 						</tr>
 					</thead>
@@ -657,25 +689,38 @@
 					<tbody>
 						<tr>
 							<td>
+								<label class="inline-flex items-center cursor-pointer" for="seal-865774">
+									<input type="checkbox" class="sr-only peer" id="seal-865774">
+									<span
+										class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center peer-disabled:pointer-events-none peer-disabled:border-0 peer-disabled:bg-gray-300 peer-disabled:[&>svg]:stroke-gray-300">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+							<td>
 								865774
 							</td>
 							<td>
-								67576576
+								М678ИМ799
 							</td>
 							<td>
 								Land Rover
 							</td>
 							<td>
-								9117738332/ +7(911)734-01-64
+								9111992345
 							</td>
 							<td>
 								Евгений Присяжнюк
 							</td>
 							<td>
-								ул. Софьи-Ковалевской, 22
+								ул. Софьи Ковалевской
 							</td>
 							<td>
-
+								-
 							</td>
 							<td>
 								23.10.2025 14:00
@@ -684,22 +729,91 @@
 								2025-10-19 21:44:07
 							</td>
 							<td>
-
+								358474
 							</td>
 							<td>
-								Заказ #358474
+								Иван Иванов
+							</td>
+							<td>
+								<div>
+									<time class="hidden" datetime="2025-11-13T14:00">23.11.2025 14:00</time>
+
+									<button class="" type="button">
+										Заказать
+									</button>
+								</div>
 							</td>
 							<td>
 
 							</td>
 						</tr>
 
+						<tr>
+							<td>
+								<label class="inline-flex items-center cursor-pointer" for="seal-865775">
+									<input type="checkbox" class="sr-only peer" id="seal-865775" disabled>
+									<span
+										class="w-5 h-5 border-2 border-pitpos-700 rounded-sm 
+														peer-checked:bg-pitpos-700 
+														flex items-center justify-center peer-disabled:pointer-events-none peer-disabled:border-0 peer-disabled:bg-gray-300 peer-disabled:[&>svg]:stroke-gray-300">
+										<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+							<td>
+								865775
+							</td>
+							<td>
+								М678ИМ799
+							</td>
+							<td>
+								Land Rover
+							</td>
+							<td>
+								9111992345
+							</td>
+							<td>
+								Евгений Присяжнюк
+							</td>
+							<td>
+								ул. Софьи Ковалевской
+							</td>
+							<td>
+								-
+							</td>
+							<td>
+								23.10.2025 14:00
+							</td>
+							<td>
+								2025-10-19 21:44:07
+							</td>
+							<td>
+								358474
+							</td>
+							<td>
+								Иван Иванов
+							</td>
+							<td>
+								<div>
+									<time class="" datetime="2025-11-13T14:00">23.11.2025 14:00</time>
+
+									<button class="hidden" type="button">
+										Заказать
+									</button>
+								</div>
+							</td>
+							<td>
+
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 			<!-- End info of an application of seosonal storage (table)-->
-			<form class="mb-6 w-full flex flex-col gap-3 md:gap-6 md:flex-row">
-				<div class="w-full flex flex-col gap-y-1">
+			<form class="mb-6 w-full flex flex-col gap-3 md:gap-6">
+				<div class="w-full max-w-164.5 flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="ssr-comment">Комментарий</label>
 					<textarea
 						class=" min-h-30 px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error placeholder"
@@ -707,12 +821,12 @@
 				</div>
 
 				<button
-					class="self-end px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer whitespace-nowrap duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+					class="self-start px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer whitespace-nowrap duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 					type="submit" disabled>Сохранить комментарий</button>
 			</form>
 			<!-- End from for create comment of application -->
-			<form class="w-full grid 	sm:grid-cols-[1fr_auto_auto] gap-3 md:gap-6">
-				<div class="w-full flex flex-col gap-y-1">
+			<form class="w-full flex flex-col justify-start gap-3 md:gap-6 md:flex-row">
+				<div class="w-full max-w-81 flex flex-col gap-y-1">
 					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error"
@@ -720,18 +834,19 @@
 				</div>
 
 				<button
-					class="px-2.5 py-2.5 self-end justify-self-end flex items-center gap-x-2.5 rounded-md whitespace-nowrap duration-300 will-change-transform cursor-pointer ring-1 ring-pitpos-700  hover:bg-gray-100 hover:ring-2 active:scale-98 active:brightness-85"
+					class="px-2.5 py-[0.44rem] self-start justify-self-end flex items-center gap-x-2.5 rounded-md whitespace-nowrap duration-300 will-change-transform cursor-pointer ring-1 ring-pitpos-700  hover:bg-gray-100 hover:ring-2 active:scale-98 active:brightness-85 md:self-end"
 					type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-seasonal-storages-list-modal"
 					data-hs-overlay="#hs-seasonal-storages-list-modal">
-					<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
-						<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
-					</svg>
 
 					<span class="text-pitpos-700 text-sm font-medium">Выбрать из&nbsp;списка</span>
+
+					<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#external-link-icon"></use>
+					</svg>
 				</button>
 
 				<button
-					class="inline-flex self-end justify-self-end px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold whitespace-nowrap cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+					class="inline-flex self-start justify-self-end px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold whitespace-nowrap cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 md:self-end"
 					type="submit">Прикрепить</button>
 
 				<div id="hs-seasonal-storages-list-modal"
@@ -741,7 +856,7 @@
 						class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
 						<div
 							class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
-							<div class="flex justify-between items-center p-2.5 border-b border-gray-200 ">
+							<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200 ">
 								<h3 id="hs-seasonal-storages-list-modal-label" class="font-bold text-dark-text">
 									Выбор сезонного хранения
 								</h3>
@@ -754,7 +869,7 @@
 								</button>
 							</div>
 
-							<div class="p-2.5 overflow-y-auto">
+							<div class="pt-2.5 px-5 pb-5 overflow-y-auto">
 								<div class="pb-3 space-y-4">
 									<div class="w-full mb-6 flex flex-col  justify-between gap-3 sm:flex-row sm:items-end">
 										<div class="flex flex-col gap-y-1">
@@ -792,8 +907,9 @@
 										prose-th:align-middle 
 										prose-th:text-[0.81rem] 
 										prose-th:font-semibold
-										prose-th:[&:nth-child(2)]:min-w-61.5 
-										prose-th:[&:nth-child(3)]:min-w-45.5 
+										prose-th:[&:nth-child(2)]:min-w-116 
+										prose-th:[&:nth-child(3)]:min-w-45.5
+										prose-td:leading-none
 										prose-td:px-2.5 
 										prose-td:py-0.5 
 										prose-td:align-middle 
