@@ -11,8 +11,6 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-50: #f7f7f8;
     --color-gray-100: #eeedf3;
     --color-gray-200: #e9e7eb;
@@ -23,16 +21,12 @@
     --color-gray-700: #5e5a67;
     --color-gray-800: #2a2831;
     --color-neutral-400: oklch(70.8% 0 0);
-    --color-neutral-700: oklch(37.1% 0 0);
-    --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #131216;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
     --container-lg: 32rem;
     --container-4xl: 56rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
@@ -917,9 +911,6 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-11 {
-    height: calc(var(--spacing) * 11);
-  }
   .h-\[calc\(100\%-56px\)\] {
     height: calc(100% - 56px);
   }
@@ -1095,9 +1086,6 @@
   }
   .items-end {
     align-items: flex-end;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -1290,9 +1278,6 @@
   .bg-ready {
     background-color: var(--color-ready);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-success {
     background-color: var(--color-success);
   }
@@ -1341,12 +1326,6 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-2\.5 {
-    padding: calc(var(--spacing) * 2.5);
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
@@ -1392,44 +1371,14 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .py-\[0\.4rem\] {
-    padding-block: 0.4rem;
-  }
-  .py-\[0\.5rem\] {
-    padding-block: 0.5rem;
-  }
   .py-\[0\.44rem\] {
     padding-block: 0.44rem;
-  }
-  .py-\[0\.45rem\] {
-    padding-block: 0.45rem;
   }
   .py-\[0\.49rem\] {
     padding-block: 0.49rem;
   }
-  .py-\[0\.55rem\] {
-    padding-block: 0.55rem;
-  }
   .py-\[0\.439rem\] {
     padding-block: 0.439rem;
-  }
-  .py-\[0\.553rem\] {
-    padding-block: 0.553rem;
-  }
-  .py-\[0\.555rem\] {
-    padding-block: 0.555rem;
-  }
-  .py-\[0\.559rem\] {
-    padding-block: 0.559rem;
-  }
-  .py-\[0\.561\] {
-    padding-block: 0.561;
-  }
-  .py-\[0\.561rem\] {
-    padding-block: 0.561rem;
-  }
-  .py-\[0\.562rem\] {
-    padding-block: 0.562rem;
   }
   .py-\[0\.563rem\] {
     padding-block: 0.563rem;
@@ -2215,11 +2164,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .sm\:grid-cols-\[1fr_auto_auto\] {
-    @media (width >= 40rem) {
-      grid-template-columns: 1fr auto auto;
-    }
-  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
@@ -2655,62 +2599,9 @@
       }
     }
   }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:bg-success {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        background-color: var(--color-success);
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        text-decoration-line: line-through;
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:not-\[span\[data-outfit-status\=\'paid\'\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &:not(*:is(span[data-outfit-status='paid'])) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:not-\[span\[data-outfit-status\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &:not(*:is(span[data-outfit-status])) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:not-\[span\[data-outfit-status\]\]\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:not(*:is(span[data-outfit-status])) {
-        &:has(*:is(span[data-outfit-status='paid'])) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:pointer-events-none {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        pointer-events: none;
-      }
-    }
-  }
   .prose-th\:bg-gray-50 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       background-color: var(--color-gray-50);
-    }
-  }
-  .prose-th\:p-1 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      padding: calc(var(--spacing) * 1);
     }
   }
   .prose-th\:p-2\.5 {
@@ -2726,11 +2617,6 @@
   .prose-th\:px-2\.5 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       padding-inline: calc(var(--spacing) * 2.5);
-    }
-  }
-  .prose-th\:py-1 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      padding-block: calc(var(--spacing) * 1);
     }
   }
   .prose-th\:py-1\.5 {
@@ -2855,12 +2741,6 @@
   .prose-td\:text-\[0\.938rem\] {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       font-size: 0.938rem;
-    }
-  }
-  .prose-td\:leading-\[1\.2\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      --tw-leading: 1.2;
-      line-height: 1.2;
     }
   }
   .prose-td\:leading-none {
@@ -3047,13 +2927,6 @@
       background-color: var(--color-gray-100);
     }
   }
-  .prose-th\:\[\&\:nth-child\(2\)\]\:min-w-61\.5 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(2) {
-        min-width: calc(var(--spacing) * 61.5);
-      }
-    }
-  }
   .prose-th\:\[\&\:nth-child\(2\)\]\:min-w-116 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
@@ -3065,13 +2938,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
         white-space: nowrap;
-      }
-    }
-  }
-  .prose-th\:\[\&\:nth-child\(3\)\]\:min-w-28 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(3) {
-        min-width: calc(var(--spacing) * 28);
       }
     }
   }
@@ -3096,31 +2962,10 @@
       }
     }
   }
-  .prose-td\:\[\&\:nth-child\(4\)\]\:min-w-40 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(4) {
-        min-width: calc(var(--spacing) * 40);
-      }
-    }
-  }
-  .prose-th\:\[\&\:nth-child\(6\)\]\:min-w-40 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(6) {
-        min-width: calc(var(--spacing) * 40);
-      }
-    }
-  }
   .prose-td\:\[\&\:nth-child\(6\)\]\:min-w-32\.5 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(6) {
         min-width: calc(var(--spacing) * 32.5);
-      }
-    }
-  }
-  .prose-th\:\[\&\:nth-child\(9\)\]\:min-w-32 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(9) {
-        min-width: calc(var(--spacing) * 32);
       }
     }
   }
@@ -3893,18 +3738,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:hover\:brightness-80 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(80%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:active\:scale-95 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
@@ -4090,34 +3923,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>span\[data-outfit-status\=\'paid\'\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status='paid'] {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-outfit-status\=\'paid\'\]\]\:decoration-\[none\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status='paid'] {
-        text-decoration-color: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-outfit-status\=\'paid\'\]\]\:decoration-\[underline\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status='paid'] {
-        text-decoration-color: underline;
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-outfit-status\=\'paid\'\]\]\:decoration-auto {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status='paid'] {
-        text-decoration-thickness: auto;
-      }
-    }
-  }
   .prose-td\:\[\&\>span\[data-outfit-status\=\'ready\'\]\]\:bg-ready {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-outfit-status='ready'] {
@@ -4174,13 +3979,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>span\[data-outfit-status\]\]\:py-1\.5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status] {
-        padding-block: calc(var(--spacing) * 1.5);
-      }
-    }
-  }
   .prose-td\:\[\&\>span\[data-outfit-status\]\]\:text-\[0\.81rem\] {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-outfit-status] {
@@ -4200,13 +3998,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-outfit-status] {
         color: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-outfit-status\]\]\:underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status] {
-        text-decoration-line: underline;
       }
     }
   }
@@ -4263,13 +4054,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-workshop-status] {
         padding-block: calc(var(--spacing) * 0.5);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-workshop-status\]\]\:py-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-workshop-status] {
-        padding-block: calc(var(--spacing) * 1);
       }
     }
   }
@@ -4411,11 +4195,6 @@
       }
     }
   }
-  .\[\&\>tbody\]\:bg-red-500 {
-    &>tbody {
-      background-color: var(--color-red-500);
-    }
-  }
   .\[\&\>tbody\>tr\]\:h-13 {
     &>tbody>tr {
       height: calc(var(--spacing) * 13);
@@ -4426,22 +4205,24 @@
       height: calc(var(--spacing) * 14);
     }
   }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td {
-          text-decoration-line: line-through;
-        }
-      }
+  .\[\&\>tbody\>tr\]\:h-14\.5 {
+    &>tbody>tr {
+      height: calc(var(--spacing) * 14.5);
     }
   }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td {
-          text-decoration-line: line-through;
-        }
-      }
+  .\[\&\>tbody\>tr\]\:h-16\.5 {
+    &>tbody>tr {
+      height: calc(var(--spacing) * 16.5);
+    }
+  }
+  .\[\&\>tbody\>tr\]\:h-17 {
+    &>tbody>tr {
+      height: calc(var(--spacing) * 17);
+    }
+  }
+  .\[\&\>tbody\>tr\]\:bg-red-500 {
+    &>tbody>tr {
+      background-color: var(--color-red-500);
     }
   }
   .prose-tr\:\[\&\>td\:first-child\]\:max-w-8\.5 {
@@ -4455,51 +4236,6 @@
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:first-child {
         max-width: calc(var(--spacing) * 28);
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:has-\[not\:\[span\]\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:has-[not:[span]] {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\(\&\>\[span\]\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not(&>[span]) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\(\&\>span\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not(&>span) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not() {
-          text-decoration-line: line-through;
-        }
       }
     }
   }
@@ -4526,60 +4262,6 @@
       &:has(*:is(span[data-outfit-status=paid])) {
         &>td:not(:has(button)) {
           pointer-events: none;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\(\>span\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not(>span) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\>span\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(>span) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\(\[span\]\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not([span]) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\(span\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not(span) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\[\&\>span\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not[&>span] {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=\'paid\'\]\]\:\[\&\>td\:not\[span\]\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status='paid'])) {
-        &>td:not[span] {
-          text-decoration-line: line-through;
         }
       }
     }
