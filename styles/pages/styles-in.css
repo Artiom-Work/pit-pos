@@ -5,6 +5,8 @@
 @import "tailwindcss";
 @source "preline/dist/*.js";
 @import "preline/variants.css";
+@import "flatpickr";
+/* @import "preline/apexcharts.css"; */
 /* @plugin "@tailwindcss/forms"; */
 @plugin "@tailwindcss/typography";
 
@@ -76,6 +78,7 @@
 	--color-pitpos-200: #e9e1f2;
 	--color-pitpos-300: #ddbdff;
 	--color-pitpos-400: #bf9dfe;
+	--color-pitpos-450: #B499E7;
 	--color-pitpos-500: #9d67ff;
 	--color-pitpos-600: #7d47db;
 	--color-pitpos-700: #6a33cf;

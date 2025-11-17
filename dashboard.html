@@ -1,0 +1,1932 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" sizes="16x16" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
+	<title>PitPos | Dashboard</title>
+	<link href="./styles/pages/styles-op.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 h-full">
+	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
+		<div class="flex items-center justify-between gap-x-4">
+			<a href="./index.html" title="На главную">
+				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+					viewBox="0 0 140 60">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="flex items-center gap-x-10">
+				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
+					href="#!">
+					<div
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
+						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-boy.webp" alt="Мужчина">
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-girl.webp" alt="Женщина">
+					</div>
+
+					<div class="flex flex-col">
+						<span class="text-[15px]">Александр Иванов</span>
+						<span class="text-sm text-gray-600">Собственник</span>
+					</div>
+				</a>
+
+				<time class="hidden text-[15px] sm:block" datetime="2025-09-03">3 сентября 2025 г.</time>
+				<time class="hidden text-xl font-bold md:block" datetime="10:38:22">10:38:22</time>
+			</div>
+		</div>
+	</header>
+
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
+		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
+			<div class="max-w-80 h-full relative">
+				<input class="hidden peer" id="menu-toggle" type="checkbox">
+
+				<div class="absolute w-12 min-h-12 bg-white overflow-hidden duration-300 peer-checked:w-80"></div>
+
+				<div class="size-12 absolute left-0 py-3 px-3 duration-300 peer-checked:opacity-0 ">
+					<svg class="size-6 fill-black " viewBox="0 0 26 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
+					</svg>
+				</div>
+
+				<div
+					class="size-12 opacity-0 rotate-90 absolute right-0 py-3 px-3 duration-300 peer-checked:block peer-checked:opacity-100">
+					<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+				</div>
+
+				<label
+					class="relative  z-1 w-12 flex items-center justify-center min-h-12 cursor-pointer  peer-checked:left-68 border-3 border-white rounded-md hover:border-black active:opacity-40"
+					for="menu-toggle">
+				</label>
+
+				<nav class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80">
+					<ul>
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Дашборд">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./dashboard.html">Дашборд</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="./op-control.html" title="Оперативный контроль">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./op-control.html">Оперативный контроль</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-1">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-1">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-shifts.html">Смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-disks-painting.html">Покраска дисков</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-guarantees.html">Гарантии</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Ключевые показатели эффективности">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">KPI</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-2">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-2">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Финансовые планы</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Ночные смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Отчеты по мотивации</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Средние чеки</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Выгрузка услуг</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Кабинет бухгалтера">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Кабинет бухгалтера</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-3">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-3">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Зарплаты</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дополнительные начисления</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Баланс</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Инкассации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Клиенты">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Клиенты</a>
+
+							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-4">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-4">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./clients-individuals.html">Физ.лица</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Юр.лица</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Пользователи">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Пользователи</a>
+
+							<input class="hidden peer" id="menu-item-toggle-5" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-5">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-5" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-5">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-36 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Владельцы</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сотрудники</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Помощники</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Справочники">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
+								</svg>
+
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Справочники</a>
+
+							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-6">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-6">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-108 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Услуги</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Причины обращений</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Марки и модели</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы для отзывов</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы при открытии смены</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Роли</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Рекомендации клиенту</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мотивации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Лояльность">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Лояльность</a>
+
+							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-7">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-7">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дисконтные карты</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./loyalty-promo-codes.html">Промокоды</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Настройки">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Настройки</a>
+
+							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-8">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-8">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Уведомления</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сайт</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Обучение">
+
+								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Обучение</a>
+
+							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-9">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-9">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вики</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Материалы</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Логи">
+								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Логи</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</aside>
+
+		<h1 class="sr-only">статистика PotPos</h1>
+		<!-- End sidebar -->
+		<div class="w-full mb-6">
+			<nav class="xl:container">
+				<ul class="flex flex-wrap">
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./index.html">Главная&nbsp;-&nbsp;</a>
+					</li>
+
+					<li>
+						<a class="text-gray-500 text-[12px] duration-300 text-pitpos-700 active:text-pitpos-500 pointer-events-none"
+							href="./dashboard.html">
+							Дашборд
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="xl:container">
+			<div>
+				<nav class="mb-3 flex flex-col gap-2.5 flex-wrap xs:flex-row lg:flex-nowrap lg:mb-6" aria-label="Tabs"
+					role="tablist" aria-orientation="horizontal">
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white  active"
+						id="dashboard-item-1" aria-selected="true" data-hs-tab="#dashboard-1" aria-controls="dashboard-1"
+						role="tab">
+						Основная&nbsp;информация
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="workshop-desc-item-2" aria-selected="false" data-hs-tab="#dashboard-2" aria-controls="dashboard-2"
+						role="tab">
+						Ремонт дисков
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="dashboard-item-3" aria-selected="false" data-hs-tab="#dashboard-3" aria-controls="dashboard-3"
+						role="tab">
+						Ремонт шин
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="dashboard-item-4" aria-selected="false" data-hs-tab="#dashboard-4" aria-controls="dashboard-4"
+						role="tab">
+						Автомойка
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="dashboard-item-4" aria-selected="false" data-hs-tab="#dashboard-5" aria-controls="dashboard-5"
+						role="tab">
+						Автосервис
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="dashboard-item-4" aria-selected="false" data-hs-tab="#dashboard-6" aria-controls="dashboard-6"
+						role="tab">
+						Мастера
+					</button>
+
+					<button type="button"
+						class="inline-block px-2.5 py-2 bg-white text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 hs-tab-active:ring-pitpos-700 hs-tab-active:bg-pitpos-700 hs-tab-active:text-white"
+						id="dashboard-item-4" aria-selected="false" data-hs-tab="#dashboard-7" aria-controls="dashboard-7"
+						role="tab">
+						Маркетинг
+					</button>
+				</nav>
+				<!-- End tab navigation -->
+				<div>
+
+					<div id="dashboard-1" role="tabpanel" aria-labelledby="dashboard-item-1">
+						<div class="mb-6">
+							<form class="grid gap-1 xs:gap-3 md:grid-cols-2 md:grid-rows-2 md:gap-6" action="">
+								<div
+									class="relative max-w-130.5 md:max-w-118.5 xs:grid xs:grid-cols-[5.81rem_minmax(1rem,_26.875rem)] md:grid-cols-[2.69rem_minmax(1rem,_26.875rem)] md:justify-self-end">
+									<label class="self-center text-sm text-gray-500 inline-block mb-1.5 xs:mb-0"
+										for="date-range">Дата</label>
+									<input
+										class="max-w-107.5 px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
+											focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error date-picker-indicator-violet placeholder:text-black"
+										type="text" id="date-range" name="date-range" placeholder="Нет выбранных значений">
+									<button
+										class="hidden absolute right-3 top-1.5 p-0.5 rounded-lg cursor-pointer duration-300 will-change-transform hover:bg-gray-300 active:scale-95 active:brightness-85"
+										type="button" title="Сбросить настройки даты" id="clear-date-btn">
+										<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
+										</svg>
+									</button>
+
+								</div>
+
+								<div class="xs:grid xs:grid-cols-[5.81rem_minmax(1rem,_26.875rem)] md:pl-4">
+									<label class="self-center text-sm text-gray-500 inline-block mb-1.5 xs:mb-0"
+										for="workshop_name">Мастерские</label>
+									<select id="workshop_name" name="workshop_name" data-hs-select='{
+											"hasSearch": true,
+											"searchPlaceholder": "Нет выбранных значений",
+											"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+											"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+											"placeholder": "Нет выбранных значений",
+											"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+											"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+											"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+											"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+											"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+											"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6A33CF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+										}' class="hidden">
+										<option selected="selected" value="">Все</option>
+										<option value="workshop_1">
+											Пулковское ш., д. 19
+										</option>
+										<option value="workshop_2">
+											ул. Софьи Ковалевской, д. 22
+										</option>
+										<option value="workshop_3">
+											пр. Металлистов, д. 116
+										</option>
+										<option value="workshop_4">
+											НЕсофьяНЕ
+										</option>
+										<option value="workshop_5">
+											Муринка
+										</option>
+										<option value="workshop_6">
+											Шафировский
+										</option>
+										<option value="workshop_7">
+											Кудрово, Ленинградская ул., д. 9/8
+										</option>
+										<option value="workshop_8">
+											Испытателей
+										</option>
+										<option value="workshop_9">
+											Дундича
+										</option>
+										<option value="workshop_10">
+											Фермское
+										</option>
+										<option value="workshop_11">
+											пр. Сизова д. 2
+										</option>
+										<option value="workshop_12">
+											Кудровский
+										</option>
+										<option value="workshop_13">
+											ул. Васенко, д. 12
+										</option>
+										<option value="workshop_14">
+											пр. Просвещения д. 74 корп. 2 лит. А
+										</option>
+										<option value="workshop_15">
+											ул. Руставели д. 43 лит. А
+										</option>
+										<option value="workshop_16">
+											ул. Савушкина д. 116 лит. А
+										</option>
+										<option value="workshop_17">
+											ПО
+										</option>
+										<option value="workshop_18">
+											ТЕСТ
+										</option>
+										<option value="workshop_19">
+											Мурманское
+										</option>
+										<option value="workshop_20">
+											Пулковское ш., д. 43/1
+										</option>
+										<option value="workshop_21">
+											Зеленогорск, пр. Ленина, д. 88
+										</option>
+										<option value="workshop_22">
+											Мойка, Пулковское шоссе, д. 19А
+										</option>
+										<option value="workshop_23">
+											Московское ш., 25/1В
+										</option>
+										<option value="workshop_24">
+											пр. Ветеранов, 167/2
+										</option>
+										<option value="workshop_25">
+											Шушары, Московское ш., д. 16/7
+										</option>
+										<option value="workshop_26">
+											ТО Зеленогорск, пр. Ленина, д. 88И
+										</option>
+										<option value="workshop_27">
+											Парковка
+										</option>
+										<option value="workshop_28">
+											пр. Испытателей, д. 5 корп. 2 лит. А
+										</option>
+									</select>
+								</div>
+
+								<div
+									class="xs:grid xs:grid-cols-[5.81rem_minmax(1rem,_26.875rem)] md:grid-cols-[3.875rem_minmax(1rem,_26.875rem)] md:justify-self-end">
+									<label class="self-center text-sm text-gray-500 inline-block mb-1.5 xs:mb-0"
+										for="employee_id">Мастер</label>
+									<select id="employee_id" name="employee_id" data-hs-select='{
+										"hasSearch": true,
+										"searchLimit": 5,
+										"searchPlaceholder": "Нет выбранных значений",
+										"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+										"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+										"placeholder": "Все",
+										"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+										"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+										"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6A33CF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+									}' class="hidden">
+										<option selected="selected" value="all">Нет выбранных значений</option>
+										<option value="1">Андрей Никишин Никишин</option>
+										<option value="8">Исмаилов Марат </option>
+										<option value="9">Стрелков Александр </option>
+										<option value="10">Сейфетдинов Евгений </option>
+										<option value="11">Иванов Сергей </option>
+										<option value="12">Викторов Павел </option>
+										<option value="13">Цыбулько Дмитрий </option>
+										<option value="14">Крахмаль Вячеслав </option>
+										<option value="15">Иванов Александр </option>
+										<option value="16">Васильев Игорь </option>
+										<option value="17">Покрыш Домкратов </option>
+										<option value="18">Сердюцкий Олег </option>
+										<option value="19">Воробцов Александр </option>
+										<option value="20">Голубев Константин </option>
+										<option value="21">Жданов Руслан </option>
+										<option value="22">Ремизов Алексей </option>
+										<option value="24">Борисов Иван </option>
+										<option value="25">Судариков Юрий </option>
+										<option value="26">Мурзин Никита </option>
+										<option value="27">Стрелков Александр Старый</option>
+										<option value="28">Казаков Алексей </option>
+										<option value="29">Боровков Василий </option>
+										<option value="30">Будыкин Александр </option>
+										<option value="31">Кристина Викторова </option>
+										<option value="32">Санников Илья </option>
+										<option value="33">Судаков Дмитрий </option>
+										<option value="34">Синицын Станислав </option>
+										<option value="35">Никонов Леонид </option>
+										<option value="36">Рамский Василий </option>
+										<option value="37">Рылова Оксана </option>
+										<option value="38">Шмаков Евгений </option>
+										<option value="39">Елумеев Михаил </option>
+										<option value="40">Пельцер Александр </option>
+										<option value="41">Жибров Валентин </option>
+										<option value="42">Ганиев Алим </option>
+										<option value="43">Буйлов Павел </option>
+										<option value="44">Зубарев Александр </option>
+										<option value="45">Рязанцев Александр </option>
+										<option value="46">Гусаров Станислав </option>
+										<option value="47">Буренин Алексей </option>
+										<option value="48">Иванов Виталий </option>
+										<option value="49">Будыкин Александр </option>
+										<option value="50">Суханов Андрей </option>
+										<option value="51">Воропаев Михаил </option>
+										<option value="52">Спирин Александр </option>
+										<option value="53">Гуменюк Александр </option>
+										<option value="54">Жоров Андрей </option>
+										<option value="55">Бабак Филипп </option>
+										<option value="56">Гуменюк Александр </option>
+										<option value="57">Гурин Владимир </option>
+										<option value="58">Вонтов Дмитрий </option>
+										<option value="59">Буяк Станислав </option>
+										<option value="60">Афанасьев Дмитрий </option>
+										<option value="61">Саракуца Игорь </option>
+										<option value="62">Солдаткин Максим </option>
+										<option value="63">Иванов Антон </option>
+										<option value="65">Artem E</option>
+										<option value="66">Тест </option>
+										<option value="67">Хан Дмитрий </option>
+										<option value="68">Буловин Леонид </option>
+										<option value="69">Кривов Даниил </option>
+										<option value="70">Тихонов Александр Старый</option>
+										<option value="71">Прудников Евгений </option>
+										<option value="72">Субханкулов Эдуард </option>
+										<option value="73">Гребенюков Максим </option>
+										<option value="74">Чучман Андрей </option>
+										<option value="75">Подкуйко Дмитрий </option>
+										<option value="76">Кравченко Артем </option>
+										<option value="77">Щеглов Юрий </option>
+										<option value="78">Сейфетдинов Артур </option>
+										<option value="79">Прокофьев Борис </option>
+										<option value="80">Соловьев Олег </option>
+										<option value="81">Дима </option>
+										<option value="82">Шахович Никита </option>
+										<option value="83">Векшинский Алексей </option>
+										<option value="84">Морозов Михаил </option>
+										<option value="85">Баракова Юлия </option>
+										<option value="86">Некрасов Руслан </option>
+										<option value="87">Чуменков Александр </option>
+										<option value="88">Иван Маркин</option>
+										<option value="89">Иванов Сергей (Зеленогорск) </option>
+										<option value="90">Петров Артем </option>
+										<option value="91">Габагков Алан </option>
+										<option value="92">Додонов Кирилл </option>
+										<option value="93">Максим Покраска </option>
+										<option value="94">Александра Покраска </option>
+										<option value="95">Столицын Игорь </option>
+										<option value="96">Бараков Всеволод </option>
+										<option value="98">Судаков Дмитрий </option>
+										<option value="99">Тураев Владимир </option>
+										<option value="100">Леха </option>
+										<option value="101">Куцык Валентин </option>
+										<option value="102">Штанухин Константин </option>
+										<option value="103">Бритвин Даниил </option>
+										<option value="104">Мирон Андрей </option>
+										<option value="105">Марсель Демент</option>
+										<option value="106">Малюков Дмитрий </option>
+										<option value="107">Зулпукаров Расул </option>
+										<option value="108">Постников Андрей </option>
+										<option value="109">Людвиг Андрей </option>
+										<option value="110">Грибинюк Артем </option>
+										<option value="111">Тарасова Ирина </option>
+										<option value="112">Валиев Ринат </option>
+										<option value="113">Кацер Иван </option>
+										<option value="114">Евтеев Станислав </option>
+										<option value="115">Карцев Алексей </option>
+										<option value="116">Михайлов Даниил </option>
+										<option value="117">Серов Владимир </option>
+										<option value="118">Кадыкин Алексей </option>
+										<option value="119">Кошкин Дмитрий </option>
+										<option value="120">Глушонок Николай </option>
+										<option value="121">Масляников Назар </option>
+										<option value="122">Егоров Эдуард </option>
+										<option value="123">Юсупов Бахтияр </option>
+										<option value="124">Андреев Андрей </option>
+										<option value="125">Ткачев Никита </option>
+										<option value="126">Илья Прохоров </option>
+										<option value="127">Горбиков Алексей </option>
+										<option value="128">Романов Аркадий </option>
+										<option value="129">Токарев Сергей (Дубль) </option>
+										<option value="130">Токарев Сергей </option>
+										<option value="131">Довженко Илья </option>
+										<option value="132">Кузьминский Денис </option>
+										<option value="133">Филатов Максим </option>
+										<option value="134">Лепешкин Дмитрий </option>
+										<option value="135">Узун Григорий </option>
+										<option value="136">Зайферт Никита </option>
+										<option value="137">Сисюк Елена </option>
+										<option value="138">Апенов Василий </option>
+										<option value="139">Носов Владислав </option>
+										<option value="140">Апаршев Иван </option>
+										<option value="141">Веселов Игорь </option>
+										<option value="142">Попов Андрей </option>
+										<option value="143">Капустин Владимир </option>
+										<option value="144">Безверхий Григорий </option>
+										<option value="145">Борисюк Александр </option>
+										<option value="146">Васильев Андрей </option>
+										<option value="147">Есаян Армен </option>
+										<option value="148">Мизонов Даниил </option>
+										<option value="149">Тарасенко Роман </option>
+										<option value="150">Счастный Антон </option>
+										<option value="151">Осипов Никита </option>
+										<option value="152">Казаков Артем </option>
+										<option value="153">Патрик Дмитрий </option>
+										<option value="154">Модзолевский Кирилл </option>
+										<option value="155">Погребняк Артем </option>
+										<option value="156">Евневич Дмитрий </option>
+										<option value="157">Кондратьев Артем </option>
+										<option value="158">Реуцкий Данил </option>
+										<option value="159">Халимов Борис </option>
+										<option value="160">Гурбанов Роман </option>
+										<option value="161">Шаронов Александр </option>
+										<option value="162">Геворкян Самвел </option>
+										<option value="163">Шмилев Дмитрий </option>
+										<option value="164">Чуев Антон </option>
+										<option value="165">Канкулов Александр </option>
+										<option value="166">Ганжур Даниил </option>
+										<option value="167">Чистяков Алексей </option>
+										<option value="168">Кильдибаев Вадим </option>
+										<option value="169">Ефимчик Сергей </option>
+										<option value="170">Зулпукаров Магомед </option>
+										<option value="171">Плясецкий Игорь </option>
+										<option value="172">Евдокимов Эльдар </option>
+										<option value="173">Авчаров Даниил </option>
+										<option value="174">Фролова Ксения </option>
+										<option value="175">Михайленко Виталий </option>
+										<option value="176">Левицкий Никита </option>
+										<option value="177">Филиппов Святослав </option>
+										<option value="178">Елеуов Константин </option>
+										<option value="179">Казаков Станислав </option>
+										<option value="180">Кравцов Алексей </option>
+										<option value="181">Донская Софья </option>
+										<option value="182">Мурадов Федор </option>
+										<option value="183">Юсупов Шахтер </option>
+										<option value="184">Шевколенко Сергей </option>
+										<option value="185">Андреев Александр </option>
+										<option value="186">Формалев Андрей </option>
+										<option value="187">Чернов Сергей </option>
+										<option value="188">Игошкин Алексей </option>
+										<option value="189">Сидоров Рафик </option>
+										<option value="190">Щукин Антон </option>
+										<option value="191">Киселева Оксана </option>
+										<option value="192">Шевченко Юрий </option>
+										<option value="193">Куракин Максим </option>
+										<option value="194">Кузнецов Александр </option>
+										<option value="195">Корнилов Николай </option>
+										<option value="196">Дёмушкин Константин </option>
+										<option value="197">Соловьев Сергей </option>
+										<option value="198">Файрузов Александр </option>
+										<option value="199">Пекин Глеб </option>
+										<option value="200">Вячеслав 101 </option>
+										<option value="201">Грибанова Юлия </option>
+										<option value="202">Шкурдода Александр </option>
+										<option value="203">Зверев Анатолий </option>
+										<option value="204">Вдовиченко Александр </option>
+										<option value="205">Хруцкая Светлана </option>
+										<option value="206">Щукин Алексей </option>
+										<option value="207">Цвирко Евгений </option>
+										<option value="208">Алексеев Олег </option>
+										<option value="209">Мегадиски Покраска Покраска</option>
+										<option value="210">Халимов Бохадур </option>
+										<option value="211">Пазгалев Андрей </option>
+										<option value="212">Кужелев Николай </option>
+										<option value="213">Евтюков Николай </option>
+										<option value="214">Магомеднабиев Руслан </option>
+										<option value="215">Соловей Владимир </option>
+										<option value="216">Овтин Илья </option>
+										<option value="217">Ярош Артем </option>
+										<option value="218">Шушаков Анатолий </option>
+										<option value="219">Котляров Виталий </option>
+										<option value="220">Анисимова Ольга </option>
+										<option value="221">Ястремский Станислав </option>
+										<option value="222">Пронин Леонид </option>
+										<option value="223">Терёхин Константин </option>
+										<option value="224">Аверьянов Вадим </option>
+										<option value="225">Сергеенко Владлен </option>
+										<option value="226">Герасименко Дмитрий </option>
+										<option value="227">Герасимов Виталий </option>
+										<option value="228">Осипов Эрнест </option>
+										<option value="229">Филатов Кирилл </option>
+										<option value="230">Шевчук Михаил </option>
+										<option value="231">Нехай Денис </option>
+										<option value="232">Павлов Вячеслав </option>
+										<option value="233">Емелин Денис </option>
+										<option value="234">Васильев Максим </option>
+										<option value="235">Чёбота Александр </option>
+										<option value="236">Вайтулевич Андрей </option>
+										<option value="237">Гаджиев Константин </option>
+										<option value="238">Гавриков Денис </option>
+										<option value="239">Кудряшкина Евгения </option>
+										<option value="240">Щербаков Андрей </option>
+										<option value="241">Матвиенко Юлия </option>
+										<option value="242">Яковлев Василий </option>
+										<option value="243">Большаков Сергей </option>
+										<option value="244">Тарабурин Юрий </option>
+										<option value="245">Бовриков Мерген </option>
+										<option value="246">Неплюхин Александр </option>
+										<option value="247">Воронин Николай </option>
+										<option value="248">Сергеенко Даниил </option>
+										<option value="249">Радзевич Владислав </option>
+										<option value="250">Бахтиев Руслан </option>
+										<option value="251">Вершинин Евгений </option>
+										<option value="252">Алиев Фируз </option>
+										<option value="253">Тарасенко Никита </option>
+										<option value="254">Рудаков Евгений </option>
+										<option value="255">Джордж Запала </option>
+										<option value="256">Клюкин Николай </option>
+										<option value="257">Эрик Коме Мбах </option>
+										<option value="258">Игнатьев Максим </option>
+										<option value="259">Кишов Максим </option>
+										<option value="260">Борюшкин Сергей </option>
+										<option value="261">Белоус Александр </option>
+										<option value="262">Шамуратов Олег </option>
+										<option value="263">Ботоев Маир </option>
+										<option value="264">Голубченко Геннадий </option>
+										<option value="265">Брагин Влад </option>
+										<option value="266">Соловьёва Анастасия </option>
+										<option value="267">Жадаев Максим </option>
+										<option value="268">Серюгин Константин </option>
+										<option value="269">Фадеева Татьяна </option>
+										<option value="270">Визняк Ирина </option>
+										<option value="271">Исламов Александр </option>
+										<option value="272">Колосов Глеб </option>
+										<option value="273">Кудашев Дамир </option>
+										<option value="274">Кознов Алексей </option>
+										<option value="275">Горовой Леонид </option>
+										<option value="276">Захарова Ольга </option>
+										<option value="277">Протченко Евгений </option>
+										<option value="278">Фыафываыва </option>
+										<option value="279">Шевченко Александр </option>
+										<option value="280">Яцюк Максим </option>
+										<option value="281">Клушин Антон </option>
+										<option value="282">Исанов Мухаммад </option>
+										<option value="283">Степанцев Никита </option>
+										<option value="284">Хамидуллин Илья </option>
+										<option value="285">Хонин Михаил </option>
+										<option value="286">Тавостин Владислав </option>
+										<option value="287">Пакалин Игорь </option>
+										<option value="288">Поправко Герман </option>
+										<option value="289">Арефьев Антон </option>
+										<option value="290">Быков Михаил </option>
+										<option value="291">Рипинчик Яков </option>
+										<option value="292">Михайлов Владислав </option>
+										<option value="293">Павлов Лев </option>
+										<option value="294">Мухачев Данил </option>
+										<option value="295">Ситников Сергей </option>
+										<option value="296">Юданов Александр </option>
+										<option value="297">Коробов Андрей </option>
+										<option value="298">Кузнецов Максим </option>
+										<option value="299">Плисюк Дмитрий </option>
+										<option value="300">Бурков Никита </option>
+										<option value="301">Денисов Иван </option>
+										<option value="302">Нестеров Дмитрий </option>
+										<option value="303">Ракчеев Николай </option>
+										<option value="304">Гладков Евгений </option>
+										<option value="305">Герц Артур (Кассир) </option>
+										<option value="306">Козырев Александр </option>
+										<option value="307">Лобанов Даниил </option>
+										<option value="308">Мичурин Виктор </option>
+										<option value="309">Качалов Илья </option>
+										<option value="310">Астафьев Илья </option>
+										<option value="311">Горюнов Андрей </option>
+										<option value="312">Поликарпов Артем </option>
+										<option value="313">Рылов Андрей </option>
+										<option value="314">Елена Рыжова </option>
+										<option value="315">Иванова Ольга </option>
+										<option value="316">Тузова Маргарита </option>
+										<option value="317">Морозов Виталий </option>
+										<option value="318">Кон Даниил </option>
+										<option value="319">Дидович Дмитрий </option>
+										<option value="320">Дербин Максим </option>
+										<option value="321">Кошевой Даниил </option>
+										<option value="322">Лагутик Антон </option>
+										<option value="323">Победоносцев Илья </option>
+										<option value="324">Горев Павел </option>
+										<option value="325">Соколов Александр </option>
+										<option value="326">Кристина Чучина </option>
+										<option value="327">Мальцев Максим </option>
+										<option value="328">Однорогов Даниил </option>
+										<option value="329">Щавелев Алексей </option>
+										<option value="330">Иванов Ярослав </option>
+										<option value="331">Мараев Сергей </option>
+										<option value="332">Яцюк Максим (Кассир) </option>
+										<option value="333">Владимир Князев </option>
+										<option value="334">Текутьев Михаил </option>
+										<option value="335">Маслов Петр </option>
+										<option value="336">Луганский Александр </option>
+										<option value="337">Балагуров Алексей </option>
+										<option value="338">Давыдов Илья </option>
+										<option value="339">Кармановский Сергей </option>
+										<option value="340">Зверьев Иван </option>
+										<option value="341">Литвинов Дмитрий </option>
+										<option value="342">Воробьев Вячеслав </option>
+										<option value="343">Ураков Анатолий </option>
+										<option value="344">Комарь Сергей </option>
+										<option value="345">Кадиров Константин </option>
+										<option value="346">Цыбенко Роман </option>
+										<option value="347">Герц Артур (Мойщик) </option>
+										<option value="348">Григорьев Сергей </option>
+										<option value="349">Кутубаев Владислав </option>
+										<option value="350">Назаров Василий </option>
+										<option value="351">Макаров Юрий </option>
+										<option value="352">Аверьянов Вадим (Кассир) </option>
+										<option value="353">Богданов Валентин </option>
+										<option value="354">Корнезо Петр </option>
+										<option value="355">Твердохлебов Иван </option>
+										<option value="356">Заболотный Александр </option>
+										<option value="357">Газя Владислав </option>
+										<option value="358">Петраков Максим </option>
+										<option value="359">Силантьев Артур </option>
+										<option value="360">Налётов Никита </option>
+										<option value="361">Прошин Роман </option>
+										<option value="362">Ануар Бухарбаев </option>
+										<option value="363">Шалито Никита </option>
+										<option value="364">Сергей Тираспольский </option>
+										<option value="365">Федоров Владислав </option>
+										<option value="366">Рузанова Ангелина </option>
+										<option value="367">Кононов Алексей </option>
+										<option value="368">Корнезо Петр (Кассир) </option>
+										<option value="369">Смирнов Юрий </option>
+										<option value="370">Николаев Виктор </option>
+										<option value="371">Сергеенко Владлен (Кассир) </option>
+										<option value="372">Игошев Кирилл </option>
+										<option value="373">Соловьёва Анастасия </option>
+										<option value="374">Вертиков Артем </option>
+										<option value="375">Налётов Никита (Кассир) </option>
+										<option value="376">Андреев Игорь </option>
+										<option value="377">Димашова Екатерина </option>
+										<option value="378">Приходько Иван </option>
+										<option value="379">Салякаев Марат </option>
+										<option value="380">Артур Герц </option>
+										<option value="381">Никитин Андрей </option>
+										<option value="382">Ульянов Дмитрий </option>
+										<option value="383">Герасимов Сергей </option>
+										<option value="384">Дидович Дмитрий (Кассир) </option>
+										<option value="385">Алексеев Иван </option>
+										<option value="386">Маликов Ильдар </option>
+										<option value="387">Ганенков Дмитрий (Мойщик) </option>
+										<option value="388">Ильин Михаил </option>
+										<option value="389">Тихонов Александр </option>
+										<option value="390">Ганенков Дмитрий (Кассир) </option>
+										<option value="391">Никитин Кирилл </option>
+										<option value="392">Булашов Сергей </option>
+										<option value="393">Абрамова Анна </option>
+										<option value="394">Алан Карим </option>
+										<option value="395">Юлия Никитина </option>
+										<option value="396">Синицын Евгений </option>
+										<option value="397">Мякяляйнен Михаил </option>
+										<option value="398">Хромейчук Николай </option>
+										<option value="399">Шагеев Илья </option>
+										<option value="400">Каблуков Александр </option>
+										<option value="401">Иванов Евгений </option>
+										<option value="402">Газя Владислав (Кассир) </option>
+										<option value="403">Джанбулатов Курбан </option>
+										<option value="404">Богданов Илья </option>
+										<option value="405">Данилина Елена </option>
+										<option value="406">Щедров Александр </option>
+										<option value="407">Аксёнов Никита </option>
+										<option value="408">Аксёнов Никита (Шm) </option>
+										<option value="409">Широков Андрей </option>
+										<option value="410">Дроздов Сергей </option>
+										<option value="411">Тарасенко Никита </option>
+										<option value="412">Патрушев Илья </option>
+										<option value="413">Дмитрий Никольский </option>
+										<option value="414">Трушкин Алексей </option>
+										<option value="415">Афанасенко Павел </option>
+										<option value="416">Клейн Денис </option>
+										<option value="417">Гырдымов Марк </option>
+										<option value="418">Армине </option>
+										<option value="419">Попов Владислав </option>
+										<option value="420">Маликов Ильдар </option>
+										<option value="421">Костин Вадим </option>
+										<option value="422">Иванов Никита </option>
+										<option value="423">Алан Карим </option>
+										<option value="424">Федор Конюхофф </option>
+										<option value="425">Артем Межейников </option>
+									</select>
+								</div>
+
+								<div
+									class="xs:grid xs:grid-cols-[5.81rem_minmax(1rem,_26.875rem)] md:grid-cols-[5.31rem_minmax(1rem,_26.875rem)] md:pl-6">
+									<label class="self-center text-sm text-gray-500 inline-block mb-1.5 xs:mb-0"
+										for="svc_type">Тип&nbsp;услуги</label>
+
+									<select id="svc_type" name="svc_type" data-hs-select='{
+										"placeholder": "Нет выбранных значений",
+										"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+										"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6a33cf\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}' class="hidden">
+										<option value="all" required="required">Нет выбранных значений</option>
+										<option value="tire_svc">Шиномонтаж</option>
+										<option value="wheel_alignment">Развал-схождение</option>
+										<option value="car_wash">Автомойка</option>
+										<option value="dry_cleaning">Химчистка</option>
+										<option value="protective_coatings">Защитные покрытия</option>
+										<option value="headlight_armoring">Полировка и&nbsp;бронирование фар</option>
+										<option value="wheel_repair">Ремонт шин и&nbsp;дисков</option>
+										<option value="wheel_studding">Ошиповка колес</option>
+										<option value="argon_welding">Аргоновая сварка</option>
+										<option value="conditioning_refilling">Заправка кондиционеров</option>
+										<option value="tire_monitoring_svc">Контроль давления в&nbsp;шинах</option>
+									</select>
+								</div>
+
+							</form>
+						</div>
+						<!-- End main dashbord tab-1 filter -->
+						<div class="mb-6">
+							<dl class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
+								<div
+									class="flex flex-col gap-y-2.5 w-full p-5 rounded-lg bg-white shadow-md sm:col-span-2 lg:col-span-1">
+									<dt class="p-1 text-gray-700 leading-[1.2]">Выручка, руб</dt>
+									<dd class="p-1 text-5xl font-bold text-pitpos-700 leading-[1.25] whitespace-nowrap">7 123
+										876</dd>
+								</div>
+
+								<div class="flex flex-col gap-y-2.5 w-full p-5 rounded-lg bg-white shadow-md">
+									<dt class="p-1 text-gray-700 leading-[1.2]">Средний чек, руб</dt>
+									<dd class="p-1 text-5xl font-bold text-pitpos-700 leading-[1.25] whitespace-nowrap">4 898</dd>
+								</div>
+
+								<div class="flex flex-col gap-y-2.5 w-full p-5 rounded-lg bg-white shadow-md">
+									<dt class="p-1 text-gray-700 leading-[1.2]">Количество заказов, руб</dt>
+									<dd class="p-1 text-5xl font-bold text-pitpos-700 leading-[1.25] whitespace-nowrap">898</dd>
+								</div>
+							</dl>
+						</div>
+						<!-- End stats bages block -->
+						<div class="mb-6 flex flex-col gap-3 lg:gap-6 lg:flex-row">
+							<div class="w-full p-5 rounded-lg bg-white shadow-md">
+								<h2 class="flex items-center font-semibold leading-[1.5] mb-1.5 py-2">
+									<svg class="size-6 stroke-pitpos-700 fill-transparent mr-2.5" viewBox="0 0 24 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#dollar-icon"></use>
+									</svg>
+
+									<span class="text-pitpos-700">Выручка по&nbsp;дням, руб</span>
+								</h2>
+
+								<div id="hs-single-area-chart"></div>
+							</div>
+
+							<div class="w-full pl-5 py-5 xs:p-5 rounded-lg bg-white shadow-md">
+								<h2 class="flex items-center font-semibold leading-[1.5] mb-1.5 py-2">
+									<svg class="size-6 stroke-pitpos-700 fill-transparent mr-2.5" viewBox="0 0 24 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#pie-chart-icon"></use>
+									</svg>
+
+									<span class="text-pitpos-700">Распределение платежей</span>
+								</h2>
+
+								<div class="flex flex-col justify-center items-center">
+									<div class="lg:mb-5 text-pitpos-700" id="hs-doughnut-chart"></div>
+
+									<!-- Legend Indicator -->
+									<div class="xs:px-1 w-full flex items-center justify-between">
+										<div class="inline-flex items-center max-w-45 w-full">
+											<span class="size-5 inline-block bg-pitpos-700 rounded-sm me-2"></span>
+											<span class="text-xs text-gray-600 xs:text-sm">
+												Карта
+											</span>
+										</div>
+										<div class="inline-flex items-center max-w-45 w-full">
+											<span class="size-5 inline-block bg-accent rounded-sm me-2"></span>
+											<span class="text-xs text-gray-600 xs:text-sm">
+												Наличные
+											</span>
+										</div>
+										<div class="inline-flex items-center max-w-45 w-full">
+											<span class="size-5 inline-block bg-pitpos-450 rounded-sm me-2"></span>
+											<span class="text-xs text-gray-600 xs:text-sm">
+												Счет
+											</span>
+										</div>
+									</div>
+									<!-- End Legend Indicator -->
+								</div>
+							</div>
+						</div>
+						<!-- End graphs block -->
+						<div
+							class="p-5 rounded-lg bg-white shadow-md  overflow-x-auto [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700 xl:w-full ">
+							<h2 class="flex items-center font-semibold leading-[1.5] py-2">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent mr-2.5" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
+								</svg>
+
+								<span class="text-pitpos-700">Общие данные по&nbsp;мастерским</span>
+							</h2>
+
+							<div class="flex justify-end min-w-244">
+								<div class="flex flex-col gap-y-1 w-full">
+									<h3 class="py-2.5 pr-2.5 text-[0.9375rem] leading-[1.2]">Количество заказов</h3>
+
+									<ul class="h-full text-[0.9375rem] leading-[1.2] prose prose-li:h-9.5 prose-li:py-2.5">
+										<li>ул. Ленина, 15</li>
+										<li>ул. Солнечная, 22</li>
+										<li>ул. Московская, 65</li>
+										<li>ул. Бианки, 15</li>
+										<li>Пулковское ш., д. 19</li>
+										<li>ул. Софьи Ковалевской, д. 22</li>
+										<li>пр. Металлистов, д. 116</li>
+										<li>НЕсофьяНЕ</li>
+										<li>Муринка</li>
+										<li>Шафировский</li>
+										<li>Кудрово, Ленинградская ул., д. 9/8</li>
+										<li>Испытателей</li>
+										<li>Дундича</li>
+										<li>Фермское</li>
+										<li>пр. Сизова д. 2</li>
+										<li>Кудровский</li>
+										<li>ул. Васенко, д. 12</li>
+										<li>пр. Просвещения д. 74 корп. 2 лит. А</li>
+										<li>ул. Руставели д. 43 лит. А</li>
+										<li>ул. Савушкина д. 116 лит. А</li>
+										<li>ПО</li>
+										<li>ТЕСТ</li>
+										<li>Мурманское</li>
+										<li>Пулковское ш., д. 43/1</li>
+										<li>Зеленогорск, пр. Ленина, д. 88</li>
+										<li>Мойка, Пулковское шоссе, д. 19А</li>
+										<li>Московское ш., 25/1В</li>
+										<li>пр. Ветеранов, 167/2</li>
+										<li>Шушары, Московское ш., д. 16/7</li>
+										<li>ТО Зеленогорск, пр. Ленина, д. 88И</li>
+										<li>Парковка</li>
+										<li>пр. Испытателей, д. 5 корп. 2 лит. А</li>
+									</ul>
+								</div>
+
+								<div class="flex flex-col gap-y-1">
+									<h3 class="p-2.5 text-[0.9375rem] leading-[1.2]">Количество заказов</h3>
+
+									<div class="w-75" id="hs-horizontal-bar-chart-orders"></div>
+								</div>
+
+								<div class="flex flex-col gap-y-1">
+									<h3 class="p-2.5 text-[0.9375rem] leading-[1.2] ">Выручка</h3>
+
+									<div class="w-75" id="hs-horizontal-bar-chart-revenue"></div>
+								</div>
+							</div>
+						</div>
+						<!-- End general information on workshops -->
+					</div>
+
+					<div id="dashboard-2" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-2">
+						<p class="text-xl font-semibold text-gray-500">Ремонт дисков</p>
+
+					</div>
+
+					<div id="dashboard-3" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-3">
+						<p class="text-xl font-semibold text-gray-500">Ремонт шин</p>
+					</div>
+
+					<div id="dashboard-4" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-4">
+						<p class="text-xl font-semibold text-gray-500">Автомойка</p>
+					</div>
+
+					<div id="dashboard-5" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-5">
+						<p class="text-xl font-semibold text-gray-500">Автосервис</p>
+					</div>
+
+					<div id="dashboard-6" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-6">
+						<p class="text-xl font-semibold text-gray-500">Мастера</p>
+					</div>
+
+					<div id="dashboard-7" class="hidden" role="tabpanel" aria-labelledby="dashboard-item-7">
+						<p class="text-xl font-semibold text-gray-500">Маркетинг</p>
+					</div>
+				</div>
+			</div>
+			<!-- End tabs -->
+		</div>
+	</main>
+
+	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+
+
+	<script src="./temporary-js-for-preline-charts/lodash.min.js"></script>
+	<script src="./temporary-js-for-preline-charts/apexcharts.min.js"></script>
+	<script src="./temporary-js-for-preline-charts/helper-apexcharts.js"></script>
+
+	<script>
+		window.addEventListener('load', () => {
+			// Apex Single Area Chart
+			(function () {
+				buildChart('#hs-single-area-chart', (mode) => ({
+					chart: {
+						height: 325,
+						type: 'area',
+						toolbar: {
+							show: true
+						},
+						zoom: {
+							enabled: true
+						}
+					},
+					series: [
+						{
+							name: 'week-revenue',
+							data: [360000, 390000, 570000, 405000, 395000, 407000, 540000, 405000]
+						}
+					],
+					legend: {
+						show: false
+					},
+					dataLabels: {
+						enabled: false
+					},
+					stroke: {
+						curve: 'straight',
+						width: 2
+					},
+					grid: {
+						strokeDashArray: 2
+					},
+					fill: {
+						type: 'gradient',
+						gradient: {
+							type: 'vertical',
+							shadeIntensity: 1,
+							opacityFrom: 0.1,
+							opacityTo: 0.8
+						}
+					},
+					xaxis: {
+						type: 'category',
+						tickPlacement: 'on',
+						categories: [
+							'15 окт',
+							'16 окт',
+							'17 окт',
+							'18 окт',
+							'19 окт',
+							'20 окт',
+							'21 окт',
+							'22 окт'
+						],
+						axisBorder: {
+							show: false
+						},
+						axisTicks: {
+							show: false
+						},
+						crosshairs: {
+							stroke: {
+								dashArray: 0
+							},
+							dropShadow: {
+								show: false
+							}
+						},
+						tooltip: {
+							enabled: false
+						},
+						labels: {
+							style: {
+								colors: '#717F9B',
+								fontSize: '12px',
+								fontFamily: 'Inter, ui-sans-serif',
+								fontWeight: 400
+							},
+							formatter: (title) => {
+								let t = title;
+
+								if (t) {
+									const newT = t.split(' ');
+									t = `${newT[0]} ${newT[1].slice(0, 3)}`;
+								}
+
+								return t;
+							}
+						}
+					},
+					yaxis: {
+						labels: {
+							align: 'left',
+							minWidth: 0,
+							maxWidth: 140,
+							style: {
+								colors: '#9ca3af',
+								fontSize: '12px',
+								fontFamily: 'Inter, ui-sans-serif',
+								fontWeight: 400
+							},
+							formatter: (value) => value >= 1000 ? `${value / 1000}k` : value
+						}
+					},
+					tooltip: {
+						x: {
+							format: 'MMMM yyyy'
+						},
+						y: {
+							formatter: (value) => `${value >= 1000 ? `${value / 1000}k` : value}`
+						},
+						custom: function (props) {
+							const { categories } = props.ctx.opts.xaxis;
+							const { dataPointIndex } = props;
+							const title = categories[dataPointIndex].split(' ');
+							const newTitle = `${title[0]} ${title[1]}`;
+
+							return buildTooltip(props, {
+								title: newTitle,
+								mode,
+								valuePrefix: '',
+								hasTextLabel: true,
+								wrapperExtClasses: 'min-w-28'
+							});
+						}
+					},
+					responsive: [{
+						breakpoint: 1116,
+						options: {
+							chart: {
+								height: 200
+							},
+							labels: {
+								style: {
+									colors: '#9ca3af',
+									fontSize: '11px',
+									fontFamily: 'Inter, ui-sans-serif',
+									fontWeight: 400
+								},
+								offsetX: -2,
+								formatter: (title) => title.slice(0, 3)
+							},
+							yaxis: {
+								labels: {
+									align: 'left',
+									minWidth: 0,
+									maxWidth: 140,
+									style: {
+										colors: '#9ca3af',
+										fontSize: '11px',
+										fontFamily: 'Inter, ui-sans-serif',
+										fontWeight: 400
+									},
+									formatter: (value) => value >= 1000 ? `${value / 1000}k` : value
+								}
+							},
+						},
+					}]
+				}), {
+					colors: ['#6a33cf', '#9333ea'],
+					fill: {
+						gradient: {
+							shadeIntensity: .1,
+							opacityFrom: .5,
+							opacityTo: 0,
+							stops: [50, 100, 50, 100]
+						}
+					},
+					xaxis: {
+						labels: {
+							style: {
+								colors: '#9ca3af'
+							}
+						}
+					},
+					yaxis: {
+						labels: {
+							style: {
+								colors: '#9ca3af'
+							}
+						}
+					},
+					grid: {
+						borderColor: '#e5e7eb'
+					}
+				}, {
+					colors: ['#3b82f6', '#a855f7'],
+					fill: {
+						gradient: {
+							shadeIntensity: .1,
+							opacityFrom: .5,
+							opacityTo: 0,
+							stops: [50, 100, 50, 100]
+						}
+					},
+					xaxis: {
+						labels: {
+							style: {
+								colors: '#a3a3a3',
+							}
+						}
+					},
+					yaxis: {
+						labels: {
+							style: {
+								colors: '#a3a3a3'
+							}
+						}
+					},
+					grid: {
+						borderColor: '#404040'
+					}
+				});
+			})();
+		});
+	</script>
+
+	<script>
+		window.addEventListener('load', () => {
+			// Apex Doughnut Chart
+			(function () {
+				const roundGraphValues = [5770339, 1068581, 284955];
+				const totalSum = roundGraphValues.reduce((a, b) => a + b, 0);
+
+				buildChart('#hs-doughnut-chart', (mode) => ({
+					chart: {
+						height: 265,
+						width: 265,
+						type: 'donut',
+						zoom: {
+							enabled: true
+						}
+					},
+					plotOptions: {
+						pie: {
+							donut: {
+								size: '60%',
+								labels: {
+									show: true,
+									value: {
+										fontSize: '1.3rem',
+										fontWeight: 700,
+										color: '#6a33cf',
+									},
+									total: {
+										show: true,
+										showAlways: true,
+										label: '',
+										formatter: function (w) { return totalSum.toLocaleString(); },
+									}
+								}
+							},
+							dataLabels: {
+								offset: 20,
+								minAngleToShowLabel: 10,
+							},
+						},
+					},
+					series: roundGraphValues,
+					legend: {
+						show: false
+					},
+					dataLabels: {
+						enabled: true,
+						formatter: function (val, { seriesIndex, w }) {
+							return w.config.series[seriesIndex].toLocaleString();
+						},
+						style: {
+							fontSize: '1rem',
+							fontWeight: 'normal',
+							colors: ['#fff'],
+						},
+						background: {
+							enabled: true,
+							foreColor: '#5A5E67',
+							padding: 4,
+							borderRadius: 2,
+							borderWidth: 1,
+							borderColor: '#E4E7EC',
+							opacity: 1,
+							dropShadow: {
+								enabled: true,
+								top: 1,
+								left: 1,
+								blur: 1,
+								color: '#000',
+								opacity: 0.5
+							}
+						},
+						dropShadow: {
+							enabled: false
+						}
+					},
+					stroke: {
+						width: 5
+					},
+					grid: {
+						padding: {
+							top: 40,
+							bottom: 40,
+							left: 40,
+							right: 40
+						}
+					},
+					states: {
+						hover: {
+							filter: {
+								type: 'none'
+							}
+						}
+					},
+					tooltip: {
+						enabled: false
+					}
+				}), {
+					colors: ['#6a33cf', '#FE4F02', '#B499E7'],
+					stroke: {
+						colors: ['rgb(255, 255, 255)']
+					}
+				}, {
+					colors: ['#3b82f6', '#22d3ee', '#404040'],
+					stroke: {
+						colors: ['rgb(38, 38, 38)']
+					}
+				});
+			})();
+		});
+	</script>
+	<!-- https://preline.co/docs/charts.html -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- from date-range input -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script><!-- from date-range input -->
+	<script>
+		/* from date-range input  */
+		const clearDataPickerBtn = document.getElementById('clear-date-btn');
+		let calendar = flatpickr("#date-range", {
+			mode: "range",
+			enableTime: true,
+			dateFormat: "Y-m-d H:i",
+			locale: "ru",
+			onChange: function () {
+				if (clearDataPickerBtn && clearDataPickerBtn.classList.contains('hidden')) {
+					clearDataPickerBtn.classList.remove('hidden');
+				}
+			},
+		});
+		clearDataPickerBtn.addEventListener('click', function () {
+			calendar.clear();
+			clearDataPickerBtn.classList.add('hidden');
+		});
+	</script>
+
+	<script>
+		window.addEventListener('load', () => {
+			// Apex Horizontal Bar Chart (oreders-counter)
+			(function () {
+				const horizontalBarOrdersValues = [112, 242, 102, 237, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 220, 230, 240, 250, 260, 270, 280];
+
+				buildChart('#hs-horizontal-bar-chart-orders', (mode) => ({
+					chart: {
+						type: 'bar',
+						height: 1436,
+						width: 250,
+						toolbar: {
+							show: false
+						},
+						zoom: {
+							enabled: false
+						}
+					},
+					series: [
+						{
+							name: 'orders-counter',
+							data: horizontalBarOrdersValues
+						}
+					],
+					plotOptions: {
+						bar: {
+							horizontal: true,
+							barHeight: '30%',
+							dataLabels: {
+								position: 'top'
+							}
+						}
+					},
+					legend: {
+						show: true
+					},
+					dataLabels: {
+						enabled: true,
+						offsetY: 8,
+						textAnchor: 'start',
+						offsetX: 12,
+						style: {
+							fontSize: '1rem',
+							fontWeight: 'normal',
+							fontFamily: 'Inter, Arial, sans-serif',
+							colors: ['#303336'],
+						}
+					},
+					stroke: {
+						show: false
+					},
+					tooltip: {
+						enabled: false
+					}
+				}), {
+					colors: ['#FE4F02'],
+					xaxis: {
+						axisBorder: {
+							show: false
+						},
+						axisTicks: {
+							show: false
+						},
+						labels: {
+							style: {
+								colors: 'transparent',
+							}
+						}
+					},
+					yaxis: {
+						labels: {
+							style: {
+								colors: '#fff'
+							}
+						}
+					},
+					grid: {
+						borderColor: 'transparent',
+						padding: {
+							top: -30,
+							bottom: -50,
+							left: -10,
+							right: 50
+						}
+					}
+				});
+			})();
+		});
+	</script>
+
+	<script>
+		window.addEventListener('load', () => {
+			// Apex Horizontal Bar Chart (from revenue)
+			(function () {
+				const horizontalBarRevenueValues = [453988, 578943, 399877, 607866, 100300, 100400, 100500, 100600, 100700, 100800, 100900, 200000, 200100, 200200, 200300, 200400, 200500, 200600, 200700, 200700, 200800, 200900, 300000, 300100, 300200, 300300, 300400, 300500, 300600, 300700, 300800];
+
+				buildChart('#hs-horizontal-bar-chart-revenue', (mode) => ({
+					chart: {
+						type: 'bar',
+						height: 1436,
+						width: 250,
+						toolbar: {
+							show: false
+						},
+						zoom: {
+							enabled: false
+						}
+					},
+					series: [
+						{
+							name: 'orders-counter',
+							data: horizontalBarRevenueValues
+						}
+					],
+					plotOptions: {
+						bar: {
+							horizontal: true,
+							barHeight: '30%',
+							dataLabels: {
+								position: 'top'
+							}
+						}
+					},
+					legend: {
+						show: true
+					},
+					dataLabels: {
+						enabled: true,
+						formatter: function (val) {
+							return val.toLocaleString();
+						},
+						offsetY: 8,
+						textAnchor: 'start',
+						offsetX: 12,
+						style: {
+							fontSize: '1rem',
+							fontWeight: 'normal',
+							fontFamily: 'Inter, Arial, sans-serif',
+							colors: ['#303336'],
+						}
+					},
+					stroke: {
+						show: false
+					},
+					tooltip: {
+						enabled: false
+					}
+				}), {
+					colors: ['#6a33cf'],
+					xaxis: {
+						axisBorder: {
+							show: false
+						},
+						axisTicks: {
+							show: false
+						},
+						labels: {
+							style: {
+								colors: 'transparent',
+							}
+						}
+					},
+					yaxis: {
+						labels: {
+							style: {
+								colors: '#fff'
+							}
+						}
+					},
+					grid: {
+						borderColor: 'transparent',
+						padding: {
+							top: -30,
+							bottom: -50,
+							left: -10,
+							right: 50
+						}
+					}
+				});
+			})();
+		});
+	</script>
+</body>
+
+</html>
