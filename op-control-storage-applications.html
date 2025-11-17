@@ -701,8 +701,8 @@
 				<div class="flex flex-col justify-end gap-y-1 w-full">
 					<label class="text-sm text-gray-500" for="register_date">Дата записи клиента</label>
 					<input class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
-						focus:ring-2 cursor-pointer invalid:ring-error invalid:focus:ring-error date-picker-indicator-violet" type="date"
-						id="register_date" name="register_date">
+						focus:ring-2 cursor-pointer invalid:ring-error invalid:focus:ring-error date-picker-indicator-violet"
+						type="datetime-local" id="register_date" name="register_date">
 				</div>
 
 				<div
@@ -848,6 +848,8 @@
 				prose-tr:border-white 
 				prose-tr:border-b-2 
 				prose-tr:[&>td:first-child]:max-w-8.5
+					prose-td:[&[data-client-state=true]>svg:last-child]:hidden
+					prose-td:[&[data-client-state=false]>svg:first-child]:hidden
 					prose-td:[&>a]:text-pitpos-700
 					prose-td:[&>a]:duration-300
 					prose-td:[&>a]:hover:text-pitpos-500
@@ -925,8 +927,14 @@
 									865774
 								</a>
 							</td>
-							<td>
-								Ok
+							<td data-client-state="true">
+								<svg class="size-5 stroke-success-035 fill-transparent" viewBox="0 0 12 10">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								</svg>
+
+								<svg class="size-5 fill-ready" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#attantion-icon"></use>
+								</svg>
 							</td>
 							<td>
 								ул. Софьи Ковалевской
@@ -964,8 +972,14 @@
 									865775
 								</a>
 							</td>
-							<td>
-								Error
+							<td data-client-state="false">
+								<svg class="size-5 stroke-success-035 fill-transparent" viewBox="0 0 12 10">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								</svg>
+
+								<svg class="size-5 fill-ready" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#attantion-icon"></use>
+								</svg>
 							</td>
 							<td>
 								ул. Софьи Ковалевской
@@ -1003,8 +1017,14 @@
 									865776
 								</a>
 							</td>
-							<td>
-								Ok
+							<td data-client-state="true">
+								<svg class="size-5 stroke-success-035 fill-transparent" viewBox="0 0 12 10">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								</svg>
+
+								<svg class="size-5 fill-ready" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#attantion-icon"></use>
+								</svg>
 							</td>
 							<td>
 								ул. Софьи Ковалевской
@@ -1042,8 +1062,14 @@
 									865777
 								</a>
 							</td>
-							<td>
-								Ok
+							<td data-client-state="true">
+								<svg class="size-5 stroke-success-035 fill-transparent" viewBox="0 0 12 10">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								</svg>
+
+								<svg class="size-5 fill-ready" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#attantion-icon"></use>
+								</svg>
 							</td>
 							<td>
 								ул. Софьи Ковалевской
@@ -1081,8 +1107,14 @@
 									865778
 								</a>
 							</td>
-							<td>
-								Error
+							<td data-client-state="false">
+								<svg class="size-5 stroke-success-035 fill-transparent" viewBox="0 0 12 10">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								</svg>
+
+								<svg class="size-5 fill-ready" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#attantion-icon"></use>
+								</svg>
 							</td>
 							<td>
 								ул. Софьи Ковалевской
