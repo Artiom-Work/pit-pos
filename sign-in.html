@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" sizes="16x16" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
+	<title>PitPos | Вход</title>
+	<link href="./styles/pages/styles-op.css" rel="stylesheet">
+</head>
+
+<body class="flex items-center justify-center bg-gray-50 h-full w-full">
+	<div class="w-full max-w-87.5 max-h-88.5 bg-white rounded-md p-7.5 shadow-lg">
+		<header class="mb-6 flex justify-center">
+			<svg class="fill-accent w-35 h-15" viewBox="0 0 140 60">
+				<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
+			</svg>
+		</header>
+
+		<main class="">
+			<form class="mb-6 w-full flex flex-col gap-6">
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="email">E-mail</label>
+					<input
+						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error valid:ring-success"
+						id="email" name="email" type="email" placeholder="alexander.ivanov@supershina.ru" required>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="password">Пароль</label>
+					<div class="relative">
+						<input
+							class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error valid:focus:ring-success disabled:opacity-50 disabled:pointer-events-none"
+							id="hs-toggle-password" type="password" name="password" placeholder="Введите пароль" required>
+						<button type="button" data-hs-toggle-password='{
+								"target": "#hs-toggle-password"
+							}' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-hidden focus:text-pitpos-700">
+							<svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+								<path class="hs-password-active:hidden"
+									d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+								<path class="hs-password-active:hidden"
+									d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+								<line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+								<path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+								<circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<button
+					class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer whitespace-nowrap duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98"
+					type="submit">Войти</button>
+			</form>
+		</main>
+	</div>
+
+
+	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+</body>
+
+</html>
