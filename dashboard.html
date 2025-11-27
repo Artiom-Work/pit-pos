@@ -47,8 +47,10 @@
 					</div>
 				</a>
 
-				<time class="hidden text-[15px] sm:block" datetime="2025-09-03">3 сентября 2025 г.</time>
-				<time class="hidden text-xl font-bold md:block" datetime="10:38:22">10:38:22</time>
+				<div class="hidden flex flex-col items-end sm:flex">
+					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -78,11 +80,12 @@
 					for="menu-toggle">
 				</label>
 
-				<nav class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80">
+				<nav
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
 					<ul>
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
-								href="#!" title="Дашборд">
+								href="./dashboard.html" title="Дашборд">
 								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
@@ -314,12 +317,7 @@
 							</label>
 
 							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-36 peer-checked:opacity-100">
-								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="./users-owners.html">Владельцы</a>
-								</li>
-
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Сотрудники</a>
@@ -361,7 +359,7 @@
 							</label>
 
 							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-108 peer-checked:opacity-100">
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Услуги</a>
@@ -375,6 +373,11 @@
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-my-companies.html">Мои компании</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -655,7 +658,7 @@
 											"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
 											"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 											"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-											"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6A33CF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+											"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 										}' class="hidden">
 										<option selected="selected" value="">Все</option>
 										<option value="workshop_1">
@@ -761,7 +764,7 @@
 										"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
 										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 										"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6A33CF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 									}' class="hidden">
 										<option selected="selected" value="all">Нет выбранных значений</option>
 										<option value="1">Андрей Никишин Никишин</option>
@@ -1196,7 +1199,7 @@
 										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 										"optionTemplate": 
 										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#6a33cf\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+										"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 									}' class="hidden">
 										<option value="all" required="required">Нет выбранных значений</option>
 										<option value="tire_svc">Шиномонтаж</option>
@@ -1553,7 +1556,7 @@
 						},
 					}]
 				}), {
-					colors: ['#6a33cf', '#9333ea'],
+					colors: ['#1b0939', '#9333ea'],
 					fill: {
 						gradient: {
 							shadeIntensity: .1,
@@ -1636,7 +1639,7 @@
 									value: {
 										fontSize: '1.3rem',
 										fontWeight: 700,
-										color: '#6a33cf',
+										color: '#1b0939',
 									},
 									total: {
 										show: true,
@@ -1709,7 +1712,7 @@
 						enabled: false
 					}
 				}), {
-					colors: ['#6a33cf', '#FE4F02', '#B499E7'],
+					colors: ['#1b0939', '#FE4F02', '#B499E7'],
 					stroke: {
 						colors: ['rgb(255, 255, 255)']
 					}
@@ -1893,7 +1896,7 @@
 						enabled: false
 					}
 				}), {
-					colors: ['#6a33cf'],
+					colors: ['#1b0939'],
 					xaxis: {
 						axisBorder: {
 							show: false

@@ -35,14 +35,15 @@
 	--pitpos-50: #fefefd;
 	--pitpos-100: #f5f2f9;
 	--pitpos-200: #e9e1f2;
-	--pitpos-300: #ddbdff;
-	--pitpos-400: #bf9dfe;
-	--pitpos-500: #9d67ff;
-	--pitpos-600: #7d47db;
-	--pitpos-700: #6a33cf;
-	--pitpos-800: #4807b8;
+	--pitpos-300: #d3ccda;
+	--pitpos-400: #a89bc2;
+	--pitpos-500: #816ea4;
+	--pitpos-600: #543a80;
+	--pitpos-700: #1b0939;
+	--pitpos-800: #553e7d;
 	--pitpos-900: #39066b;
 	--pitpos-950: #131216;
+	--pitpos-: #131216;
 }
 
 @theme {
@@ -78,13 +79,13 @@
 	--color-pitpos-50: #fefefd;
 	--color-pitpos-100: #f5f2f9;
 	--color-pitpos-200: #e9e1f2;
-	--color-pitpos-300: #ddbdff;
-	--color-pitpos-400: #bf9dfe;
+	--color-pitpos-300: #d3ccda;
+	--color-pitpos-400: #a89bc2;
 	--color-pitpos-450: #B499E7;
-	--color-pitpos-500: #9d67ff;
-	--color-pitpos-600: #7d47db;
-	--color-pitpos-700: #6a33cf;
-	--color-pitpos-800: #4807b8;
+	--color-pitpos-500: #816ea4;
+	--color-pitpos-600: #543a80;
+	--color-pitpos-700: #1b0939;
+	--color-pitpos-800: #553e7d;
 	--color-pitpos-900: #39066b;
 
 	--breakpoint-xs: 29.99rem;

@@ -47,8 +47,10 @@
 					</div>
 				</a>
 
-				<time class="hidden text-[15px] sm:block" datetime="2025-09-03">3 сентября 2025 г.</time>
-				<time class="hidden text-xl font-bold md:block" datetime="10:38:22">10:38:22</time>
+				<div class="hidden flex flex-col items-end sm:flex">
+					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+				</div>
 			</div>
 		</div>
 
@@ -79,11 +81,12 @@
 					for="menu-toggle">
 				</label>
 
-				<nav class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80">
+				<nav
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
 					<ul>
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
-								href="#!" title="Дашборд">
+								href="./dashboard.html" title="Дашборд">
 								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
@@ -315,12 +318,7 @@
 							</label>
 
 							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-36 peer-checked:opacity-100">
-								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="./users-owners.html">Владельцы</a>
-								</li>
-
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Сотрудники</a>
@@ -362,7 +360,7 @@
 							</label>
 
 							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-108 peer-checked:opacity-100">
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Услуги</a>
@@ -376,6 +374,11 @@
 								<li class="w-full min-h-12 inline-flex items-center">
 									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-my-companies.html">Мои компании</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
@@ -654,6 +657,13 @@
 					</a>
 				</li>
 
+				<li class="bg-sky-300 mb-2 border-1 rounded-md border-pitpos-700">
+					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+						href="./reference-my-companies.html">
+						Мои&nbsp;компании(Справочник).
+					</a>
+				</li>
+
 				<li class="mb-2 border-1 rounded-md border-pitpos-700">
 					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 						href="./loyalty-promo-codes.html">
@@ -669,21 +679,21 @@
 					</a>
 				</li>
 
-				<li class="bg-sky-300 mb-2 border-1 rounded-md border-pitpos-700">
+				<li class="bg-red-300 mb-2 border-1 rounded-md border-pitpos-700">
 					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 						href="./users-owners.html">
 						Владельцы(Пользователи)
 					</a>
 				</li>
 
-				<li class="bg-sky-300 mb-2 border-1 rounded-md border-pitpos-700">
+				<li class="bg-red-300 mb-2 border-1 rounded-md border-pitpos-700">
 					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 						href="./users-owner.html">
 						Карточка владельца(Пользователи)
 					</a>
 				</li>
 
-				<li class="bg-sky-300 mb-2 border-1 rounded-md border-pitpos-700">
+				<li class="bg-red-300 mb-2 border-1 rounded-md border-pitpos-700">
 					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
 						href="./users-create-new-owner.html">
 						Создание владельца(Пользователи)
