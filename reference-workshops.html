@@ -289,45 +289,16 @@
 							</ul>
 						</li>
 
-						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
-								href="#!" title="Пользователи">
-
+								href="./users.html" title="Пользователи">
 								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-								href="#!">Пользователи</a>
-
-							<input class="hidden peer" id="menu-item-toggle-5" type="radio" name="submenu">
-							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
-								for="menu-item-toggle-5">
-								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
-									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-								</svg>
-							</label>
-
-							<input class="hidden" id="close-submenu-5" type="radio" name="submenu">
-							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
-								for="close-submenu-5">
-							</label>
-
-							<ul
-								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
-								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Сотрудники</a>
-								</li>
-
-								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Помощники</a>
-								</li>
-							</ul>
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./users.html">Пользователи</a>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
@@ -556,18 +527,18 @@
 			<nav class="xl:container">
 				<ul class="flex flex-wrap">
 					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
 							href="./index.html">Главная&nbsp;-&nbsp;</a>
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500" href="#!">
+						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500" href="#!">
 							Справочники&nbsp;/&nbsp;
 						</a>
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[12px] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
 							href="./reference-workshops.html">
 							Мастерские
 						</a>
@@ -776,18 +747,18 @@
 						class="px-5 py-3  bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
 						type="submit">Сохранить</button>
 					<button
-						class="px-2.5 py-1.5 flex items-center  gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98 mb-1.5 self-end xl:self-center xl:mb-0"
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98 mb-1.5 self-end xl:self-center xl:mb-0"
 						type="reset">
-						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 						</svg>
 
-						<span class="text-dark-red text-sm font-medium">Сбросить</span>
+						<span class="text-accent text-sm font-medium">Сбросить</span>
 					</button>
 				</div>
 			</form>
 			<!-- End MAIN filter of workshops -->
-			<div class="mb-6 w-full flex items-center">
+			<div class="mb-6 w-full flex flex-col gap-3  sm:flex-row sm:items-center sm:justify-between">
 				<form class="flex flex-col gap-3 sm:flex-row">
 					<div>
 						<input class="hidden peer" type="checkbox" id="filter-workshops-all" checked>
@@ -810,6 +781,9 @@
 							for="filter-workshops-finished">Завершенные</label>
 					</div>
 				</form>
+
+				<a class="font-bold text-sm text-accent rounded-sm border-1 border-pitpos-700 ring-0 ring-accent px-2.5 py-1 leading-[1.71429] duration-300 will-change-transform hover:border-accent hover:ring-1 active:scale-98 active:brightness-90 active:bg-pitpos-100 active:ring-0 active:border-pitpos-700 self-end"
+					href="#!">Добавить&nbsp;мастерскую</a>
 			</div>
 			<!-- End workshops аdditional filter -->
 			<div class="overflow-x-auto xl:w-full mb-6">
@@ -967,7 +941,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-1" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-1" checked>
@@ -1004,7 +978,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-2" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-2" checked>
@@ -1041,7 +1015,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-3" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-3" checked>
@@ -1078,7 +1052,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-4" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-4" disabled>
@@ -1115,7 +1089,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-5" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-5" checked>
@@ -1152,7 +1126,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-6" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-6">
@@ -1189,7 +1163,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-7" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-7" checked>
@@ -1226,7 +1200,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-8" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-8" checked>
@@ -1263,7 +1237,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-9" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-9" disabled>
@@ -1300,7 +1274,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-10" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-10" checked>
@@ -1337,7 +1311,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-11" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-11" checked>
@@ -1374,7 +1348,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-12" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-12" checked>
@@ -1411,7 +1385,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-13" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-13" checked>
@@ -1448,7 +1422,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-14" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-14" checked>
@@ -1485,7 +1459,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-15" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-15" checked>
@@ -1522,7 +1496,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-16" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-16" checked>
@@ -1559,7 +1533,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-17" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-17" checked>
@@ -1596,7 +1570,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-18" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-18" disabled>
@@ -1633,7 +1607,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-19" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-19" disabled>
@@ -1670,7 +1644,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-20" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-20" checked>
@@ -1707,7 +1681,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-21" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-21" checked>
@@ -1744,7 +1718,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-22" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-22" checked>
@@ -1781,7 +1755,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-23" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-23" disabled>
@@ -1818,7 +1792,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-24" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-24" checked>
@@ -1855,7 +1829,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-25" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-25" disabled>
@@ -1892,7 +1866,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-26" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-26" disabled>
@@ -1929,7 +1903,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-27" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-27" checked>
@@ -1966,7 +1940,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-28" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-28" disabled>
@@ -2003,7 +1977,7 @@
 							</td>
 
 							<td>
-								<div class="flex items-center gap-x-3">
+								<div class="flex items-center">
 									<label for="workshop-switcher-29" title="Вкл/откл запись"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
 										<input class="peer sr-only" type="checkbox" id="workshop-switcher-29" disabled>

@@ -1,0 +1,2868 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" sizes="16x16" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
+	<title>PitPos | Пользователи </title>
+	<link href="./styles/pages/styles-op.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 h-full">
+	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
+		<div class="flex items-center justify-between gap-x-4">
+			<a href="./index.html" title="На главную">
+				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+					viewBox="0 0 140 60">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="flex items-center gap-x-10">
+				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
+					href="#!">
+					<div
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
+						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-boy.webp" alt="Мужчина">
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-girl.webp" alt="Женщина">
+					</div>
+
+					<div class="flex flex-col">
+						<span class="text-[15px]">Александр Иванов</span>
+						<span class="text-sm text-gray-600">Собственник</span>
+					</div>
+				</a>
+
+				<div class="hidden flex flex-col items-end sm:flex">
+					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
+		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
+			<div class="max-w-80 h-full relative">
+				<input class="hidden peer" id="menu-toggle" type="checkbox">
+
+				<div class="absolute w-12 min-h-12 bg-white overflow-hidden duration-300 peer-checked:w-80"></div>
+
+				<div class="size-12 absolute left-0 py-3 px-3 duration-300 peer-checked:opacity-0 ">
+					<svg class="size-6 fill-black " viewBox="0 0 26 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
+					</svg>
+				</div>
+
+				<div
+					class="size-12 opacity-0 rotate-90 absolute right-0 py-3 px-3 duration-300 peer-checked:block peer-checked:opacity-100">
+					<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+				</div>
+
+				<label
+					class="relative  z-1 w-12 flex items-center justify-center min-h-12 cursor-pointer  peer-checked:left-68 border-3 border-white rounded-md hover:border-black active:opacity-40"
+					for="menu-toggle">
+				</label>
+
+				<nav
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
+					<ul>
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="./dashboard.html" title="Дашборд">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./dashboard.html">Дашборд</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="./op-control.html" title="Оперативный контроль">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./op-control.html">Оперативный контроль</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-1">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-1">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-shifts.html">Смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-disks-painting.html">Покраска дисков</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-guarantees.html">Гарантии</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Ключевые показатели эффективности">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">KPI</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-2">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-2">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Финансовые планы</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Ночные смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Отчеты по мотивации</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Средние чеки</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Выгрузка услуг</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Кабинет бухгалтера">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Кабинет бухгалтера</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-3">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-3">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Зарплаты</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дополнительные начисления</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Баланс</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Инкассации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Клиенты">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Клиенты</a>
+
+							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-4">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-4">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./clients-individuals.html">Физ.лица</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Юр.лица</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="./users.html" title="Пользователи">
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="./users.html">Пользователи</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Справочники">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
+								</svg>
+
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Справочники</a>
+
+							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-6">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-6">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Услуги</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Причины обращений</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-my-companies.html">Мои компании</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Марки и модели</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы для отзывов</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы при открытии смены</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Роли</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Рекомендации клиенту</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мотивации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Лояльность">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Лояльность</a>
+
+							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-7">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-7">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дисконтные карты</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="./loyalty-promo-codes.html">Промокоды</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Настройки">
+
+								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Настройки</a>
+
+							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-8">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-8">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Уведомления</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сайт</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Обучение">
+
+								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Обучение</a>
+
+							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								for="menu-item-toggle-9">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								for="close-submenu-9">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вики</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Материалы</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								href="#!" title="Логи">
+								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Логи</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</aside>
+		<!-- End sidebar -->
+		<div class="w-full mb-6 ">
+			<nav class="">
+				<ul class="flex flex-wrap">
+					<li>
+						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+							href="./index.html">Главная&nbsp;-&nbsp;</a>
+					</li>
+
+					<li>
+						<a class="text-pitpos-700 text-[0.75rem] pointer-events-none" href="./users.html">
+							Пользователи
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
+			<div class="mb-6 w-full flex flex-col justify-between items-start xs:items-center xs:flex-row">
+				<h1 class="flex font-bold py-2">
+					<svg class="size-6 stroke-pitpos-700 mr-3.5 fill-pitpos-700" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
+					</svg>
+
+					<span class="text-pitpos-700">Пользователи</span>
+				</h1>
+
+				<a class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
+					href="#!">Добавить</a>
+			</div>
+			<!-- End page name -->
+			<form class="mb-6 grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 2xl:grid-cols-4" action="">
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="employee_id">Имя</label>
+					<select id="employee_id" name="employee_id" data-hs-select='{
+						"hasSearch": true,
+						"searchLimit": 5,
+						"searchPlaceholder": "Имя пользователя...",
+						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+						"placeholder": "Все",
+						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+					}' class="hidden">
+						<option selected="selected" value="all">Все</option>
+						<option value="1">Андрей Никишин Никишин</option>
+						<option value="8">Исмаилов Марат </option>
+						<option value="9">Стрелков Александр </option>
+						<option value="10">Сейфетдинов Евгений </option>
+						<option value="11">Иванов Сергей </option>
+						<option value="12">Викторов Павел </option>
+						<option value="13">Цыбулько Дмитрий </option>
+						<option value="14">Крахмаль Вячеслав </option>
+						<option value="15">Иванов Александр </option>
+						<option value="16">Васильев Игорь </option>
+						<option value="17">Покрыш Домкратов </option>
+						<option value="18">Сердюцкий Олег </option>
+						<option value="19">Воробцов Александр </option>
+						<option value="20">Голубев Константин </option>
+						<option value="21">Жданов Руслан </option>
+						<option value="22">Ремизов Алексей </option>
+						<option value="24">Борисов Иван </option>
+						<option value="25">Судариков Юрий </option>
+						<option value="26">Мурзин Никита </option>
+						<option value="27">Стрелков Александр Старый</option>
+						<option value="28">Казаков Алексей </option>
+						<option value="29">Боровков Василий </option>
+						<option value="30">Будыкин Александр </option>
+						<option value="31">Кристина Викторова </option>
+						<option value="32">Санников Илья </option>
+						<option value="33">Судаков Дмитрий </option>
+						<option value="34">Синицын Станислав </option>
+						<option value="35">Никонов Леонид </option>
+						<option value="36">Рамский Василий </option>
+						<option value="37">Рылова Оксана </option>
+						<option value="38">Шмаков Евгений </option>
+						<option value="39">Елумеев Михаил </option>
+						<option value="40">Пельцер Александр </option>
+						<option value="41">Жибров Валентин </option>
+						<option value="42">Ганиев Алим </option>
+						<option value="43">Буйлов Павел </option>
+						<option value="44">Зубарев Александр </option>
+						<option value="45">Рязанцев Александр </option>
+						<option value="46">Гусаров Станислав </option>
+						<option value="47">Буренин Алексей </option>
+						<option value="48">Иванов Виталий </option>
+						<option value="49">Будыкин Александр </option>
+						<option value="50">Суханов Андрей </option>
+						<option value="51">Воропаев Михаил </option>
+						<option value="52">Спирин Александр </option>
+						<option value="53">Гуменюк Александр </option>
+						<option value="54">Жоров Андрей </option>
+						<option value="55">Бабак Филипп </option>
+						<option value="56">Гуменюк Александр </option>
+						<option value="57">Гурин Владимир </option>
+						<option value="58">Вонтов Дмитрий </option>
+						<option value="59">Буяк Станислав </option>
+						<option value="60">Афанасьев Дмитрий </option>
+						<option value="61">Саракуца Игорь </option>
+						<option value="62">Солдаткин Максим </option>
+						<option value="63">Иванов Антон </option>
+						<option value="65">Artem E</option>
+						<option value="66">Тест </option>
+						<option value="67">Хан Дмитрий </option>
+						<option value="68">Буловин Леонид </option>
+						<option value="69">Кривов Даниил </option>
+						<option value="70">Тихонов Александр Старый</option>
+						<option value="71">Прудников Евгений </option>
+						<option value="72">Субханкулов Эдуард </option>
+						<option value="73">Гребенюков Максим </option>
+						<option value="74">Чучман Андрей </option>
+						<option value="75">Подкуйко Дмитрий </option>
+						<option value="76">Кравченко Артем </option>
+						<option value="77">Щеглов Юрий </option>
+						<option value="78">Сейфетдинов Артур </option>
+						<option value="79">Прокофьев Борис </option>
+						<option value="80">Соловьев Олег </option>
+						<option value="81">Дима </option>
+						<option value="82">Шахович Никита </option>
+						<option value="83">Векшинский Алексей </option>
+						<option value="84">Морозов Михаил </option>
+						<option value="85">Баракова Юлия </option>
+						<option value="86">Некрасов Руслан </option>
+						<option value="87">Чуменков Александр </option>
+						<option value="88">Иван Маркин</option>
+						<option value="89">Иванов Сергей (Зеленогорск) </option>
+						<option value="90">Петров Артем </option>
+						<option value="91">Габагков Алан </option>
+						<option value="92">Додонов Кирилл </option>
+						<option value="93">Максим Покраска </option>
+						<option value="94">Александра Покраска </option>
+						<option value="95">Столицын Игорь </option>
+						<option value="96">Бараков Всеволод </option>
+						<option value="98">Судаков Дмитрий </option>
+						<option value="99">Тураев Владимир </option>
+						<option value="100">Леха </option>
+						<option value="101">Куцык Валентин </option>
+						<option value="102">Штанухин Константин </option>
+						<option value="103">Бритвин Даниил </option>
+						<option value="104">Мирон Андрей </option>
+						<option value="105">Марсель Демент</option>
+						<option value="106">Малюков Дмитрий </option>
+						<option value="107">Зулпукаров Расул </option>
+						<option value="108">Постников Андрей </option>
+						<option value="109">Людвиг Андрей </option>
+						<option value="110">Грибинюк Артем </option>
+						<option value="111">Тарасова Ирина </option>
+						<option value="112">Валиев Ринат </option>
+						<option value="113">Кацер Иван </option>
+						<option value="114">Евтеев Станислав </option>
+						<option value="115">Карцев Алексей </option>
+						<option value="116">Михайлов Даниил </option>
+						<option value="117">Серов Владимир </option>
+						<option value="118">Кадыкин Алексей </option>
+						<option value="119">Кошкин Дмитрий </option>
+						<option value="120">Глушонок Николай </option>
+						<option value="121">Масляников Назар </option>
+						<option value="122">Егоров Эдуард </option>
+						<option value="123">Юсупов Бахтияр </option>
+						<option value="124">Андреев Андрей </option>
+						<option value="125">Ткачев Никита </option>
+						<option value="126">Илья Прохоров </option>
+						<option value="127">Горбиков Алексей </option>
+						<option value="128">Романов Аркадий </option>
+						<option value="129">Токарев Сергей (Дубль) </option>
+						<option value="130">Токарев Сергей </option>
+						<option value="131">Довженко Илья </option>
+						<option value="132">Кузьминский Денис </option>
+						<option value="133">Филатов Максим </option>
+						<option value="134">Лепешкин Дмитрий </option>
+						<option value="135">Узун Григорий </option>
+						<option value="136">Зайферт Никита </option>
+						<option value="137">Сисюк Елена </option>
+						<option value="138">Апенов Василий </option>
+						<option value="139">Носов Владислав </option>
+						<option value="140">Апаршев Иван </option>
+						<option value="141">Веселов Игорь </option>
+						<option value="142">Попов Андрей </option>
+						<option value="143">Капустин Владимир </option>
+						<option value="144">Безверхий Григорий </option>
+						<option value="145">Борисюк Александр </option>
+						<option value="146">Васильев Андрей </option>
+						<option value="147">Есаян Армен </option>
+						<option value="148">Мизонов Даниил </option>
+						<option value="149">Тарасенко Роман </option>
+						<option value="150">Счастный Антон </option>
+						<option value="151">Осипов Никита </option>
+						<option value="152">Казаков Артем </option>
+						<option value="153">Патрик Дмитрий </option>
+						<option value="154">Модзолевский Кирилл </option>
+						<option value="155">Погребняк Артем </option>
+						<option value="156">Евневич Дмитрий </option>
+						<option value="157">Кондратьев Артем </option>
+						<option value="158">Реуцкий Данил </option>
+						<option value="159">Халимов Борис </option>
+						<option value="160">Гурбанов Роман </option>
+						<option value="161">Шаронов Александр </option>
+						<option value="162">Геворкян Самвел </option>
+						<option value="163">Шмилев Дмитрий </option>
+						<option value="164">Чуев Антон </option>
+						<option value="165">Канкулов Александр </option>
+						<option value="166">Ганжур Даниил </option>
+						<option value="167">Чистяков Алексей </option>
+						<option value="168">Кильдибаев Вадим </option>
+						<option value="169">Ефимчик Сергей </option>
+						<option value="170">Зулпукаров Магомед </option>
+						<option value="171">Плясецкий Игорь </option>
+						<option value="172">Евдокимов Эльдар </option>
+						<option value="173">Авчаров Даниил </option>
+						<option value="174">Фролова Ксения </option>
+						<option value="175">Михайленко Виталий </option>
+						<option value="176">Левицкий Никита </option>
+						<option value="177">Филиппов Святослав </option>
+						<option value="178">Елеуов Константин </option>
+						<option value="179">Казаков Станислав </option>
+						<option value="180">Кравцов Алексей </option>
+						<option value="181">Донская Софья </option>
+						<option value="182">Мурадов Федор </option>
+						<option value="183">Юсупов Шахтер </option>
+						<option value="184">Шевколенко Сергей </option>
+						<option value="185">Андреев Александр </option>
+						<option value="186">Формалев Андрей </option>
+						<option value="187">Чернов Сергей </option>
+						<option value="188">Игошкин Алексей </option>
+						<option value="189">Сидоров Рафик </option>
+						<option value="190">Щукин Антон </option>
+						<option value="191">Киселева Оксана </option>
+						<option value="192">Шевченко Юрий </option>
+						<option value="193">Куракин Максим </option>
+						<option value="194">Кузнецов Александр </option>
+						<option value="195">Корнилов Николай </option>
+						<option value="196">Дёмушкин Константин </option>
+						<option value="197">Соловьев Сергей </option>
+						<option value="198">Файрузов Александр </option>
+						<option value="199">Пекин Глеб </option>
+						<option value="200">Вячеслав 101 </option>
+						<option value="201">Грибанова Юлия </option>
+						<option value="202">Шкурдода Александр </option>
+						<option value="203">Зверев Анатолий </option>
+						<option value="204">Вдовиченко Александр </option>
+						<option value="205">Хруцкая Светлана </option>
+						<option value="206">Щукин Алексей </option>
+						<option value="207">Цвирко Евгений </option>
+						<option value="208">Алексеев Олег </option>
+						<option value="209">Мегадиски Покраска Покраска</option>
+						<option value="210">Халимов Бохадур </option>
+						<option value="211">Пазгалев Андрей </option>
+						<option value="212">Кужелев Николай </option>
+						<option value="213">Евтюков Николай </option>
+						<option value="214">Магомеднабиев Руслан </option>
+						<option value="215">Соловей Владимир </option>
+						<option value="216">Овтин Илья </option>
+						<option value="217">Ярош Артем </option>
+						<option value="218">Шушаков Анатолий </option>
+						<option value="219">Котляров Виталий </option>
+						<option value="220">Анисимова Ольга </option>
+						<option value="221">Ястремский Станислав </option>
+						<option value="222">Пронин Леонид </option>
+						<option value="223">Терёхин Константин </option>
+						<option value="224">Аверьянов Вадим </option>
+						<option value="225">Сергеенко Владлен </option>
+						<option value="226">Герасименко Дмитрий </option>
+						<option value="227">Герасимов Виталий </option>
+						<option value="228">Осипов Эрнест </option>
+						<option value="229">Филатов Кирилл </option>
+						<option value="230">Шевчук Михаил </option>
+						<option value="231">Нехай Денис </option>
+						<option value="232">Павлов Вячеслав </option>
+						<option value="233">Емелин Денис </option>
+						<option value="234">Васильев Максим </option>
+						<option value="235">Чёбота Александр </option>
+						<option value="236">Вайтулевич Андрей </option>
+						<option value="237">Гаджиев Константин </option>
+						<option value="238">Гавриков Денис </option>
+						<option value="239">Кудряшкина Евгения </option>
+						<option value="240">Щербаков Андрей </option>
+						<option value="241">Матвиенко Юлия </option>
+						<option value="242">Яковлев Василий </option>
+						<option value="243">Большаков Сергей </option>
+						<option value="244">Тарабурин Юрий </option>
+						<option value="245">Бовриков Мерген </option>
+						<option value="246">Неплюхин Александр </option>
+						<option value="247">Воронин Николай </option>
+						<option value="248">Сергеенко Даниил </option>
+						<option value="249">Радзевич Владислав </option>
+						<option value="250">Бахтиев Руслан </option>
+						<option value="251">Вершинин Евгений </option>
+						<option value="252">Алиев Фируз </option>
+						<option value="253">Тарасенко Никита </option>
+						<option value="254">Рудаков Евгений </option>
+						<option value="255">Джордж Запала </option>
+						<option value="256">Клюкин Николай </option>
+						<option value="257">Эрик Коме Мбах </option>
+						<option value="258">Игнатьев Максим </option>
+						<option value="259">Кишов Максим </option>
+						<option value="260">Борюшкин Сергей </option>
+						<option value="261">Белоус Александр </option>
+						<option value="262">Шамуратов Олег </option>
+						<option value="263">Ботоев Маир </option>
+						<option value="264">Голубченко Геннадий </option>
+						<option value="265">Брагин Влад </option>
+						<option value="266">Соловьёва Анастасия </option>
+						<option value="267">Жадаев Максим </option>
+						<option value="268">Серюгин Константин </option>
+						<option value="269">Фадеева Татьяна </option>
+						<option value="270">Визняк Ирина </option>
+						<option value="271">Исламов Александр </option>
+						<option value="272">Колосов Глеб </option>
+						<option value="273">Кудашев Дамир </option>
+						<option value="274">Кознов Алексей </option>
+						<option value="275">Горовой Леонид </option>
+						<option value="276">Захарова Ольга </option>
+						<option value="277">Протченко Евгений </option>
+						<option value="278">Фыафываыва </option>
+						<option value="279">Шевченко Александр </option>
+						<option value="280">Яцюк Максим </option>
+						<option value="281">Клушин Антон </option>
+						<option value="282">Исанов Мухаммад </option>
+						<option value="283">Степанцев Никита </option>
+						<option value="284">Хамидуллин Илья </option>
+						<option value="285">Хонин Михаил </option>
+						<option value="286">Тавостин Владислав </option>
+						<option value="287">Пакалин Игорь </option>
+						<option value="288">Поправко Герман </option>
+						<option value="289">Арефьев Антон </option>
+						<option value="290">Быков Михаил </option>
+						<option value="291">Рипинчик Яков </option>
+						<option value="292">Михайлов Владислав </option>
+						<option value="293">Павлов Лев </option>
+						<option value="294">Мухачев Данил </option>
+						<option value="295">Ситников Сергей </option>
+						<option value="296">Юданов Александр </option>
+						<option value="297">Коробов Андрей </option>
+						<option value="298">Кузнецов Максим </option>
+						<option value="299">Плисюк Дмитрий </option>
+						<option value="300">Бурков Никита </option>
+						<option value="301">Денисов Иван </option>
+						<option value="302">Нестеров Дмитрий </option>
+						<option value="303">Ракчеев Николай </option>
+						<option value="304">Гладков Евгений </option>
+						<option value="305">Герц Артур (Кассир) </option>
+						<option value="306">Козырев Александр </option>
+						<option value="307">Лобанов Даниил </option>
+						<option value="308">Мичурин Виктор </option>
+						<option value="309">Качалов Илья </option>
+						<option value="310">Астафьев Илья </option>
+						<option value="311">Горюнов Андрей </option>
+						<option value="312">Поликарпов Артем </option>
+						<option value="313">Рылов Андрей </option>
+						<option value="314">Елена Рыжова </option>
+						<option value="315">Иванова Ольга </option>
+						<option value="316">Тузова Маргарита </option>
+						<option value="317">Морозов Виталий </option>
+						<option value="318">Кон Даниил </option>
+						<option value="319">Дидович Дмитрий </option>
+						<option value="320">Дербин Максим </option>
+						<option value="321">Кошевой Даниил </option>
+						<option value="322">Лагутик Антон </option>
+						<option value="323">Победоносцев Илья </option>
+						<option value="324">Горев Павел </option>
+						<option value="325">Соколов Александр </option>
+						<option value="326">Кристина Чучина </option>
+						<option value="327">Мальцев Максим </option>
+						<option value="328">Однорогов Даниил </option>
+						<option value="329">Щавелев Алексей </option>
+						<option value="330">Иванов Ярослав </option>
+						<option value="331">Мараев Сергей </option>
+						<option value="332">Яцюк Максим (Кассир) </option>
+						<option value="333">Владимир Князев </option>
+						<option value="334">Текутьев Михаил </option>
+						<option value="335">Маслов Петр </option>
+						<option value="336">Луганский Александр </option>
+						<option value="337">Балагуров Алексей </option>
+						<option value="338">Давыдов Илья </option>
+						<option value="339">Кармановский Сергей </option>
+						<option value="340">Зверьев Иван </option>
+						<option value="341">Литвинов Дмитрий </option>
+						<option value="342">Воробьев Вячеслав </option>
+						<option value="343">Ураков Анатолий </option>
+						<option value="344">Комарь Сергей </option>
+						<option value="345">Кадиров Константин </option>
+						<option value="346">Цыбенко Роман </option>
+						<option value="347">Герц Артур (Мойщик) </option>
+						<option value="348">Григорьев Сергей </option>
+						<option value="349">Кутубаев Владислав </option>
+						<option value="350">Назаров Василий </option>
+						<option value="351">Макаров Юрий </option>
+						<option value="352">Аверьянов Вадим (Кассир) </option>
+						<option value="353">Богданов Валентин </option>
+						<option value="354">Корнезо Петр </option>
+						<option value="355">Твердохлебов Иван </option>
+						<option value="356">Заболотный Александр </option>
+						<option value="357">Газя Владислав </option>
+						<option value="358">Петраков Максим </option>
+						<option value="359">Силантьев Артур </option>
+						<option value="360">Налётов Никита </option>
+						<option value="361">Прошин Роман </option>
+						<option value="362">Ануар Бухарбаев </option>
+						<option value="363">Шалито Никита </option>
+						<option value="364">Сергей Тираспольский </option>
+						<option value="365">Федоров Владислав </option>
+						<option value="366">Рузанова Ангелина </option>
+						<option value="367">Кононов Алексей </option>
+						<option value="368">Корнезо Петр (Кассир) </option>
+						<option value="369">Смирнов Юрий </option>
+						<option value="370">Николаев Виктор </option>
+						<option value="371">Сергеенко Владлен (Кассир) </option>
+						<option value="372">Игошев Кирилл </option>
+						<option value="373">Соловьёва Анастасия </option>
+						<option value="374">Вертиков Артем </option>
+						<option value="375">Налётов Никита (Кассир) </option>
+						<option value="376">Андреев Игорь </option>
+						<option value="377">Димашова Екатерина </option>
+						<option value="378">Приходько Иван </option>
+						<option value="379">Салякаев Марат </option>
+						<option value="380">Артур Герц </option>
+						<option value="381">Никитин Андрей </option>
+						<option value="382">Ульянов Дмитрий </option>
+						<option value="383">Герасимов Сергей </option>
+						<option value="384">Дидович Дмитрий (Кассир) </option>
+						<option value="385">Алексеев Иван </option>
+						<option value="386">Маликов Ильдар </option>
+						<option value="387">Ганенков Дмитрий (Мойщик) </option>
+						<option value="388">Ильин Михаил </option>
+						<option value="389">Тихонов Александр </option>
+						<option value="390">Ганенков Дмитрий (Кассир) </option>
+						<option value="391">Никитин Кирилл </option>
+						<option value="392">Булашов Сергей </option>
+						<option value="393">Абрамова Анна </option>
+						<option value="394">Алан Карим </option>
+						<option value="395">Юлия Никитина </option>
+						<option value="396">Синицын Евгений </option>
+						<option value="397">Мякяляйнен Михаил </option>
+						<option value="398">Хромейчук Николай </option>
+						<option value="399">Шагеев Илья </option>
+						<option value="400">Каблуков Александр </option>
+						<option value="401">Иванов Евгений </option>
+						<option value="402">Газя Владислав (Кассир) </option>
+						<option value="403">Джанбулатов Курбан </option>
+						<option value="404">Богданов Илья </option>
+						<option value="405">Данилина Елена </option>
+						<option value="406">Щедров Александр </option>
+						<option value="407">Аксёнов Никита </option>
+						<option value="408">Аксёнов Никита (Шm) </option>
+						<option value="409">Широков Андрей </option>
+						<option value="410">Дроздов Сергей </option>
+						<option value="411">Тарасенко Никита </option>
+						<option value="412">Патрушев Илья </option>
+						<option value="413">Дмитрий Никольский </option>
+						<option value="414">Трушкин Алексей </option>
+						<option value="415">Афанасенко Павел </option>
+						<option value="416">Клейн Денис </option>
+						<option value="417">Гырдымов Марк </option>
+						<option value="418">Армине </option>
+						<option value="419">Попов Владислав </option>
+						<option value="420">Маликов Ильдар </option>
+						<option value="421">Костин Вадим </option>
+						<option value="422">Иванов Никита </option>
+						<option value="423">Алан Карим </option>
+						<option value="424">Федор Конюхофф </option>
+						<option value="425">Артем Межейников </option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_role">Роль</label>
+					<select id="user_role" name="user_role" multiple="" data-hs-select='{
+						"placeholder": "Все",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleSeparators": {
+							"betweenItemsAndCounter": ""
+						},
+						"toggleCountText": "+",
+						"toggleCountTextPlacement": "prefix-no-space",
+						"toggleCountTextMinItems": 2,
+						"toggleCountTextMode": "nItemsAndCount",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": 
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+					}' class="hidden">
+						<option value="">Все</option>
+						<option value="owner">Владелец</option>
+						<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
+						<option value="workshop-admin">Администратор&nbsp;мастерской</option>
+						<option value="carwash-admin">Администратор&nbsp;мойки</option>
+						<option value="service-admin">Администратор&nbsp;сервиса</option>
+						<option value="master">Мастер</option>
+						<option value="service-advisor">Мастер-приемщик</option>
+						<option value="shiftController">Контролер&nbsp;смен</option>
+						<option value="technical-inspector">Мастер&nbsp;ТО</option>
+						<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
+						<option value="wheel-alignment-master">Мастер развал-схождения</option>
+						<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
+						<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
+						<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
+						<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
+						<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
+						<option value="cashierTireFitting">Кассир-шиномонтаж</option>
+						<option value="washer">Мойщик</option>
+						<option value="locksmith">Слесарь</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_phone">Телефон</label>
+					<select id="user_phone" name="user_phone" data-hs-select='{
+						"hasSearch": true,
+						"searchLimit": 5,
+						"searchPlaceholder": "Телефон пользователя...",
+						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+						"placeholder": "Все",
+						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+					}' class="hidden">
+						<option selected="selected" value="all">Все</option>
+						<option value="63">9119593464</option>
+						<option value="1">9626972464</option>
+						<option value="8">9500246722</option>
+						<option value="9">9046303336</option>
+						<option value="10">9523820641</option>
+						<option value="11">9626830869</option>
+						<option value="12">9522112288</option>
+						<option value="13">9522284119</option>
+						<option value="14">9675606119</option>
+						<option value="15">9213324142</option>
+						<option value="16">9643748864</option>
+						<option value="17">9119998877</option>
+						<option value="18">9817184163</option>
+						<option value="19">9046102128</option>
+						<option value="20">999000001</option>
+						<option value="21">9111289606</option>
+						<option value="22">999000003</option>
+						<option value="24">9516856561</option>
+						<option value="25">9991110004</option>
+						<option value="26">9991110003</option>
+						<option value="27">9991110002</option>
+						<option value="28">9991110001</option>
+						<option value="29">9531558065</option>
+						<option value="30">9991110007</option>
+						<option value="31">9210935533</option>
+						<option value="32">9643643950</option>
+						<option value="33">9675929218</option>
+						<option value="34">9531466461</option>
+						<option value="35">9500264538</option>
+						<option value="36">9633410400</option>
+						<option value="37">9046092883</option>
+						<option value="38">9213949057</option>
+						<option value="39">9213847277</option>
+						<option value="40">9990001001</option>
+						<option value="41">9531569505</option>
+						<option value="42">9626999996</option>
+						<option value="43">9818514081</option>
+						<option value="44">9967945046</option>
+						<option value="45">9214344628</option>
+						<option value="46">9522888822</option>
+						<option value="47">15758</option>
+						<option value="48">9998880007</option>
+						<option value="49">9998880008</option>
+						<option value="50">9998880021</option>
+						<option value="51">9998880031</option>
+						<option value="52">9991110009</option>
+						<option value="53">9998880010</option>
+						<option value="54">9111229102</option>
+						<option value="55">9998880012</option>
+						<option value="56">15779</option>
+						<option value="57">9998880013</option>
+						<option value="58">9998880014</option>
+						<option value="59">9500385455</option>
+						<option value="60">9516672783</option>
+						<option value="61">9998880017</option>
+						<option value="62">9998880018</option>
+						<option value="65">9643702511</option>
+						<option value="66">9-9-9</option>
+						<option value="67">9639361495</option>
+						<option value="68">9998880035</option>
+						<option value="69">9998880025</option>
+						<option value="70">9998880024</option>
+						<option value="71">9998880026</option>
+						<option value="72">9174797934</option>
+						<option value="73">9998880028</option>
+						<option value="74">9811527257</option>
+						<option value="75">9818871132</option>
+						<option value="76">9043350598</option>
+						<option value="77">9697077215</option>
+						<option value="78">9816870633</option>
+						<option value="79">9967776538</option>
+						<option value="80">9502288265</option>
+						<option value="81">9809060151</option>
+						<option value="82">9522387091</option>
+						<option value="83">9522424766</option>
+						<option value="84">9998880039</option>
+						<option value="313">9052223240</option>
+						<option value="85">9657693919</option>
+						<option value="86">9112911832</option>
+						<option value="87">9998880040</option>
+						<option value="88">9818219970</option>
+						<option value="89">9811735969</option>
+						<option value="90">9522116500</option>
+						<option value="91">9998880045</option>
+						<option value="92">9998880049</option>
+						<option value="93">9219922011</option>
+						<option value="94">9219002331</option>
+						<option value="95">9313110003</option>
+						<option value="96">89052121282</option>
+						<option value="98">9998880044</option>
+						<option value="99">9650029339</option>
+						<option value="100">9998881133</option>
+						<option value="101">9643329345</option>
+						<option value="102">9998880051</option>
+						<option value="103">9811563354</option>
+						<option value="104">9811981215</option>
+						<option value="105">9500244661</option>
+						<option value="106">9998880054</option>
+						<option value="107">9627155188</option>
+						<option value="108">9312204022</option>
+						<option value="109">9944203317</option>
+						<option value="110">9959754495</option>
+						<option value="111">9213403212</option>
+						<option value="112">9995147056</option>
+						<option value="113">9627122838</option>
+						<option value="114">9950907952</option>
+						<option value="115">9516675295</option>
+						<option value="116">9157269670</option>
+						<option value="117">9119446329</option>
+						<option value="118">9663524327</option>
+						<option value="119">9523577451</option>
+						<option value="120">9047576815</option>
+						<option value="121">9502252244</option>
+						<option value="122">9062706235</option>
+						<option value="123">9533404022</option>
+						<option value="124">9500350674</option>
+						<option value="125">9213629625</option>
+						<option value="126">9144948516</option>
+						<option value="127">9811973623</option>
+						<option value="128">9692133338</option>
+						<option value="129">8888888</option>
+						<option value="130">9502251537</option>
+						<option value="131">9026669446</option>
+						<option value="132">9214340953</option>
+						<option value="133">9052663800</option>
+						<option value="134">9995290045</option>
+						<option value="135">9117317448</option>
+						<option value="136">9112570553</option>
+						<option value="314">9162869610</option>
+						<option value="137">9095857890</option>
+						<option value="138">9516439906</option>
+						<option value="139">9995359002</option>
+						<option value="140">9500432213</option>
+						<option value="141">9119798198</option>
+						<option value="142">9817776999</option>
+						<option value="143">9657564839</option>
+						<option value="144">9817400849</option>
+						<option value="145">9500227482</option>
+						<option value="146">1111111111</option>
+						<option value="147">9819887350</option>
+						<option value="148">9045597316</option>
+						<option value="149">9006335700</option>
+						<option value="150">9818644124</option>
+						<option value="151">9110086061</option>
+						<option value="152">9006397273</option>
+						<option value="153">9219348925</option>
+						<option value="154">9046487095</option>
+						<option value="155">9522182778</option>
+						<option value="156">9062746500</option>
+						<option value="157">9119748613</option>
+						<option value="158">9112272361</option>
+						<option value="159">9697347516</option>
+						<option value="160">9319804158</option>
+						<option value="161">9650077845</option>
+						<option value="162">9643867853</option>
+						<option value="163">9052012201</option>
+						<option value="164">9118252205</option>
+						<option value="165">5556667788</option>
+						<option value="166">9967699582</option>
+						<option value="167">9522111542</option>
+						<option value="168">9328611558</option>
+						<option value="169">9500035528</option>
+						<option value="170">9119993192</option>
+						<option value="171">9522787922</option>
+						<option value="172">9523786874</option>
+						<option value="173">9621020172</option>
+						<option value="174">9657782499</option>
+						<option value="175">9657261922</option>
+						<option value="176">9046409134</option>
+						<option value="177">9818074347</option>
+						<option value="178">9673490896</option>
+						<option value="179">9819636731</option>
+						<option value="180">9817999522</option>
+						<option value="181">9111266666</option>
+						<option value="182">9117163499</option>
+						<option value="183">9668640554</option>
+						<option value="184">9217577759</option>
+						<option value="185">9219865087</option>
+						<option value="186">9533558687</option>
+						<option value="187">9992295939</option>
+						<option value="188">9650731844</option>
+						<option value="189">9218581655</option>
+						<option value="190">9215570809</option>
+						<option value="191">9967729197</option>
+						<option value="192">9006476805</option>
+						<option value="193">9522416707</option>
+						<option value="194">9818722774</option>
+						<option value="195">9992061465</option>
+						<option value="196">9213563574</option>
+						<option value="197">9502276325</option>
+						<option value="198">9196040233</option>
+						<option value="199">9998887766</option>
+						<option value="200">9650028000</option>
+						<option value="201">9006370255</option>
+						<option value="202">9650141065</option>
+						<option value="203">9006260266</option>
+						<option value="204">9967854045</option>
+						<option value="205">9533456394</option>
+						<option value="206">9152447618</option>
+						<option value="207">9522013376</option>
+						<option value="208">9657511596</option>
+						<option value="209">9219470303</option>
+						<option value="210">9697437516</option>
+						<option value="211">9632498004</option>
+						<option value="212">9516417451</option>
+						<option value="213">9214339353</option>
+						<option value="214">9062680888</option>
+						<option value="215">9062436566</option>
+						<option value="216">9657512016</option>
+						<option value="217">9633204565</option>
+						<option value="218">9817043752</option>
+						<option value="219">9313626167</option>
+						<option value="220">9219705348</option>
+						<option value="221">9216346943</option>
+						<option value="222">9062465555</option>
+						<option value="223">9117607630</option>
+						<option value="224">9995239586</option>
+						<option value="225">9528127621</option>
+						<option value="226">9967988948</option>
+						<option value="227">9522415915</option>
+						<option value="228">9117859901</option>
+						<option value="229">9500312540</option>
+						<option value="230">9110917723</option>
+						<option value="231">9531474623</option>
+						<option value="232">9675938403</option>
+						<option value="233">9040554152</option>
+						<option value="234">9523928684</option>
+						<option value="235">9818623009</option>
+						<option value="236">9046397766</option>
+						<option value="237">9119546789</option>
+						<option value="238">9215555052</option>
+						<option value="239">9215612161</option>
+						<option value="240">9110345924</option>
+						<option value="241">9111871130</option>
+						<option value="242">9669308826</option>
+						<option value="243">9119400762</option>
+						<option value="244">9213191508</option>
+						<option value="245">9217488298</option>
+						<option value="246">9952304188</option>
+						<option value="247">9965602814</option>
+						<option value="248">9817181606</option>
+						<option value="249">9219131413</option>
+						<option value="250">9633149042</option>
+						<option value="251">9531520348</option>
+						<option value="252">9171163839</option>
+						<option value="253">9312027199</option>
+						<option value="254">9118491708</option>
+						<option value="255">9531707525</option>
+						<option value="256">9523766203</option>
+						<option value="257">9996358405</option>
+						<option value="258">9818264903</option>
+						<option value="259">9528702536</option>
+						<option value="260">9992320113</option>
+						<option value="261">9811933561</option>
+						<option value="262">9897472439</option>
+						<option value="263">9891359309</option>
+						<option value="264">9213458333</option>
+						<option value="265">9245659258</option>
+						<option value="266">9817098232</option>
+						<option value="267">9967879928</option>
+						<option value="268">9500099691</option>
+						<option value="269">9500038048</option>
+						<option value="270">9643330670</option>
+						<option value="271">9523803536</option>
+						<option value="272">9111535125</option>
+						<option value="273">9516472393</option>
+						<option value="274">9281547214</option>
+						<option value="275">9111181641</option>
+						<option value="276">9516575142</option>
+						<option value="277">9602564837</option>
+						<option value="278">9992344176</option>
+						<option value="279">9990658200</option>
+						<option value="280">9219966667</option>
+						<option value="281">9531586888</option>
+						<option value="282">9052308063</option>
+						<option value="283">9531735061</option>
+						<option value="284">9503216597</option>
+						<option value="285">9817796999</option>
+						<option value="286">9810013577</option>
+						<option value="287">9675318434</option>
+						<option value="288">9811063083</option>
+						<option value="289">9530485202</option>
+						<option value="290">9111545858</option>
+						<option value="291">9502596843</option>
+						<option value="292">961809170</option>
+						<option value="293">9819953673</option>
+						<option value="294">9091313330</option>
+						<option value="295">9635535903</option>
+						<option value="296">9500475428</option>
+						<option value="297">9916335149</option>
+						<option value="298">9657635749</option>
+						<option value="299">9818948912</option>
+						<option value="300">9533714921</option>
+						<option value="301">9667045974</option>
+						<option value="302">9000166931</option>
+						<option value="303">9500066410</option>
+						<option value="304">9657842492</option>
+						<option value="305">89944245972</option>
+						<option value="306">9217877297</option>
+						<option value="307">9215820709</option>
+						<option value="308">9944051039</option>
+						<option value="309">9585878323</option>
+						<option value="310">9312619076</option>
+						<option value="311">9821047630</option>
+						<option value="312">9992367854</option>
+						<option value="315">9533749649</option>
+						<option value="316">9062784452</option>
+						<option value="317">9817686729</option>
+						<option value="318">9213285527</option>
+						<option value="319">9312662366</option>
+						<option value="320">9119839233</option>
+						<option value="321">9313363294</option>
+						<option value="322">9520963405</option>
+						<option value="323">9006556972</option>
+						<option value="324">9212578445</option>
+						<option value="325">9210614315</option>
+						<option value="326">9117963540</option>
+						<option value="327">9991152818</option>
+						<option value="328">9006362874</option>
+						<option value="329">9526851210</option>
+						<option value="330">9967797639</option>
+						<option value="331">9681915566</option>
+						<option value="332">9219966667</option>
+						<option value="333">9944398747</option>
+						<option value="334">9532626545</option>
+						<option value="335">9818141669</option>
+						<option value="336">9615349993</option>
+						<option value="337">9992014166</option>
+						<option value="338">9257819301</option>
+						<option value="339">9019739708</option>
+						<option value="340">9997802177</option>
+						<option value="341">9111867312</option>
+						<option value="342">9650006036</option>
+						<option value="343">9213204686</option>
+						<option value="344">9643330426</option>
+						<option value="345">9213062651</option>
+						<option value="346">9967867292</option>
+						<option value="347">99442459720</option>
+						<option value="348">9669331601</option>
+						<option value="349">9523667787</option>
+						<option value="350">9111778796</option>
+						<option value="351">9006223374</option>
+						<option value="352">9995239586</option>
+						<option value="353">9215720172</option>
+						<option value="354">9095829920</option>
+						<option value="355">9117590980</option>
+						<option value="356">9117590980</option>
+						<option value="357">9052092927</option>
+						<option value="358">9210961264</option>
+						<option value="359">9944108482</option>
+						<option value="360">9819423992</option>
+						<option value="361">9533656577</option>
+						<option value="362">9534507527</option>
+						<option value="363">9910103540</option>
+						<option value="364">9500339269</option>
+						<option value="365">9117855767</option>
+						<option value="366">9112910808</option>
+						<option value="367">9217868777</option>
+						<option value="368">9095829920</option>
+						<option value="369">9218493325</option>
+						<option value="370">9516784624</option>
+						<option value="371">9528127621</option>
+						<option value="372">9834002794</option>
+						<option value="373">9006357533</option>
+						<option value="374">9955901125</option>
+						<option value="375">9819423992</option>
+						<option value="376">9214222285</option>
+						<option value="377">9818957506</option>
+						<option value="378">9531792008</option>
+						<option value="379">9009413176</option>
+						<option value="380">9944245972</option>
+						<option value="381">9119347750</option>
+						<option value="382">9112816197</option>
+						<option value="383">9650404287</option>
+						<option value="384">9312662366</option>
+						<option value="385">9500476057</option>
+						<option value="386">9523666692</option>
+						<option value="387">9992909996</option>
+						<option value="388">9939712294</option>
+						<option value="389">9669283891</option>
+						<option value="390">9992909996</option>
+						<option value="391">9516489751</option>
+						<option value="392">9958918702</option>
+						<option value="393">9500352308</option>
+						<option value="394">9500000712</option>
+						<option value="395">9095704663</option>
+						<option value="396">9992142765</option>
+						<option value="397">9602732388</option>
+						<option value="398">9110993208</option>
+						<option value="399">9992906403</option>
+						<option value="400">9936439963</option>
+						<option value="401">9111010986</option>
+						<option value="402">90520929270</option>
+						<option value="403">9995366662</option>
+						<option value="404">9668591889</option>
+						<option value="405">9679767953</option>
+						<option value="406">9500192260</option>
+						<option value="407">91182454320</option>
+						<option value="408">9118245432</option>
+						<option value="409">9633449104</option>
+						<option value="410">9211840558</option>
+						<option value="411">93120271990</option>
+						<option value="412">195148511</option>
+						<option value="413">9531548886</option>
+						<option value="414">9844509697</option>
+						<option value="415">9522833898</option>
+						<option value="416">9995213309</option>
+						<option value="417">9962178995</option>
+						<option value="418">9110106661</option>
+						<option value="419">9650074389</option>
+						<option value="420">9523666692</option>
+						<option value="421">9374704689</option>
+						<option value="422">9006550265</option>
+						<option value="423">95000007121</option>
+						<option value="424">9997773344</option>
+						<option value="425">+375445821803</option>
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-500" for="user_email">E-mail</label>
+					<select id="user_email" name="user_email" data-hs-select='{
+						"hasSearch": true,
+						"searchLimit": 5,
+						"searchPlaceholder": "E-mail пользователя...",
+						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+						"placeholder": "Все",
+						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+					}' class="hidden">
+						<option selected="selected" value="all">Все</option>
+						<option value="63">ivanov.a.v@me.com</option>
+						<option value="1">noctkpuntym@gmail.com</option>
+						<option value="8">marat@2atm.ru</option>
+						<option value="9">strelkov@2atm.ru</option>
+						<option value="10">sey@2atm.ru</option>
+						<option value="11">s_ivanov@2atm.ru</option>
+						<option value="12">p_viktorov@2atm.ru</option>
+						<option value="13">d.cibulko@2atm.ru</option>
+						<option value="14">v.krahmal@2atm.ru</option>
+						<option value="15">a_ivanov_murinka@2atm.ru</option>
+						<option value="16">i.vasilev@2atm.ru</option>
+						<option value="17">test2@example.com</option>
+						<option value="18">oleg@2atm.ru</option>
+						<option value="19">avorobcov@2atm.ru</option>
+						<option value="20">k_golubev@2atm.ru</option>
+						<option value="21">r.jdanov@2atm.ru</option>
+						<option value="22">a_remizov@2atm.ru</option>
+						<option value="24">i.borisov@2atm.ru</option>
+						<option value="25">UVOLENy.sudarikov@2atm.ru</option>
+						<option value="26">n_murzin@2atm.ru</option>
+						<option value="27">a.pendik@2atm.ru</option>
+						<option value="28">a.kazakov@2atm.ru</option>
+						<option value="29">v_borovkov@2atm.ru</option>
+						<option value="30">a_budikin@2atm.ru</option>
+						<option value="31">89210935533@mail.ru</option>
+						<option value="32">i.sannikov@2atm.ru</option>
+						<option value="33">d_sudakov@2atm.ru</option>
+						<option value="34">s.sinitsyn@2atm.ru</option>
+						<option value="35">l_nikonov@2atm.ru</option>
+						<option value="36">v_ramskiy@2atm.ru</option>
+						<option value="37">o_rilova@2atm.ru</option>
+						<option value="38">e_shmakov@2atm.ru</option>
+						<option value="39">m_elumeev@2atm.ru</option>
+						<option value="40">a_pelcer@2atm.ru</option>
+						<option value="41">v.zhibrov@2atm.ru</option>
+						<option value="42">a.ganiev@2atm.ru</option>
+						<option value="43">p.buylov@2atm.ru</option>
+						<option value="44">a.zubarev@2atm.ru</option>
+						<option value="45">a.ryazantsev@2atm.ru</option>
+						<option value="46">s.gusarov@2atm.ru</option>
+						<option value="47">a.burenin@2atm.ru</option>
+						<option value="48">v.ivanov@2atm.ru</option>
+						<option value="49">a.budykin@2atm.ru</option>
+						<option value="50">a.suhanov@2atm.ru</option>
+						<option value="51">m.voropaev@2atm.ru</option>
+						<option value="52">a.spirin@2atm.ru</option>
+						<option value="53">a_gumenuk@2atm.ru</option>
+						<option value="54">a_jorov@2atm.ru</option>
+						<option value="55">f_babak@2atm.ru</option>
+						<option value="56">a.gumenuk@2atm.ru</option>
+						<option value="57">v.gurin@2atm.ru</option>
+						<option value="58">d.vontov@2atm.ru</option>
+						<option value="59">s.buyak@2atm.ru</option>
+						<option value="60">d.afanasiev@2atm.ru</option>
+						<option value="61">i.sarakuca@2atm.ru</option>
+						<option value="62">UVOLENm.soldatkin@2atm.ru</option>
+						<option value="65">3702511@gmail.com</option>
+						<option value="66">2@2</option>
+						<option value="67">d.han@2atm.ru</option>
+						<option value="68">l.bulovin@2atm.ru</option>
+						<option value="69">d.krivov@2atm.ru</option>
+						<option value="70">a.tihonov@2atm.ru</option>
+						<option value="71">UVOLENe.prudnikov@2atm.ru</option>
+						<option value="72">e.subhankulov@2atm.ru</option>
+						<option value="73">m.grebenukov@2atm.ru</option>
+						<option value="74">a.chuchman@2atm.ru</option>
+						<option value="75">d.podkuyko@2atm.ru</option>
+						<option value="76">a.kravchenko@2atm.ru</option>
+						<option value="77">ura22@2atm.ru</option>
+						<option value="78">artur@2atm.ru</option>
+						<option value="79">b.prokofiev@2atm.ru</option>
+						<option value="80">Solovevoleg280@gmail.com</option>
+						<option value="81">961122@gmail.com</option>
+						<option value="82">n.shahovich@2atm.ru</option>
+						<option value="83">a.vekshinskiy@2atm.ru</option>
+						<option value="84">m.morozov@2atm.ru</option>
+						<option value="313">twoatm@gmal.com</option>
+						<option value="85">pavkina@gmail.com</option>
+						<option value="86">r.nekrasov@2atm.ru</option>
+						<option value="87">a.chumenkov@2atm.ru</option>
+						<option value="88">i.markin@2atm.ru</option>
+						<option value="89">s.ivanov-zelek@2atm.ru</option>
+						<option value="90">a.petrov@2atm.ru</option>
+						<option value="91">a.gabagkov@2atm.ru</option>
+						<option value="92">k.dodonov@2atm.ru</option>
+						<option value="93">9002331@mail.ru</option>
+						<option value="94">9922011@mail.ru</option>
+						<option value="95">Stealth15031986@yandex.ru</option>
+						<option value="96">9821282@gmail.com</option>
+						<option value="98">UVOLENd.sudakov@2atm.ru</option>
+						<option value="99">v.turaev@2atm.ru</option>
+						<option value="100">leha@leha.leha</option>
+						<option value="101">v.kucik@2atm.ru</option>
+						<option value="102">k.shtanuhin@2atm.ru</option>
+						<option value="103">d.britvin@2atm.ru</option>
+						<option value="104">marsel000@mail.ru</option>
+						<option value="105">a.miron@2atm.ru</option>
+						<option value="106">UVOLENd.malukov@2atm.ru</option>
+						<option value="107">zm@2atm.ru</option>
+						<option value="108">a.postnikov@2atm.ru</option>
+						<option value="109">a.ludvig@2atm.ru</option>
+						<option value="110">a.gribinuk@2atm.ru</option>
+						<option value="111">i.tarasova@2atm.ru</option>
+						<option value="112">r.valiev@2atm.ru</option>
+						<option value="113">i.kacer@2atm.ru</option>
+						<option value="114">Stas17358211@gmail.com</option>
+						<option value="115">glukoza8811@gmail.com</option>
+						<option value="116">d.mihaylov@gmail.com</option>
+						<option value="117">Vladim.serow2014@gmail.com</option>
+						<option value="118">a.kadikin@2atm.ru</option>
+						<option value="119">dkoskin78@gmail.com</option>
+						<option value="120">n.glushonok@2atm.ru</option>
+						<option value="121">n.maslyan.2atm@gmail.ru</option>
+						<option value="122">9062706235egorov@gmail.com</option>
+						<option value="123">usb8827@gmail.com</option>
+						<option value="124">a.andreev@2atm.ru</option>
+						<option value="125">mikita11q@gmail.com</option>
+						<option value="126">123456@gmail.com</option>
+						<option value="127">9817705873@gmail.com</option>
+						<option value="128">43566@gmail.com</option>
+						<option value="129">1111111@gmail.com</option>
+						<option value="130">9502251537@gmail.com</option>
+						<option value="131">Venomxxx91@gmail.com</option>
+						<option value="132">9214340953@gmail.com</option>
+						<option value="133">12345@gmail.com</option>
+						<option value="134">12343356@gmail.com</option>
+						<option value="135">98765@gmail.com</option>
+						<option value="136">765@gmail.com</option>
+						<option value="314">lenamaggi@gmail.com</option>
+						<option value="137">lena.sisiuk@gmail.com</option>
+						<option value="138">Vailevdaniil47@gmail.com</option>
+						<option value="139">v.nosov2atm@gmail.com</option>
+						<option value="140">546545321@gmail.com</option>
+						<option value="141">i.veselov.2atm@gmail.com</option>
+						<option value="142">12367@gmail.com</option>
+						<option value="143">v.kapustin.2atm@gmail.com</option>
+						<option value="144">g.bezverhiy.2atm@gmail.com</option>
+						<option value="145">sasaborisuk228@gmail.com</option>
+						<option value="146">732435@gmail.com</option>
+						<option value="147">Armeesaan57@gmail.com</option>
+						<option value="148">weallshineynw@gmail.com</option>
+						<option value="149">1234@gmail.com</option>
+						<option value="150">a.schastniy.2atm@gmail.com</option>
+						<option value="151">tomastomastttom@gmail.com</option>
+						<option value="152">a.kazakov@gmail.com</option>
+						<option value="153">12335245@gmail.com</option>
+						<option value="154">23435465766@gmail.com</option>
+						<option value="155">pogrebnyakartem91@gmail.com</option>
+						<option value="156">387419@gmail.com</option>
+						<option value="157">artemkondratev87@gmail.com</option>
+						<option value="158">danil.reutskiy@gmail.com</option>
+						<option value="159">Bh2atm@gmail.com</option>
+						<option value="160">gurram2atm@gmail.com</option>
+						<option value="161">a.sharonov.2atm@gmail.com</option>
+						<option value="162">sg2atm@gmail.com</option>
+						<option value="163">smelev.2atm@gmail.com</option>
+						<option value="164">Chuev.1999@gmail.com</option>
+						<option value="165">hankulov.a@gmail.com</option>
+						<option value="166">d.gangur2atm@gmail.com</option>
+						<option value="167">Alexslesay@gmail.com</option>
+						<option value="168">v.kildibaev.2atm@gmail.com</option>
+						<option value="169">efil.2atm@gmail.com</option>
+						<option value="170">omar.2atm@gmail.com</option>
+						<option value="171">plyaceckiy.2atm@gmail.com</option>
+						<option value="172">e.evdokimov.2atm@gmail.com</option>
+						<option value="173">d.avcharov.2atm@gmail.com</option>
+						<option value="174">k.frolova.2atm@gmail.com</option>
+						<option value="175">Mih.2atm@gmail.com</option>
+						<option value="176">n.lev.2atm@gmail.com</option>
+						<option value="177">s.filippov@gmail.com</option>
+						<option value="178">Rtcfde@gmail.com</option>
+						<option value="179">s.kazakov.2atm@gmail.com</option>
+						<option value="180">125436334@gmail.com</option>
+						<option value="181">sofdom313@gmail.com</option>
+						<option value="182">23243546@gmail.com</option>
+						<option value="183">3243546@gmail.com</option>
+						<option value="184">snik7thor@gmail.com</option>
+						<option value="185">3274354@gmail.com</option>
+						<option value="186">Aformalyov061087@gmail.com</option>
+						<option value="187">chernoplodnoe@gmail.com</option>
+						<option value="188">a.igoshkin.2atm@gmail.com</option>
+						<option value="189">r.sidorov.2atm@gmail.com</option>
+						<option value="190">a.shukin.2atm@gmail.com</option>
+						<option value="191">o.kiseleva@gmail.com</option>
+						<option value="192">u.shevchenko.2atm@gmail.com</option>
+						<option value="193">m.kurakin@gmail.com</option>
+						<option value="194">a.kuznecov.2atm@gmail.com</option>
+						<option value="195">n.kornilov.2atm@gmail.com</option>
+						<option value="196">skvarkovd@gmail.com</option>
+						<option value="197">s.soloviev@gmail.com</option>
+						<option value="198">a.fayzulin.2atm@gmail.com</option>
+						<option value="199">g.pekin.2atm@gmail.com</option>
+						<option value="200">trnw.ru@gmail.com</option>
+						<option value="201">luluz0909v@gmail.com</option>
+						<option value="202">Ivanova52857@gmail.com</option>
+						<option value="203">12345678@gmail.com</option>
+						<option value="204">a.vdovich.2atm@gmail.com</option>
+						<option value="205">s.hruckaya.2atm@gmail.com</option>
+						<option value="206">supermaster@gmail.com</option>
+						<option value="207">e.cvirko.2atm@gmail.com</option>
+						<option value="208">o.alekseev.2atm@gmail.com</option>
+						<option value="209">a.paint.2atm@gmail.com</option>
+						<option value="210">bohadurhalimov@gmail.com</option>
+						<option value="211">Andrejpazgalev643@gmail.com</option>
+						<option value="212">Nikolau.1288@gmail.com</option>
+						<option value="213">evt2atm@gmail.com</option>
+						<option value="214">driver.rusik05@gmail.com</option>
+						<option value="215">kalash5620@gmail.com</option>
+						<option value="216">sizovasizovyj@gmail.com</option>
+						<option value="217">a.yarosh.2atm@gmail.com</option>
+						<option value="218">tshushak@gmail.com</option>
+						<option value="219">vit20.12.1991@gmail.com</option>
+						<option value="220">frau.tigr1980@gmail.com</option>
+						<option value="221">Zloistas33@gmail.com</option>
+						<option value="222">lspronin2288@gmail.com</option>
+						<option value="223">vladimirovi4kostya@gmail.com</option>
+						<option value="224">v.averjanov.2atm@gmail.com</option>
+						<option value="225">ballinguy1990@gmail.com</option>
+						<option value="226">Gerasimenkoo1996@gmail.com</option>
+						<option value="227">8888bars7255@gmail.com</option>
+						<option value="228">erni7kvartal@gmail.com</option>
+						<option value="229">kirillfilatovbmw13@gmail.com</option>
+						<option value="230">bdfybdfyjdbx953@gmail.com</option>
+						<option value="231">denisnehaj005@gmail.com</option>
+						<option value="232">pavlovslavik480@gmail.com</option>
+						<option value="233">snakedeniska1@gmail.com</option>
+						<option value="234">m.vasiliev.2atm@gmail.com</option>
+						<option value="235">Cebotaranaleksandr7@gmail.com</option>
+						<option value="236">a.vaytulevich@gmail.com</option>
+						<option value="237">k.gadjiev.2atm@gmail.com</option>
+						<option value="238">d.gavrikov.2atm@gmail.com</option>
+						<option value="239">e.kudryashkina.2atm@gmail.com</option>
+						<option value="240">a.sherbakov.2atm@gmail.com</option>
+						<option value="241">Umatvienko787@gmail.com</option>
+						<option value="242">Vasilyakovlew@gmail.com</option>
+						<option value="243">Slardbeats@gmail.com</option>
+						<option value="244">12345098765@gmail.com</option>
+						<option value="245">mergenbovrikov49@gmail.com</option>
+						<option value="246">neplyukhinalex@gmail.com</option>
+						<option value="247">nikvoron198787@gmail.com</option>
+						<option value="248">pro100troll56@gmail.com</option>
+						<option value="249">V771542@gmail.com</option>
+						<option value="250">bahtiev.7231@gmail.com</option>
+						<option value="251">e.vershinin.2atm@gmail.com</option>
+						<option value="252">firuz.2atm@gmail.com</option>
+						<option value="253">n.tarasenko.2atm@gmail.com</option>
+						<option value="254">ololoev230985@gmail.com</option>
+						<option value="255">d.zapala.2atm@gmail.com</option>
+						<option value="256">n.klukin@gmail.com</option>
+						<option value="257">erik.2atm@gmail.com</option>
+						<option value="258">m.igna.2atm@gmail.com</option>
+						<option value="259">m.kishov@gmail.com</option>
+						<option value="260">s.borush@gmail.com</option>
+						<option value="261">a.belous.2atm@gmail.com</option>
+						<option value="262">o.shamutov@gmail.com</option>
+						<option value="263">m.botoev@gmail.com</option>
+						<option value="264">g.golubchenko.2atm@gmail.com</option>
+						<option value="265">v.bragin.2atm@gmail.com</option>
+						<option value="266">a.solovieva@gmail.com</option>
+						<option value="267">m.jadaev@gmail.com</option>
+						<option value="268">k.serugin@gmail.com</option>
+						<option value="269">t.fadeeva.2atm@gmail.com</option>
+						<option value="270">i.viznyak.2atm@gmail.com</option>
+						<option value="271">a.islamov.2atm@gmail.com</option>
+						<option value="272">g.kolosov.2atm@gmail.com</option>
+						<option value="273">kozlynocek@gmail.com</option>
+						<option value="274">akoznov1@gmail.com</option>
+						<option value="275">gorovoi.leon198@gmail.com</option>
+						<option value="276">valuakarnih@gmail.com</option>
+						<option value="277">shantjmen@gmail.com</option>
+						<option value="278">noctkpuntymnoctkpuntym@gmail.com</option>
+						<option value="279">mentalmuted@gmail.com</option>
+						<option value="280">maksimuslion1950@gmail.com</option>
+						<option value="281">autist1983@gmail.com</option>
+						<option value="282">mishamalika1@gmail.com</option>
+						<option value="283">bosstepantsev944@gmail.com</option>
+						<option value="284">Yuri.worli.kcen@gmail.com</option>
+						<option value="285">honin.mikhail@gmail.com</option>
+						<option value="286">velievrenat53@gmail.com</option>
+						<option value="287">pakalinigor8434@gmail.com</option>
+						<option value="288">german192002@gmail.com</option>
+						<option value="289">Dike6818@gmail.com</option>
+						<option value="290">bykov.m199@gmail.com</option>
+						<option value="291">Ripinchikyakov@gmail.com</option>
+						<option value="292">ookakz@gmail.com</option>
+						<option value="293">btapejlke@gmail.com</option>
+						<option value="294">20danil15@gmail.com</option>
+						<option value="295">Dom.rus43@gmail.com</option>
+						<option value="296">ponchobf2@gmail.com</option>
+						<option value="297">andreaskorobov@gmail.com</option>
+						<option value="298">dovaking8888@gmail.com</option>
+						<option value="299">dima8171@gmail.com</option>
+						<option value="300">smashhh87nikita@gmail.com</option>
+						<option value="301">i30804414@gmail.com</option>
+						<option value="302">mironchernyshewski@gmail.com</option>
+						<option value="303">rakcheev8@gmail.com</option>
+						<option value="304">joniksever23rus@gmail.com</option>
+						<option value="305">artagerz1909@gmail.com</option>
+						<option value="306">kozirev0007@gmail.com</option>
+						<option value="307">Danik5270@gmail.com</option>
+						<option value="308">viktorinos135qw@gmail.com</option>
+						<option value="309">kachalovspb2020@gmail.com</option>
+						<option value="310">ilaastafev944@gmail.com</option>
+						<option value="311">a.gor.2atm@gmail.com</option>
+						<option value="312">a.polikarpov.2atm@gmail.com</option>
+						<option value="315">o.ivanova.2atm@gmail.com</option>
+						<option value="316">m.tuzova.2atm@gmail.com</option>
+						<option value="317">antituxxd@gmail.com</option>
+						<option value="318">kon.terentiy@gmail.com</option>
+						<option value="319">soldnerok@gmail.com</option>
+						<option value="320">Maximderbin@gmail.com</option>
+						<option value="321">kosevojdana@gmail.com</option>
+						<option value="322">petavasa736@gmail.com</option>
+						<option value="323">pobedonosceff@gmail.com</option>
+						<option value="324">gorysoulxxx@gmail.com</option>
+						<option value="325">snowshineblessed@gmail.com</option>
+						<option value="326">kristinavers21082003@gmail.com</option>
+						<option value="327">maks.dobrovolskiy.2022@gmail.com</option>
+						<option value="328">danilodnorogov@gmail.com</option>
+						<option value="329">leha.shav.027683@gmail.com</option>
+						<option value="330">novosokolniki13@gmail.com</option>
+						<option value="331">ramozserhio4@gmail.com</option>
+						<option value="332">maksimuslion1951@gmail.com</option>
+						<option value="333">v.knyazev.2atm@gmail.com</option>
+						<option value="334">tekutevmihail1981@gmail.com</option>
+						<option value="335">petrmaslov585@gmail.com</option>
+						<option value="336">balagurovalekse@gmail.com</option>
+						<option value="337">balagurovalekse@gmail.com</option>
+						<option value="338">21345darf@gmail.com</option>
+						<option value="339">karmanovskijsergej@gmail.com</option>
+						<option value="340">izverkov340@gmail.com</option>
+						<option value="341">melimsolo@gmail.com</option>
+						<option value="342">vv862525@gmail.com</option>
+						<option value="343">Tulkin.urakov.08081984@gmail.com</option>
+						<option value="344">somaroff@gmail.com</option>
+						<option value="345">kadirovkahramon41@gmail.com</option>
+						<option value="346">nikitaivasov64@gmail.com</option>
+						<option value="347">2artagerz1909@gmail.com</option>
+						<option value="348">Sergewspb@gmail.com</option>
+						<option value="349">Kutubaev.vlad@gmail.com</option>
+						<option value="350">nazaroff2301@gmail.com</option>
+						<option value="351">yurijm8946@gmail.com</option>
+						<option value="352">averjanov.2atm@gmail.com</option>
+						<option value="353">valek2305@gmail.com</option>
+						<option value="354">pkornezo@gmail.com</option>
+						<option value="355">ivan.sslife@gmail.com</option>
+						<option value="356">zabolotnyalex2002@gmail.com</option>
+						<option value="357">mirnayao08@gmail.com</option>
+						<option value="358">maks.petrakov.922@gmail.com</option>
+						<option value="359">artursilantev715@gmail.com</option>
+						<option value="360">nnaletov254@gmail.com</option>
+						<option value="361">Wemen01@gmail.com</option>
+						<option value="362">b.e.anuar2@gmail.com</option>
+						<option value="363">salitonikita@gmail.com</option>
+						<option value="364">Sergei.tiras@gmail.com</option>
+						<option value="365">fasber.f23@gmail.com</option>
+						<option value="366">ruzanova.angelina.2atm@gmail.com</option>
+						<option value="367">Enrique.hulyevich.eglesias@gmail.com</option>
+						<option value="368">pkornezo2@gmail.com</option>
+						<option value="369">u348946@gmail.com</option>
+						<option value="370">v631831@gmail.com</option>
+						<option value="371">ballinguy19903@gmail.com</option>
+						<option value="372">flashtool2517@gmail.com</option>
+						<option value="373">evdokimovaanastasia15@gmail.com</option>
+						<option value="374">Sergeevartem193@gmail.com</option>
+						<option value="375">nnnaletov254@gmail.com</option>
+						<option value="376">Igoroff01@gmail.com</option>
+						<option value="377">aralova2010@gmail.com</option>
+						<option value="378">e92.535@gmail.com</option>
+						<option value="379">tnasta218@gmail.com</option>
+						<option value="380">gerc.2atm@gmail.com</option>
+						<option value="381">9347750@gmail.com</option>
+						<option value="382">dimaesaul1961@gmail.com</option>
+						<option value="383">Sergeygerasimov767@icloud.com</option>
+						<option value="384">soldnerok2@gmail.com</option>
+						<option value="385">Nigma138@gmail.com</option>
+						<option value="386">drdarick1992@gmail.com</option>
+						<option value="387">t.gorkova87@gmail.com</option>
+						<option value="388">Ilinmikhail51@gmail.com</option>
+						<option value="389">samsungsymplex90@gmail.com</option>
+						<option value="390">2t.gorkova87@gmail.com</option>
+						<option value="391">kirilnikit01@gmail.com</option>
+						<option value="392">skorobko791@gmail.com</option>
+						<option value="393">Anuta200900bibik@gmail.com</option>
+						<option value="394">elhafkalan@gmail.com</option>
+						<option value="395">nikitinajulia2108@gmail.com</option>
+						<option value="396">evgenijsinicyn35@gmail.com</option>
+						<option value="397">dewulisha@gmail.com</option>
+						<option value="398">nikolay1234@gmail.com</option>
+						<option value="399">Chagev.03@gmail.com</option>
+						<option value="400">hulivamvsemnado666@gmail.com</option>
+						<option value="401">e.ivanov.2atm@gmail.com</option>
+						<option value="402">mirnayao082@gmail.com</option>
+						<option value="403">kurbandzanbulatov112@gmail.com</option>
+						<option value="404">Vioshoka@gmail.com</option>
+						<option value="405">Danilinae848@gmail.com</option>
+						<option value="406">aleksandr02041987.s@gmail.com</option>
+						<option value="407">jackeretp@gmail.com</option>
+						<option value="408">jackeretp2@gmail.com</option>
+						<option value="409">Shir19and2016@gmail.com</option>
+						<option value="410">Serepuha1@gmail.com</option>
+						<option value="411">n.tarasenko.3atm@gmail.com</option>
+						<option value="412">filulka5@gmail.com</option>
+						<option value="413">dm2nikolskiy@gmail.com</option>
+						<option value="414">alexeytrushkin61@gmail.com</option>
+						<option value="415">pavel281018@gmail.com</option>
+						<option value="416">denis9859you@gmail.com</option>
+						<option value="417">18markgyrdymov@gmail.com</option>
+						<option value="418">0909@gmail.com</option>
+						<option value="419">Vladlollox07@gmail.com</option>
+						<option value="420">drdarick19922@gmail.com</option>
+						<option value="421">kostin0404@gmail.com</option>
+						<option value="422">nikitaiva20097@gmail.com</option>
+						<option value="423">elhafkalan2@gmail.com</option>
+						<option value="424">9997773344@gmail.com</option>
+						<option value="425">artiom.mezheynikov.work@gmail.com</option>
+					</select>
+				</div>
+
+				<div class="w-full flex justify-end items-center gap-x-2 lg:col-span-2 xl:gap-x-6 2xl:col-span-4">
+					<button
+						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
+						type="submit">Сохранить</button>
+					<button
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98 mb-1.5 self-end xl:self-center xl:mb-0"
+						type="reset">
+						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+						</svg>
+
+						<span class="text-accent text-sm font-medium">Сбросить</span>
+					</button>
+				</div>
+			</form>
+			<!-- End MAIN users filter  -->
+			<div class="mb-6 w-full flex justify-between items-center">
+				<form class="w-full flex flex-col gap-3 xs:flex-row">
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-users-active" checked>
+						<label
+							class="w-full text-center inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-users-active">Активные</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-users-passive">
+						<label
+							class="w-full text-center inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-users-passive">Неактивные</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-users-all">
+						<label
+							class="w-full text-center inline-block px-2.5 py-2 text-sm font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white"
+							for="filter-users-all">Все</label>
+					</div>
+				</form>
+			</div>
+			<!-- End users аdditional filter -->
+			<div class="overflow-x-auto xl:w-full mb-6">
+				<table class="prose 
+											max-w-screen
+											min-w-235
+											w-full
+											leading-[1.2]
+											text-dark-text 
+											prose-thead:border-0 
+											prose-th:p-2.5 
+											prose-th:bg-gray-50 
+											prose-th:align-middle 
+											prose-th:text-[0.81rem] 
+											prose-th:font-semibold
+											prose-th:[&>div]:flex
+											prose-th:[&>div]:items-center
+											prose-th:[&>div]:justify-between
+											prose-td:text-[0.93rem]
+											prose-td:leading-none
+											prose-td:p-2.5 
+											prose-td:align-middle 
+											prose-td:has-[a]:py-0 
+											prose-tr:even:bg-gray-50
+											prose-tr:min-w-6 
+											prose-tr:h-9.5 
+											prose-tr:border-white 
+											prose-tr:border-b-2
+											prose-tr:[&>td:first-child]:max-w-17.5
+											prose-td:[&>a]:text-accent
+											prose-td:[&>a]:underline
+											prose-td:[&>a]:duration-300
+											prose-td:[&>a]:hover:no-underline
+											prose-td:[&>a]:hover:opacity-70
+											prose-td:[&>a]:active:opacity-100
+											prose-td:[&>a]:active:scale-95
+											prose-td:[&>a]:active:text-pitpos-700
+											prose-td:[&>a[data-user]]:flex
+											prose-td:[&>a[data-user]]:items-center
+											prose-td:[&>a[data-user]]:gap-x-1
+											prose-td:[&>a[data-user]]:font-semibold
+											prose-td:[&>a[data-user]]:duration-300
+											prose-td:[&>a[data-user]>svg]:opacity-0
+											prose-td:[&>a[data-user]]:hover:[&>svg]:opacity-70
+											prose-td:[&>a[data-user]]:active:[&>svg]:opacity-100
+											prose-td:[&>a[data-user]]:active:[&>svg]:stroke-pitpos-700
+											prose-td:[&:has(>span+span)>span[data-user-role]]:whitespace-nowrap
+											prose-td:[&:has(>span+span)>span[data-user-role]]:w-min
+											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:pr-4
+											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:relative
+											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:after:absolute
+											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:after:right-0
+											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:after:content-[',и']
+					">
+					<thead>
+						<tr>
+							<th>
+								ID
+							</th>
+							<th>
+								<div>
+									<span>ФИО</span>
+
+									<svg class="size-4.5 stroke-black fill-black" viewBox="0 0 18 18">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#sort-icon"></use>
+									</svg>
+								</div>
+							</th>
+
+							<th>
+								<div>
+									<span>Роль</span>
+
+									<svg class="size-4.5 stroke-black fill-black" viewBox="0 0 18 18">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#sort-icon"></use>
+									</svg>
+								</div>
+							</th>
+
+							<th>
+								<div>
+									<span>Телефон</span>
+
+									<svg class="size-4.5 stroke-black fill-black" viewBox="0 0 18 18">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#sort-icon"></use>
+									</svg>
+								</div>
+							</th>
+
+							<th>
+								<div>
+									<span>E-mail</span>
+
+									<svg class="size-4.5 stroke-black fill-black" viewBox="0 0 18 18">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#sort-icon"></use>
+									</svg>
+								</div>
+							</th>
+
+							<th>
+								Статус
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>425</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Артем Межейников
+							</td>
+
+							<td>
+								<span data-user-role>Владелец</span>
+							</td>
+
+							<td>
+								+375445821803
+							</td>
+
+							<td>
+								artiom.mezheynikov.work@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-425" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-425" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>423</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Алан Карим
+							</td>
+
+							<td>
+								<span data-user-role>Мойщик</span>
+							</td>
+
+							<td>
+								95000007121
+							</td>
+
+							<td>
+								elhafkalan2@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-423" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-423" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>420</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Маликов Ильдар
+							</td>
+
+							<td>
+								<span data-user-role>Мастер развал-схождения</span>
+							</td>
+
+							<td>
+								9523666692
+							</td>
+
+							<td>
+								drdarick19922@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-420" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-420" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>418</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Армине
+							</td>
+
+							<td>
+								<span data-user-role>Контроллер&nbsp;смен</span>
+							</td>
+
+							<td>
+								9110106661
+							</td>
+
+							<td>
+								0909@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-418" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-418" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>407</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Аксёнов Никита
+							</td>
+
+							<td>
+								<span data-user-role>Слесарь</span>
+							</td>
+
+							<td>
+								91182454320
+							</td>
+
+							<td>
+								jackeretp@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-407" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-407" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>405</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Данилина Елена
+							</td>
+
+							<td>
+								<span data-user-role>Кассир&nbsp;Зеленогорск</span>
+							</td>
+
+							<td>
+								9679767953
+							</td>
+
+							<td>
+								Danilinae848@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-405" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-405" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>402</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Газя Владислав (Кассир)
+							</td>
+
+							<td>
+								<span data-user-role>Кассир&nbsp;Пулково</span>
+							</td>
+
+							<td>
+								90520929270
+							</td>
+
+							<td>
+								mirnayao082@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-402" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-402" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>382</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Ульянов Дмитрий
+							</td>
+
+							<td>
+								<span data-user-role>Мастер&nbsp;ТО</span>
+							</td>
+
+							<td>
+								9112816197
+							</td>
+
+							<td>
+								dimaesaul1961@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-382" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-382" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>367</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Кононов Алексей
+							</td>
+
+							<td>
+								<span data-user-role>Мастер</span>
+							</td>
+
+							<td>
+								9217868777
+							</td>
+
+							<td>
+								Enrique.hulyevich.eglesias@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-367" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-367" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>360</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Налётов Никита
+							</td>
+
+							<td>
+								<span data-user-role>Администратор&nbsp;сервиса</span>
+							</td>
+
+							<td>
+								9819423992
+							</td>
+
+							<td>
+								nnaletov254@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-360" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-360" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>353</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Богданов Валентин
+							</td>
+
+							<td>
+								<span data-user-role>Администратор мастерской</span>
+							</td>
+
+							<td>
+								9215720172
+							</td>
+
+							<td>
+								valek2305@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-353" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-353" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>278</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Фыафываыва
+							</td>
+
+							<td>
+								<span data-user-role>Администратор&nbsp;мойки</span>
+							</td>
+
+							<td>
+								9992344176
+							</td>
+
+							<td>
+								noctkpuntymnoctkpuntym@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-278" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-278" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>265</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Брагин Влад
+							</td>
+
+							<td>
+								<span data-user-role>Кассир-шиномонтаж</span>
+							</td>
+
+							<td>
+								9245659258
+							</td>
+
+							<td>
+								v.bragin.2atm@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-265" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-265" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>224</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Аверьянов Вадим
+							</td>
+
+							<td>
+								<span data-user-role>Мастер-приемщик</span>
+							</td>
+
+							<td>
+								9995239586
+							</td>
+
+							<td>
+								v.averjanov.2atm@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-224" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-224" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>137</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Сисюк Елена
+							</td>
+
+							<td>
+								<span data-user-role>Менеджер дисконтных&nbsp;карт</span>
+							</td>
+
+							<td>
+								9095857890
+							</td>
+
+							<td>
+								lena.sisiuk@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-137" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-137" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>89</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Иванов Сергей (Зеленогорск)
+							</td>
+
+							<td>
+								<span data-user-role>Мастер&nbsp;шиномонтажа Зеленогорск</span>
+							</td>
+
+							<td>
+								9811735969
+							</td>
+
+							<td>
+								s.ivanov-zelek@2atm.ru
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-89" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-89" disabled checked>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a href="./user.html" data-user title="Подробнее о пользователе">
+									<span>65</span>
+
+									<svg class="inline-block size-6 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+
+							<td>
+								Artem E
+							</td>
+
+							<td>
+								<span data-user-role>Владелец</span>
+								<span data-user-role>Просмотр фин.&nbsp;статистики</span>
+								<span data-user-role>Душа компании</span>
+								<span data-user-role>Роль 4</span>
+								<span data-user-role>Роль 5</span>
+							</td>
+
+							<td>
+								9643702511
+							</td>
+
+							<td>
+								3702511@gmail.com
+							</td>
+
+							<td>
+								<div data-user-state>
+									<label for="user-switcher-65" title="Вкл/откл пользователя"
+										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-65" disabled>
+										<span
+											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+										<span
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End table of users -->
+			<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
+				<div>
+					Записи
+					<span>1</span>-<span>10</span>
+					из
+					<span>256</span>
+				</div>
+
+				<label class="relative inline-block z-0 h-8 self-start" for="seasonal-storage-lists-select">
+					<svg class="absolute right-2.5 top-1 -z-1 size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+
+					<select
+						class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-pitpos-950 font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-pitpos-700  focus:outline-0 focus:outline-0 no-number-spinner"
+						id="seasonal-storage-lists-select">
+						<option value="shifts-list-1-10" selected>10</option>
+						<option value="shifts-list-10-20">20</option>
+						<option value="shifts-list-20-30">30</option>
+						<option value="shifts-list-30-40">40</option>
+						<option value="shifts-list-40-50">50</option>
+						<option value="shifts-list-50-60">60</option>
+						<option value="shifts-list-60-70">70</option>
+						<option value="shifts-list-70-80">80</option>
+						<option value="shifts-list-80-90">90</option>
+						<option value="shifts-list-90-100">100</option>
+						<option value="shifts-list-100-110">110</option>
+						<option value="shifts-list-110-120">120</option>
+						<option value="shifts-list-120-130">130</option>
+						<option value="shifts-list-130-140">140</option>
+						<option value="shifts-list-140-150">150</option>
+						<option value="shifts-list-150-160">160</option>
+						<option value="shifts-list-160-170">170</option>
+						<option value="shifts-list-170-180">180</option>
+						<option value="shifts-list-180-190">190</option>
+						<option value="shifts-list-190-200">200</option>
+						<option value="shifts-list-200-210">210</option>
+						<option value="shifts-list-210-220">220</option>
+						<option value="shifts-list-220-230">230</option>
+						<option value="shifts-list-230-240">240</option>
+						<option value="shifts-list-240-250">250</option>
+						<option value="shifts-list-250-256">256</option>
+					</select>
+				</label>
+
+				<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
+					<ul class="flex gap-x-1.5 sm:gap-x-2.5">
+						<li class="shrink-0 h-8 w-8" disabled>
+							<a class="flex items-center justify-center w-full h-full rounded-full will-change-transform duration-300 hover:ring-1 hover:ring-pitpos-700 active:scale-95 has-disabled:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none disabled"
+								href="#!" rel="prev" aria-label="« Назад">
+								<svg class="shrink-0 size-6 stroke-pitpos-700 fill-transparent rotate-90" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
+								href="#!">1</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">2</a>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">3</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class=" h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">4</a>
+						</li>
+
+						<li class="hidden sm:block">
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">5</a>
+						</li>
+
+						<li aria-disabled="true">
+							<span class="cursor-default">...</span>
+						</li>
+
+						<li>
+							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">8</a>
+						</li>
+
+						<li class=" h-8">
+							<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-pitpos-700 hover:opacity-80 has-disabled:[&>svg]:bg-gray-100 has-disabled:[&>svg]:stroke-pitpos-300 has-disabled:pointer-events-none"
+								href="#!" rel="next" aria-label="Вперёд »">
+								<span class="hidden xs:block">Дальше</span>
+
+								<svg class="duration-300 rounded-full -rotate-90 size-6 stroke-pitpos-700 fill-transparent"
+									viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- End pagination block -->
+		</div>
+
+	</main>
+
+	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+</body>
+
+</html>
