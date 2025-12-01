@@ -556,17 +556,16 @@
 				<span class="text-pitpos-700">Сезонные хранения</span>
 			</h1>
 			<!-- End page name -->
-			<form class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-3"
-				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
+			<form class="max-w-369 w-full mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-12">
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="seal">Номер пломбы</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="seal" name="seal" type="text">
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="phone">Телефон</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
@@ -574,21 +573,21 @@
 						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="plate">Госномер</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="plate" name="plate" type="text">
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="name">ФИО</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="name" name="name" type="text">
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="workshop_id">Мастерская</label>
 
 					<select id="workshop_id" name="workshop_id" data-hs-select='{
@@ -610,7 +609,7 @@
 					</select>
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="flex flex-col gap-y-1 xl:col-span-3">
 					<label class="text-sm text-gray-500" for="workshop_state">Статус</label>
 					<select id="workshop_state" name="workshop_state" data-hs-select='{
 						"placeholder": "Все",
@@ -629,12 +628,10 @@
 					</select>
 				</div>
 
-				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-3">
+				<div
+					class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-3 xl:col-span-2  xl:col-start-[10] xl:col-end-[13] xl:row-start-[1] xl:row-end-[3] xl:items-end">
 					<button
-						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-						type="submit">Сохранить</button>
-					<button
-						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
+						class="px-2.5 py-[0.5625rem] bg-white flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90"
 						type="reset">
 						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
@@ -642,6 +639,11 @@
 
 						<span class="text-accent text-sm font-medium">Сбросить</span>
 					</button>
+
+					<button
+						class="px-5 py-[0.5625rem] bg-white rounded-md ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white hover:ring-pitpos-700 hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90 disabled:bg-gray-300 disabled:text-gray-500 disabled:text-gray-500 disabled:pointer-events-none"
+						type="submit">Сохранить</button>
+
 				</div>
 			</form>
 			<!-- End MAIN filter of seosonal storage -->
@@ -668,9 +670,8 @@
 				</form>
 
 				<button
-					class="font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform hover:brightness-80 hover:no-underline active:scale-98 active:brightness-70"
-					type="button">Отправить
-					на&nbsp;проверку</button>
+					class="px-3.5 py-[0.5625rem] rounded-md bg-white font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent hover:no-underline active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-300"
+					type="button">Отправить</button>
 			</div>
 			<!-- End aditional filter of seasonal storage (tables filter) -->
 			<div class="overflow-x-auto xl:w-full mb-6">
@@ -702,17 +703,39 @@
 				prose-td:has-[a]:py-0 
 					prose-td:[&>a]:text-accent
 					prose-td:[&>a]:duration-300
-					prose-td:[&>a]:hover:brightness-70
-					prose-td:[&>a]:active:no-underline
+					prose-td:[&>a]:hover:no-underline
+					prose-td:[&>a]:active:brightness-90
+					prose-td:[&>div>a]:px-3.5
+					prose-td:[&>div>a]:bg-transparent
+					prose-td:[&>div>a]:py-[0.69rem]
+					prose-td:[&>div>a]:rounded-md
 					prose-td:[&>div>a]:text-accent
+					prose-td:[&>div>a]:will-change-transform
 					prose-td:[&>div>a]:duration-300
-					prose-td:[&>div>a]:hover:brightness-60
-					prose-td:[&>div>a]:active:no-underline
-					prose-td:[&>div>button]:underline
+					prose-td:[&>div>a]:hover:ring-2
+					prose-td:[&>div>a]:hover:ring-accent
+					prose-td:[&>div>a]:hover:bg-white
+					prose-td:[&>div>a]:active:brightness-90
+					prose-td:[&>div>a]:active:scale-96
+					prose-td:[&>div>a[data-disabled]]:pointer-events-none
+					prose-td:[&>div>a[data-disabled]]:text-gray-300
+					prose-td:[&>div>button]:px-3.5
+					prose-td:[&>div>button]:cursor-pointer
+					prose-td:[&>div>button]:rounded-sm
+					prose-td:[&>div>button]:font-bold
+					prose-td:[&>div>button]:py-[0.69rem]
+					prose-td:[&>div>button]:bg-transparent
 					prose-td:[&>div>button]:text-accent
+					prose-td:[&>div>button]:ring-1
 					prose-td:[&>div>button]:duration-300
-					prose-td:[&>div>button]:hover:brightness-60
-					prose-td:[&>div>button]:active:no-underline
+					prose-td:[&>div>button]:will-change-transform
+					prose-td:[&>div>button]:hover:bg-pitpos-700
+					prose-td:[&>div>button]:hover:text-white
+					prose-td:[&>div>button]:active:brightness-90
+					prose-td:[&>div>button]:active:scale-96
+					prose-td:[&>div>button]:disabled:pointer-events-none
+					prose-td:[&>div>button]:disabled:bg-pitpos-500
+					prose-td:[&>div>button]:disabled:text-pitpos-300
 					">
 					<thead>
 						<tr>
@@ -796,11 +819,11 @@
 							</td>
 							<td>
 								<div>
-									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv">
+									<a href="https://backend.dev.2atm.ru/backoffice/seasonal-storages/15972/getcsv" data-disabled>
 										CSV
 									</a>
 
-									<button type="submit">
+									<button disabled>
 										Отправить
 									</button>
 								</div>
@@ -856,7 +879,7 @@
 										CSV
 									</a>
 
-									<button type="submit">
+									<button>
 										Отправить
 									</button>
 								</div>
@@ -912,7 +935,7 @@
 										CSV
 									</a>
 
-									<button type="submit">
+									<button>
 										Отправить
 									</button>
 								</div>
@@ -941,7 +964,7 @@
 								865774
 							</td>
 							<td>
-								В мастерской
+								В&nbsp;мастерской
 							</td>
 							<td>
 								М678ИМ799
@@ -968,7 +991,7 @@
 										CSV
 									</a>
 
-									<button type="submit">
+									<button>
 										Отправить
 									</button>
 								</div>
