@@ -524,7 +524,7 @@
 		</aside>
 		<!-- End sidebar -->
 		<div class="w-full mb-6 ">
-			<nav class="xl:container">
+			<nav>
 				<ul class="flex flex-wrap">
 					<li>
 						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
@@ -539,8 +539,7 @@
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-seasonal-storage.html">
+						<a class="text-pitpos-700 text-[0.75rem] pointer-events-none" href="./op-control-seasonal-storage.html">
 							Сезонные хранения
 						</a>
 					</li>
@@ -548,7 +547,7 @@
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
 			<h1 class="flex font-semibold mb-6 py-2">
 				<svg class="size-6 stroke-pitpos-700 mr-3.5" viewBox="0 0 24 24">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
@@ -633,15 +632,15 @@
 				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 lg:col-span-3">
 					<button
 						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-						type="submit" disabled>Сохранить</button>
+						type="submit">Сохранить</button>
 					<button
-						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
 						type="reset">
-						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 						</svg>
 
-						<span class="text-dark-red text-sm font-medium">Сбросить</span>
+						<span class="text-accent text-sm font-medium">Сбросить</span>
 					</button>
 				</div>
 			</form>
@@ -669,7 +668,7 @@
 				</form>
 
 				<button
-					class="font-bold underline text-sm text-pitpos-700 cursor-pointer duration-300 will-change-transform hover:text-pitpos-800 hover:no-underline active:scale-98"
+					class="font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform hover:brightness-80 hover:no-underline active:scale-98 active:brightness-70"
 					type="button">Отправить
 					на&nbsp;проверку</button>
 			</div>
@@ -680,6 +679,7 @@
 				[&>tbody>tr]:h-17
 				prose-th:p-2.5 
 				prose-th:first:p-0.5 
+				prose-th:[&:nth-child(2)]:text-accent 
 				prose-th:bg-gray-50 
 				prose-th:align-middle 
 				prose-th:text-[0.81rem] 
@@ -700,18 +700,18 @@
 				prose-td:py-[0.5rem] 
 				prose-td:align-middle 
 				prose-td:has-[a]:py-0 
-					prose-td:[&>a]:text-pitpos-700
+					prose-td:[&>a]:text-accent
 					prose-td:[&>a]:duration-300
-					prose-td:[&>a]:hover:text-pitpos-500
+					prose-td:[&>a]:hover:brightness-70
 					prose-td:[&>a]:active:no-underline
-					prose-td:[&>div>a]:text-pitpos-700
+					prose-td:[&>div>a]:text-accent
 					prose-td:[&>div>a]:duration-300
-					prose-td:[&>div>a]:hover:text-pitpos-500
+					prose-td:[&>div>a]:hover:brightness-60
 					prose-td:[&>div>a]:active:no-underline
 					prose-td:[&>div>button]:underline
-					prose-td:[&>div>button]:text-pitpos-700
+					prose-td:[&>div>button]:text-accent
 					prose-td:[&>div>button]:duration-300
-					prose-td:[&>div>button]:hover:text-pitpos-500
+					prose-td:[&>div>button]:hover:brightness-60
 					prose-td:[&>div>button]:active:no-underline
 					">
 					<thead>
@@ -1035,27 +1035,27 @@
 						</li>
 
 						<li>
-							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
+							<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white active"
 								href="#!">1</a>
 						</li>
 
 						<li>
-							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+							<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
 								href="#!">2</a>
 						</li>
 
 						<li>
-							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+							<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
 								href="#!">3</a>
 						</li>
 
 						<li class="hidden sm:block">
-							<a class=" h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+							<a class=" h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
 								href="#!">4</a>
 						</li>
 
 						<li class="hidden sm:block">
-							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+							<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
 								href="#!">5</a>
 						</li>
 
@@ -1064,8 +1064,8 @@
 						</li>
 
 						<li>
-							<a class="h-8 w-8 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
-								href="#!">8</a>
+							<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white active:scale-95 has-active:bg-pitpos-700 has-active:text-white"
+								href="#!">3214</a>
 						</li>
 
 						<li class=" h-8">

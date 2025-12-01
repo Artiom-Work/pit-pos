@@ -524,7 +524,7 @@
 		</aside>
 		<!-- End sidebar -->
 		<div class="w-full mb-6 ">
-			<nav class="xl:container">
+			<nav>
 				<ul class="flex flex-wrap">
 					<li>
 						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
@@ -539,8 +539,7 @@
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
-							href="./op-control-storage-applications.html">
+						<a class="text-pitpos-700 text-[0.75rem] pointer-events-none" href="./op-control-storage-applications.html">
 							Заявки на&nbsp;выдачу сезонных хранений
 						</a>
 					</li>
@@ -548,7 +547,7 @@
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
 			<h1 class="flex font-semibold mb-6 py-2">
 				<svg class="size-6 stroke-pitpos-700 mr-3.5" viewBox="0 0 24 24">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
@@ -575,7 +574,7 @@
 						"placeholder": "Все",
 						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
 						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error focus:outline-0",
-						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 						"optionTemplate": 
 						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
@@ -683,18 +682,18 @@
 					class="flex justify-end items-end gap-3 w-full sm:col-span-2 lg:col-span-3 xl:gap-2 xl:col-span-1 xl:flex-col-reverse">
 					<button
 						class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-						type="submit" disabled>
+						type="submit">
 						Сохранить
 					</button>
 
 					<button
-						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
 						type="reset">
-						<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 						</svg>
 
-						<span class="text-dark-red text-sm font-medium">Сбросить</span>
+						<span class="text-accent text-sm font-medium">Сбросить</span>
 					</button>
 				</div>
 			</form>
@@ -724,7 +723,7 @@
 				</form>
 
 				<button
-					class="self-start font-bold underline text-sm text-pitpos-700 cursor-pointer duration-300 will-change-transform hover:text-pitpos-800 hover:no-underline active:scale-98 xs:self-center"
+					class="self-start font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform hover:brightness-70 hover:no-underline active:scale-98 xs:self-center"
 					type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-create-storage-applic-modal"
 					data-hs-overlay="#hs-create-storage-applic-modal">Добавить&nbsp;заявку</button>
 
@@ -783,13 +782,13 @@
 												</button>
 
 												<button
-													class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+													class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
 													type="reset" data-hs-overlay="#hs-create-storage-applic-modal">
-													<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+													<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 														<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 													</svg>
 
-													<span class="text-dark-red text-sm font-medium">Отмена</span>
+													<span class="text-accent text-sm font-medium">Отмена</span>
 												</button>
 											</div>
 										</form>
@@ -807,10 +806,11 @@
 				<table class="prose mb-6 max-w-screen min-w-240 w-full text-dark-text 
 				prose-thead:border-0 
 				prose-th:p-2.5 
-				prose-th:first:p-0.5 
+				prose-th:first:p-0.5
+				prose-th:first:w-7.5
+				prose-th:[&:nth-child(2)>span]:text-accent
 				prose-th:bg-gray-50 
 				prose-th:align-middle 
-				prose-th:[&>span]:text-pitpos-700 
 				prose-td:leading-none
 				prose-td:p-2.5
 				prose-td:align-middle 
@@ -824,9 +824,9 @@
 				prose-tr:[&>td:first-child]:max-w-8.5
 					prose-td:[&[data-client-state=true]>svg:last-child]:hidden
 					prose-td:[&[data-client-state=false]>svg:first-child]:hidden
-					prose-td:[&>a]:text-pitpos-700
+					prose-td:[&>a]:text-accent
 					prose-td:[&>a]:duration-300
-					prose-td:[&>a]:hover:text-pitpos-500
+					prose-td:[&>a]:hover:brightness-60
 					prose-td:[&>a]:active:no-underline
 					prose-tr:[&>td>div]:w-full 
 					prose-tr:[&>td>div]:flex 
@@ -845,6 +845,7 @@
 					prose-td:[&>div>time]:after:bg-success
 					prose-td:[&>div>button]:font-bold
 					prose-td:[&>div>button]:text-sm
+					prose-td:[&>div>button]:text-accent
 					prose-td:[&>div>button]:leading-[1.71429]
 					prose-td:[&>div>button]:tracking-[0.01em]
 					prose-td:[&>div>button]:py-1
@@ -855,7 +856,8 @@
 					prose-td:[&>div>button]:cursor-pointer
 					prose-td:[&>div>button]:duration-300
 					prose-td:[&>div>button]:will-change-transform
-					prose-td:[&>div>button]:hover:bg-pitpos-700
+					prose-td:[&>div>button]:hover:bg-accent
+					prose-td:[&>div>button]:hover:text-white
 					prose-td:[&>div>button]:hover:shadow-sm
 					prose-td:[&>div>button]:hover:text-white
 					prose-td:[&>div>button]:active:scale-95

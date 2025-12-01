@@ -84,7 +84,6 @@
     --color-pitpos-400: #a89bc2;
     --color-pitpos-450: #B499E7;
     --color-pitpos-500: #816ea4;
-    --color-pitpos-600: #543a80;
     --color-pitpos-700: #1b0939;
     --color-pitpos-800: #553e7d;
   }
@@ -1103,6 +1102,9 @@
   }
   .max-w-xs {
     max-width: var(--container-xs);
+  }
+  .min-w-8 {
+    min-width: calc(var(--spacing) * 8);
   }
   .min-w-24 {
     min-width: calc(var(--spacing) * 24);
@@ -2270,6 +2272,14 @@
       }
     }
   }
+  .hover\:brightness-70 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-brightness: brightness(70%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
   .hover\:brightness-80 {
     &:hover {
       @media (hover: hover) {
@@ -2545,11 +2555,6 @@
   .xs\:items-center {
     @media (width >= 29.99rem) {
       align-items: center;
-    }
-  }
-  .xs\:justify-between {
-    @media (width >= 29.99rem) {
-      justify-content: space-between;
     }
   }
   .xs\:gap-3 {
@@ -3214,6 +3219,11 @@
       }
     }
   }
+  .prose-th\:max-w-8\.5 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      max-width: calc(var(--spacing) * 8.5);
+    }
+  }
   .prose-th\:bg-gray-50 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       background-color: var(--color-gray-50);
@@ -3287,10 +3297,45 @@
       font-weight: var(--font-weight-semibold);
     }
   }
+  .prose-th\:first\:w-7\.5 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:first-child {
+        width: calc(var(--spacing) * 7.5);
+      }
+    }
+  }
+  .prose-th\:first\:w-8\.5 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:first-child {
+        width: calc(var(--spacing) * 8.5);
+      }
+    }
+  }
+  .prose-th\:first\:max-w-1 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:first-child {
+        max-width: calc(var(--spacing) * 1);
+      }
+    }
+  }
+  .prose-th\:first\:max-w-8\.5 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:first-child {
+        max-width: calc(var(--spacing) * 8.5);
+      }
+    }
+  }
   .prose-th\:first\:p-0\.5 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:first-child {
         padding: calc(var(--spacing) * 0.5);
+      }
+    }
+  }
+  .prose-th\:first\:px-0 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:first-child {
+        padding-inline: calc(var(--spacing) * 0);
       }
     }
   }
@@ -3748,27 +3793,6 @@
       background-color: var(--color-gray-100);
     }
   }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:relative {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        position: relative;
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        display: block;
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:inline-block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        display: inline-block;
-      }
-    }
-  }
   .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:w-min {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(>span+span)>span[data-user-role] {
@@ -3780,63 +3804,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(>span+span)>span[data-user-role] {
         white-space: nowrap;
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:text-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:before\:content-\[\'\/\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        &::before {
-          --tw-content: '/';
-          content: var(--tw-content);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:after\:absolute {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        &::after {
-          content: var(--tw-content);
-          position: absolute;
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:after\:-right-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -2);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:after\:-right-6 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -6);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\]\:after\:content-\[\'\/\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role] {
-        &::after {
-          --tw-content: '/';
-          content: var(--tw-content);
-        }
       }
     }
   }
@@ -3864,36 +3831,6 @@
       }
     }
   }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:-right-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role]:not(:last-child) {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -2);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:-right-3 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role]:not(:last-child) {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -3);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:-right-4 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role]:not(:last-child) {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -4);
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:right-0 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(>span+span)>span[data-user-role]:not(:last-child) {
@@ -3914,26 +3851,6 @@
       }
     }
   }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:content-\[\'\/\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role]:not(:last-child) {
-        &::after {
-          --tw-content: '/';
-          content: var(--tw-content);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\:has\(\>span\+span\)\>span\[data-user-role\]\:not\(\:last-child\)\]\:after\:content-\[\'и\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(>span+span)>span[data-user-role]:not(:last-child) {
-        &::after {
-          --tw-content: 'и';
-          content: var(--tw-content);
-        }
-      }
-    }
-  }
   .prose-th\:\[\&\:nth-child\(2\)\]\:min-w-116 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
@@ -3941,10 +3858,24 @@
       }
     }
   }
+  .prose-th\:\[\&\:nth-child\(2\)\]\:text-accent {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:nth-child(2) {
+        color: var(--color-accent);
+      }
+    }
+  }
   .prose-td\:\[\&\:nth-child\(2\)\]\:whitespace-nowrap {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
         white-space: nowrap;
+      }
+    }
+  }
+  .prose-th\:\[\&\:nth-child\(2\)\>span\]\:text-accent {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:nth-child(2)>span {
+        color: var(--color-accent);
       }
     }
   }
@@ -4047,6 +3978,30 @@
         &:hover {
           @media (hover: hover) {
             opacity: 70%;
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\]\:hover\:brightness-60 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(60%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\]\:hover\:brightness-70 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(70%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
       }
@@ -4838,10 +4793,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:text-pitpos-700 {
+  .prose-td\:\[\&\>div\>a\]\:text-accent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
-        color: var(--color-pitpos-700);
+        color: var(--color-accent);
       }
     }
   }
@@ -4853,12 +4808,13 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:hover\:text-pitpos-500 {
+  .prose-td\:\[\&\>div\>a\]\:hover\:brightness-60 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
         &:hover {
           @media (hover: hover) {
-            color: var(--color-pitpos-500);
+            --tw-brightness: brightness(60%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
       }
@@ -4933,10 +4889,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:text-pitpos-700 {
+  .prose-td\:\[\&\>div\>button\]\:text-accent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
-        color: var(--color-pitpos-700);
+        color: var(--color-accent);
       }
     }
   }
@@ -4977,23 +4933,23 @@
       }
     }
   }
+  .prose-td\:\[\&\>div\>button\]\:hover\:bg-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:hover {
+          @media (hover: hover) {
+            background-color: var(--color-accent);
+          }
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>div\>button\]\:hover\:bg-pitpos-700 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         &:hover {
           @media (hover: hover) {
             background-color: var(--color-pitpos-700);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:hover\:text-pitpos-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-pitpos-500);
           }
         }
       }
@@ -5017,6 +4973,18 @@
           @media (hover: hover) {
             --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
             box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:hover\:brightness-60 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(60%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
       }
@@ -5439,145 +5407,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-promo-code-status] {
         color: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\]\:block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role] {
-        display: block;
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\]\:w-100 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role] {
-        width: calc(var(--spacing) * 100);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\]\:text-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role] {
-        color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:last-child\]\:text-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:last-child {
-        color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+1\)\]\:text-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+1) {
-        color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:relative {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        position: relative;
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:text-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:absolute {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          content: var(--tw-content);
-          position: absolute;
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:-left-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          content: var(--tw-content);
-          left: calc(var(--spacing) * -1);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:-left-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          content: var(--tw-content);
-          left: calc(var(--spacing) * -2);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:left-0 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          content: var(--tw-content);
-          left: calc(var(--spacing) * 0);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:content-\[\'\/\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          --tw-content: '/';
-          content: var(--tw-content);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:content-\[\/\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          --tw-content: /;
-          content: var(--tw-content);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:after\:absolute {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::after {
-          content: var(--tw-content);
-          position: absolute;
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:after\:-right-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -2);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:after\:-right-6 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-user-role]:nth-child(n+2) {
-        &::after {
-          content: var(--tw-content);
-          right: calc(var(--spacing) * -6);
-        }
       }
     }
   }
@@ -6007,16 +5836,6 @@
   .\[\&\[data-outfit-status\=\'receipt\'\]\]\:bg-receipt {
     &[data-outfit-status='receipt'] {
       background-color: var(--color-receipt);
-    }
-  }
-  .prose-td\:\[\&has\(\>span\+span\)\>span\[data-user-role\]\:nth-child\(n\+2\)\]\:before\:content-\[\'\/\'\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &has(>span+span)>span[data-user-role]:nth-child(n+2) {
-        &::before {
-          --tw-content: '/';
-          content: var(--tw-content);
-        }
-      }
     }
   }
 }
@@ -6777,7 +6596,7 @@ span.flatpickr-weekday {
     margin: 0;
   }
   .date-picker-indicator-violet::-webkit-calendar-picker-indicator {
-    filter: invert(26%) sepia(59%) saturate(2500%) hue-rotate(245deg) brightness(90%) contrast(90%);
+    filter: invert(41%) sepia(99%) saturate(2600%) hue-rotate(5deg) brightness(102%) contrast(101%);
   }
 }
 @property --tw-translate-x {
