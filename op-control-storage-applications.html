@@ -678,16 +678,9 @@
 						type="datetime-local" id="register_date" name="register_date">
 				</div>
 
-				<div
-					class="flex justify-end items-end gap-3 w-full sm:col-span-2 lg:col-span-3 xl:gap-2 xl:col-span-1 xl:flex-col-reverse">
+				<div class="flex justify-end items-end gap-3 w-full sm:col-span-2 lg:col-span-3 xl:col-span-1">
 					<button
-						class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-						type="submit">
-						Сохранить
-					</button>
-
-					<button
-						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
+						class="px-2.5 py-[0.5625rem] bg-white flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90"
 						type="reset">
 						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
@@ -695,35 +688,39 @@
 
 						<span class="text-accent text-sm font-medium">Сбросить</span>
 					</button>
+
+					<button
+						class="px-5 py-[0.5625rem] bg-white rounded-md ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white hover:ring-pitpos-700 hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90 disabled:bg-gray-300 disabled:text-gray-500 disabled:text-gray-500 disabled:pointer-events-none"
+						type="submit">Сохранить</button>
 				</div>
 			</form>
 			<!-- End MAIN filter for applications of seosonal storage -->
 			<div class="mb-6 w-full flex flex-col justify-between items-center flex-wrap gap-6 xs:flex-row">
 				<form class="flex flex-col w-full gap-3 xs:flex-row xs:w-auto">
 					<div class="w-full sx:w-auto">
-						<input class="hidden peer" type="checkbox" id="filter-shifts-all" checked>
+						<input class="hidden peer" type="checkbox" id="filter-storages-app-all" checked>
 						<label
-							class="w-full inline-block px-2.5 py-2 text-sm text-center  font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
-							for="filter-shifts-all">Все</label>
+							class="w-full inline-block px-2.5 py-2 text-sm text-center font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
+							for="filter-storages-app-all">Все</label>
 					</div>
 
 					<div class="w-full sx:w-auto">
-						<input class="hidden peer" type="checkbox" id="filter-shifts-active">
+						<input class="hidden peer" type="checkbox" id="filter-storages-app-active">
 						<label
-							class="w-full inline-block px-2.5 py-2 text-sm text-center  font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
-							for="filter-shifts-active">Не&nbsp;заказаны</label>
+							class="w-full inline-block px-2.5 py-2 text-sm text-center font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
+							for="filter-storages-app-active">Не&nbsp;заказаны</label>
 					</div>
 
 					<div class="w-full sx:w-auto">
-						<input class="hidden peer" type="checkbox" id="filter-shifts-finished">
+						<input class="hidden peer" type="checkbox" id="filter-storages-app-finished">
 						<label
-							class="w-full inline-block px-2.5 py-2 text-sm  text-center font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
-							for="filter-shifts-finished">Заказаны</label>
+							class="w-full inline-block px-2.5 py-2 text-sm text-center font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-700 hover:ring-2 peer-checked:ring-pitpos-700 peer-checked:bg-pitpos-700 peer-checked:text-white xs:w-auto"
+							for="filter-storages-app-finished">Заказаны</label>
 					</div>
 				</form>
 
 				<button
-					class="self-start font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform hover:brightness-70 hover:no-underline active:scale-98 xs:self-center"
+					class="px-3.5 py-[0.5625rem] rounded-md bg-white font-bold underline text-sm text-accent cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent hover:no-underline active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-300"
 					type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-create-storage-applic-modal"
 					data-hs-overlay="#hs-create-storage-applic-modal">Добавить&nbsp;заявку</button>
 
@@ -776,19 +773,19 @@
 
 											<div class="flex justify-end items-center gap-3 w-full md:gap-6">
 												<button
-													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-													type="submit">
-													Сохранить
-												</button>
-
-												<button
-													class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98"
+													class="px-2.5 py-[0.5625rem] bg-white flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90"
 													type="reset" data-hs-overlay="#hs-create-storage-applic-modal">
 													<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 														<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 													</svg>
 
 													<span class="text-accent text-sm font-medium">Отмена</span>
+												</button>
+
+												<button
+													class="px-5 py-[0.5625rem] bg-white rounded-md ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-pitpos-700 hover:text-white hover:ring-pitpos-700 hover:ring-2 hover:ring-accent active:scale-98 active:brightness-90 disabled:bg-gray-300 disabled:text-gray-500 disabled:text-gray-500 disabled:pointer-events-none"
+													type="submit">
+													Сохранить
 												</button>
 											</div>
 										</form>
@@ -843,24 +840,23 @@
 					prose-td:[&>div>time]:after:h-3.5
 					prose-td:[&>div>time]:after:rounded-full
 					prose-td:[&>div>time]:after:bg-success
-					prose-td:[&>div>button]:font-bold
-					prose-td:[&>div>button]:text-sm
-					prose-td:[&>div>button]:text-accent
-					prose-td:[&>div>button]:leading-[1.71429]
-					prose-td:[&>div>button]:tracking-[0.01em]
-					prose-td:[&>div>button]:py-1
-					prose-td:[&>div>button]:px-2.5
-					prose-td:[&>div>button]:outline-1
-					prose-td:[&>div>button]:outline-pitpos-700
-					prose-td:[&>div>button]:rounded-sm
+					prose-td:[&>div>button]:px-3.5
 					prose-td:[&>div>button]:cursor-pointer
+					prose-td:[&>div>button]:rounded-sm
+					prose-td:[&>div>button]:font-bold
+					prose-td:[&>div>button]:py-[0.69rem]
+					prose-td:[&>div>button]:bg-transparent
+					prose-td:[&>div>button]:text-accent
+					prose-td:[&>div>button]:ring-1
 					prose-td:[&>div>button]:duration-300
 					prose-td:[&>div>button]:will-change-transform
-					prose-td:[&>div>button]:hover:bg-accent
+					prose-td:[&>div>button]:hover:bg-pitpos-700
 					prose-td:[&>div>button]:hover:text-white
-					prose-td:[&>div>button]:hover:shadow-sm
-					prose-td:[&>div>button]:hover:text-white
-					prose-td:[&>div>button]:active:scale-95
+					prose-td:[&>div>button]:active:brightness-90
+					prose-td:[&>div>button]:active:scale-96
+					prose-td:[&>div>button]:disabled:pointer-events-none
+					prose-td:[&>div>button]:disabled:bg-pitpos-500
+					prose-td:[&>div>button]:disabled:text-pitpos-300
 					">
 					<thead>
 						<tr>
@@ -1112,7 +1108,7 @@
 				</table>
 
 				<button
-					class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+					class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer whitespace-nowrap duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-300 disabled:text-gray-500 disabled:pointer-events-none"
 					type="button">Заказать отмеченные</button>
 			</div>
 			<!-- End table of storages applications -->

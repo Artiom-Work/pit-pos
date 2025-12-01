@@ -395,6 +395,9 @@
       max-width: 102.44rem;
     }
   }
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -1252,9 +1255,6 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -1628,26 +1628,11 @@
   .py-\[0\.49rem\] {
     padding-block: 0.49rem;
   }
-  .py-\[0\.56rem\] {
-    padding-block: 0.56rem;
-  }
-  .py-\[0\.57rem\] {
-    padding-block: 0.57rem;
-  }
-  .py-\[0\.96rem\] {
-    padding-block: 0.96rem;
-  }
   .py-\[0\.439rem\] {
     padding-block: 0.439rem;
   }
-  .py-\[0\.562rem\] {
-    padding-block: 0.562rem;
-  }
   .py-\[0\.563rem\] {
     padding-block: 0.563rem;
-  }
-  .py-\[0\.5624rem\] {
-    padding-block: 0.5624rem;
   }
   .py-\[0\.5625rem\] {
     padding-block: 0.5625rem;
@@ -1937,9 +1922,6 @@
   }
   .outline-pitpos-700 {
     outline-color: var(--color-pitpos-700);
-  }
-  .outline-red-500 {
-    outline-color: var(--color-red-500);
   }
   .blur {
     --tw-blur: blur(8px);
@@ -2310,6 +2292,13 @@
       }
     }
   }
+  .hover\:ring-transparent {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: transparent;
+      }
+    }
+  }
   .hover\:brightness-70 {
     &:hover {
       @media (hover: hover) {
@@ -2462,12 +2451,6 @@
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
-  .active\:brightness-60 {
-    &:active {
-      --tw-brightness: brightness(60%);
-      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-    }
-  }
   .active\:brightness-70 {
     &:active {
       --tw-brightness: brightness(70%);
@@ -2527,6 +2510,11 @@
       color: var(--color-gray-500);
     }
   }
+  .disabled\:text-pitpos-300 {
+    &:disabled {
+      color: var(--color-pitpos-300);
+    }
+  }
   .disabled\:opacity-40 {
     &:disabled {
       opacity: 40%;
@@ -2581,6 +2569,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .xs\:mb-1 {
+    @media (width >= 29.99rem) {
+      margin-bottom: calc(var(--spacing) * 1);
+    }
+  }
   .xs\:block {
     @media (width >= 29.99rem) {
       display: block;
@@ -2589,6 +2582,11 @@
   .xs\:grid {
     @media (width >= 29.99rem) {
       display: grid;
+    }
+  }
+  .xs\:inline {
+    @media (width >= 29.99rem) {
+      display: inline;
     }
   }
   .xs\:min-h-30 {
@@ -3004,54 +3002,14 @@
       grid-column: span 12 / span 12;
     }
   }
-  .xl\:col-start-\[6\] {
-    @media (width >= 80rem) {
-      grid-column-start: 6;
-    }
-  }
-  .xl\:col-start-\[7\] {
-    @media (width >= 80rem) {
-      grid-column-start: 7;
-    }
-  }
   .xl\:col-start-\[10\] {
     @media (width >= 80rem) {
       grid-column-start: 10;
     }
   }
-  .xl\:col-end-\[1\] {
-    @media (width >= 80rem) {
-      grid-column-end: 1;
-    }
-  }
-  .xl\:col-end-\[3\] {
-    @media (width >= 80rem) {
-      grid-column-end: 3;
-    }
-  }
-  .xl\:col-end-\[8\] {
-    @media (width >= 80rem) {
-      grid-column-end: 8;
-    }
-  }
-  .xl\:col-end-\[12\] {
-    @media (width >= 80rem) {
-      grid-column-end: 12;
-    }
-  }
   .xl\:col-end-\[13\] {
     @media (width >= 80rem) {
       grid-column-end: 13;
-    }
-  }
-  .xl\:row-span-2 {
-    @media (width >= 80rem) {
-      grid-row: span 2 / span 2;
-    }
-  }
-  .xl\:row-span-3 {
-    @media (width >= 80rem) {
-      grid-row: span 3 / span 3;
     }
   }
   .xl\:row-start-\[1\] {
@@ -3104,16 +3062,6 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .xl\:mb-1\.5 {
-    @media (width >= 80rem) {
-      margin-bottom: calc(var(--spacing) * 1.5);
-    }
-  }
-  .xl\:mb-2 {
-    @media (width >= 80rem) {
-      margin-bottom: calc(var(--spacing) * 2);
-    }
-  }
   .xl\:grid {
     @media (width >= 80rem) {
       display: grid;
@@ -3124,19 +3072,9 @@
       width: 100%;
     }
   }
-  .xl\:grid-cols-3 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
   .xl\:grid-cols-4 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .xl\:grid-cols-8 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
     }
   }
   .xl\:grid-cols-12 {
@@ -4037,20 +3975,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\]\:px-3\.5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a {
-        padding-inline: calc(var(--spacing) * 3.5);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\]\:py-\[0\.5625rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a {
-        padding-block: 0.5625rem;
-      }
-    }
-  }
   .prose-td\:\[\&\>a\]\:text-accent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a {
@@ -4119,18 +4043,6 @@
         &:hover {
           @media (hover: hover) {
             --tw-brightness: brightness(60%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\]\:hover\:brightness-70 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a {
-        &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(70%);
             filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
@@ -4768,6 +4680,13 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:text-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        color: var(--color-accent);
+      }
+    }
+  }
   .prose-td\:\[\&\>button\]\:text-pitpos-700 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
@@ -4780,6 +4699,13 @@
       &>button {
         --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\]\:ring-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        --tw-ring-color: var(--color-accent);
       }
     }
   }
@@ -4849,6 +4775,17 @@
           @media (hover: hover) {
             --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
             box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\]\:hover\:ring-pitpos-700 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-color: var(--color-pitpos-700);
           }
         }
       }
@@ -4933,27 +4870,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        display: block;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:flex {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        display: flex;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:inline-block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        display: inline-block;
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>a\]\:rounded-md {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
@@ -4961,54 +4877,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:border-0 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        border-style: var(--tw-border-style);
-        border-width: 0px;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:border-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:border-accent {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        border-color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:border-transparent {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        border-color: transparent;
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>a\]\:bg-transparent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
         background-color: transparent;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:bg-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        background-color: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:px-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        padding-inline: calc(var(--spacing) * 2);
       }
     }
   }
@@ -5026,40 +4898,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:py-\[0\.5625rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        padding-block: 0.5625rem;
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>a\]\:text-accent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
         color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:ring-0 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:ring-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        --tw-ring-color: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:outline-0 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        outline-style: var(--tw-outline-style);
-        outline-width: 0px;
       }
     }
   }
@@ -5075,29 +4917,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
         will-change: transform;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:hover\:border-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:hover {
-          @media (hover: hover) {
-            border-style: var(--tw-border-style);
-            border-width: 1px;
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:hover\:border-accent {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:hover {
-          @media (hover: hover) {
-            border-color: var(--color-accent);
-          }
-        }
       }
     }
   }
@@ -5146,41 +4965,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:hover\:outline-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:hover {
-          @media (hover: hover) {
-            outline-style: var(--tw-outline-style);
-            outline-width: 1px;
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:hover\:outline-accent {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:hover {
-          @media (hover: hover) {
-            outline-color: var(--color-accent);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:hover\:brightness-60 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(60%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>a\]\:active\:scale-96 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a {
@@ -5189,15 +4973,6 @@
           --tw-scale-y: 96%;
           --tw-scale-z: 96%;
           scale: var(--tw-scale-x) var(--tw-scale-y);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\]\:active\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:active {
-          text-decoration-line: none;
         }
       }
     }
@@ -5212,33 +4987,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>a\]\:disabled\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a {
-        &:disabled {
-          background-color: var(--color-red-500);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\:has-disabled\]\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a:has-disabled {
-        background-color: var(--color-red-500);
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>a\[data-disabled\]\]\:pointer-events-none {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a[data-disabled] {
         pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>a\[data-disabled\]\]\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>a[data-disabled] {
-        background-color: var(--color-red-500);
       }
     }
   }
@@ -5256,13 +5008,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:rounded-md {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        border-radius: var(--radius-md);
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:rounded-sm {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
@@ -5270,31 +5015,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:rounded-xs {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        border-radius: var(--radius-xs);
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:bg-transparent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         background-color: transparent;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:bg-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        background-color: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:px-2 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        padding-inline: calc(var(--spacing) * 2);
       }
     }
   }
@@ -5319,38 +5043,10 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:py-\[0\.67rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        padding-block: 0.67rem;
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:py-\[0\.69rem\] {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         padding-block: 0.69rem;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:py-\[0\.5625rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        padding-block: 0.5625rem;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:py-\[0\.6625rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        padding-block: 0.6625rem;
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:py-\[0\.6675rem\] {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        padding-block: 0.6675rem;
       }
     }
   }
@@ -5390,13 +5086,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        text-decoration-line: underline;
       }
     }
   }
@@ -5483,18 +5172,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:hover\:brightness-60 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(60%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:active\:scale-95 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
@@ -5515,15 +5192,6 @@
           --tw-scale-y: 96%;
           --tw-scale-z: 96%;
           scale: var(--tw-scale-x) var(--tw-scale-y);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:active\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:active {
-          text-decoration-line: none;
         }
       }
     }
@@ -5562,15 +5230,6 @@
       &>div>button {
         &:disabled {
           background-color: var(--color-pitpos-500);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:disabled\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:disabled {
-          background-color: var(--color-red-500);
         }
       }
     }
@@ -5685,6 +5344,15 @@
         &::after {
           --tw-content: '';
           content: var(--tw-content);
+        }
+      }
+    }
+  }
+  .hover\:\[\&\>span\]\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        &>span {
+          color: var(--color-white);
         }
       }
     }
@@ -6078,6 +5746,15 @@
       @media (hover: hover) {
         &>svg {
           stroke: var(--color-pitpos-700);
+        }
+      }
+    }
+  }
+  .hover\:\[\&\>svg\]\:stroke-white {
+    &:hover {
+      @media (hover: hover) {
+        &>svg {
+          stroke: var(--color-white);
         }
       }
     }
