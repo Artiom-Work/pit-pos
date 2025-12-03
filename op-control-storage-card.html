@@ -554,8 +554,8 @@
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<div class="flex flex-col gap-6 h-full w-full xl:grid xl:grid-cols-12">
-			<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:col-span-9">
+		<div class="flex flex-col gap-6 h-full w-full xl:grid lg:grid-cols-12">
+			<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg lg:col-span-8 3xl:col-span-9">
 				<h1 class="mb-6 flex items-center grow-1 gap-x-2.5 font-semibold py-2 3xl:w-full">
 					<svg class="size-6 stroke-pitpos-700 fill-transparent shrink-0" viewBox="0 0 24 24">
 						<use xlink:href="./public/images/icons/sprite-icons.svg#tire-icon"></use>
@@ -807,8 +807,8 @@
 			</div>
 			<!-- End middle content -->
 
-			<div class="bg-white h-full rounded-md pt-2.5 px-0 shadow-lg xl:col-span-3 xl:pt-6 3xl:pb-2">
-				<div class="w-full hs-accordion-group">
+			<div class="bg-white h-full rounded-md pt-2.5 px-0 shadow-lg lg:col-span-4 3xl:col-span-3 xl:pt-6 3xl:pb-2">
+				<div class="w-full min-w-92 hs-accordion-group">
 					<div class="hs-accordion hs-accordion-active: duration-300" id="hs-active-heading-1">
 						<button
 							class="hs-accordion-toggle cursor-pointer duration-300 flex items-center gap-x-2.5 w-full font-semibold text-start mb-2.5 py-2 px-2.5 text-pitpos-700 disabled:opacity-50 disabled:pointer-events-none"
@@ -849,6 +849,124 @@
 								<li class="flex justify-between py-1.5">
 									<span class="text-gray-700">Мастерская:</span>
 									<span>Тестовая</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="hs-accordion hs-accordion-active: duration-300" id="hs-active-heading-2">
+
+						<button
+							class="hs-accordion-toggle cursor-pointer duration-300 flex items-center gap-x-2.5 w-full font-semibold text-start mb-2.5 py-2 px-2.5 text-pitpos-700 disabled:opacity-50 disabled:pointer-events-none"
+							aria-expanded="false" aria-controls="hs-basic-active-collapse-2">
+
+							<svg class="size-6 stroke-transparent fill-pitpos-700" viewBox="-2 0 19 19">
+								<use xlink:href="./public/images/icons/sprite-icons.svg#legal-list-icon"></use>
+							</svg>
+
+							<span class="grow-1">История статуса</span>
+
+							<svg class="duration-300 size-6 stroke-pitpos-700 fill-transparent hs-accordion-active:rotate-180 "
+								viewBox="0 0 24 24">
+								<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+							</svg>
+						</button>
+
+						<div id="hs-basic-active-collapse-2"
+							class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300 px-2.5"
+							role="region" aria-labelledby="hs-active-heading-2">
+
+							<ul class="flex 
+							flex-col 
+							gap-y-2.5 
+							py-2 
+							pb-2.5 
+							text-[0.81rem] 
+							font-semibold
+							[&_address]:not-italic
+							[&>li]:flex 
+							[&>li]:justify-between 
+							[&>li]:items-center
+							[&>li]:py-1.5
+							[&>li:not(:last-child)]:border-b-1
+							[&>li:not(:last-child)]:border-gray-100 
+							[&>li:nth-last-child(2)]:border-pitpos-700 
+							[&_span[data-storage-state]]:text-white
+							[&_span[data-storage-state]]:leading-5
+							[&_span[data-storage-state]]:font-semibold
+							[&_span[data-storage-state]]:whitespace-nowrap
+							[&_span[data-storage-state]]:w-min
+							[&_span[data-storage-state]]:px-1.5
+							[&_span[data-storage-state]]:py-0.5
+							[&_span[data-storage-state]]:rounded-xs
+							[&_span[data-storage-state]]:justify-start
+							[&_span[data-storage-state='entry']]:bg-receipt
+							[&_span[data-storage-state='registered']]:bg-in-progress
+							[&_span[data-storage-state='ordered']]:bg-accent
+							[&_span[data-storage-state='transit']]:bg-success-035
+							[&_span[data-storage-state='ready']]:bg-ready
+							[&_span[data-storage-state='ended']]:bg-success
+							">
+								<li>
+									<time datetime="2025-05-10">10.05.2025</time>
+									<span data-storage-state="entry">оформлен</span>
+
+									<address>
+										<span>на</span>
+										<span>Карбышева, 9</span>
+									</address>
+								</li>
+
+								<li>
+									<time datetime="2025-05-10">30.10.2025</time>
+									<span data-storage-state="registered">запись</span>
+
+									<address>
+										<span>Металлистов, 116</span>
+									</address>
+								</li>
+
+								<li>
+									<time datetime="2025-05-10">31.10.2025</time>
+									<span data-storage-state="registered">запись</span>
+
+									<address>
+										<span>Карбышева, 9</span>
+									</address>
+								</li>
+
+								<li>
+									<time datetime="2025-05-10">05.11.2025</time>
+									<span data-storage-state="ordered">заказан</span>
+
+									<address>
+										<span>Пулковское ш., 19</span>
+									</address>
+								</li>
+
+								<li>
+									<time datetime="2025-05-10">06.11.2025</time>
+									<span data-storage-state="transit">поехал</span>
+
+									<address>
+										<span>Пулковское ш., 19</span>
+									</address>
+								</li>
+
+								<li>
+									<time datetime="2025-05-10">06.11.2025</time>
+									<span data-storage-state="ready">прибыл</span>
+
+									<address>
+										<span>Пулковское ш., 19</span>
+									</address>
+								</li>
+
+								<li>
+									<!-- <time>Сегодня</time>
+									<span data-storage-state="opened">открыт</span> -->
+									<time datetime="2025-05-10">07.11.2025</time>
+									<span data-storage-state="ended">завершен</span>
 								</li>
 							</ul>
 						</div>
