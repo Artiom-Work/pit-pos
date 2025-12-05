@@ -17,7 +17,7 @@
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
 		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
-				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
 				</svg>
@@ -49,7 +49,7 @@
 
 				<div class="hidden flex flex-col items-end sm:flex">
 					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
-					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
@@ -612,28 +612,28 @@
 						<form class="mb-6 flex flex-col gap-3 md:gap-6" action="">
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="title">Название</label>
+								<label class="text-sm text-gray-700" for="title">Название</label>
 								<input
 									class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 									id="title" name="title" type="text" value="ТЦ Мега" disabled>
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="address">Адрес</label>
+								<label class="text-sm text-gray-700" for="address">Адрес</label>
 								<input
 									class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 									id="address" name="address" type="text" value="ул. Ленина, 21" disabled>
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="coordinates">Координаты на&nbsp;карте</label>
+								<label class="text-sm text-gray-700" for="coordinates">Координаты на&nbsp;карте</label>
 								<input
 									class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 									id="coordinates" name="coordinates" type="text" value="44, 47" disabled>
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="description">Описание</label>
+								<label class="text-sm text-gray-700" for="description">Описание</label>
 								<textarea
 									class="min-h-60 px-3 py-2.5 outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error placeholder disabled:bg-pitpos-200 xs:min-h-30 md:min-h-15"
 									id="description" name="description" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, explicabo quaerat fugit deleniti amet ipsam aperiam voluptates fugiat. Dolorem non sunt alias maiores omnis et commodi placeat. Nemo aperiam officia et natus consequatur voluptates veritatis accusamus eum adipisci facilis magnam culpa fuga, quod similique sapiente pariatur praesentium voluptatum consectetur! Obcaecati est voluptas quam esse doloremque deleniti dolorem facere, nulla quos autem minus voluptates, amet commodi excepturi sint praesentium explicabo, repellendus mollitia laudantium magni. Neque sed eligendi sit odit, architecto commodi illo in pariatur explicabo deserunt amet ratione minus praesentium eum cupiditate veniam quae aliquid nisi voluptatibus rerum vero id? Provident!
@@ -641,7 +641,7 @@
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="workshop_lord">Владелец</label>
+								<label class="text-sm text-gray-700" for="workshop_lord">Владелец</label>
 								<select id="workshop_lord" name="workshop_lord" data-hs-select='{
 									"placeholder": "Владелец",
 									"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
@@ -660,7 +660,7 @@
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="legal_entity_id">Юр.&nbsp;лицо для услуг</label>
+								<label class="text-sm text-gray-700" for="legal_entity_id">Юр.&nbsp;лицо для услуг</label>
 								<select id="legal_entity_id" name="legal_entity_id" data-hs-select='{
 									"placeholder": "Юр. лицо для услуг",
 									"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
@@ -679,7 +679,7 @@
 							</div>
 
 							<div class="w-full max-w-125 flex flex-col gap-y-1">
-								<label class="text-sm text-gray-500" for="legal_trademark_id">Юр.&nbsp;лицо&nbsp;для товаров</label>
+								<label class="text-sm text-gray-700" for="legal_trademark_id">Юр.&nbsp;лицо&nbsp;для товаров</label>
 								<select id="legal_trademark_id" name="legal_trademark_id" data-hs-select='{
 									"placeholder": "Юр. лицо для товаров",
 									"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
@@ -698,7 +698,7 @@
 							</div>
 
 							<button
-								class="self-start px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+								class="self-start px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 								type="submit" disabled>Сохранить изменения</button>
 						</form>
 					</div>

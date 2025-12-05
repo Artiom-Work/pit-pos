@@ -17,7 +17,7 @@
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
 		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
-				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
 				</svg>
@@ -49,7 +49,7 @@
 
 				<div class="hidden flex flex-col items-end sm:flex">
 					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
-					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
@@ -561,14 +561,14 @@
 				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
 
 				<div class="flex flex-col gap-y-1 xl:col-span-4">
-					<label class="text-sm text-gray-500" for="warranty_number">&#8470;&nbsp;Гарантии</label>
+					<label class="text-sm text-gray-700" for="warranty_number">&#8470;&nbsp;Гарантии</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="warranty_number" name="warranty_number" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1 xl:col-span-4">
-					<label class="text-sm text-gray-500" for="phone">Телефон</label>
+					<label class="text-sm text-gray-700" for="phone">Телефон</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 placeholder:text-black invalid:ring-error invalid:focus:ring-error"
 						id="phone" name="phone" type="tel" placeholder="+7(111) 111-11-11"
@@ -576,35 +576,35 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1 xl:col-span-4">
-					<label class="text-sm text-gray-500" for="car_brand">А/м</label>
+					<label class="text-sm text-gray-700" for="car_brand">А/м</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="car_brand" name="car_brand" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1 xl:col-span-3">
-					<label class="text-sm text-gray-500" for="work_order_number">&#8470;&nbsp;заказ-наряда</label>
+					<label class="text-sm text-gray-700" for="work_order_number">&#8470;&nbsp;заказ-наряда</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="work_order_number" name="work_order_number" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1 xl:col-span-3">
-					<label class="text-sm text-gray-500" for="work_before">Действует&nbsp;с</label>
+					<label class="text-sm text-gray-700" for="work_before">Действует&nbsp;с</label>
 					<input class="px-3 py-[0.439rem]  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error" type="datetime-local"
 						id="work_before" name="work_before">
 				</div>
 
 				<div class="flex flex-col gap-y-1 xl:col-span-3">
-					<label class="text-sm text-gray-500" for="work_after">Действует&nbsp;по</label>
+					<label class="text-sm text-gray-700" for="work_after">Действует&nbsp;по</label>
 					<input class="px-3 py-[0.439rem]  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error" type="datetime-local"
 						id="work_after" name="work_after">
 				</div>
 
 				<div class="flex flex-col gap-y-1 md:col-span-2 xl:col-span-3">
-					<label class="text-sm text-gray-500" for="guarantee_status">Статус</label>
+					<label class="text-sm text-gray-700" for="guarantee_status">Статус</label>
 
 					<select id="guarantee_status" name="guarantee_status" data-hs-select='{
 						"placeholder": "Все",
@@ -624,7 +624,7 @@
 
 				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 xl:col-span-12">
 					<button
-						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 						type="submit" disabled>Сохранить</button>
 					<button
 						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"

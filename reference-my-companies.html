@@ -17,7 +17,7 @@
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
 		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
-				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
 				</svg>
@@ -49,7 +49,7 @@
 
 				<div class="hidden flex flex-col items-end sm:flex">
 					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
-					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
@@ -557,7 +557,7 @@
 				</h1>
 
 				<button
-					class="px-5 py-2 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
+					class="px-5 py-2 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
 					type="button" data-hs-overlay="#create-legal-entity">Добавить</button>
 
 				<div id="create-legal-entity"
@@ -585,42 +585,42 @@
 									<div>
 										<form class="w-full flex flex-col gap-3 md:gap-6">
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="title">Название*</label>
+												<label class="text-sm text-gray-700" for="title">Название*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="title" name="title" type="text" placeholder="Название или ФИО" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="form">Форма собственности*</label>
+												<label class="text-sm text-gray-700" for="form">Форма собственности*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="form" name="form" type="text" placeholder="ИП" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="inn">ИНН*</label>
+												<label class="text-sm text-gray-700" for="inn">ИНН*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="inn" name="inn" type="text" placeholder="000000000000" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="kpp">КПП</label>
+												<label class="text-sm text-gray-700" for="kpp">КПП</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="kpp" name="kpp" type="text" placeholder="000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="ogrn">ОГРН</label>
+												<label class="text-sm text-gray-700" for="ogrn">ОГРН</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="ogrn" name="ogrn" type="text" placeholder="000000000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="legal_address">Юридический адрес</label>
+												<label class="text-sm text-gray-700" for="legal_address">Юридический адрес</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="legal_address" name="legal_address" type="text"
@@ -628,28 +628,28 @@
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="bank">Банк</label>
+												<label class="text-sm text-gray-700" for="bank">Банк</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="bank" name="bank" type="text" placeholder="Банк">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="bik">БИК</label>
+												<label class="text-sm text-gray-700" for="bik">БИК</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="bik" name="bik" type="text" placeholder="000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="rs">Р/с</label>
+												<label class="text-sm text-gray-700" for="rs">Р/с</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="rs" name="rs" type="text" placeholder="00000000000000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="ks">К/с</label>
+												<label class="text-sm text-gray-700" for="ks">К/с</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="ks" name="ks" type="text" placeholder="00000000000000000000">
@@ -657,7 +657,7 @@
 
 											<div class="flex justify-end items-center gap-3 w-full md:gap-6">
 												<button
-													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 													type="submit">
 													Сохранить
 												</button>
@@ -1016,7 +1016,7 @@
 									<div>
 										<form class="w-full flex flex-col gap-3 md:gap-6">
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="title">Название*</label>
+												<label class="text-sm text-gray-700" for="title">Название*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="title" name="title" type="text" placeholder="Название или ФИО"
@@ -1024,35 +1024,35 @@
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="form">Форма собственности*</label>
+												<label class="text-sm text-gray-700" for="form">Форма собственности*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="form" name="form" type="text" placeholder="ИП" value="ИП" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="inn">ИНН*</label>
+												<label class="text-sm text-gray-700" for="inn">ИНН*</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="inn" name="inn" type="text" placeholder="000000000000" value="780428113778" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="kpp">КПП</label>
+												<label class="text-sm text-gray-700" for="kpp">КПП</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="kpp" name="kpp" type="text" placeholder="000000" value="000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="ogrn">ОГРН</label>
+												<label class="text-sm text-gray-700" for="ogrn">ОГРН</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="ogrn" name="ogrn" type="text" placeholder="000000000000000" value="321784700270866">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="legal_address">Юридический адрес</label>
+												<label class="text-sm text-gray-700" for="legal_address">Юридический адрес</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="legal_address" name="legal_address" type="text"
@@ -1061,7 +1061,7 @@
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="bank">Банк</label>
+												<label class="text-sm text-gray-700" for="bank">Банк</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="bank" name="bank" type="text" placeholder="Банк"
@@ -1069,21 +1069,21 @@
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="bik">БИК</label>
+												<label class="text-sm text-gray-700" for="bik">БИК</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="bik" name="bik" type="text" placeholder="000000000" value="044030653">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="rs">Р/с</label>
+												<label class="text-sm text-gray-700" for="rs">Р/с</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="rs" name="rs" type="text" placeholder="00000000000000000000" value="40802810355000071217">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-500" for="ks">К/с</label>
+												<label class="text-sm text-gray-700" for="ks">К/с</label>
 												<input
 													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
 													id="ks" name="ks" type="text" placeholder="00000000000000000000" value="30101810500000000653">
@@ -1091,7 +1091,7 @@
 
 											<div class="flex justify-end items-center gap-3 w-full md:gap-6">
 												<button
-													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 													type="submit">
 													Сохранить
 												</button>
@@ -1137,7 +1137,7 @@
 									<p class="font-semibold text-center py-2 tracking-[1.5]">Вы действительно хотите удалить лицо?</p>
 
 									<button
-										class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+										class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
 										type="button">Удалить</button>
 								</div>
 							</div>

@@ -17,7 +17,7 @@
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
 		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
-				<svg class="w-23 h-10 fill-accent hover:fill-pitpos-800 active:scale-98 duration-300 sm:w-35 sm:h-15"
+				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
 				</svg>
@@ -49,7 +49,7 @@
 
 				<div class="hidden flex flex-col items-end sm:flex">
 					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
-					<time class="text-[15px]" datetime="2025-09-03">3 сентября 2025 г.</time>
+					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 						<li class="relative pl-12 min-h-12">
 							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
@@ -559,14 +559,14 @@
 			<form class="mb-6 grid gap-3 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4" action="">
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="promo_code_val">Промокод</label>
+					<label class="text-sm text-gray-700" for="promo_code_val">Промокод</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="promo_code_val" name="promo_code_val" type="text">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="promotion_title">Название акции</label>
+					<label class="text-sm text-gray-700" for="promotion_title">Название акции</label>
 
 					<select id="promotion_title" name="promotion_title" data-hs-select='{
 						"placeholder": "Все",
@@ -587,14 +587,14 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="discount_val">Скидка</label>
+					<label class="text-sm text-gray-700" for="discount_val">Скидка</label>
 					<input
 						class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error"
 						id="discount_val" name="discount_val" type="number" min="0" max="100">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="promo_code_status">Статус</label>
+					<label class="text-sm text-gray-700" for="promo_code_status">Статус</label>
 
 					<select id="promo_code_status" name="promo_code_status" multiple="" data-hs-select='{
 						"placeholder": "Все",
@@ -621,7 +621,7 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="work_before">Действует&nbsp;с</label>
+					<label class="text-sm text-gray-700" for="work_before">Действует&nbsp;с</label>
 					<input
 						class="px-3 py-[0.439rem]  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error date-picker-indicator-violet"
@@ -629,7 +629,7 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="work_after">Действует&nbsp;по</label>
+					<label class="text-sm text-gray-700" for="work_after">Действует&nbsp;по</label>
 					<input
 						class="px-3 py-[0.439rem]  outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input
 						focus:ring-2 no-number-spinner cursor-pointer invalid:ring-error invalid:focus:ring-error date-picker-indicator-violet"
@@ -637,7 +637,7 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="services">Услуги</label>
+					<label class="text-sm text-gray-700" for="services">Услуги</label>
 
 					<select id="services" name="services" multiple="" data-hs-select='{
 						"placeholder": "Все",
@@ -672,7 +672,7 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-500" for="conditions">Условия</label>
+					<label class="text-sm text-gray-700" for="conditions">Условия</label>
 
 					<select id="conditions" name="conditions" multiple="" data-hs-select='{
 						"placeholder": "Все",
@@ -702,7 +702,7 @@
 				<div
 					class="w-full flex justify-end gap-x-2 sm:gap-x-6 sm:col-span-2 lg:w-auto lg:col-span-1 lg:justify-center xl:justify-end xl:w-full xl:col-span-4">
 					<button
-						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:cursor-none disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 lg:self-end"
+						class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 lg:self-end"
 						type="submit">Сохранить</button>
 					<button
 						class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98 lg:self-end lg:mb-2"
