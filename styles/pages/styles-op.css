@@ -3766,6 +3766,11 @@
       opacity: 20%;
     }
   }
+  .\[\&_address\]\:shrink-0 {
+    & address {
+      flex-shrink: 0;
+    }
+  }
   .\[\&_address\]\:not-italic {
     & address {
       font-style: normal;
@@ -3953,6 +3958,11 @@
       background-color: var(--color-receipt);
     }
   }
+  .\[\&_span\[data-storage-state\=\'opened\'\]\]\:bg-error {
+    & span[data-storage-state='opened'] {
+      background-color: var(--color-error);
+    }
+  }
   .\[\&_span\[data-storage-state\=\'ordered\'\]\]\:bg-accent {
     & span[data-storage-state='ordered'] {
       background-color: var(--color-accent);
@@ -3971,6 +3981,18 @@
   .\[\&_span\[data-storage-state\=\'transit\'\]\]\:bg-success-035 {
     & span[data-storage-state='transit'] {
       background-color: var(--color-success-035);
+    }
+  }
+  .\[\&_span\[data-storage-state\]\]\:size-min {
+    & span[data-storage-state] {
+      width: min-content;
+      height: min-content;
+    }
+  }
+  .\[\&_span\[data-storage-state\]\]\:size-min\! {
+    & span[data-storage-state] {
+      width: min-content !important;
+      height: min-content !important;
     }
   }
   .\[\&_span\[data-storage-state\]\]\:w-min {
@@ -4018,6 +4040,11 @@
   .\[\&_span\[data-storage-state\]\]\:text-white {
     & span[data-storage-state] {
       color: var(--color-white);
+    }
+  }
+  .\[\&_time\]\:mr-2\.5 {
+    & time {
+      margin-right: calc(var(--spacing) * 2.5);
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:h-2 {
@@ -4180,6 +4207,21 @@
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(7) {
         min-width: calc(var(--spacing) * 55);
+      }
+    }
+  }
+  .prose-th\:\[\&\:nth-child\(n\+2\)\]\:border-l-1 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:nth-child(n+2) {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 1px;
+      }
+    }
+  }
+  .prose-th\:\[\&\:nth-child\(n\+2\)\]\:border-gray-300 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:nth-child(n+2) {
+        border-color: var(--color-gray-300);
       }
     }
   }
@@ -5604,9 +5646,81 @@
       border-color: var(--color-gray-100);
     }
   }
+  .\[\&\>li\:nth-child\(2\)\]\:w-full {
+    &>li:nth-child(2) {
+      width: 100%;
+    }
+  }
+  .\[\&\>li\:nth-child\(2\)\]\:bg-red-500 {
+    &>li:nth-child(2) {
+      background-color: var(--color-red-500);
+    }
+  }
+  .\[\&\>li\:nth-last-child\(2\)\]\:border-black {
+    &>li:nth-last-child(2) {
+      border-color: var(--color-black);
+    }
+  }
+  .\[\&\>li\:nth-last-child\(2\)\]\:border-gray-500 {
+    &>li:nth-last-child(2) {
+      border-color: var(--color-gray-500);
+    }
+  }
+  .\[\&\>li\:nth-last-child\(2\)\]\:border-gray-600 {
+    &>li:nth-last-child(2) {
+      border-color: var(--color-gray-600);
+    }
+  }
   .\[\&\>li\:nth-last-child\(2\)\]\:border-pitpos-700 {
     &>li:nth-last-child(2) {
       border-color: var(--color-pitpos-700);
+    }
+  }
+  .\[\&\>li\:nth-last-child\(2\)\]\:border-pitpos-blue {
+    &>li:nth-last-child(2) {
+      border-color: var(--color-pitpos-blue);
+    }
+  }
+  .\[\&\>li\>\[data-storage-state\]\]\:size-min {
+    &>li>[data-storage-state] {
+      width: min-content;
+      height: min-content;
+    }
+  }
+  .\[\&\>li\>\[data-storage-state\]\]\:size-min\! {
+    &>li>[data-storage-state] {
+      width: min-content !important;
+      height: min-content !important;
+    }
+  }
+  .\[\&\>li\>span\:not\[data-storage-state\]\:nth-child\(2\)\]\:w-full {
+    &>li>span:not[data-storage-state]:nth-child(2) {
+      width: 100%;
+    }
+  }
+  .\[\&\>li\>span\:nth-child\(2\)\]\:w-full {
+    &>li>span:nth-child(2) {
+      width: 100%;
+    }
+  }
+  .\[\&\>li\>span\:nth-child\(2\)\]\:bg-red-500 {
+    &>li>span:nth-child(2) {
+      background-color: var(--color-red-500);
+    }
+  }
+  .\[\&\>li\>span\:nth-child\(2\)\]\:px-2\.5 {
+    &>li>span:nth-child(2) {
+      padding-inline: calc(var(--spacing) * 2.5);
+    }
+  }
+  .\[\&\>li\>span\:nth-child\(2\)\:not\(\:last-child\)\]\:w-full {
+    &>li>span:nth-child(2):not(:last-child) {
+      width: 100%;
+    }
+  }
+  .\[\&\>li\>span\:nth-child\(2\)\:not\[data-storage-state\]\]\:w-full {
+    &>li>span:nth-child(2):not[data-storage-state] {
+      width: 100%;
     }
   }
   .hover\:\[\&\>span\]\:text-white {
