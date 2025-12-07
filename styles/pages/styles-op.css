@@ -887,6 +887,18 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-1\.5 {
+    margin-left: calc(var(--spacing) * 1.5);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
   .\!flex {
     display: flex !important;
   }
@@ -944,6 +956,10 @@
   .size-full {
     width: 100%;
     height: 100%;
+  }
+  .size-min {
+    width: min-content;
+    height: min-content;
   }
   .\!h-2\.5 {
     height: calc(var(--spacing) * 2.5) !important;
@@ -1412,6 +1428,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -1936,6 +1956,9 @@
   .ring-pitpos-700 {
     --tw-ring-color: var(--color-pitpos-700);
   }
+  .ring-pitpos-blue {
+    --tw-ring-color: var(--color-pitpos-blue);
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -2263,6 +2286,13 @@
       }
     }
   }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
   .hover\:fill-black {
     &:hover {
       @media (hover: hover) {
@@ -2401,6 +2431,23 @@
       }
     }
   }
+  .hover\:brightness-95 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-brightness: brightness(95%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .peer-checked\:hover\:bg-pitpos-blue {
+    &:is(:where(.peer):checked ~ *) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-pitpos-blue);
+        }
+      }
+    }
+  }
   .focus\:border-0 {
     &:focus {
       border-style: var(--tw-border-style);
@@ -2507,6 +2554,11 @@
   .active\:bg-pitpos-100 {
     &:active {
       background-color: var(--color-pitpos-100);
+    }
+  }
+  .active\:text-gray-400 {
+    &:active {
+      color: var(--color-gray-400);
     }
   }
   .active\:text-gray-500 {
@@ -2654,6 +2706,16 @@
         --tw-scale-z: 100%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
+    }
+  }
+  .data-\[filled\=true\]\:text-black {
+    &[data-filled="true"] {
+      color: var(--color-black);
+    }
+  }
+  .data-\[filled\=true\]\:ring-gray-600 {
+    &[data-filled="true"] {
+      --tw-ring-color: var(--color-gray-600);
     }
   }
   .xs\:mb-0 {
@@ -3953,46 +4015,9 @@
       background-color: var(--color-success);
     }
   }
-  .\[\&_span\[data-storage-state\=\'entry\'\]\]\:bg-receipt {
-    & span[data-storage-state='entry'] {
-      background-color: var(--color-receipt);
-    }
-  }
   .\[\&_span\[data-storage-state\=\'opened\'\]\]\:bg-error {
     & span[data-storage-state='opened'] {
       background-color: var(--color-error);
-    }
-  }
-  .\[\&_span\[data-storage-state\=\'ordered\'\]\]\:bg-accent {
-    & span[data-storage-state='ordered'] {
-      background-color: var(--color-accent);
-    }
-  }
-  .\[\&_span\[data-storage-state\=\'ready\'\]\]\:bg-ready {
-    & span[data-storage-state='ready'] {
-      background-color: var(--color-ready);
-    }
-  }
-  .\[\&_span\[data-storage-state\=\'registered\'\]\]\:bg-in-progress {
-    & span[data-storage-state='registered'] {
-      background-color: var(--color-in-progress);
-    }
-  }
-  .\[\&_span\[data-storage-state\=\'transit\'\]\]\:bg-success-035 {
-    & span[data-storage-state='transit'] {
-      background-color: var(--color-success-035);
-    }
-  }
-  .\[\&_span\[data-storage-state\]\]\:size-min {
-    & span[data-storage-state] {
-      width: min-content;
-      height: min-content;
-    }
-  }
-  .\[\&_span\[data-storage-state\]\]\:size-min\! {
-    & span[data-storage-state] {
-      width: min-content !important;
-      height: min-content !important;
     }
   }
   .\[\&_span\[data-storage-state\]\]\:w-min {
@@ -4040,11 +4065,6 @@
   .\[\&_span\[data-storage-state\]\]\:text-white {
     & span[data-storage-state] {
       color: var(--color-white);
-    }
-  }
-  .\[\&_time\]\:mr-2\.5 {
-    & time {
-      margin-right: calc(var(--spacing) * 2.5);
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:h-2 {
@@ -5417,6 +5437,18 @@
       }
     }
   }
+  .prose-td\:\[\&\>div\>button\]\:hover\:ring-2 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>div\>button\]\:active\:scale-96 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
@@ -5646,66 +5678,9 @@
       border-color: var(--color-gray-100);
     }
   }
-  .\[\&\>li\:nth-child\(2\)\]\:w-full {
-    &>li:nth-child(2) {
-      width: 100%;
-    }
-  }
-  .\[\&\>li\:nth-child\(2\)\]\:bg-red-500 {
-    &>li:nth-child(2) {
-      background-color: var(--color-red-500);
-    }
-  }
-  .\[\&\>li\:nth-last-child\(2\)\]\:border-black {
-    &>li:nth-last-child(2) {
-      border-color: var(--color-black);
-    }
-  }
-  .\[\&\>li\:nth-last-child\(2\)\]\:border-gray-500 {
-    &>li:nth-last-child(2) {
-      border-color: var(--color-gray-500);
-    }
-  }
-  .\[\&\>li\:nth-last-child\(2\)\]\:border-gray-600 {
-    &>li:nth-last-child(2) {
-      border-color: var(--color-gray-600);
-    }
-  }
-  .\[\&\>li\:nth-last-child\(2\)\]\:border-pitpos-700 {
-    &>li:nth-last-child(2) {
-      border-color: var(--color-pitpos-700);
-    }
-  }
   .\[\&\>li\:nth-last-child\(2\)\]\:border-pitpos-blue {
     &>li:nth-last-child(2) {
       border-color: var(--color-pitpos-blue);
-    }
-  }
-  .\[\&\>li\>\[data-storage-state\]\]\:size-min {
-    &>li>[data-storage-state] {
-      width: min-content;
-      height: min-content;
-    }
-  }
-  .\[\&\>li\>\[data-storage-state\]\]\:size-min\! {
-    &>li>[data-storage-state] {
-      width: min-content !important;
-      height: min-content !important;
-    }
-  }
-  .\[\&\>li\>span\:not\[data-storage-state\]\:nth-child\(2\)\]\:w-full {
-    &>li>span:not[data-storage-state]:nth-child(2) {
-      width: 100%;
-    }
-  }
-  .\[\&\>li\>span\:nth-child\(2\)\]\:w-full {
-    &>li>span:nth-child(2) {
-      width: 100%;
-    }
-  }
-  .\[\&\>li\>span\:nth-child\(2\)\]\:bg-red-500 {
-    &>li>span:nth-child(2) {
-      background-color: var(--color-red-500);
     }
   }
   .\[\&\>li\>span\:nth-child\(2\)\]\:px-2\.5 {
@@ -5715,11 +5690,6 @@
   }
   .\[\&\>li\>span\:nth-child\(2\)\:not\(\:last-child\)\]\:w-full {
     &>li>span:nth-child(2):not(:last-child) {
-      width: 100%;
-    }
-  }
-  .\[\&\>li\>span\:nth-child\(2\)\:not\[data-storage-state\]\]\:w-full {
-    &>li>span:nth-child(2):not[data-storage-state] {
       width: 100%;
     }
   }
@@ -6431,6 +6401,20 @@
   .prose-td\:\[\&\[data-client-state\=false\]\>svg\:first-child\]\:hidden {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &[data-client-state=false]>svg:first-child {
+        display: none;
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-client-state\=false\]\>svg\:last-child\]\:hidden {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-client-state=false]>svg:last-child {
+        display: none;
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-client-state\=true\]\>svg\:first-child\]\:hidden {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-client-state=true]>svg:first-child {
         display: none;
       }
     }
@@ -7255,6 +7239,12 @@ span.flatpickr-weekday {
   }
   .date-picker-indicator-violet::-webkit-calendar-picker-indicator {
     filter: invert(41%) sepia(99%) saturate(2600%) hue-rotate(5deg) brightness(102%) contrast(101%);
+  }
+  .date-picker-auto::-webkit-calendar-picker-indicator {
+    filter: invert(39%) sepia(6%) saturate(668%) hue-rotate(217deg) brightness(94%) contrast(89%);
+  }
+  .date-picker-auto[data-filled="true"]::-webkit-calendar-picker-indicator {
+    filter: none;
   }
 }
 @property --tw-translate-x {

@@ -142,6 +142,13 @@
 		filter: invert(41%) sepia(99%) saturate(2600%) hue-rotate(5deg) brightness(102%) contrast(101%);
 	}
 
+	.date-picker-auto::-webkit-calendar-picker-indicator {
+		filter: invert(39%) sepia(6%) saturate(668%) hue-rotate(217deg) brightness(94%) contrast(89%);
+	}
+
+	.date-picker-auto[data-filled="true"]::-webkit-calendar-picker-indicator {
+		filter: none;
+	}
 }
 
 @variant has-active {

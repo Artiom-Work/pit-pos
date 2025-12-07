@@ -541,10 +541,10 @@
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<!-- фильтровые кнопки -->
+		<!-- фильтровые кнопки главная прозрачная -->
 		<div class="w-full flex justify-end gap-x-2 sm:gap-x-6">
 			<button
-				class="px-2.5 py-[0.5625rem] bg-white flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+				class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
 				type="reset">
 				<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
@@ -554,15 +554,87 @@
 			</button>
 
 			<button
-				class="px-5 py-[0.5625rem] bg-white rounded-md ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
 				type="submit">Применить</button>
 		</div>
-		<!-- Главная кнопка на странице -->
+		<!-- фильтровые кнопки главная чёрная -->
+		<div class="w-full flex justify-end gap-x-2 sm:gap-x-6">
+			<button
+				class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-80 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+				type="reset">
+				<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+				</svg>
+
+				<span class=" text-sm font-medium">Сбросить</span>
+			</button>
+
+			<button
+				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+				type="submit">Применить</button>
+		</div>
+		<!-- Главная кнопка на странице акцентный цвет-->
 		<button
 			class="px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
 			type="button">Главная</button>
+		<!-- Главная кнопка на странице тёмный цвет-->
+		<button
+			class="px-5 py-3 rounded-md bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-80 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
+			type="button">Главная</button>
+		<!-- Акцентная кнопка прозрачная 44 высотой -->
+		<button
+			class="px-5 py-3 rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:text-gray-500 disabled:ring-gray-200 disabled:pointer-events-none"
+			type="button" disabled>Акцентная прозрачная высокая</button>
 		<!-- поля для форм -->
 		<!-- обычное -->
+		<div class="flex flex-col gap-y-1 xl:col-span-3">
+			<label class="text-sm text-gray-700" for="seal">Номер пломбы</label>
+			<input class="
+				w-full
+				px-3 
+				py-[0.439rem] 
+				rounded-md 
+				outline-0 
+				ring-1 
+				ring-gray-300 
+				not-placeholder-shown:ring-gray-600 
+				duration-300 
+				placeholder:text-gray-500 
+				focus:ring-blue-focus-input 
+				focus:ring-2 
+				invalid:focus:ring-error
+				invalid:focus:text-error
+				disabled:ring-gray-200
+				disabled:bg-gray-200
+				disabled:text-gray-500
+				" id="seal" name="seal" type="text" placeholder="#" disabled>
+		</div>
+		<!-- textarea с min-h -->
+		<div class="flex flex-col gap-y-1">
+			<label class="text-sm text-gray-700" for="note">Заметка</label>
+			<textarea class="
+				min-h-30
+				w-full
+				px-3 
+				py-2.5 
+				rounded-md 
+				outline-0 
+				ring-1 
+				ring-gray-300 
+				not-placeholder-shown:ring-gray-600 
+				duration-300 
+				placeholder:text-gray-500 
+				focus:ring-blue-focus-input 
+				focus:ring-2 
+				invalid:focus:ring-error
+				invalid:focus:text-error
+				disabled:ring-gray-200
+				disabled:bg-gray-200
+				disabled:text-gray-500
+				" id="note" name="note" placeholder="Оставьте заметку"></textarea>
+			</input>
+		</div>
+		<!-- телефон -->
 		<div class="flex flex-col gap-y-1 xl:col-span-3">
 			<label class="text-sm text-gray-700" for="phone">Телефон</label>
 			<input class="
@@ -586,7 +658,7 @@
 					" id="phone" name="phone" type="tel" placeholder="+7(111) 111-11-11"
 				pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 		</div>
-		<!-- телефон -->
+		<!-- ФИО -->
 		<div class="flex flex-col gap-y-1 xl:col-span-3">
 			<label class="text-sm text-gray-700" for="seal">Номер пломбы</label>
 			<input class="
@@ -609,7 +681,6 @@
 				disabled:text-gray-50
 				" id="seal" name="seal" type="text" placeholder="#">
 		</div>
-		<!-- ФИО -->
 		<div class="flex flex-col gap-y-1 xl:col-span-3">
 			<label class="text-sm text-gray-700" for="name">ФИО</label>
 			<input class="
@@ -761,6 +832,33 @@
 				<option value="close">Закрыта</option>
 			</select>
 		</div>
+		<!-- Поле с выбором даты -->
+		<div class="flex flex-col justify-end gap-y-1 w-full">
+			<label class="text-sm text-gray-700" for="register_date">Дата записи клиента</label>
+			<input class="
+							w-full
+							px-3 
+							py-[0.439rem] 
+							rounded-md 
+							outline-0 
+							border-0
+							ring-1 
+							ring-gray-300
+							text-gray-500 
+							duration-300 
+							focus:ring-blue-focus-input 
+							focus:ring-2 
+							invalid:focus:ring-error
+							invalid:focus:text-error
+							disabled:ring-gray-200
+							disabled:bg-gray-200
+							disabled:text-gray-500
+							date-picker-auto
+							data-[filled=true]:ring-gray-600
+							data-[filled=true]:text-black
+			" type="datetime-local" id="register_date" name="register_date"
+				oninput="this.dataset.filled = this.value ? 'true' : 'false'">
+		</div>
 		<!-- Акцентный checkbox -->
 		<label class="inline-flex items-center" for="storage-30135">
 			<input type="checkbox" class="sr-only peer" id="storage-30135">
@@ -780,25 +878,25 @@
 				<div>
 					<input class="hidden peer" type="checkbox" id="filter-storages-all" checked>
 					<label
-						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:text-white"
+						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
 						for="filter-storages-all">Все</label>
 				</div>
 				<div>
 					<input class="hidden peer" type="checkbox" id="filter-storages-active">
 					<label
-						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:text-white"
+						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
 						for="filter-storages-active">Активные</label>
 				</div>
 				<div>
 					<input class="hidden peer" type="checkbox" id="filter-storages-finished">
 					<label
-						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:text-white"
+						class="w-full text-center inline-block px-2.5 py-2 text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
 						for="filter-storages-finished">Завершенные</label>
 				</div>
 			</form>
 
 			<button
-				class="px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200 xs:ml-auto"
+				class="ml-auto size-min px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
 				type="button">Отправить</button>
 		</div>
 		<!-- погинация для таблицы -->
@@ -1247,6 +1345,246 @@
 									Отправить
 								</button>
 							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- Прмер таблицы с caption -->
+		<div
+			class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
+			<table class="prose mb-3 max-w-screen  min-w-145 w-full text-dark-text
+		[&>caption]:mb-1.5
+		[&>caption]:font-semibold 
+		[&>caption]:text-[0.81rem] 
+		[&>caption]:leading-[1.545]
+		[&>caption]:bg-gray-200 
+		[&>caption]:text-left 
+		prose-thead:border-0 
+		prose-thead:whitespace-nowrap
+		prose-th:[&:nth-child(n+2)]:border-l-1
+		prose-th:[&:nth-child(n+2)]:border-gray-300
+		prose-th:p-2.5 
+		prose-th:font-semibold 
+		prose-th:bg-gray-50  
+		prose-th:text-[0.81rem] 
+		prose-th:align-middle 
+		prose-th:leading-[1.2]
+		prose-td:leading-none
+		prose-td:text-sm 
+		prose-td:align-middle 
+		prose-td:p-2.5  
+		prose-tr:h-9.5  
+		prose-tr:border-white 
+		prose-tr:border-b-2 
+		">
+
+				<caption>Сезонное хранение #30899 от 2025-10-19 19:25:54</caption>
+
+				<thead>
+					<tr>
+						<th>
+							&#8470;&nbsp;пломбы
+						</th>
+						<th>
+							Номер а/м
+						</th>
+						<th>
+							Срок хранения
+						</th>
+						<th>
+							Дата начала
+						</th>
+						<th>
+							Детали
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							43434
+						</td>
+						<td>
+							4343434
+						</td>
+						<td>
+							700
+						</td>
+						<td>
+							2025-10-19 19:25:54
+						</td>
+						<td>
+							R16. резина зимняя Contyre, состояние среднее, ширина 165 мм, высота 35, протектор 2 мм. Без дисков.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="prose max-w-screen min-w-145  w-full text-dark-text
+		[&>caption]:mb-1.5
+		[&>caption]:font-semibold 
+		[&>caption]:text-[0.81rem] 
+		[&>caption]:leading-[1.545]
+		[&>caption]:bg-gray-200 
+		[&>caption]:text-left 
+		prose-thead:border-0 
+		prose-thead:whitespace-nowrap
+		prose-th:[&:nth-child(n+2)]:border-l-1
+		prose-th:[&:nth-child(n+2)]:border-gray-300
+		prose-th:p-2.5 
+		prose-th:font-semibold 
+		prose-th:bg-gray-50  
+		prose-th:text-[0.81rem] 
+		prose-th:align-middle 
+		prose-th:leading-[1.2]
+		prose-td:leading-none
+		prose-td:text-sm 
+		prose-td:align-middle 
+		prose-td:p-2.5  
+		prose-tr:h-9.5  
+		prose-tr:border-white 
+		prose-tr:border-b-2 
+		">
+
+				<caption>На хранении:</caption>
+
+				<thead>
+					<tr>
+						<th>
+							Cover
+						</th>
+						<th>
+							Disk cap
+						</th>
+						<th>
+							Тип диска
+						</th>
+						<th>
+							Марка
+						</th>
+						<th>
+							Протектор
+						</th>
+						<th>
+							Сезон
+						</th>
+						<th>
+							Размер
+						</th>
+						<th>
+							Тип
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							Литой
+						</td>
+						<td>
+							Contyre
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							зимняя
+						</td>
+						<td>
+							165/35 R16
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							Железный
+						</td>
+						<td>
+							Contyre
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							летняя
+						</td>
+						<td>
+							165/35 R16
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							Круглый
+						</td>
+						<td>
+							Contyre
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							зимняя
+						</td>
+						<td>
+							165/35 R16
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+
+						</td>
+						<td>
+							Contyre
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							зимняя
+						</td>
+						<td>
+							165/35 R16
+						</td>
+						<td>
+							1
 						</td>
 					</tr>
 				</tbody>
