@@ -1185,9 +1185,6 @@
   .min-w-301 {
     min-width: calc(var(--spacing) * 301);
   }
-  .min-w-311 {
-    min-width: calc(var(--spacing) * 311);
-  }
   .min-w-313 {
     min-width: calc(var(--spacing) * 313);
   }
@@ -1477,6 +1474,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
+  }
   .border-pink {
     border-color: var(--color-pink);
   }
@@ -1552,12 +1552,6 @@
   .fill-pitpos-blue {
     fill: var(--color-pitpos-blue);
   }
-  .fill-red-500 {
-    fill: var(--color-red-500);
-  }
-  .fill-red-500\! {
-    fill: var(--color-red-500) !important;
-  }
   .fill-transparent {
     fill: transparent;
   }
@@ -1582,9 +1576,6 @@
   .stroke-gray-900 {
     stroke: var(--color-gray-900);
   }
-  .stroke-inherit {
-    stroke: inherit;
-  }
   .stroke-pitpos-400 {
     stroke: var(--color-pitpos-400);
   }
@@ -1593,12 +1584,6 @@
   }
   .stroke-pitpos-blue {
     stroke: var(--color-pitpos-blue);
-  }
-  .stroke-red-500 {
-    stroke: var(--color-red-500);
-  }
-  .stroke-red-500\! {
-    stroke: var(--color-red-500) !important;
   }
   .stroke-success-035 {
     stroke: var(--color-success-035);
@@ -1967,9 +1952,6 @@
   .ring-accent {
     --tw-ring-color: var(--color-accent);
   }
-  .ring-gray-200 {
-    --tw-ring-color: var(--color-gray-200);
-  }
   .ring-gray-300 {
     --tw-ring-color: var(--color-gray-300);
   }
@@ -2117,6 +2099,11 @@
   .peer-checked\:overflow-y-scroll {
     &:is(:where(.peer):checked ~ *) {
       overflow-y: scroll;
+    }
+  }
+  .peer-checked\:border-accent {
+    &:is(:where(.peer):checked ~ *) {
+      border-color: var(--color-accent);
     }
   }
   .peer-checked\:bg-accent {
@@ -2424,13 +2411,6 @@
       }
     }
   }
-  .hover\:ring-transparent {
-    &:hover {
-      @media (hover: hover) {
-        --tw-ring-color: transparent;
-      }
-    }
-  }
   .hover\:brightness-80 {
     &:hover {
       @media (hover: hover) {
@@ -2639,11 +2619,6 @@
   .disabled\:bg-gray-200 {
     &:disabled {
       background-color: var(--color-gray-200);
-    }
-  }
-  .disabled\:bg-gray-300 {
-    &:disabled {
-      background-color: var(--color-gray-300);
     }
   }
   .disabled\:bg-gray-400 {
@@ -3446,18 +3421,6 @@
       border-color: var(--color-white);
     }
   }
-  .prose-tr\:duration-300 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      --tw-duration: 300ms;
-      transition-duration: 300ms;
-    }
-  }
-  .prose-tr\:duration-600 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      --tw-duration: 600ms;
-      transition-duration: 600ms;
-    }
-  }
   .prose-tr\:will-change-transform {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       will-change: transform;
@@ -3470,74 +3433,11 @@
       }
     }
   }
-  .prose-tr\:hover\:relative {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          position: relative;
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:z-100 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          z-index: 100;
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:scale-101 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-scale-x: 101%;
-          --tw-scale-y: 101%;
-          --tw-scale-z: 101%;
-          scale: var(--tw-scale-x) var(--tw-scale-y);
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:scale-105 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-scale-x: 105%;
-          --tw-scale-y: 105%;
-          --tw-scale-z: 105%;
-          scale: var(--tw-scale-x) var(--tw-scale-y);
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:scale-110 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-scale-x: 110%;
-          --tw-scale-y: 110%;
-          --tw-scale-z: 110%;
-          scale: var(--tw-scale-x) var(--tw-scale-y);
-        }
-      }
-    }
-  }
   .prose-tr\:hover\:bg-gray-75 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:hover {
         @media (hover: hover) {
           background-color: var(--color-gray-75);
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:bg-gray-100 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-gray-100);
         }
       }
     }
@@ -3851,14 +3751,6 @@
       background-color: var(--color-pitpos-200);
     }
   }
-  .hs-select-disabled\:stroke-gray-500 {
-    &.disabled {
-      stroke: var(--color-gray-500);
-    }
-    .disabled & {
-      stroke: var(--color-gray-500);
-    }
-  }
   .hs-select-disabled\:opacity-20 {
     &.disabled {
       opacity: 20%;
@@ -3873,14 +3765,6 @@
     }
     .disabled & {
       --tw-ring-color: var(--color-gray-200);
-    }
-  }
-  .hs-select-disabled\:ring-gray-300 {
-    &.disabled {
-      --tw-ring-color: var(--color-gray-300);
-    }
-    .disabled & {
-      --tw-ring-color: var(--color-gray-300);
     }
   }
   .hs-password-active\:block {
@@ -4111,36 +3995,6 @@
       }
     }
   }
-  .\[\&_select\[disabled\'true\'\]\]\:border-red-500 {
-    & select[disabled'true'] {
-      border-color: var(--color-red-500);
-    }
-  }
-  .\[\&_select\[disabled\=\'true\'\]\]\:border-5 {
-    & select[disabled='true'] {
-      border-style: var(--tw-border-style);
-      border-width: 5px;
-    }
-  }
-  .\[\&_select\[disabled\]\]\:scale-200 {
-    & select[disabled] {
-      --tw-scale-x: 200%;
-      --tw-scale-y: 200%;
-      --tw-scale-z: 200%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .\[\&_select\[disabled\]\]\:border-5 {
-    & select[disabled] {
-      border-style: var(--tw-border-style);
-      border-width: 5px;
-    }
-  }
-  .\[\&_select\[disabled\]\]\:border-red-500 {
-    & select[disabled] {
-      border-color: var(--color-red-500);
-    }
-  }
   .\[\&_span\[data-storage-state\=\'ended\'\]\]\:bg-success {
     & span[data-storage-state='ended'] {
       background-color: var(--color-success);
@@ -4196,30 +4050,6 @@
   .\[\&_span\[data-storage-state\]\]\:text-white {
     & span[data-storage-state] {
       color: var(--color-white);
-    }
-  }
-  .hs-select-disabled\:\[\&_svg\]\:pointer-events-none {
-    &.disabled {
-      & svg {
-        pointer-events: none;
-      }
-    }
-    .disabled & {
-      & svg {
-        pointer-events: none;
-      }
-    }
-  }
-  .hs-select-disabled\:\[\&_svg\]\:stroke-gray-500 {
-    &.disabled {
-      & svg {
-        stroke: var(--color-gray-500);
-      }
-    }
-    .disabled & {
-      & svg {
-        stroke: var(--color-gray-500);
-      }
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:h-2 {
@@ -5274,17 +5104,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>button\]\:hover\:ring-pitpos-700 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>button {
-        &:hover {
-          @media (hover: hover) {
-            --tw-ring-color: var(--color-pitpos-700);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>button\]\:active\:scale-95 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
@@ -5321,13 +5140,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>button\[disabled\]\]\:bg-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>button[disabled] {
-        background-color: var(--color-gray-500);
-      }
-    }
-  }
   .prose-td\:\[\&\>button\[disabled\]\]\:text-gray-500 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button[disabled] {
@@ -5339,13 +5151,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button[disabled] {
         --tw-ring-color: var(--color-gray-200);
-      }
-    }
-  }
-  .prose-td\:\[\&\>button\[disbled\]\]\:bg-gray-200 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>button[disbled] {
-        background-color: var(--color-gray-200);
       }
     }
   }
@@ -5780,28 +5585,6 @@
       width: 100%;
     }
   }
-  .\[\&\>select\[disabled\]\]\:scale-200 {
-    &>select[disabled] {
-      --tw-scale-x: 200%;
-      --tw-scale-y: 200%;
-      --tw-scale-z: 200%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .\[\&\>select\[disabled\]_svg\]\:stroke-red-500 {
-    &>select[disabled] svg {
-      stroke: var(--color-red-500);
-    }
-  }
-  .hover\:\[\&\>span\]\:text-white {
-    &:hover {
-      @media (hover: hover) {
-        &>span {
-          color: var(--color-white);
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>span\]\:flex {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span {
@@ -6186,6 +5969,20 @@
       }
     }
   }
+  .peer-checked\:\[\&\>svg\]\:border-accent {
+    &:is(:where(.peer):checked ~ *) {
+      &>svg {
+        border-color: var(--color-accent);
+      }
+    }
+  }
+  .peer-checked\:\[\&\>svg\]\:stroke-white {
+    &:is(:where(.peer):checked ~ *) {
+      &>svg {
+        stroke: var(--color-white);
+      }
+    }
+  }
   .peer-disabled\:\[\&\>svg\]\:stroke-gray-200 {
     &:is(:where(.peer):disabled ~ *) {
       &>svg {
@@ -6207,15 +6004,6 @@
       @media (hover: hover) {
         &>svg {
           stroke: var(--color-pitpos-700);
-        }
-      }
-    }
-  }
-  .hover\:\[\&\>svg\]\:stroke-white {
-    &:hover {
-      @media (hover: hover) {
-        &>svg {
-          stroke: var(--color-white);
         }
       }
     }
@@ -6562,35 +6350,9 @@
       background-color: var(--color-receipt);
     }
   }
-  .\[\&\[disabled\]_svg\]\:stroke-red-500 {
-    &[disabled] svg {
-      stroke: var(--color-red-500);
-    }
-  }
   .\[\&\[disabled\]\~button\]\:pointer-events-none {
     &[disabled]~button {
       pointer-events: none;
-    }
-  }
-  .\[\&\[disabled\]\~button\]\:cursor-default {
-    &[disabled]~button {
-      cursor: default;
-    }
-  }
-  .\[\&\[disabled\]\~button\]\:border-5 {
-    &[disabled]~button {
-      border-style: var(--tw-border-style);
-      border-width: 5px;
-    }
-  }
-  .\[\&\[disabled\]\~button\]\:border-red-500 {
-    &[disabled]~button {
-      border-color: var(--color-red-500);
-    }
-  }
-  .\[\&\[disabled\]\~button_svg\]\:stroke-red-500 {
-    &[disabled]~button svg {
-      stroke: var(--color-red-500);
     }
   }
   .\[\&\[disabled\]\~div\]\:pointer-events-none {
@@ -6598,24 +6360,9 @@
       pointer-events: none;
     }
   }
-  .\[\&\[disabled\]\~div\>svg\]\:pointer-events-none {
-    &[disabled]~div>svg {
-      pointer-events: none;
-    }
-  }
-  .\[\&\[disabled\]\~div\>svg\]\:cursor-default {
-    &[disabled]~div>svg {
-      cursor: default;
-    }
-  }
   .\[\&\[disabled\]\~div\>svg\]\:stroke-gray-500 {
     &[disabled]~div>svg {
       stroke: var(--color-gray-500);
-    }
-  }
-  .\[\&\[disabled\]\~div\>svg\]\:stroke-red-500 {
-    &[disabled]~div>svg {
-      stroke: var(--color-red-500);
     }
   }
   .hs-select-disabled\:\[\&\~div_svg\]\:stroke-gray-500 {
@@ -6626,30 +6373,6 @@
     }
     .disabled & {
       &~div svg {
-        stroke: var(--color-gray-500);
-      }
-    }
-  }
-  .hs-select-disabled\:\[\&\~span_svg\]\:stroke-gray-500 {
-    &.disabled {
-      &~span svg {
-        stroke: var(--color-gray-500);
-      }
-    }
-    .disabled & {
-      &~span svg {
-        stroke: var(--color-gray-500);
-      }
-    }
-  }
-  .hs-select-disabled\:\[\&\~svg\]\:stroke-gray-500 {
-    &.disabled {
-      &~svg {
-        stroke: var(--color-gray-500);
-      }
-    }
-    .disabled & {
-      &~svg {
         stroke: var(--color-gray-500);
       }
     }
