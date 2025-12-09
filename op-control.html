@@ -15,7 +15,7 @@
 
 <body class="bg-gray-50 h-full">
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
-		<div class="container flex items-center justify-between gap-x-4">
+		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
 				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
@@ -27,7 +27,7 @@
 				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
 					href="#!">
 					<div
-						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-blue">
 						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
 					</div>
 
@@ -48,7 +48,7 @@
 				</a>
 
 				<div class="hidden flex flex-col items-end sm:flex">
-					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
 					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
@@ -81,36 +81,36 @@
 				</label>
 
 				<nav
-					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-black">
 					<ul>
 						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="./dashboard.html">Дашборд</a>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="./op-control.html" title="Оперативный контроль">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="./op-control.html">Оперативный контроль</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
 
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-1">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -119,50 +119,50 @@
 
 							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-1">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-shifts.html">Смены</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-disks-painting.html">Покраска дисков</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-guarantees.html">Гарантии</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Ключевые показатели эффективности">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">KPI</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-2">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -171,50 +171,50 @@
 
 							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-2">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Финансовые планы</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Ночные смены</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Отчеты по мотивации</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Средние чеки</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Выгрузка услуг</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Кабинет бухгалтера">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Кабинет бухгалтера</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-3">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -223,46 +223,46 @@
 
 							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-3">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Зарплаты</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Дополнительные начисления</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Баланс</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Инкассации</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Клиенты">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Клиенты</a>
 
 							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-4">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -271,52 +271,52 @@
 
 							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-4">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./clients-individuals.html">Физ.лица</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Юр.лица</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="./users.html" title="Пользователи">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="./users.html">Пользователи</a>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Справочники">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
 								</svg>
 
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Справочники</a>
 
 							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-6">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -325,79 +325,79 @@
 
 							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-6">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Услуги</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Причины обращений</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-workshops.html">Мастерские</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-my-companies.html">Мои компании</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Марки и модели</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вопросы для отзывов</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вопросы при открытии смены</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Роли</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Рекомендации клиенту</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Мотивации</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Лояльность">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Лояльность</a>
 
 							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-7">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -406,39 +406,39 @@
 
 							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-7">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Дисконтные карты</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./loyalty-promo-codes.html">Промокоды</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Настройки">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Настройки</a>
 
 							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-8">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -447,39 +447,39 @@
 
 							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-8">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Уведомления</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Сайт</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Обучение">
 
-								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+								<svg class="size-6  stroke-black fill-black" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Обучение</a>
 
 							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-9">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -488,33 +488,33 @@
 
 							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-9">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вики</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Материалы</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Логи">
-								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-black" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Логи</a>
 						</li>
 					</ul>
@@ -714,10 +714,10 @@
 			"toggleSeparators": {
 				"betweenItemsAndCounter": "+"
 			},
-			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 			"optionTemplate": 
-			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 		}' class="hidden">
 				<option value="all">Все</option>
@@ -810,7 +810,7 @@
 				</option>
 			</select>
 		</div>
-		<!-- статус мастерской(просто селект одиночный) -->
+		<!-- статус(просто селект одиночный) -->
 		<div
 			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
 			<label class="text-sm text-gray-700" for="workshop_state">Статус</label>
@@ -821,10 +821,10 @@
 		"toggleSeparators": {
 			"betweenItemsAndCounter": "+"
 		},
-		"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+		"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 		"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 		"optionTemplate": 
-		"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+		"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 		"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 	}' class="hidden">
 				<option value="all">Все</option>
@@ -854,9 +854,9 @@
 				"placeholder": "&#8470",
 				"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
 				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-gray-200 hs-select-disabled:bg-gray-200 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-				"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+				"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 text-gray-500 hover:stroke-3 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 			}' class="hidden">
 				<option value="">Все</option>
@@ -968,7 +968,7 @@
 				</svg>
 
 				<select
-					class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-pitpos-950 font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-black  focus:outline-0 focus:outline-0 no-number-spinner"
+					class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-black font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-black  focus:outline-0 focus:outline-0 no-number-spinner"
 					id="seasonal-storage-lists-select">
 					<option value="storages-list-1-10" selected>10</option>
 					<option value="storages-list-10-20">20</option>
@@ -1001,7 +1001,7 @@
 
 			<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
 				<ul class="flex gap-x-1.5 sm:gap-x-2.5">
-					<li class="shrink-0 h-8 w-8" disabled>
+					<li class="shrink-0 h-8 w-8">
 						<a class="flex items-center justify-center w-full h-full rounded-full will-change-transform duration-300 hover:ring-1 hover:ring-black active:scale-95 has-disabled:bg-gray-100 has-disabled:[&>svg]:stroke-gray-300 has-disabled:pointer-events-none disabled"
 							href="#!" rel="prev" aria-label="« Назад">
 							<svg class="shrink-0 size-6 stroke-black fill-transparent rotate-90" viewBox="0 0 24 24">
@@ -1175,10 +1175,11 @@
 							<label class="inline-flex items-center" for="storage-30135">
 								<input type="checkbox" class="sr-only peer" id="storage-30135" disabled>
 								<span
-									class="w-5 h-5 border-2 border-accent rounded-sm 
-												peer-checked:bg-accent 
-												flex items-center justify-center duration-300 will-change-transform   peer-disabled:pointer-events-none cursor-pointer peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 peer-disabled:[&>svg]:stroke-gray-200 hover:ring-1 hover:ring-accent">
-									<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
+		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
+									<svg
+										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
+										viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
@@ -1233,10 +1234,11 @@
 							<label class="inline-flex items-center" for="storage-30136">
 								<input type="checkbox" class="sr-only peer" id="storage-30136">
 								<span
-									class="w-5 h-5 border-2 border-accent rounded-sm 
-												peer-checked:bg-accent 
-												flex items-center justify-center duration-300 will-change-transform   peer-disabled:pointer-events-none cursor-pointer peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 peer-disabled:[&>svg]:stroke-gray-200 hover:ring-1 hover:ring-accent">
-									<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
+		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
+									<svg
+										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
+										viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
@@ -1291,10 +1293,11 @@
 							<label class="inline-flex items-center" for="storage-30137">
 								<input type="checkbox" class="sr-only peer" id="storage-30137">
 								<span
-									class="w-5 h-5 border-2 border-accent rounded-sm 
-												peer-checked:bg-accent 
-												flex items-center justify-center duration-300 will-change-transform   peer-disabled:pointer-events-none cursor-pointer peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 peer-disabled:[&>svg]:stroke-gray-200 hover:ring-1 hover:ring-accent">
-									<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
+		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
+									<svg
+										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
+										viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
@@ -1347,12 +1350,13 @@
 					<tr>
 						<td>
 							<label class="inline-flex items-center" for="storage-30138">
-								<input type="checkbox" class="sr-only peer" id="storage-30138">
+								<input type="checkbox" class="sr-only peer" id="storage-30138" disabled>
 								<span
-									class="w-5 h-5 border-2 border-accent rounded-sm 
-												peer-checked:bg-accent 
-												flex items-center justify-center duration-300 will-change-transform   peer-disabled:pointer-events-none cursor-pointer peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 peer-disabled:[&>svg]:stroke-gray-200 hover:ring-1 hover:ring-accent">
-									<svg class="w-3 h-2.5 stroke-white fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
+		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
+									<svg
+										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
+										viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
