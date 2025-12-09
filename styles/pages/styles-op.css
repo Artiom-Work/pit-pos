@@ -1162,12 +1162,6 @@
   .min-w-337\.5 {
     min-width: calc(var(--spacing) * 337.5);
   }
-  .min-w-347 {
-    min-width: calc(var(--spacing) * 347);
-  }
-  .min-w-347\.5 {
-    min-width: calc(var(--spacing) * 347.5);
-  }
   .min-w-395 {
     min-width: calc(var(--spacing) * 395);
   }
@@ -2236,6 +2230,13 @@
       }
     }
   }
+  .hover\:text-gray-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-700);
+      }
+    }
+  }
   .hover\:text-gray-800 {
     &:hover {
       @media (hover: hover) {
@@ -3173,6 +3174,16 @@
       order: 0;
     }
   }
+  .\33 xl\:col-span-1 {
+    @media (width >= 102.44rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .\33 xl\:col-span-2 {
+    @media (width >= 102.44rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
   .\33 xl\:col-span-3 {
     @media (width >= 102.44rem) {
       grid-column: span 3 / span 3;
@@ -3186,6 +3197,16 @@
   .\33 xl\:col-span-9 {
     @media (width >= 102.44rem) {
       grid-column: span 9 / span 9;
+    }
+  }
+  .\33 xl\:col-span-10 {
+    @media (width >= 102.44rem) {
+      grid-column: span 10 / span 10;
+    }
+  }
+  .\33 xl\:col-span-11 {
+    @media (width >= 102.44rem) {
+      grid-column: span 11 / span 11;
     }
   }
   .\33 xl\:grid {
@@ -3706,13 +3727,6 @@
       opacity: 20%;
     }
   }
-  .prose-td\:\[\&_a\.disabled\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & a.disabled {
-        pointer-events: none;
-      }
-    }
-  }
   .prose-td\:\[\&_a\.disabled\]\:pointer-events-none\! {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & a.disabled {
@@ -3720,24 +3734,10 @@
       }
     }
   }
-  .prose-td\:\[\&_a\.disabled\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & a.disabled {
-        color: var(--color-gray-500);
-      }
-    }
-  }
   .prose-td\:\[\&_a\.disabled\]\:text-gray-500\! {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & a.disabled {
         color: var(--color-gray-500) !important;
-      }
-    }
-  }
-  .prose-td\:\[\&_a\.disabled\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & a.disabled {
-        text-decoration-line: none;
       }
     }
   }
@@ -4062,10 +4062,10 @@
       }
     }
   }
-  .prose-tr\:\[\&\:nth-child\(1\)\]\:text-accent {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(1) {
-        color: var(--color-accent);
+  .prose-th\:\[\&\:not\(\:first-child\)\]\:px-2\.5 {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:not(:first-child) {
+        padding-inline: calc(var(--spacing) * 2.5);
       }
     }
   }
@@ -4312,111 +4312,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\(disabled\)\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a(disabled) {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\(disabled\)\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a(disabled) {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\(disabled\)\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a(disabled) {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\.disabled\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a.disabled {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\.disabled\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a.disabled {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\.disabled\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a.disabled {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[\.disabled\]\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[.disabled] {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[\.disabled\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[.disabled] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[\.disabled\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[.disabled] {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=\'disabled\'\]\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class='disabled'] {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=\'disabled\'\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class='disabled'] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=\'disabled\'\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class='disabled'] {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=disabled\]\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class=disabled] {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=disabled\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class=disabled] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[class\=disabled\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[class=disabled] {
-        text-decoration-line: none;
-      }
-    }
-  }
   .prose-td\:\[\&\>a\[data-checklist\]\]\:flex {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-checklist] {
@@ -4523,13 +4418,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\[data-guarantee\]\]\:h-4\.5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-guarantee] {
-        height: calc(var(--spacing) * 4.5);
-      }
-    }
-  }
   .prose-td\:\[\&\>a\[data-guarantee\]\]\:items-center {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-guarantee] {
@@ -4555,13 +4443,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-guarantee] {
         color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[data-guarantee\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-guarantee] {
-        text-decoration-line: none;
       }
     }
   }
@@ -4799,13 +4680,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\[data-work-order\]\]\:h-4\.5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order] {
-        height: calc(var(--spacing) * 4.5);
-      }
-    }
-  }
   .prose-td\:\[\&\>a\[data-work-order\]\]\:items-center {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order] {
@@ -4831,13 +4705,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order] {
         color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[data-work-order\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order] {
-        text-decoration-line: none;
       }
     }
   }
@@ -4974,48 +4841,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-workshop]>svg {
         opacity: 0%;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[disabled\]\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[disabled] {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[disabled\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[disabled] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[disabled\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[disabled] {
-        text-decoration-line: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[has-disabled\]\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[has-disabled] {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[has-disabled\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[has-disabled] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[has-disabled\]\]\:no-underline {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[has-disabled] {
-        text-decoration-line: none;
       }
     }
   }
@@ -5668,20 +5493,6 @@
   .\[\&\>li\>span\:nth-child\(2\)\:not\(\:last-child\)\]\:w-full {
     &>li>span:nth-child(2):not(:last-child) {
       width: 100%;
-    }
-  }
-  .prose-tr\:\[\&\>nth-child\(1\)\]\:text-accent {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>nth-child(1) {
-        color: var(--color-accent);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>nth-child\(1\)\>a\]\:text-accent {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>nth-child(1)>a {
-        color: var(--color-accent);
-      }
     }
   }
   .prose-td\:\[\&\>span\]\:flex {
