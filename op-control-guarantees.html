@@ -17,7 +17,7 @@
 	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
 		<div class="flex items-center justify-between gap-x-4">
 			<a href="./index.html" title="На главную">
-				<svg class="w-23 h-10 fill-accent hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
+				<svg class="w-23 h-10 fill-accent-bright hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
 					viewBox="0 0 140 60">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
 				</svg>
@@ -556,10 +556,10 @@
 				<span class="text-black">Гарантии</span>
 			</h1>
 			<!-- End page name -->
-			<form class="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 xl:grid-cols-12"
+			<form class="mb-6 grid grid-cols-1 gap-3 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
 				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
 
-				<div class="flex flex-col gap-y-1 xl:col-span-4">
+				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="warranty_number">&#8470;&nbsp;Гарантии</label>
 					<input class="
 						w-full
@@ -581,7 +581,7 @@
 						disabled:text-gray-500" id="warranty_number" name="warranty_number" type="text" placeholder="GW-2025-1001">
 				</div>
 
-				<div class="flex flex-col gap-y-1 xl:col-span-4">
+				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="phone">Телефон</label>
 					<input class="
 							w-full
@@ -605,8 +605,8 @@
 						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 				</div>
 
-				<div class="flex flex-col gap-y-1 xl:col-span-4">
-					<label class="text-sm text-gray-700" for="car_brand">А/м</label>
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-700" for="car_brand">Марка</label>
 					<input class="
 								w-full
 								px-3 
@@ -624,10 +624,32 @@
 								invalid:focus:text-error
 								disabled:ring-gray-200
 								disabled:bg-gray-200
-								disabled:text-gray-500" id="car_brand" name="car_brand" type="text" placeholder="Volkswagen Mustang">
+								disabled:text-gray-500" id="car_brand" name="car_brand" type="text" placeholder="Volkswagen">
 				</div>
 
-				<div class="flex flex-col gap-y-1 xl:col-span-3">
+				<div class="flex flex-col gap-y-1">
+					<label class="text-sm text-gray-700" for="car_model">Модель</label>
+					<input class="
+								w-full
+								px-3 
+								py-[0.439rem] 
+								rounded-md 
+								outline-0 
+								ring-1 
+								ring-gray-300 
+								not-placeholder-shown:ring-gray-600 
+								duration-300 
+								placeholder:text-gray-500 
+								focus:ring-blue-focus-input 
+								focus:ring-2 
+								invalid:focus:ring-error
+								invalid:focus:text-error
+								disabled:ring-gray-200
+								disabled:bg-gray-200
+								disabled:text-gray-500" id="car_model" name="car_model" type="text" placeholder="Mustang">
+				</div>
+
+				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="work_order_number">&#8470;&nbsp;заказ-наряда</label>
 					<input class="
 								w-full
@@ -649,7 +671,7 @@
 								disabled:text-gray-500" id="work_order_number" name="work_order_number" type="text" placeholder="696969">
 				</div>
 
-				<div class="flex flex-col gap-y-1 xl:col-span-3">
+				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="work_before">Действует&nbsp;с</label>
 					<input class="
 									w-full
@@ -676,7 +698,7 @@
 						oninput="this.dataset.filled = this.value ? 'true' : 'false'">
 				</div>
 
-				<div class="flex flex-col gap-y-1 xl:col-span-3">
+				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="work_after">Действует&nbsp;по</label>
 					<input class="
 									w-full
@@ -704,7 +726,7 @@
 				</div>
 
 				<div
-					class="flex flex-col gap-y-1 md:col-span-2 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
+					class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
 					<label class="text-sm text-gray-700" for="guarantee_status">Статус</label>
 
 					<select id="guarantee_status" name="guarantee_status" data-hs-select='{
@@ -725,7 +747,7 @@
 					</select>
 				</div>
 
-				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 md:col-span-2 xl:col-span-12">
+				<div class="w-full flex justify-end gap-x-2 sm:gap-x-6 sm:col-span-2 lg:col-span-1 lg:items-end 2xl:col-span-4">
 					<button
 						class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
 						type="reset">
