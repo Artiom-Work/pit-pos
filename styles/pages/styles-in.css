@@ -10,7 +10,7 @@
 /* @plugin "@tailwindcss/forms"; */
 @plugin "@tailwindcss/typography";
 
-:root {
+/* :root {
 	--gray-black-opacity-30: #0000004d;
 	--gray-50: #f7f7f8;
 	--gray-75: #f2f0f4;
@@ -45,7 +45,7 @@
 	--pitpos-900: #39066b;
 	--pitpos-950: #131216;
 	--pitpos-: #131216;
-}
+} */
 
 @theme {
 	--font-sans: 'Inter', sans-serif;
@@ -90,8 +90,18 @@
 	--color-pink: #ffa7a7;
 	--color-dark-red: #a4302d;
 	--color-accent-bright: #FE4F02;
-	--color-accent: #EB4800;
+	--color-accent: #E64308;
+
 	--color-blue-focus-input: #5171ff;
+	--color-disabled-input: #f7f7f8;
+	--color-default-input: #ffffff;
+
+	--color-disabled-checkbox: #f7f7f8;
+	--color-disabled-checkbox-icon: #a199ab;
+	--color-disabled-border-checkbox: #d6d6d8;
+	--color-default-checkbox: #ffffff;
+
+	--color-disabled-button: #F7F7F8;
 
 
 	--breakpoint-xs: 29.99rem;

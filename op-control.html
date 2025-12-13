@@ -554,7 +554,7 @@
 			</button>
 
 			<button
-				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
 				type="submit">Применить</button>
 		</div>
 		<!-- фильтровые кнопки главная чёрная -->
@@ -570,24 +570,24 @@
 			</button>
 
 			<button
-				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+				class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
 				type="submit">Применить</button>
 		</div>
 		<!-- Главная кнопка на странице акцентный цвет-->
 		<button
-			class="px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
+			class="px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button"
 			type="button">Главная</button>
 		<!-- Главная кнопка на странице тёмный цвет-->
 		<button
-			class="px-5 py-3 rounded-md bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-80 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
+			class="px-5 py-3 rounded-md bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-80 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button"
 			type="button">Главная</button>
 		<!-- Акцентная кнопка прозрачная 44 высотой -->
 		<button
-			class="px-5 py-3 rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:text-gray-500 disabled:ring-gray-200 disabled:pointer-events-none"
+			class="px-5 py-3 rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:text-gray-500 disabled:ring-disabled-button disabled:pointer-events-none"
 			type="button" disabled>Акцентная прозрачная высокая</button>
 		<!-- поля для форм -->
 		<!-- обычное -->
-		<div class="flex flex-col gap-y-1 xl:col-span-3">
+		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="seal">Номер пломбы</label>
 			<input class="
 				w-full
@@ -604,10 +604,12 @@
 				focus:ring-2 
 				invalid:focus:ring-error
 				invalid:focus:text-error
-				disabled:ring-gray-200
-				disabled:bg-gray-200
-				disabled:text-gray-500
-				" id="seal" name="seal" type="text" placeholder="#" disabled>
+				disabled:text-gray-700
+				disabled:placeholder:text-disabled-input
+				disabled:ring-disabled-input
+				disabled:bg-disabled-input
+				bg-default-input
+				" id="seal" name="seal" type="text" placeholder="#">
 		</div>
 		<!-- textarea с min-h -->
 		<div class="flex flex-col gap-y-1">
@@ -628,14 +630,16 @@
 				focus:ring-2 
 				invalid:focus:ring-error
 				invalid:focus:text-error
-				disabled:ring-gray-200
-				disabled:bg-gray-200
-				disabled:text-gray-500
+				disabled:text-gray-700
+				disabled:placeholder:text-disabled-input
+				disabled:ring-disabled-input
+				disabled:bg-disabled-input
+				bg-default-input
 				" id="note" name="note" placeholder="Оставьте заметку"></textarea>
 			</input>
 		</div>
 		<!-- телефон -->
-		<div class="flex flex-col gap-y-1 xl:col-span-3">
+		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="phone">Телефон</label>
 			<input class="
 					w-full
@@ -652,14 +656,16 @@
 					focus:ring-2 
 					invalid:focus:ring-error
 					invalid:focus:text-error
-					disabled:ring-gray-200
-					disabled:bg-gray-200
-					disabled:text-gray-500
+					disabled:text-gray-700
+					disabled:placeholder:text-disabled-input
+					disabled:ring-disabled-input
+					disabled:bg-disabled-input
+					bg-default-input
 					" id="phone" name="phone" type="tel" placeholder="+7(111) 111-11-11"
 				pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 		</div>
 		<!-- ФИО -->
-		<div class="flex flex-col gap-y-1 xl:col-span-3">
+		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="seal">Номер пломбы</label>
 			<input class="
 				w-full
@@ -676,12 +682,15 @@
 				focus:ring-2 
 				invalid:focus:ring-error
 				invalid:focus:text-error
-				disabled:ring-gray-200
-				disabled:bg-gray-200
-				disabled:text-gray-50
+				disabled:text-gray-700
+				disabled:placeholder:text-disabled-input
+				disabled:ring-disabled-input
+				disabled:bg-disabled-input
+				bg-default-input
 				" id="seal" name="seal" type="text" placeholder="#">
 		</div>
-		<div class="flex flex-col gap-y-1 xl:col-span-3">
+
+		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="name">ФИО</label>
 			<input class="
 				w-full
@@ -698,22 +707,21 @@
 				focus:ring-2 
 				invalid:focus:ring-error
 				invalid:focus:text-error
-				disabled:ring-gray-200
-				disabled:bg-gray-200
-				disabled:text-gray-50
+				disabled:text-gray-700
+				disabled:placeholder:text-disabled-input
+				disabled:ring-disabled-input
+				disabled:bg-disabled-input
+				bg-default-input
 				" id="name" name="name" type="text" placeholder="Иванова Иван Ивановна">
 		</div>
 		<!-- мастерские(просто селект одиночный) -->
 		<div
-			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
+			class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
 			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
 
 			<select id="workshop_id" name="workshop_id" data-hs-select='{
-			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
 			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
-			"toggleSeparators": {
-				"betweenItemsAndCounter": "+"
-			},
 			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 			"optionTemplate": 
@@ -816,11 +824,8 @@
 			<label class="text-sm text-gray-700" for="workshop_state">Статус</label>
 
 			<select id="workshop_state" name="workshop_state" data-hs-select='{
-		"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+		"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
 		"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
-		"toggleSeparators": {
-			"betweenItemsAndCounter": "+"
-		},
 		"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 		"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 		"optionTemplate": 
@@ -845,7 +850,7 @@
 				Введите номер пломбы <span class="hidden xs:inline">сезонного хранения</span>
 			</label>
 			<select
-				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none"
+				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none"
 				id="seal" name="seal" data-hs-select='{
 				"hasSearch": true,
 				"searchPlaceholder": "&#8470",
@@ -853,7 +858,7 @@
 				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 				"placeholder": "&#8470",
 				"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-gray-200 hs-select-disabled:bg-gray-200 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
 				"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
@@ -887,10 +892,114 @@
 				<option value="115313">115313</option>
 			</select>
 		</div>
+		<!-- Поле с выбором мастерской (одиночнй select) -->
+		<div
+			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
+			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
+
+			<select id="workshop_id" name="workshop_id" data-hs-select='{
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+			"optionTemplate": 
+			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+		}' class="hidden">
+				<option value="all">Все</option>
+				<option value="workshop_1">
+					Пулковское ш., д. 19
+				</option>
+				<option value="workshop_2">
+					ул. Софьи Ковалевской, д. 22
+				</option>
+				<option value="workshop_3">
+					пр. Металлистов, д. 116
+				</option>
+				<option value="workshop_4">
+					НЕсофьяНЕ
+				</option>
+				<option value="workshop_5">
+					Муринка
+				</option>
+				<option value="workshop_6">
+					Шафировский
+				</option>
+				<option value="workshop_7">
+					Кудрово, Ленинградская ул., д. 9/8
+				</option>
+				<option value="workshop_8">
+					Испытателей
+				</option>
+				<option value="workshop_9">
+					Дундича
+				</option>
+				<option value="workshop_10">
+					Фермское
+				</option>
+				<option value="workshop_11">
+					пр. Сизова д. 2
+				</option>
+				<option value="workshop_12">
+					пр. Сизова д. 2
+				</option>
+				<option value="workshop_13">
+					Кудровский
+				</option>
+				<option value="workshop_14">
+					ул. Васенко, д. 12
+				</option>
+				<option value="workshop_15">
+					пр. Просвещения д. 74 корп. 2 лит. А
+				</option>
+				<option value="workshop_16">
+					ул. Руставели д. 43 лит. А
+				</option>
+				<option value="workshop_17">
+					ул. Савушкина д. 116 лит. А
+				</option>
+				<option value="workshop_18">
+					ПО
+				</option>
+				<option value="workshop_19">
+					ТЕСТ
+				</option>
+				<option value="workshop_20">
+					Мурманское
+				</option>
+				<option value="workshop_21">
+					Пулковское ш., д. 43/1
+				</option>
+				<option value="workshop_22">
+					Зеленогорск, пр. Ленина, д. 88
+				</option>
+				<option value="workshop_23">
+					Мойка, Пулковское шоссе, д. 19А
+				</option>
+				<option value="workshop_24">
+					Московское ш., 25/1В
+				</option>
+				<option value="workshop_25">
+					пр. Ветеранов, 167/2
+				</option>
+				<option value="workshop_26">
+					Шушары, Московское ш., д. 16/7
+				</option>
+				<option value="workshop_27">
+					ТО Зеленогорск, пр. Ленина, д. 88И
+				</option>
+				<option value="workshop_28">
+					Парковка
+				</option>
+				<option value="workshop_29">
+					пр. Испытателей, д. 5 корп. 2 лит. А
+				</option>
+			</select>
+		</div>
 		<!-- Поле с выбором даты -->
 		<div class="flex flex-col justify-end gap-y-1 w-full">
 			<label class="text-sm text-gray-700" for="register_date">Дата записи клиента</label>
-			<input class="
+			<input disabled class="
 							w-full
 							px-3 
 							py-[0.439rem] 
@@ -905,23 +1014,24 @@
 							focus:ring-2 
 							invalid:focus:ring-error
 							invalid:focus:text-error
-							disabled:ring-gray-200
-							disabled:bg-gray-200
-							disabled:text-gray-500
+							disabled:text-disabled-input
+							disabled:ring-disabled-input
+							disabled:bg-disabled-input
+							bg-default-input
 							date-picker-auto
 							data-[filled=true]:ring-gray-600
 							data-[filled=true]:text-black
 			" type="datetime-local" id="register_date" name="register_date"
 				oninput="this.dataset.filled = this.value ? 'true' : 'false'">
 		</div>
-		<!-- Акцентный checkbox -->
+		<!-- checkbox -->
 		<label class="inline-flex items-center" for="storage-30135">
-			<input type="checkbox" class="sr-only peer" id="storage-30135">
+			<input type="checkbox" class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+				id="storage-30135" disabled checked>
 			<span
-				class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-				<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-					viewBox="0 0 12 10">
+				class="w-5 h-5 border-1 border-gray-600 bg-default-checkbox rounded-sm peer-checked:bg-accent 
+				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-disabled-border-checkbox peer-disabled:[&>svg]:stroke-disabled-checkbox-icon peer-disabled:bg-disabled-checkbox hover:border-accent hover:shadow-md">
+				<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 					<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 				</svg>
 			</span>
@@ -950,7 +1060,7 @@
 			</form>
 
 			<button
-				class="ml-auto size-min px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
+				class="ml-auto size-min px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button"
 				type="button">Отправить</button>
 		</div>
 		<!-- погинация для таблицы -->
@@ -1111,9 +1221,6 @@
 				prose-td:[&>div>a]:hover:no-underline
 				prose-td:[&>div>a]:active:brightness-95
 				prose-td:[&>div>a]:active:scale-96
-				prose-td:[&>div>a[data-disabled]]:pointer-events-none
-				prose-td:[&>div>a[data-disabled]]:text-gray-500
-				prose-td:[&>div>a[data-disabled]]:no-underline
 				prose-td:[&>div>button]:px-3.5
 				prose-td:[&>div>button]:cursor-pointer
 				prose-td:[&>div>button]:rounded-sm
@@ -1129,8 +1236,8 @@
 				prose-td:[&>div>button]:active:brightness-95
 				prose-td:[&>div>button]:active:scale-96
 				prose-td:[&>div>button]:disabled:pointer-events-none
-				prose-td:[&>div>button]:disabled:bg-gray-200
-				prose-td:[&>div>button]:disabled:ring-gray-200
+				prose-td:[&>div>button]:disabled:bg-disabled-button
+				prose-td:[&>div>button]:disabled:ring-disabled-button
 				prose-td:[&>div>button]:disabled:text-gray-500 
 			">
 				<thead>
@@ -1173,17 +1280,34 @@
 					<tr>
 						<td>
 							<label class="inline-flex items-center" for="storage-30135">
-								<input type="checkbox" class="sr-only peer" id="storage-30135" disabled>
-								<span
-									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-									<svg
-										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-										viewBox="0 0 12 10">
+								<input type="checkbox" class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+									id="storage-30135" disabled checked>
+								<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+									<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
-							</label>
 						</td>
 						<td>
 							<a data-disabled href="./op-control-storage-card.html" title="Смотреть подробности хранения">
@@ -1232,17 +1356,34 @@
 					<tr>
 						<td>
 							<label class="inline-flex items-center" for="storage-30136">
-								<input type="checkbox" class="sr-only peer" id="storage-30136">
-								<span
-									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-									<svg
-										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-										viewBox="0 0 12 10">
+								<input type="checkbox" class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+									id="storage-30136">
+								<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+									<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
-							</label>
 						</td>
 						<td>
 							<a href="./op-control-storage-card.html" title="Смотреть подробности хранения">
@@ -1291,17 +1432,34 @@
 					<tr>
 						<td>
 							<label class="inline-flex items-center" for="storage-30137">
-								<input type="checkbox" class="sr-only peer" id="storage-30137">
-								<span
-									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-									<svg
-										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-										viewBox="0 0 12 10">
+								<input type="checkbox" class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+									id="storage-30137">
+								<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+									<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
-							</label>
 						</td>
 						<td>
 							<a href="./op-control-storage-card.html" title="Смотреть подробности хранения">
@@ -1350,17 +1508,34 @@
 					<tr>
 						<td>
 							<label class="inline-flex items-center" for="storage-30138">
-								<input type="checkbox" class="sr-only peer" id="storage-30138" disabled>
-								<span
-									class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-		flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-									<svg
-										class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-										viewBox="0 0 12 10">
+								<input type="checkbox" class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+									id="storage-30138" disabled>
+								<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+									<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 									</svg>
 								</span>
-							</label>
 						</td>
 						<td>
 							<a href="./op-control-storage-card.html" title="Смотреть подробности хранения">
@@ -1408,7 +1583,7 @@
 				</tbody>
 			</table>
 		</div>
-		<!-- Прмер таблицы с caption -->
+		<!-- Пример таблицы с caption -->
 		<div
 			class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 			<table class="prose mb-3 max-w-screen  min-w-145 w-full text-dark-text
