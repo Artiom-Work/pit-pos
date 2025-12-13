@@ -6189,10 +6189,59 @@
       }
     }
   }
+  .prose-tr\:\[\&\>td\:nth-child\(6\)\]\:min-w-10 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(6) {
+        min-width: calc(var(--spacing) * 10);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(6\)\]\:min-w-15 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(6) {
+        min-width: calc(var(--spacing) * 15);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(6\)\]\:min-w-20 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(6) {
+        min-width: calc(var(--spacing) * 20);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(6\)\]\:min-w-25 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(6) {
+        min-width: calc(var(--spacing) * 25);
+      }
+    }
+  }
   .prose-tr\:\[\&\>td\:nth-child\(6\)\]\:min-w-33 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(6) {
         min-width: calc(var(--spacing) * 33);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(7\)\]\:min-w-15 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(7) {
+        min-width: calc(var(--spacing) * 15);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(7\)\]\:min-w-20 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(7) {
+        min-width: calc(var(--spacing) * 20);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(7\)\]\:min-w-25 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(7) {
+        min-width: calc(var(--spacing) * 25);
       }
     }
   }
