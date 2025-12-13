@@ -3755,14 +3755,6 @@
       --tw-ring-color: var(--color-disabled-input);
     }
   }
-  .hs-select-disabled\:ring-gray-200 {
-    &.disabled {
-      --tw-ring-color: var(--color-gray-200);
-    }
-    .disabled & {
-      --tw-ring-color: var(--color-gray-200);
-    }
-  }
   .hs-password-active\:block {
     &.active {
       display: block;
@@ -5127,13 +5119,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>button\[disabled\]\]\:bg-gray-200 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>button[disabled] {
-        background-color: var(--color-gray-200);
-      }
-    }
-  }
   .prose-td\:\[\&\>button\[disabled\]\]\:text-gray-500 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button[disabled] {
@@ -5145,13 +5130,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button[disabled] {
         --tw-ring-color: var(--color-disabled-button);
-      }
-    }
-  }
-  .prose-td\:\[\&\>button\[disabled\]\]\:ring-gray-200 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>button[disabled] {
-        --tw-ring-color: var(--color-gray-200);
       }
     }
   }
@@ -5522,15 +5500,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:disabled\:bg-gray-200 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:disabled {
-          background-color: var(--color-gray-200);
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:disabled\:text-gray-500 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
@@ -5545,15 +5514,6 @@
       &>div>button {
         &:disabled {
           --tw-ring-color: var(--color-disabled-button);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:disabled\:ring-gray-200 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:disabled {
-          --tw-ring-color: var(--color-gray-200);
         }
       }
     }
@@ -6356,6 +6316,13 @@
   .\[\&\[disabled\]\~div\>svg\]\:stroke-gray-500 {
     &[disabled]~div>svg {
       stroke: var(--color-gray-500);
+    }
+  }
+  .disabled\:\[\&\~button\]\:pointer-events-none {
+    &:disabled {
+      &~button {
+        pointer-events: none;
+      }
     }
   }
   .hs-select-disabled\:\[\&\~div_svg\]\:stroke-gray-500 {

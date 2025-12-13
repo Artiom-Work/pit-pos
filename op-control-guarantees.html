@@ -556,8 +556,7 @@
 				<span class="text-black">Гарантии</span>
 			</h1>
 			<!-- End page name -->
-			<form class="mb-6 grid grid-cols-1 gap-3 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
-				action="https://backend.dev.2atm.ru/backoffice/seasonal-storages">
+			<form class="mb-6 grid grid-cols-1 gap-3 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 
 				<div class="flex flex-col gap-y-1">
 					<label class="text-sm text-gray-700" for="warranty_number">&#8470;&nbsp;Гарантии</label>
@@ -576,9 +575,12 @@
 						focus:ring-2 
 						invalid:focus:ring-error
 						invalid:focus:text-error
-						disabled:ring-gray-200
-						disabled:bg-gray-200
-						disabled:text-gray-500" id="warranty_number" name="warranty_number" type="text" placeholder="GW-2025-1001">
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="warranty_number" name="warranty_number" type="text" placeholder="GW-2025-1001">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -598,9 +600,11 @@
 							focus:ring-2 
 							invalid:focus:ring-error
 							invalid:focus:text-error
-							disabled:ring-gray-200
-							disabled:bg-gray-200
-							disabled:text-gray-500
+							disabled:text-gray-700
+							disabled:placeholder:text-disabled-input
+							disabled:ring-disabled-input
+							disabled:bg-disabled-input
+							bg-default-input
 							" id="phone" name="phone" type="tel" placeholder="+7(111) 111-11-11"
 						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 				</div>
@@ -622,9 +626,12 @@
 								focus:ring-2 
 								invalid:focus:ring-error
 								invalid:focus:text-error
-								disabled:ring-gray-200
-								disabled:bg-gray-200
-								disabled:text-gray-500" id="car_brand" name="car_brand" type="text" placeholder="Volkswagen">
+								disabled:text-gray-700
+								disabled:placeholder:text-disabled-input
+								disabled:ring-disabled-input
+								disabled:bg-disabled-input
+								bg-default-input
+								" id="car_brand" name="car_brand" type="text" placeholder="Volkswagen">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -644,9 +651,12 @@
 								focus:ring-2 
 								invalid:focus:ring-error
 								invalid:focus:text-error
-								disabled:ring-gray-200
-								disabled:bg-gray-200
-								disabled:text-gray-500" id="car_model" name="car_model" type="text" placeholder="Mustang">
+								disabled:text-gray-700
+								disabled:placeholder:text-disabled-input
+								disabled:ring-disabled-input
+								disabled:bg-disabled-input
+								bg-default-input
+								" id="car_model" name="car_model" type="text" placeholder="Mustang">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -666,9 +676,12 @@
 								focus:ring-2 
 								invalid:focus:ring-error
 								invalid:focus:text-error
-								disabled:ring-gray-200
-								disabled:bg-gray-200
-								disabled:text-gray-500" id="work_order_number" name="work_order_number" type="text" placeholder="696969">
+								disabled:text-gray-700
+								disabled:placeholder:text-disabled-input
+								disabled:ring-disabled-input
+								disabled:bg-disabled-input
+								bg-default-input
+								" id="work_order_number" name="work_order_number" type="text" placeholder="696969">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
@@ -688,9 +701,10 @@
 									focus:ring-2 
 									invalid:focus:ring-error
 									invalid:focus:text-error
-									disabled:ring-gray-200
-									disabled:bg-gray-200
-									disabled:text-gray-500
+									disabled:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
 									date-picker-auto
 									data-[filled=true]:ring-gray-600
 									data-[filled=true]:text-black
@@ -715,9 +729,10 @@
 									focus:ring-2 
 									invalid:focus:ring-error
 									invalid:focus:text-error
-									disabled:ring-gray-200
-									disabled:bg-gray-200
-									disabled:text-gray-500
+									disabled:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
 									date-picker-auto
 									data-[filled=true]:ring-gray-600
 									data-[filled=true]:text-black
@@ -730,7 +745,7 @@
 					<label class="text-sm text-gray-700" for="guarantee_status">Статус</label>
 
 					<select id="guarantee_status" name="guarantee_status" data-hs-select='{
-						"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
 						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
@@ -756,8 +771,8 @@
 					</button>
 
 					<button
-						class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
-						type="submit">Применить</button>
+						class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+						type="submit" disabled>Применить</button>
 				</div>
 			</form>
 			<!-- End MAIN filter of guarantees -->
