@@ -576,9 +576,11 @@
 						focus:ring-2 
 						invalid:focus:ring-error
 						invalid:focus:text-error
-						disabled:ring-gray-200
-						disabled:bg-gray-200
-						disabled:text-gray-500
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
 						" id="seal" name="seal" type="text" placeholder="#">
 				</div>
 
@@ -587,15 +589,12 @@
 					<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
 
 					<select id="workshop_id" name="workshop_id" data-hs-select='{
-						"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+						"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
 						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
-						"toggleSeparators": {
-							"betweenItemsAndCounter": "+"
-						},
-						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-black",
+						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 						"optionTemplate": 
-						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-black hover:text-white\"></span> </div>",
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 					}' class="hidden">
 						<option value="all">Все</option>
@@ -706,9 +705,10 @@
 									focus:ring-2 
 									invalid:focus:ring-error
 									invalid:focus:text-error
-									disabled:ring-gray-200
-									disabled:bg-gray-200
-									disabled:text-gray-500
+									disabled:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
 									date-picker-auto
 									data-[filled=true]:ring-gray-600
 									data-[filled=true]:text-black
@@ -728,7 +728,7 @@
 					</button>
 
 					<button
-						class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+						class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button  disabled:text-gray-500 disabled:pointer-events-none"
 						type="submit">Применить</button>
 				</div>
 			</form>
@@ -756,7 +756,7 @@
 				</form>
 
 				<button
-					class="ml-auto size-min px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-gray-200"
+					class="ml-auto size-min px-5 py-3 rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button"
 					type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-create-storage-applic-modal"
 					data-hs-overlay="#hs-create-storage-applic-modal">Добавить&nbsp;заявку</button>
 
@@ -802,9 +802,11 @@
 													focus:ring-2 
 													invalid:focus:ring-error
 													invalid:focus:text-error
-													disabled:ring-gray-200
-													disabled:bg-gray-200
-													disabled:text-gray-500
+													disabled:text-gray-700
+													disabled:placeholder:text-disabled-input
+													disabled:ring-disabled-input
+													disabled:bg-disabled-input
+													bg-default-input
 													" id="new-storage-app-seal" name="new-storage-app-seal" type="text" placeholder="#">
 											</div>
 
@@ -825,9 +827,11 @@
 													focus:ring-2 
 													invalid:focus:ring-error
 													invalid:focus:text-error
-													disabled:ring-gray-200
-													disabled:bg-gray-200
-													disabled:text-gray-500
+													disabled:text-gray-700
+													disabled:placeholder:text-disabled-input
+													disabled:ring-disabled-input
+													disabled:bg-disabled-input
+													bg-default-input
 													" id="plate" name="plate" type="text" placeholder="Т345АН778">
 											</div>
 
@@ -849,9 +853,11 @@
 													focus:ring-2 
 													invalid:focus:ring-error
 													invalid:focus:text-error
-													disabled:ring-gray-200
-													disabled:bg-gray-200
-													disabled:text-gray-500
+													disabled:text-gray-700
+													disabled:placeholder:text-disabled-input
+													disabled:ring-disabled-input
+													disabled:bg-disabled-input
+													bg-default-input
 													" id="note" name="note" placeholder="Оставьте заметку"></textarea>
 											</div>
 
@@ -867,7 +873,7 @@
 												</button>
 
 												<button
-													class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-gray-200 disabled:ring-gray-200 disabled:text-gray-500 disabled:pointer-events-none"
+													class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-disabled-button disabled:ring-disabled-button  disabled:text-gray-500 disabled:pointer-events-none"
 													type="submit">
 													Сохранить
 												</button>
@@ -937,8 +943,8 @@
 					prose-td:[&>div>button]:active:brightness-95
 					prose-td:[&>div>button]:active:scale-96
 					prose-td:[&>div>button]:disabled:pointer-events-none
-					prose-td:[&>div>button]:disabled:bg-gray-200
-					prose-td:[&>div>button]:disabled:ring-gray-200
+					prose-td:[&>div>button]:disabled:bg-disabled-button
+					prose-td:[&>div>button]:disabled:ring-disabled-button
 					prose-td:[&>div>button]:disabled:text-gray-500
 					">
 					<thead>
@@ -966,13 +972,32 @@
 						<tr>
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="seal-865774">
-									<input type="checkbox" class="sr-only peer" id="seal-865774" disabled checked>
-									<span
-										class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-										<svg
-											class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-											viewBox="0 0 12 10">
+									<input type="checkbox"
+										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865774"
+										disabled checked>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
 									</span>
@@ -1013,13 +1038,32 @@
 						<tr>
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="seal-865775">
-									<input type="checkbox" class="sr-only peer" id="seal-865775" disabled>
-									<span
-										class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-										<svg
-											class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-											viewBox="0 0 12 10">
+									<input type="checkbox"
+										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865775"
+										disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
 									</span>
@@ -1059,13 +1103,31 @@
 						<tr>
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="seal-865776">
-									<input type="checkbox" class="sr-only peer" id="seal-865776">
-									<span
-										class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-										<svg
-											class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-											viewBox="0 0 12 10">
+									<input type="checkbox"
+										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865776">
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
 									</span>
@@ -1105,13 +1167,31 @@
 						<tr>
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="seal-865777">
-									<input type="checkbox" class="sr-only peer" id="seal-865777">
-									<span
-										class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-										<svg
-											class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-											viewBox="0 0 12 10">
+									<input type="checkbox"
+										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865777">
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
 									</span>
@@ -1151,13 +1231,32 @@
 						<tr>
 							<td>
 								<label class="inline-flex items-center cursor-pointer" for="seal-865778">
-									<input type="checkbox" class="sr-only peer" id="seal-865778" disabled>
-									<span
-										class="w-5 h-5 border-1 border-gray-600 bg-white rounded-sm peer-checked:bg-accent 
-				flex items-center justify-center cursor-pointer duration-300 will-change-transform peer-checked:[&>svg]:stroke-white peer-checked:border-accent peer-disabled:pointer-events-none peer-disabled:cursor-default peer-disabled:border-gray-200 peer-disabled:bg-gray-200 hover:border-accent hover:shadow-md">
-										<svg
-											class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block peer-disabled:stroke-gray-200"
-											viewBox="0 0 12 10">
+									<input type="checkbox"
+										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865778"
+										disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
 											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
 										</svg>
 									</span>
@@ -1197,8 +1296,8 @@
 				</table>
 			</div>
 			<button
-				class="px-5 py-3 rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-gray-200 disabled:text-gray-500 disabled:ring-gray-200 disabled:pointer-events-none"
-				type="button">Заказать отмеченные</button>
+				class="px-5 py-3 rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:text-gray-500 disabled:bg-disabled-button disabled:ring-disabled-button  disabled:pointer-events-none"
+				type="button">Заказать&nbsp;отмеченные</button>
 			<!-- End table of storages applications -->
 		</div>
 
