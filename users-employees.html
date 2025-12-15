@@ -594,21 +594,23 @@
 							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black
 							">
 					<label class="text-sm text-gray-700" for="employee_id">Имя</label>
-					<select id="employee_id" name="employee_id" data-hs-select='{
+					<select
+						class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+						id="employee_id" name="employee_id" data-hs-select='{
 						"hasSearch": true,
 						"searchLimit": 5,
 						"searchPlaceholder": "Имя пользователя...",
 						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
 						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 						"placeholder": "Все",
-						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
-						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+						"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
 						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-					}' class="hidden">
-						<option selected="selected" value="all">Все</option>
+					}'>
+						<option value="all">Все</option>
 						<option value="1">Андрей Никишин Никишин</option>
 						<option value="8">Исмаилов Марат </option>
 						<option value="9">Стрелков Александр </option>
@@ -2120,7 +2122,7 @@
 								<div data-user-state>
 									<label for="user-switcher-425" title="Вкл/откл пользователя"
 										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-425" disabled checked>
+										<input class="peer sr-only" type="checkbox" id="user-switcher-425" checked>
 										<span
 											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
 										<span
