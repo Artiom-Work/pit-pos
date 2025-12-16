@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Пользователи </title>
+	<title>PitPos | Сотрудники </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -569,21 +569,17 @@
 						Сотрудники
 					</a>
 				</li>
+			</ul>
 		</div>
 		<!-- End breadcrumbs -->
 		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
-			<div class="mb-6 w-full flex flex-col justify-between items-start xs:items-center xs:flex-row">
-				<h1 class="flex font-bold py-2">
-					<svg class="size-6 stroke-black mr-3.5 fill-black" viewBox="0 0 24 24">
-						<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
-					</svg>
+			<h1 class="mb-6 w-full flex font-bold py-2">
+				<svg class="size-6 stroke-black mr-3.5 fill-black" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
+				</svg>
 
-					<span class="text-black">Пользователи</span>
-				</h1>
-
-				<a class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500 disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
-					href="#!">Добавить</a>
-			</div>
+				<span class="text-black">Пользователи</span>
+			</h1>
 			<!-- End page name -->
 			<form class="mb-6 grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 2xl:grid-cols-4">
 				<div class="
@@ -603,12 +599,12 @@
 						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
 						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 						"placeholder": "Все",
-						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
 						"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+						"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 					}'>
 						<option value="all">Все</option>
 						<option value="1">Андрей Никишин Никишин</option>
@@ -1030,12 +1026,21 @@
 					</select>
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="
+							flex 
+							flex-col 
+							gap-y-1
+							has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
+							has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+							has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+							">
 					<label class="text-sm text-gray-700" for="user_role">Роль</label>
-					<select id="user_role" name="user_role" multiple="" data-hs-select='{
+					<select
+						class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+						id="user_role" name="user_role" multiple="" data-hs-select='{
 						"placeholder": "Все",
 						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
-						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 focus:ring-blue-focus-input focus:ring-2 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
 						"toggleSeparators": {
 							"betweenItemsAndCounter": ""
 						},
@@ -1043,13 +1048,13 @@
 						"toggleCountTextPlacement": "prefix-no-space",
 						"toggleCountTextMinItems": 2,
 						"toggleCountTextMode": "nItemsAndCount",
-						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 						"optionTemplate": 
-						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-pitpos-700 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
-					}' class="hidden">
-						<option value="">Все</option>
+						"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-blue hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+					}'>
+						<option value="all">Все</option>
 						<option value="owner">Владелец</option>
 						<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
 						<option value="workshop-admin">Администратор&nbsp;мастерской</option>
@@ -1072,23 +1077,31 @@
 					</select>
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="
+								flex 
+								flex-col 
+								gap-y-1
+								has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
+								has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black
+								">
 					<label class="text-sm text-gray-700" for="user_phone">Телефон</label>
-					<select id="user_phone" name="user_phone" data-hs-select='{
+					<select
+						class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+						id="user_phone" name="user_phone" data-hs-select='{
 						"hasSearch": true,
 						"searchLimit": 5,
-						"searchPlaceholder": "Телефон пользователя...",
+						"searchPlaceholder": "Имя пользователя...",
 						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
 						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 						"placeholder": "Все",
-						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
-						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
+						"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+						"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+						"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-					}' class="hidden">
-						<option selected="selected" value="all">Все</option>
+						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+					}'>
+						<option value="all">Все</option>
 						<option value="63">9119593464</option>
 						<option value="1">9626972464</option>
 						<option value="8">9500246722</option>
@@ -1508,23 +1521,30 @@
 					</select>
 				</div>
 
-				<div class="flex flex-col gap-y-1">
+				<div class="
+							flex 
+							flex-col 
+							gap-y-1
+							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
+							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
 					<label class="text-sm text-gray-700" for="user_email">E-mail</label>
-					<select id="user_email" name="user_email" data-hs-select='{
-						"hasSearch": true,
-						"searchLimit": 5,
-						"searchPlaceholder": "E-mail пользователя...",
-						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-						"placeholder": "Все",
-						"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
-						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-550 rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700",
-						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-						"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-					}' class="hidden">
-						<option selected="selected" value="all">Все</option>
+					<select
+						class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+						id="user_email" name="user_email" data-hs-select='{
+							"hasSearch": true,
+							"searchLimit": 5,
+							"searchPlaceholder": "Имя пользователя...",
+							"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+							"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+							"placeholder": "Все",
+							"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+							"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+							"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+							"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+							"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+							"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+						}'>
+						<option value="all">Все</option>
 						<option value="63">ivanov.a.v@me.com</option>
 						<option value="1">noctkpuntym@gmail.com</option>
 						<option value="8">marat@2atm.ru</option>
@@ -1987,7 +2007,8 @@
 					href="./users-create-employer.html">Добавить&nbsp;пользователя</a>
 			</div>
 			<!-- End users аdditional filter -->
-			<div class="overflow-x-auto xl:w-full mb-6">
+			<div
+				class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 				<table class="prose 
 											max-w-screen
 											min-w-235
@@ -2003,7 +2024,10 @@
 											prose-th:[&>div]:flex
 											prose-th:[&>div]:items-center
 											prose-th:[&>div]:justify-between
-											prose-td:text-[0.93rem]
+											prose-th:[&:nth-child(n+2)]:border-l-1
+											prose-th:[&:nth-child(n+2)]:border-gray-300
+											prose-th:[&:first-child]:text-accent 
+											prose-td:text-sm
 											prose-td:leading-none
 											prose-td:p-2.5 
 											prose-td:align-middle 
@@ -2014,14 +2038,15 @@
 											prose-tr:border-white 
 											prose-tr:border-b-2
 											prose-tr:[&>td:first-child]:max-w-17.5
+											prose-tr:[&>td:last-child]:py-2
 											prose-td:[&>a]:text-accent
 											prose-td:[&>a]:underline
 											prose-td:[&>a]:duration-300
 											prose-td:[&>a]:hover:no-underline
 											prose-td:[&>a]:hover:opacity-70
 											prose-td:[&>a]:active:opacity-100
-											prose-td:[&>a]:active:scale-95
-											prose-td:[&>a]:active:text-pitpos-700
+											prose-td:[&>a]:active:scale-97
+											prose-td:[&>a]:active:text-pitpos-blue
 											prose-td:[&>a[data-user]]:flex
 											prose-td:[&>a[data-user]]:items-center
 											prose-td:[&>a[data-user]]:gap-x-1
@@ -2030,7 +2055,7 @@
 											prose-td:[&>a[data-user]>svg]:opacity-0
 											prose-td:[&>a[data-user]]:hover:[&>svg]:opacity-70
 											prose-td:[&>a[data-user]]:active:[&>svg]:opacity-100
-											prose-td:[&>a[data-user]]:active:[&>svg]:stroke-pitpos-700
+											prose-td:[&>a[data-user]]:active:[&>svg]:stroke-pitpos-blue
 											prose-td:[&:has(>span+span)>span[data-user-role]]:whitespace-nowrap
 											prose-td:[&:has(>span+span)>span[data-user-role]]:w-min
 											prose-td:[&:has(>span+span)>span[data-user-role]:not(:last-child)]:pr-4
@@ -2121,12 +2146,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-425" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
 										<input class="peer sr-only" type="checkbox" id="user-switcher-425" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2162,12 +2187,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-423" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-423" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-423" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2203,12 +2228,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-420" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-420" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-420" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2244,12 +2269,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-418" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-418" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-418" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2285,12 +2310,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-407" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-407" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-407" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2326,12 +2351,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-405" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-405" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-405" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2367,12 +2392,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-402" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-402" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-402" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2408,12 +2433,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-382" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-382" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-382" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2449,12 +2474,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-367" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-367" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-367" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2490,12 +2515,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-360" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-360" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-360" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2531,12 +2556,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-353" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-353" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-353" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2572,12 +2597,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-278" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-278" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-278" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2613,12 +2638,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-265" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-265" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-265" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2654,12 +2679,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-224" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-224" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-224" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2695,12 +2720,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-137" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-137" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-137" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2736,12 +2761,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-89" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
-										<input class="peer sr-only" type="checkbox" id="user-switcher-89" disabled checked>
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+										<input class="peer sr-only" type="checkbox" id="user-switcher-89" checked>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>
@@ -2781,12 +2806,12 @@
 							<td>
 								<div data-user-state>
 									<label for="user-switcher-65" title="Вкл/откл пользователя"
-										class="relative inline-block w-10 h-5.5 cursor-pointer">
+										class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
 										<input class="peer sr-only" type="checkbox" id="user-switcher-65" disabled>
 										<span
-											class="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-700 peer-disabled:opacity-70 peer-disabled:pointer-events-none hover:shadow-md "></span>
+											class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
 										<span
-											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-white rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+											class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
 									</label>
 								</div>
 							</td>

@@ -894,10 +894,10 @@
 				"placeholder": "&#8470",
 				"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
 				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-				"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 text-gray-500 hover:stroke-3 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 			}' class="hidden">
 				<option value="">Все</option>
 				<option value="43434">43434</option>
@@ -1029,6 +1029,57 @@
 				<option value="workshop_29">
 					пр. Испытателей, д. 5 корп. 2 лит. А
 				</option>
+			</select>
+		</div>
+		<!-- select multiple (роли)-->
+		<div class="
+		flex 
+		flex-col 
+		gap-y-1
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+		">
+			<label class="text-sm text-gray-700" for="user_role">Роль</label>
+			<select
+				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+				id="user_role" name="user_role" multiple="" data-hs-select='{
+	"placeholder": "Все",
+	"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+	"toggleSeparators": {
+		"betweenItemsAndCounter": ""
+	},
+	"toggleCountText": "+",
+	"toggleCountTextPlacement": "prefix-no-space",
+	"toggleCountTextMinItems": 2,
+	"toggleCountTextMode": "nItemsAndCount",
+	"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+	"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+	"optionTemplate": 
+	"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-700 hover:text-white\"></span> </div>",
+	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+}'>
+				<option value="all">Все</option>
+				<option value="owner">Владелец</option>
+				<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
+				<option value="workshop-admin">Администратор&nbsp;мастерской</option>
+				<option value="carwash-admin">Администратор&nbsp;мойки</option>
+				<option value="service-admin">Администратор&nbsp;сервиса</option>
+				<option value="master">Мастер</option>
+				<option value="service-advisor">Мастер-приемщик</option>
+				<option value="shiftController">Контролер&nbsp;смен</option>
+				<option value="technical-inspector">Мастер&nbsp;ТО</option>
+				<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
+				<option value="wheel-alignment-master">Мастер развал-схождения</option>
+				<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
+				<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
+				<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
+				<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
+				<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
+				<option value="cashierTireFitting">Кассир-шиномонтаж</option>
+				<option value="washer">Мойщик</option>
+				<option value="locksmith">Слесарь</option>
 			</select>
 		</div>
 		<!-- Поле с выбором даты -->
@@ -1534,6 +1585,17 @@
 				</svg>
 			</span>
 		</label>
+		<!-- Кнопка переключатель (состояние пользователя)-->
+		<div data-user-state>
+			<label for="user-switcher-89" title="Вкл/откл пользователя"
+				class="relative inline-block w-10 h-5.5 cursor-pointer has-[input[disabled]]:pointer-events-none hover:[&>span]:shadow-md duration-300">
+				<input class="peer sr-only" type="checkbox" id="user-switcher-89" checked>
+				<span
+					class="absolute inset-0 bg-gray-50 ring-1 ring-gray-100 rounded-full transition-colors duration-300 ease-in-out peer-checked:bg-pitpos-blue peer-disabled:opacity-60"></span>
+				<span
+					class="absolute top-1/2 start-0.5 -translate-y-1/2 size-4.5 bg-gray-200 rounded-full shadow-xs transition-transform duration-300 ease-in-out peer-checked:translate-x-full"></span>
+			</label>
+		</div>
 		<!-- Фильтр для таблицы с кнопкой-->
 		<div class="mb-6 w-full flex flex-col justify-between gap-3 flex-wrap xs:items-center xs:flex-row md:gap-6">
 			<form class="flex flex-col gap-3 items center flex-wrap xs:flex-row">
