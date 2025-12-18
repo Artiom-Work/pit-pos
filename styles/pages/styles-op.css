@@ -30,7 +30,7 @@
     --color-neutral-700: oklch(37.1% 0 0);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #131216;
-    --color-white: #fff;
+    --color-white: #FDFDFD;
     --spacing: 0.25rem;
     --container-xs: 20rem;
     --container-lg: 32rem;
@@ -324,6 +324,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
   .right-2\.5 {
     right: calc(var(--spacing) * 2.5);
   }
@@ -389,6 +392,9 @@
   }
   .\!ms-auto {
     margin-inline-start: auto !important;
+  }
+  .ms-0 {
+    margin-inline-start: calc(var(--spacing) * 0);
   }
   .ms-0\.5 {
     margin-inline-start: calc(var(--spacing) * 0.5);
@@ -826,11 +832,26 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mr-2\.5 {
     margin-right: calc(var(--spacing) * 2.5);
   }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
   .mr-3\.5 {
     margin-right: calc(var(--spacing) * 3.5);
+  }
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+  .mb-0\.5 {
+    margin-bottom: calc(var(--spacing) * 0.5);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-1\.5 {
     margin-bottom: calc(var(--spacing) * 1.5);
@@ -867,6 +888,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .inline-block {
     display: inline-block;
@@ -918,6 +942,9 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
   }
@@ -929,6 +956,9 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
   }
   .h-9\.5 {
     height: calc(var(--spacing) * 9.5);
@@ -951,11 +981,17 @@
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
   }
+  .max-h-88 {
+    max-height: calc(var(--spacing) * 88);
+  }
   .max-h-88\.5 {
     max-height: calc(var(--spacing) * 88.5);
   }
   .max-h-full {
     max-height: 100%;
+  }
+  .min-h-9 {
+    min-height: calc(var(--spacing) * 9);
   }
   .min-h-9\.5 {
     min-height: calc(var(--spacing) * 9.5);
@@ -968,6 +1004,9 @@
   }
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
+  }
+  .min-h-21 {
+    min-height: calc(var(--spacing) * 21);
   }
   .min-h-21\.5 {
     min-height: calc(var(--spacing) * 21.5);
@@ -1017,6 +1056,9 @@
   .w-min {
     width: min-content;
   }
+  .max-w-17 {
+    max-width: calc(var(--spacing) * 17);
+  }
   .max-w-17\.5 {
     max-width: calc(var(--spacing) * 17.5);
   }
@@ -1029,8 +1071,14 @@
   .max-w-81 {
     max-width: calc(var(--spacing) * 81);
   }
+  .max-w-87 {
+    max-width: calc(var(--spacing) * 87);
+  }
   .max-w-87\.5 {
     max-width: calc(var(--spacing) * 87.5);
+  }
+  .max-w-107 {
+    max-width: calc(var(--spacing) * 107);
   }
   .max-w-107\.5 {
     max-width: calc(var(--spacing) * 107.5);
@@ -1038,8 +1086,14 @@
   .max-w-125 {
     max-width: calc(var(--spacing) * 125);
   }
+  .max-w-130 {
+    max-width: calc(var(--spacing) * 130);
+  }
   .max-w-130\.5 {
     max-width: calc(var(--spacing) * 130.5);
+  }
+  .max-w-164 {
+    max-width: calc(var(--spacing) * 164);
   }
   .max-w-164\.5 {
     max-width: calc(var(--spacing) * 164.5);
@@ -1062,8 +1116,14 @@
   .min-w-28 {
     min-width: calc(var(--spacing) * 28);
   }
+  .min-w-42 {
+    min-width: calc(var(--spacing) * 42);
+  }
   .min-w-42\.5 {
     min-width: calc(var(--spacing) * 42.5);
+  }
+  .min-w-87 {
+    min-width: calc(var(--spacing) * 87);
   }
   .min-w-87\.5 {
     min-width: calc(var(--spacing) * 87.5);
@@ -1092,8 +1152,14 @@
   .min-w-279 {
     min-width: calc(var(--spacing) * 279);
   }
+  .min-w-287 {
+    min-width: calc(var(--spacing) * 287);
+  }
   .min-w-287\.5 {
     min-width: calc(var(--spacing) * 287.5);
+  }
+  .min-w-291 {
+    min-width: calc(var(--spacing) * 291);
   }
   .min-w-291\.5 {
     min-width: calc(var(--spacing) * 291.5);
@@ -1104,17 +1170,33 @@
   .min-w-313 {
     min-width: calc(var(--spacing) * 313);
   }
+  .min-w-337 {
+    min-width: calc(var(--spacing) * 337);
+  }
   .min-w-337\.5 {
     min-width: calc(var(--spacing) * 337.5);
   }
   .min-w-395 {
     min-width: calc(var(--spacing) * 395);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow-1 {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
@@ -1141,8 +1223,20 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-\[1fr_auto\] {
     grid-template-columns: 1fr auto;
+  }
+  .grid-cols-\[repeat\(3\,_auto\)\] {
+    grid-template-columns: repeat(3, auto);
+  }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -1177,6 +1271,9 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
@@ -1189,11 +1286,25 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .space-y-0 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-0\.5 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 0.5) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 0.5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-2\.5 {
@@ -1222,6 +1333,9 @@
   .gap-x-2\.5 {
     column-gap: calc(var(--spacing) * 2.5);
   }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .gap-x-3\.5 {
     column-gap: calc(var(--spacing) * 3.5);
   }
@@ -1236,6 +1350,9 @@
   }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
+  }
+  .gap-y-2 {
+    row-gap: calc(var(--spacing) * 2);
   }
   .gap-y-2\.5 {
     row-gap: calc(var(--spacing) * 2.5);
@@ -1456,6 +1573,9 @@
   .stroke-gray-400 {
     stroke: var(--color-gray-400);
   }
+  .stroke-gray-500 {
+    stroke: var(--color-gray-500);
+  }
   .stroke-gray-700 {
     stroke: var(--color-gray-700);
   }
@@ -1474,6 +1594,9 @@
   .stroke-white {
     stroke: var(--color-white);
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
   }
@@ -1488,6 +1611,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
   }
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
@@ -1555,6 +1681,9 @@
   .py-\[0\.5625rem\] {
     padding-block: 0.5625rem;
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
   }
@@ -1581,6 +1710,9 @@
   }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1711,6 +1843,9 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -1822,6 +1957,10 @@
   }
   .ring-pitpos-blue {
     --tw-ring-color: var(--color-pitpos-blue);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -2087,6 +2226,13 @@
       }
     }
   }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
   .hover\:bg-gray-200 {
     &:hover {
       @media (hover: hover) {
@@ -2333,6 +2479,14 @@
       }
     }
   }
+  .active\:scale-85 {
+    &:active {
+      --tw-scale-x: 85%;
+      --tw-scale-y: 85%;
+      --tw-scale-z: 85%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
   .active\:scale-95 {
     &:active {
       --tw-scale-x: 95%;
@@ -2355,6 +2509,11 @@
       --tw-scale-y: 98%;
       --tw-scale-z: 98%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .active\:bg-gray-100 {
+    &:active {
+      background-color: var(--color-gray-100);
     }
   }
   .active\:bg-gray-200 {
@@ -3408,9 +3567,19 @@
       padding-block: 0.5rem;
     }
   }
+  .prose-td\:pr-1 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      padding-right: calc(var(--spacing) * 1);
+    }
+  }
   .prose-td\:pr-4 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       padding-right: calc(var(--spacing) * 4);
+    }
+  }
+  .prose-td\:pl-2\.5 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      padding-left: calc(var(--spacing) * 2.5);
     }
   }
   .prose-td\:align-middle {
@@ -3438,6 +3607,13 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       --tw-leading: 1;
       line-height: 1;
+    }
+  }
+  .prose-td\:not-last\:pr-1 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:not(*:last-child) {
+        padding-right: calc(var(--spacing) * 1);
+      }
     }
   }
   .prose-td\:not-last\:pr-4 {
@@ -3499,12 +3675,28 @@
       }
     }
   }
+  .hs-tab-active\:bg-pitpos-blue {
+    &[data-hs-tab].active {
+      background-color: var(--color-pitpos-blue);
+    }
+    [data-hs-tab].active & {
+      background-color: var(--color-pitpos-blue);
+    }
+  }
   .hs-tab-active\:text-white {
     &[data-hs-tab].active {
       color: var(--color-white);
     }
     [data-hs-tab].active & {
       color: var(--color-white);
+    }
+  }
+  .hs-tab-active\:ring-pitpos-blue {
+    &[data-hs-tab].active {
+      --tw-ring-color: var(--color-pitpos-blue);
+    }
+    [data-hs-tab].active & {
+      --tw-ring-color: var(--color-pitpos-blue);
     }
   }
   .hs-overlay-open\:mt-7 {
@@ -4610,6 +4802,41 @@
       }
     }
   }
+  .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:pointer-events-none\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order='disabled'] {
+        pointer-events: none !important;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:text-gray-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order='disabled'] {
+        color: var(--color-gray-500);
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:text-gray-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order='disabled'] {
+        color: var(--color-gray-500) !important;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:no-underline\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order='disabled'] {
+        text-decoration-line: none !important;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-work-order\=disabled\]\]\:text-gray-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order=disabled] {
+        color: var(--color-gray-500);
+      }
+    }
+  }
   .prose-td\:\[\&\>a\[data-work-order\]\]\:flex {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order] {
@@ -4660,6 +4887,13 @@
       }
     }
   }
+  .prose-td\:\[\&\>a\[data-work-order\]\]\:will-change-transform {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order] {
+        will-change: transform;
+      }
+    }
+  }
   .prose-td\:\[\&\>a\[data-work-order\]\]\:hover\:text-pitpos-400 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order] {
@@ -4688,6 +4922,18 @@
         &:hover {
           @media (hover: hover) {
             --tw-brightness: brightness(70%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-work-order\]\]\:hover\:brightness-80 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-work-order] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(80%);
             filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
@@ -5061,10 +5307,31 @@
       }
     }
   }
+  .prose-td\:\[\&\>div\]\:items-center {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div {
+        align-items: center;
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\]\:justify-end {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div {
+        justify-content: flex-end;
+      }
+    }
+  }
   .prose-td\:\[\&\>div\]\:gap-x-1\.5 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div {
         column-gap: calc(var(--spacing) * 1.5);
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\]\:px-1 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div {
+        padding-inline: calc(var(--spacing) * 1);
       }
     }
   }
@@ -5227,10 +5494,24 @@
       }
     }
   }
+  .prose-td\:\[\&\>div\>button\]\:h-9 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        height: calc(var(--spacing) * 9);
+      }
+    }
+  }
   .prose-td\:\[\&\>div\>button\]\:cursor-pointer {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         cursor: pointer;
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:rounded-md {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        border-radius: var(--radius-md);
       }
     }
   }
@@ -5343,6 +5624,15 @@
           --tw-scale-y: 96%;
           --tw-scale-z: 96%;
           scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:active\:bg-gray-100 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:active {
+          background-color: var(--color-gray-100);
         }
       }
     }
@@ -5559,6 +5849,13 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span:last-child {
         background-color: var(--color-success);
+      }
+    }
+  }
+  .prose-td\:\[\&\>span\[data-outfit-status\=\'disabled\'\]\]\:text-gray-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>span[data-outfit-status='disabled'] {
+        color: var(--color-gray-500);
       }
     }
   }
@@ -5868,6 +6165,15 @@
       }
     }
   }
+  .hover\:\[\&\>svg\]\:stroke-accent {
+    &:hover {
+      @media (hover: hover) {
+        &>svg {
+          stroke: var(--color-accent);
+        }
+      }
+    }
+  }
   .hover\:\[\&\>svg\]\:ring-1 {
     &:hover {
       @media (hover: hover) {
@@ -6015,6 +6321,52 @@
       }
     }
   }
+  .prose-td\:\[\&\>div\>button\]\:hover\:\[\&\>svg\]\:stroke-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:hover {
+          @media (hover: hover) {
+            &>svg {
+              stroke: var(--color-accent);
+            }
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-disabled-input {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:disabled {
+          &>svg {
+            stroke: var(--color-disabled-input);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-gray-300 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:disabled {
+          &>svg {
+            stroke: var(--color-gray-300);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-red-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>div>button {
+        &:disabled {
+          &>svg {
+            stroke: var(--color-red-500);
+          }
+        }
+      }
+    }
+  }
   .\[\&\>tbody\>tr\]\:h-13 {
     &>tbody>tr {
       height: calc(var(--spacing) * 13);
@@ -6028,6 +6380,15 @@
   .\[\&\>tbody\>tr\]\:h-17 {
     &>tbody>tr {
       height: calc(var(--spacing) * 17);
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\]\:text-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td {
+          color: var(--color-gray-500);
+        }
+      }
     }
   }
   .prose-tr\:\[\&\>td\:first-child\]\:max-w-8\.5 {
@@ -6067,6 +6428,15 @@
       }
     }
   }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\]\:text-gray-500\! {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(>span)) {
+          color: var(--color-gray-500) !important;
+        }
+      }
+    }
+  }
   .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\]\:line-through {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(*:is(span[data-outfit-status=paid])) {
@@ -6076,10 +6446,55 @@
       }
     }
   }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\:not\(\:has\(\>a\)\)\]\:line-through {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(>span)):not(:has(>a)) {
+          text-decoration-line: line-through;
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-outfit-status\]\)\)\]\:text-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(>span[data-outfit-status])) {
+          color: var(--color-gray-500);
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-work-order\]\)\)\]\:text-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(>span[data-work-order])) {
+          color: var(--color-gray-500);
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-work-order\]\)\)\]\:text-gray-500\! {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(>span[data-work-order])) {
+          color: var(--color-gray-500) !important;
+        }
+      }
+    }
+  }
   .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(button\)\)\]\:pointer-events-none {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(*:is(span[data-outfit-status=paid])) {
         &>td:not(:has(button)) {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(button\)\)\:not\(\:has\(\>a\)\)\]\:pointer-events-none {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td:not(:has(button)):not(:has(>a)) {
           pointer-events: none;
         }
       }
@@ -6110,6 +6525,33 @@
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(7) {
         min-width: calc(var(--spacing) * 33);
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>a\]\:text-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td>a {
+          color: var(--color-gray-500);
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>a\]\:text-gray-500\! {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td>a {
+          color: var(--color-gray-500) !important;
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>a\>svg\]\:stroke-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td>a>svg {
+          stroke: var(--color-gray-500);
+        }
       }
     }
   }
@@ -6145,6 +6587,24 @@
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td>div {
         column-gap: calc(var(--spacing) * 2.5);
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>span\>a\]\:text-gray-500 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td>span>a {
+          color: var(--color-gray-500);
+        }
+      }
+    }
+  }
+  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>span\>a\]\:text-gray-500\! {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(span[data-outfit-status=paid])) {
+        &>td>span>a {
+          color: var(--color-gray-500) !important;
+        }
       }
     }
   }
