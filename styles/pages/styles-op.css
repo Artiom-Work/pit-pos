@@ -13,6 +13,11 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-orange-200: oklch(90.1% 0.076 70.697);
+    --color-orange-400: oklch(75% 0.183 55.934);
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-50: #f7f7f8;
@@ -332,6 +337,9 @@
   }
   .right-3 {
     right: calc(var(--spacing) * 3);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .-left-2 {
     left: calc(var(--spacing) * -2);
@@ -844,12 +852,6 @@
   .mr-3\.5 {
     margin-right: calc(var(--spacing) * 3.5);
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
-  }
-  .mb-0\.5 {
-    margin-bottom: calc(var(--spacing) * 0.5);
-  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -870,6 +872,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-auto {
+    margin-bottom: auto;
   }
   .ml-auto {
     margin-left: auto;
@@ -972,11 +977,23 @@
   .h-38 {
     height: calc(var(--spacing) * 38);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[90\%\] {
+    height: 90%;
+  }
   .h-\[calc\(100\%-56px\)\] {
     height: calc(100% - 56px);
   }
   .h-full {
     height: 100%;
+  }
+  .h-max {
+    height: max-content;
   }
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
@@ -1017,8 +1034,17 @@
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
   }
+  .min-h-\[80\%\] {
+    min-height: 80%;
+  }
+  .min-h-\[90\%\] {
+    min-height: 90%;
+  }
   .min-h-\[calc\(100\%-56px\)\] {
     min-height: calc(100% - 56px);
+  }
+  .min-h-full {
+    min-height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -1164,8 +1190,20 @@
   .min-w-291\.5 {
     min-width: calc(var(--spacing) * 291.5);
   }
+  .min-w-297 {
+    min-width: calc(var(--spacing) * 297);
+  }
+  .min-w-297\.5 {
+    min-width: calc(var(--spacing) * 297.5);
+  }
   .min-w-301 {
     min-width: calc(var(--spacing) * 301);
+  }
+  .min-w-307 {
+    min-width: calc(var(--spacing) * 307);
+  }
+  .min-w-307\.5 {
+    min-width: calc(var(--spacing) * 307.5);
   }
   .min-w-313 {
     min-width: calc(var(--spacing) * 313);
@@ -1186,6 +1224,12 @@
     flex-shrink: 0;
   }
   .flex-grow {
+    flex-grow: 1;
+  }
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  .grow {
     flex-grow: 1;
   }
   .grow-1 {
@@ -1223,20 +1267,26 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .grid-cols-\[1fr_auto\] {
     grid-template-columns: 1fr auto;
   }
-  .grid-cols-\[repeat\(3\,_auto\)\] {
-    grid-template-columns: repeat(3, auto);
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
-  .grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
+  .grid-rows-\[auto_1fr\] {
+    grid-template-rows: auto 1fr;
+  }
+  .grid-rows-\[auto_100\%\] {
+    grid-template-rows: auto 100%;
+  }
+  .grid-rows-\[auto_100\&\] {
+    grid-template-rows: auto 100&;
+  }
+  .grid-rows-\[auto_100\] {
+    grid-template-rows: auto 100;
+  }
+  .grid-rows-\[auto_auto\] {
+    grid-template-rows: auto auto;
   }
   .flex-col {
     flex-direction: column;
@@ -1513,6 +1563,9 @@
   .bg-orange-200 {
     background-color: var(--color-orange-200);
   }
+  .bg-orange-400 {
+    background-color: var(--color-orange-400);
+  }
   .bg-pitpos-100 {
     background-color: var(--color-pitpos-100);
   }
@@ -1543,6 +1596,15 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-200 {
+    background-color: var(--color-yellow-200);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
+  }
   .fill-accent {
     fill: var(--color-accent);
   }
@@ -1558,6 +1620,9 @@
   .fill-gray-300 {
     fill: var(--color-gray-300);
   }
+  .fill-pitpos-blue {
+    fill: var(--color-pitpos-blue);
+  }
   .fill-transparent {
     fill: transparent;
   }
@@ -1570,9 +1635,6 @@
   .stroke-dark-red {
     stroke: var(--color-dark-red);
   }
-  .stroke-gray-400 {
-    stroke: var(--color-gray-400);
-  }
   .stroke-gray-500 {
     stroke: var(--color-gray-500);
   }
@@ -1584,6 +1646,9 @@
   }
   .stroke-pitpos-400 {
     stroke: var(--color-pitpos-400);
+  }
+  .stroke-pitpos-blue {
+    stroke: var(--color-pitpos-blue);
   }
   .stroke-success-035 {
     stroke: var(--color-success-035);
@@ -1639,6 +1704,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-4\.5 {
+    padding-inline: calc(var(--spacing) * 4.5);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -1647,6 +1715,12 @@
   }
   .\!py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5) !important;
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -1804,9 +1878,17 @@
     --tw-leading: 1.2;
     line-height: 1.2;
   }
+  .leading-\[1\.3\] {
+    --tw-leading: 1.3;
+    line-height: 1.3;
+  }
   .leading-\[1\.5\] {
     --tw-leading: 1.5;
     line-height: 1.5;
+  }
+  .leading-\[1\.24\] {
+    --tw-leading: 1.24;
+    line-height: 1.24;
   }
   .leading-\[1\.25\] {
     --tw-leading: 1.25;
@@ -1884,6 +1966,9 @@
   }
   .text-pitpos-blue {
     color: var(--color-pitpos-blue);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-red-600 {
     color: var(--color-red-600);
@@ -1969,6 +2054,16 @@
   .outline-1 {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .outline-2 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
+  .outline-green-500 {
+    outline-color: var(--color-green-500);
+  }
+  .outline-red-500 {
+    outline-color: var(--color-red-500);
   }
   .blur {
     --tw-blur: blur(8px);
@@ -2509,11 +2604,6 @@
       --tw-scale-y: 98%;
       --tw-scale-z: 98%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .active\:bg-gray-100 {
-    &:active {
-      background-color: var(--color-gray-100);
     }
   }
   .active\:bg-gray-200 {
@@ -3243,6 +3333,26 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .\33 xl\:absolute {
+    @media (width >= 102.44rem) {
+      position: absolute;
+    }
+  }
+  .\33 xl\:relative {
+    @media (width >= 102.44rem) {
+      position: relative;
+    }
+  }
+  .\33 xl\:right-0 {
+    @media (width >= 102.44rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .\33 xl\:bottom-0 {
+    @media (width >= 102.44rem) {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
   .\33 xl\:order-0 {
     @media (width >= 102.44rem) {
       order: 0;
@@ -3266,6 +3376,11 @@
   .\33 xl\:grid {
     @media (width >= 102.44rem) {
       display: grid;
+    }
+  }
+  .\33 xl\:min-h-\[90\%\] {
+    @media (width >= 102.44rem) {
+      min-height: 90%;
     }
   }
   .\33 xl\:w-75 {
@@ -3308,11 +3423,6 @@
       justify-content: flex-start;
     }
   }
-  .\33 xl\:py-10 {
-    @media (width >= 102.44rem) {
-      padding-block: calc(var(--spacing) * 10);
-    }
-  }
   .\33 xl\:pt-10 {
     @media (width >= 102.44rem) {
       padding-top: calc(var(--spacing) * 10);
@@ -3321,6 +3431,21 @@
   .\33 xl\:pb-2 {
     @media (width >= 102.44rem) {
       padding-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .\33 xl\:pb-10 {
+    @media (width >= 102.44rem) {
+      padding-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .\33 xl\:pb-11 {
+    @media (width >= 102.44rem) {
+      padding-bottom: calc(var(--spacing) * 11);
+    }
+  }
+  .\33 xl\:pb-12 {
+    @media (width >= 102.44rem) {
+      padding-bottom: calc(var(--spacing) * 12);
     }
   }
   .dark\:\!border-neutral-700 {
@@ -3471,11 +3596,6 @@
       padding-right: calc(var(--spacing) * 5);
     }
   }
-  .prose-th\:pl-1 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      padding-left: calc(var(--spacing) * 1);
-    }
-  }
   .prose-th\:align-middle {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       vertical-align: middle;
@@ -3567,16 +3687,6 @@
       padding-block: 0.5rem;
     }
   }
-  .prose-td\:pr-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      padding-right: calc(var(--spacing) * 1);
-    }
-  }
-  .prose-td\:pr-4 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      padding-right: calc(var(--spacing) * 4);
-    }
-  }
   .prose-td\:pl-2\.5 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       padding-left: calc(var(--spacing) * 2.5);
@@ -3613,13 +3723,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:not(*:last-child) {
         padding-right: calc(var(--spacing) * 1);
-      }
-    }
-  }
-  .prose-td\:not-last\:pr-4 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:not(*:last-child) {
-        padding-right: calc(var(--spacing) * 4);
       }
     }
   }
@@ -4809,13 +4912,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order='disabled'] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
   .prose-td\:\[\&\>a\[data-work-order\=\'disabled\'\]\]\:text-gray-500\! {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order='disabled'] {
@@ -4827,13 +4923,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order='disabled'] {
         text-decoration-line: none !important;
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[data-work-order\=disabled\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order=disabled] {
-        color: var(--color-gray-500);
       }
     }
   }
@@ -4894,17 +4983,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>a\[data-work-order\]\]\:hover\:text-pitpos-400 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order] {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-pitpos-400);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>a\[data-work-order\]\]\:hover\:no-underline {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-work-order] {
@@ -4922,18 +5000,6 @@
         &:hover {
           @media (hover: hover) {
             --tw-brightness: brightness(70%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>a\[data-work-order\]\]\:hover\:brightness-80 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>a[data-work-order] {
-        &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(80%);
             filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
           }
         }
@@ -5852,13 +5918,6 @@
       }
     }
   }
-  .prose-td\:\[\&\>span\[data-outfit-status\=\'disabled\'\]\]\:text-gray-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>span[data-outfit-status='disabled'] {
-        color: var(--color-gray-500);
-      }
-    }
-  }
   .prose-td\:\[\&\>span\[data-outfit-status\=\'in-progress\'\]\]\:bg-in-progress {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>span[data-outfit-status='in-progress'] {
@@ -6165,15 +6224,6 @@
       }
     }
   }
-  .hover\:\[\&\>svg\]\:stroke-accent {
-    &:hover {
-      @media (hover: hover) {
-        &>svg {
-          stroke: var(--color-accent);
-        }
-      }
-    }
-  }
   .hover\:\[\&\>svg\]\:ring-1 {
     &:hover {
       @media (hover: hover) {
@@ -6334,34 +6384,12 @@
       }
     }
   }
-  .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-disabled-input {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:disabled {
-          &>svg {
-            stroke: var(--color-disabled-input);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-gray-300 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>button {
         &:disabled {
           &>svg {
             stroke: var(--color-gray-300);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&\>div\>button\]\:disabled\:\[\&\>svg\]\:stroke-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>div>button {
-        &:disabled {
-          &>svg {
-            stroke: var(--color-red-500);
           }
         }
       }
@@ -6380,15 +6408,6 @@
   .\[\&\>tbody\>tr\]\:h-17 {
     &>tbody>tr {
       height: calc(var(--spacing) * 17);
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\]\:text-gray-500 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td {
-          color: var(--color-gray-500);
-        }
-      }
     }
   }
   .prose-tr\:\[\&\>td\:first-child\]\:max-w-8\.5 {
@@ -6412,6 +6431,13 @@
       }
     }
   }
+  .prose-tr\:\[\&\>td\:first-child\]\:px-1 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:first-child {
+        padding-inline: calc(var(--spacing) * 1);
+      }
+    }
+  }
   .prose-tr\:\[\&\>td\:last-child\]\:py-2 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:last-child {
@@ -6428,65 +6454,11 @@
       }
     }
   }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\]\:text-gray-500\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(>span)) {
-          color: var(--color-gray-500) !important;
-        }
-      }
-    }
-  }
   .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\]\:line-through {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(*:is(span[data-outfit-status=paid])) {
         &>td:not(:has(>span)) {
           text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\)\)\:not\(\:has\(\>a\)\)\]\:line-through {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(>span)):not(:has(>a)) {
-          text-decoration-line: line-through;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-outfit-status\]\)\)\]\:text-gray-500 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(>span[data-outfit-status])) {
-          color: var(--color-gray-500);
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-work-order\]\)\)\]\:text-gray-500 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(>span[data-work-order])) {
-          color: var(--color-gray-500);
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(\>span\[data-work-order\]\)\)\]\:text-gray-500\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(>span[data-work-order])) {
-          color: var(--color-gray-500) !important;
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\:not\(\:has\(button\)\)\]\:pointer-events-none {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td:not(:has(button)) {
-          pointer-events: none;
         }
       }
     }
@@ -6500,10 +6472,31 @@
       }
     }
   }
+  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:max-w-24 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(2) {
+        max-width: calc(var(--spacing) * 24);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:max-w-26 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(2) {
+        max-width: calc(var(--spacing) * 26);
+      }
+    }
+  }
   .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:max-w-28 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(2) {
         max-width: calc(var(--spacing) * 28);
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:px-1 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(2) {
+        padding-inline: calc(var(--spacing) * 1);
       }
     }
   }
@@ -6533,15 +6526,6 @@
       &:has(*:is(span[data-outfit-status=paid])) {
         &>td>a {
           color: var(--color-gray-500);
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>a\]\:text-gray-500\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td>a {
-          color: var(--color-gray-500) !important;
         }
       }
     }
@@ -6587,24 +6571,6 @@
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td>div {
         column-gap: calc(var(--spacing) * 2.5);
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>span\>a\]\:text-gray-500 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td>span>a {
-          color: var(--color-gray-500);
-        }
-      }
-    }
-  }
-  .prose-tr\:has-\[span\[data-outfit-status\=paid\]\]\:\[\&\>td\>span\>a\]\:text-gray-500\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:has(*:is(span[data-outfit-status=paid])) {
-        &>td>span>a {
-          color: var(--color-gray-500) !important;
-        }
       }
     }
   }
