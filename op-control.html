@@ -2446,6 +2446,138 @@
 				</tbody>
 			</table>
 		</div>
+		<!--Пример таблицы без thead с индикаторами присутствия -->
+		<div
+			class="h-full overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
+			<table class="
+					prose 
+					mb-3 
+					max-w-screen 
+					min-w-129
+					w-full 
+					text-dark-text 
+					prose-td:[&:first-child]:w-64
+					prose-td:[&:nth-child(2)]:w-50
+					prose-td:leading-none
+					prose-td:text-sm 
+					prose-td:align-middle 
+					prose-td:p-2.5  
+					prose-tr:h-9.5  
+					prose-tr:border-white 
+					prose-tr:border-b-2
+					prose-tr:has-[span[data-code-confirm]]:bg-gray-50
+					prose-tr:has-[span[data-code-confirm]]:font-semibold
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:text-white
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:text-center
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:text-[0.8125rem]
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:leading-[1.2]
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:py-0.5
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:px-1.5
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm]]:rounded-xs
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm=true]]:bg-success
+					prose-tr:has-[span[data-code-confirm]]:[&_span[data-code-confirm=false]]:bg-error
+					prose-td:has-[span[data-presence-state]]:[&>span]:relative
+					prose-td:has-[span[data-presence-state]]:[&>span]:flex
+					prose-td:has-[span[data-presence-state]]:[&>span]:items-center
+					prose-td:has-[span[data-presence-state]]:[&>span]:pl-3.5
+					prose-td:has-[span[data-presence-state]]:[&>span:before]:absolute
+					prose-td:has-[span[data-presence-state]]:[&>span:before]:content-['']
+					prose-td:has-[span[data-presence-state]]:[&>span:before]:left-0
+					prose-td:has-[span[data-presence-state]]:[&>span:before]:rounded-full
+					prose-td:has-[span[data-presence-state]]:[&>span:before]:size-2
+					prose-td:has-[span[data-presence-state=on-line]]:[&>span:before]:bg-success
+					prose-td:has-[span[data-presence-state=absent]]:[&>span:before]:bg-error
+					">
+				<tbody>
+					<tr>
+						<td>
+							Сергеенко Владлен (кассир)
+						</td>
+						<td>
+							<span data-code-confirm="true">Подтверждено&nbsp;кодом</span>
+						</td>
+						<td>
+							<time datetime="2025-06-26T10:00:40">26.06.2025 10:00:40</time>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Сергеенко Владлен (кассир)
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Иванов Иван
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Петров Петр
+						</td>
+						<td>
+							<span data-presence-state="absent">отсутствует</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Кузнецов Иван
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Сергеенко Владлен (кассир)
+						</td>
+						<td>
+							<span data-code-confirm="false">Нет&nbsp;подтверждения</span>
+						</td>
+						<td>
+							<time datetime="2025-06-26T10:00:40">26.06.2025 00:00:40</time>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Иванов Иван
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Иванов Иван
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Иванов Иван
+						</td>
+						<td>
+							<span data-presence-state="on-line">на&nbsp;смене</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</main>
 
 	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
