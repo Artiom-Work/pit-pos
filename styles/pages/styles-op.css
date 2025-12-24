@@ -418,9 +418,6 @@
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
   }
-  .ms-auto {
-    margin-inline-start: auto;
-  }
   .\!me-1\.5 {
     margin-inline-end: calc(var(--spacing) * 1.5) !important;
   }
@@ -924,10 +921,6 @@
     width: calc(var(--spacing) * 3);
     height: calc(var(--spacing) * 3);
   }
-  .size-3\.5 {
-    width: calc(var(--spacing) * 3.5);
-    height: calc(var(--spacing) * 3.5);
-  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
@@ -943,10 +936,6 @@
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
-  }
-  .size-8 {
-    width: calc(var(--spacing) * 8);
-    height: calc(var(--spacing) * 8);
   }
   .size-12 {
     width: calc(var(--spacing) * 12);
@@ -996,17 +985,17 @@
   .h-38 {
     height: calc(var(--spacing) * 38);
   }
-  .h-112 {
-    height: calc(var(--spacing) * 112);
+  .h-\[50vh\] {
+    height: 50vh;
   }
-  .h-112\.5 {
-    height: calc(var(--spacing) * 112.5);
+  .h-\[60vh\] {
+    height: 60vh;
   }
-  .h-300 {
-    height: calc(var(--spacing) * 300);
+  .h-\[70vh\] {
+    height: 70vh;
   }
-  .h-500 {
-    height: calc(var(--spacing) * 500);
+  .h-\[80vh\] {
+    height: 80vh;
   }
   .h-\[calc\(100\%-56px\)\] {
     height: calc(100% - 56px);
@@ -1097,9 +1086,6 @@
   }
   .max-w-45 {
     max-width: calc(var(--spacing) * 45);
-  }
-  .max-w-61 {
-    max-width: calc(var(--spacing) * 61);
   }
   .max-w-80 {
     max-width: calc(var(--spacing) * 80);
@@ -1220,9 +1206,6 @@
   }
   .min-w-395 {
     min-width: calc(var(--spacing) * 395);
-  }
-  .flex-none {
-    flex: none;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1697,9 +1680,6 @@
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
-  }
   .\!py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5) !important;
   }
@@ -1741,12 +1721,6 @@
   }
   .py-\[0\.5625rem\] {
     padding-block: 0.5625rem;
-  }
-  .ps-4 {
-    padding-inline-start: calc(var(--spacing) * 4);
-  }
-  .pe-9 {
-    padding-inline-end: calc(var(--spacing) * 9);
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -1887,10 +1861,6 @@
     --tw-leading: 1.71429;
     line-height: 1.71429;
   }
-  .leading-none {
-    --tw-leading: 1;
-    line-height: 1;
-  }
   .\!font-medium {
     --tw-font-weight: var(--font-weight-medium) !important;
     font-weight: var(--font-weight-medium) !important;
@@ -1930,9 +1900,6 @@
   .text-black {
     color: var(--color-black);
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
   .text-dark-red {
     color: var(--color-dark-red);
   }
@@ -1957,29 +1924,14 @@
   .text-gray-800 {
     color: var(--color-gray-800);
   }
-  .text-green-300 {
-    color: var(--color-green-300);
-  }
   .text-green-600 {
     color: var(--color-green-600);
-  }
-  .text-pink-300 {
-    color: var(--color-pink-300);
   }
   .text-pink-500 {
     color: var(--color-pink-500);
   }
   .text-pitpos-blue {
     color: var(--color-pitpos-blue);
-  }
-  .text-red-200 {
-    color: var(--color-red-200);
-  }
-  .text-red-300 {
-    color: var(--color-red-300);
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
   }
   .text-red-600 {
     color: var(--color-red-600);
@@ -2295,13 +2247,6 @@
       --tw-ring-color: var(--color-error);
     }
   }
-  .hover\:z-200 {
-    &:hover {
-      @media (hover: hover) {
-        z-index: 200;
-      }
-    }
-  }
   .hover\:rounded-md {
     &:hover {
       @media (hover: hover) {
@@ -2530,16 +2475,6 @@
     &:focus {
       border-style: var(--tw-border-style);
       border-width: 0px;
-    }
-  }
-  .focus\:border-blue-500 {
-    &:focus {
-      border-color: var(--color-blue-500);
-    }
-  }
-  .focus\:bg-gray-100 {
-    &:focus {
-      background-color: var(--color-gray-100);
     }
   }
   .focus\:text-gray-600 {
@@ -3607,11 +3542,6 @@
       background-color: var(--color-neutral-800);
     }
   }
-  .dark\:bg-neutral-900 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-neutral-900);
-    }
-  }
   .dark\:text-neutral-200 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-neutral-200);
@@ -3620,61 +3550,6 @@
   .dark\:text-neutral-400 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-neutral-400);
-    }
-  }
-  .dark\:text-neutral-500 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-neutral-500);
-    }
-  }
-  .dark\:placeholder-neutral-500 {
-    @media (prefers-color-scheme: dark) {
-      &::placeholder {
-        color: var(--color-neutral-500);
-      }
-    }
-  }
-  .dark\:hover\:bg-neutral-800 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-neutral-800);
-        }
-      }
-    }
-  }
-  .dark\:focus\:bg-neutral-800 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        background-color: var(--color-neutral-800);
-      }
-    }
-  }
-  .dark\:focus\:ring-1 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .dark\:focus\:ring-neutral-600 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        --tw-ring-color: var(--color-neutral-600);
-      }
-    }
-  }
-  .dark\:focus\:outline-hidden {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        --tw-outline-style: none;
-        outline-style: none;
-        @media (forced-colors: active) {
-          outline: 2px solid transparent;
-          outline-offset: 2px;
-        }
-      }
     }
   }
   .prose-li\:h-9\.5 {
@@ -3687,11 +3562,6 @@
       padding-block: calc(var(--spacing) * 2.5);
     }
   }
-  .prose-thead\:relative {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      position: relative;
-    }
-  }
   .prose-thead\:sticky {
     & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       position: sticky;
@@ -3700,16 +3570,6 @@
   .prose-thead\:top-0 {
     & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       top: calc(var(--spacing) * 0);
-    }
-  }
-  .prose-thead\:left-0 {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      left: calc(var(--spacing) * 0);
-    }
-  }
-  .prose-thead\:z-1 {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      z-index: 1;
     }
   }
   .prose-thead\:z-2 {
@@ -3726,11 +3586,6 @@
   .prose-thead\:whitespace-nowrap {
     & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       white-space: nowrap;
-    }
-  }
-  .prose-tr\:relative {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      position: relative;
     }
   }
   .prose-tr\:h-9 {
@@ -3799,24 +3654,6 @@
       }
     }
   }
-  .prose-tr\:hover\:bg-gray-200 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-gray-200);
-        }
-      }
-    }
-  }
-  .prose-tr\:hover\:bg-gray-300 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-gray-300);
-        }
-      }
-    }
-  }
   .prose-tr\:hover\:shadow-md {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:hover {
@@ -3840,21 +3677,6 @@
         --tw-font-weight: var(--font-weight-semibold);
         font-weight: var(--font-weight-semibold);
       }
-    }
-  }
-  .prose-th\:sticky {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      position: sticky;
-    }
-  }
-  .prose-th\:top-0 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      top: calc(var(--spacing) * 0);
-    }
-  }
-  .prose-th\:left-0 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      left: calc(var(--spacing) * 0);
     }
   }
   .prose-th\:bg-gray-50 {
@@ -4185,14 +4007,6 @@
       opacity: 20%;
     }
   }
-  .hs-select-disabled\:opacity-50 {
-    &.disabled {
-      opacity: 50%;
-    }
-    .disabled & {
-      opacity: 50%;
-    }
-  }
   .hs-select-disabled\:ring-disabled-input {
     &.disabled {
       --tw-ring-color: var(--color-disabled-input);
@@ -4437,159 +4251,6 @@
       }
     }
   }
-  .prose-td\:\[\&_input\]\:sr-only {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        border-width: 0;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:flex {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        display: flex;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:h-5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        height: calc(var(--spacing) * 5);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:w-5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        width: calc(var(--spacing) * 5);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:cursor-pointer {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        cursor: pointer;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:items-center {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        align-items: center;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:justify-center {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        justify-content: center;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:rounded-sm {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        border-radius: var(--radius-sm);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:border-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:border-gray-600 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        border-color: var(--color-gray-600);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:bg-default-checkbox {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        background-color: var(--color-default-checkbox);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:duration-300 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        --tw-duration: 300ms;
-        transition-duration: 300ms;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:will-change-transform {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        will-change: transform;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\]\:peer-checked\:bg-pitpos-blue {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span {
-        &:is(:where(.peer):checked ~ *) {
-          background-color: var(--color-pitpos-blue);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\:peer-checked\]\:pointer-events-none {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span:peer-checked {
-        pointer-events: none;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\:peer-checked\]\:border-pitpos-blue {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span:peer-checked {
-        border-color: var(--color-pitpos-blue);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\:peer-checked\]\:bg-pitpos-blue {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span:peer-checked {
-        background-color: var(--color-pitpos-blue);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\>span\:peer-disabled\]\:cursor-default {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span:peer-disabled {
-        cursor: default;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=\'checkbox\'\]\]\:sr-only {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type='checkbox'] {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        border-width: 0;
-      }
-    }
-  }
   .prose-td\:\[\&_input\[type\=checkbox\]\]\:hidden {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & input[type=checkbox] {
@@ -4604,20 +4265,6 @@
       }
     }
   }
-  .prose-td\:\[\&_input\[type\=checkbox\]\:checked\:\~span\>svg\]\:stroke-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]:checked:~span>svg {
-        stroke: var(--color-white);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\:checked\>span\]\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]:checked>span {
-        background-color: var(--color-red-500);
-      }
-    }
-  }
   .prose-td\:\[\&_input\[type\=checkbox\]\:checked\~span\]\:border-pitpos-blue {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & input[type=checkbox]:checked~span {
@@ -4629,20 +4276,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & input[type=checkbox]:checked~span {
         background-color: var(--color-pitpos-blue);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\:checked\~span\]\:bg-red-500 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]:checked~span {
-        background-color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\:checked\~span\>svg\]\:block {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]:checked~span>svg {
-        display: block;
       }
     }
   }
@@ -4685,92 +4318,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & input[type=checkbox]:disabled~span>svg {
         stroke: var(--color-disabled-checkbox);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:flex {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        display: flex;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:h-5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        height: calc(var(--spacing) * 5);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:w-5 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        width: calc(var(--spacing) * 5);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:cursor-pointer {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        cursor: pointer;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:items-center {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        align-items: center;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:justify-center {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        justify-content: center;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:rounded-sm {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        border-radius: var(--radius-sm);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:border-1 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:border-gray-600 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        border-color: var(--color-gray-600);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:bg-default-checkbox {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        background-color: var(--color-default-checkbox);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:duration-300 {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        --tw-duration: 300ms;
-        transition-duration: 300ms;
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\>span\]\:will-change-transform {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]>span {
-        will-change: transform;
       }
     }
   }
@@ -4871,17 +4418,6 @@
       }
     }
   }
-  .prose-td\:hover\:\[\&_input\[type\=checkbox\]\~span\]\:border-pitpos-blue {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          & input[type=checkbox]~span {
-            border-color: var(--color-pitpos-blue);
-          }
-        }
-      }
-    }
-  }
   .prose-td\:\[\&_input\[type\=checkbox\]\~span\]\:hover\:shadow-md {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & input[type=checkbox]~span {
@@ -4891,40 +4427,6 @@
             box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
           }
         }
-      }
-    }
-  }
-  .prose-td\:hover\:\[\&_input\[type\=checkbox\]\~span\]\:shadow-md {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:hover {
-        @media (hover: hover) {
-          & input[type=checkbox]~span {
-            --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\~span\:hover\]\:border-pitpos-blue {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]~span:hover {
-        border-color: var(--color-pitpos-blue);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\~span\:hover\]\:shadow-md {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]~span:hover {
-        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=checkbox\]\~span\>svg\]\:hidden {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type=checkbox]~span>svg {
-        display: none;
       }
     }
   }
@@ -5098,16 +4600,6 @@
       height: calc(var(--spacing) * 3);
     }
   }
-  .\[\&\:\:-webkit-scrollbar\]\:h-3\.5 {
-    &::-webkit-scrollbar {
-      height: calc(var(--spacing) * 3.5);
-    }
-  }
-  .\[\&\:\:-webkit-scrollbar\]\:h-4 {
-    &::-webkit-scrollbar {
-      height: calc(var(--spacing) * 4);
-    }
-  }
   .\[\&\:\:-webkit-scrollbar\]\:w-1 {
     &::-webkit-scrollbar {
       width: calc(var(--spacing) * 1);
@@ -5123,25 +4615,6 @@
       width: calc(var(--spacing) * 2.5);
     }
   }
-  .\[\&\:\:-webkit-scrollbar\]\:w-3\.5 {
-    &::-webkit-scrollbar {
-      width: calc(var(--spacing) * 3.5);
-    }
-  }
-  .\[\&\:\:-webkit-scrollbar\]\:cursor-pointer {
-    &::-webkit-scrollbar {
-      cursor: pointer;
-    }
-  }
-  .\[\&\:\:-webkit-scrollbar\]\:hover\:cursor-pointer {
-    &::-webkit-scrollbar {
-      &:hover {
-        @media (hover: hover) {
-          cursor: pointer;
-        }
-      }
-    }
-  }
   .\[\&\:\:-webkit-scrollbar-thumb\]\:rounded-full {
     &::-webkit-scrollbar-thumb {
       border-radius: calc(infinity * 1px);
@@ -5152,33 +4625,14 @@
       background-color: var(--color-black);
     }
   }
-  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-300 {
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--color-gray-300);
-    }
-  }
   .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-pitpos-blue {
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-pitpos-blue);
     }
   }
-  .dark\:\[\&\:\:-webkit-scrollbar-thumb\]\:bg-neutral-500 {
-    @media (prefers-color-scheme: dark) {
-      &::-webkit-scrollbar-thumb {
-        background-color: var(--color-neutral-500);
-      }
-    }
-  }
   .\[\&\:\:-webkit-scrollbar-track\]\:bg-gray-100 {
     &::-webkit-scrollbar-track {
       background-color: var(--color-gray-100);
-    }
-  }
-  .dark\:\[\&\:\:-webkit-scrollbar-track\]\:bg-neutral-700 {
-    @media (prefers-color-scheme: dark) {
-      &::-webkit-scrollbar-track {
-        background-color: var(--color-neutral-700);
-      }
     }
   }
   .prose-th\:\[\&\:first-child\]\:min-w-12\.5 {
@@ -5281,13 +4735,6 @@
       }
     }
   }
-  .prose-th\:\[\&\:nth-child\(2\)\]\:w-70 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(2) {
-        width: calc(var(--spacing) * 70);
-      }
-    }
-  }
   .prose-th\:\[\&\:nth-child\(2\)\]\:min-w-70 {
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
@@ -5299,13 +4746,6 @@
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(2) {
         min-width: calc(var(--spacing) * 116);
-      }
-    }
-  }
-  .prose-th\:\[\&\:nth-child\(2\)\]\:bg-red-500 {
-    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &:nth-child(2) {
-        background-color: var(--color-red-500);
       }
     }
   }
@@ -6620,27 +6060,6 @@
       }
     }
   }
-  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\]\:ring-gray-300 {
-    &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
-      &>div>button {
-        --tw-ring-color: var(--color-gray-300);
-      }
-    }
-  }
-  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\]\:ring-gray-400 {
-    &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
-      &>div>button {
-        --tw-ring-color: var(--color-gray-400);
-      }
-    }
-  }
-  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\]\:ring-gray-500 {
-    &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
-      &>div>button {
-        --tw-ring-color: var(--color-gray-500);
-      }
-    }
-  }
   .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\]\:ring-gray-600 {
     &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
       &>div>button {
@@ -6865,20 +6284,6 @@
       }
     }
   }
-  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\>span\]\:text-gray-700 {
-    &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
-      &>div>button>span {
-        color: var(--color-gray-700);
-      }
-    }
-  }
-  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'all\'\]\)\.selected\]\:\[\&\>div\>button\>span\]\:text-red-500 {
-    &:has(*:is([data-title-value]:not([data-title-value='all']).selected)) {
-      &>div>button>span {
-        color: var(--color-red-500);
-      }
-    }
-  }
   .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'Все_виды\'\]\)\.selected\]\:\[\&\>div\>button\>span\]\:text-black {
     &:has(*:is([data-title-value]:not([data-title-value='Все виды']).selected)) {
       &>div>button>span {
@@ -6904,21 +6309,6 @@
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>label {
         align-items: center;
-      }
-    }
-  }
-  .prose-td\:\[\&\>label\>input\]\:sr-only {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>label>input {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        border-width: 0;
       }
     }
   }
@@ -7524,15 +6914,6 @@
       }
     }
   }
-  .prose-td\:\[\&_input\>span\:peer-disabled\]\:\[\&\>svg\]\:stroke-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input>span:peer-disabled {
-        &>svg {
-          stroke: var(--color-white);
-        }
-      }
-    }
-  }
   .prose-td\:\[\&\>a\]\:hover\:\[\&\>svg\]\:opacity-100 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a {
@@ -7692,13 +7073,6 @@
       }
     }
   }
-  .prose-tr\:\[\&\>td\:first-child\]\:top-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:first-child {
-        top: calc(var(--spacing) * 0);
-      }
-    }
-  }
   .prose-tr\:\[\&\>td\:first-child\]\:left-0 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:first-child {
@@ -7790,62 +7164,6 @@
       }
     }
   }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:fixed {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        position: fixed;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:sticky {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        position: sticky;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:top-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        top: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:left-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        left: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:z-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        z-index: 0;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:z-1 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        z-index: 1;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:z-2 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        z-index: 2;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:z-100 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        z-index: 100;
-      }
-    }
-  }
   .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:max-w-26 {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(2) {
@@ -7857,20 +7175,6 @@
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(2) {
         max-width: calc(var(--spacing) * 28);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:bg-red-500 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        background-color: var(--color-red-500);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:bg-white {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        background-color: var(--color-white);
       }
     }
   }
@@ -7886,41 +7190,6 @@
       &>td:nth-child(2) {
         --tw-leading: 1;
         line-height: 1;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:shadow-md {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:shadow-xl {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:shadow-xs {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>td\:nth-child\(2\)\]\:hover\:bg-gray-100 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>td:nth-child(2) {
-        &:hover {
-          @media (hover: hover) {
-            background-color: var(--color-gray-100);
-          }
-        }
       }
     }
   }
@@ -7940,15 +7209,6 @@
       & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
         &>td:nth-child(2) {
           position: sticky;
-        }
-      }
-    }
-  }
-  .md\:prose-tr\:\[\&\>td\:nth-child\(2\)\]\:top-0 {
-    @media (width >= 48rem) {
-      & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-        &>td:nth-child(2) {
-          top: calc(var(--spacing) * 0);
         }
       }
     }
@@ -8064,69 +7324,6 @@
       }
     }
   }
-  .prose-tr\:\[\&\>th\]\:fixed {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        position: fixed;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:sticky {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        position: sticky;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:sticky\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        position: sticky !important;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:top-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        top: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:right-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        right: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:right-0\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        right: calc(var(--spacing) * 0) !important;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:bottom-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        bottom: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:bottom-0\! {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        bottom: calc(var(--spacing) * 0) !important;
-      }
-    }
-  }
-  .prose-tr\:\[\&\>th\]\:left-0 {
-    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>th {
-        left: calc(var(--spacing) * 0);
-      }
-    }
-  }
   .prose-tr\:\[\&\>th\:nth-child\(2\)\]\:whitespace-nowrap {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>th:nth-child(2) {
@@ -8137,27 +7334,6 @@
   .\[\&\>thead\>tr\]\:h-9\.5 {
     &>thead>tr {
       height: calc(var(--spacing) * 9.5);
-    }
-  }
-  .prose-thead\:\[\&\>tr\]\:sticky {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>tr {
-        position: sticky;
-      }
-    }
-  }
-  .prose-thead\:\[\&\>tr\]\:top-0 {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>tr {
-        top: calc(var(--spacing) * 0);
-      }
-    }
-  }
-  .prose-thead\:\[\&\>tr\]\:left-0 {
-    & :is(:where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      &>tr {
-        left: calc(var(--spacing) * 0);
-      }
     }
   }
   .prose-td\:\[\&\[data-active-owner\]\>span\:first-child\]\:hidden {
@@ -8250,15 +7426,6 @@
   .checked\:disabled\:\[\&\~span\>svg\]\:stroke-disabled-checkbox-icon {
     &:checked {
       &:disabled {
-        &~span>svg {
-          stroke: var(--color-disabled-checkbox-icon);
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&_input\[type\=\'checkbox\'\]\:checked\:disabled\]\:\[\&\~span\>svg\]\:stroke-disabled-checkbox-icon {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & input[type='checkbox']:checked:disabled {
         &~span>svg {
           stroke: var(--color-disabled-checkbox-icon);
         }
