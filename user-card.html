@@ -1,0 +1,2705 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" sizes="16x16" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
+	<title>PitPos | Пользователь </title>
+	<link href="./styles/pages/styles-op.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 h-full">
+	<header class="fixed w-full top-0 z-2 bg-white py-1.5 sm:py-0 px-3 md:px-6 shadow-xs">
+		<div class="flex items-center justify-between gap-x-4">
+			<a href="./index.html" title="На главную">
+				<svg class="w-23 h-10 fill-accent-bright hover:fill-black active:scale-98 duration-300 sm:w-35 sm:h-15"
+					viewBox="0 0 140 60">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="flex items-center gap-x-10">
+				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
+					href="#!">
+					<div
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-blue">
+						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-boy.webp" alt="Мужчина">
+					</div>
+
+					<div
+						class="hidden flex items-center shrink-0 w-12 aspect-square border border-pink border-1 rounded-full overflow-hidden">
+						<img class="w-full" src="./public/images/profile-girl.webp" alt="Женщина">
+					</div>
+
+					<div class="flex flex-col">
+						<span class="text-[15px]">Александр Иванов</span>
+						<span class="text-sm text-gray-600">Собственник</span>
+					</div>
+				</a>
+
+				<div class="hidden flex flex-col items-end sm:flex">
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
+					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
+		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
+			<div class="max-w-80 h-full relative">
+				<input class="hidden peer" id="menu-toggle" type="checkbox">
+
+				<div class="absolute w-12 min-h-12 bg-white overflow-hidden duration-300 peer-checked:w-80"></div>
+
+				<div class="size-12 absolute left-0 py-3 px-3 duration-300 peer-checked:opacity-0 ">
+					<svg class="size-6 fill-black " viewBox="0 0 26 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#burger-button-icon"></use>
+					</svg>
+				</div>
+
+				<div
+					class="size-12 opacity-0 rotate-90 absolute right-0 py-3 px-3 duration-300 peer-checked:block peer-checked:opacity-100">
+					<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+					</svg>
+				</div>
+
+				<label
+					class="relative  z-1 w-12 flex items-center justify-center min-h-12 cursor-pointer  peer-checked:left-68 border-3 border-white rounded-md hover:border-black active:opacity-40"
+					for="menu-toggle">
+				</label>
+
+				<nav
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-black">
+					<ul>
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="./dashboard.html" title="Дашборд">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="./dashboard.html">Дашборд</a>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="./op-control.html" title="Оперативный контроль">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="./op-control.html">Оперативный контроль</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
+
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-1">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-1">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-shifts.html">Смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-disks-painting.html">Покраска дисков</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./op-control-guarantees.html">Гарантии</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Ключевые показатели эффективности">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">KPI</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-2">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-2">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Финансовые планы</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Ночные смены</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Отчеты по мотивации</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Средние чеки</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Выгрузка услуг</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Кабинет бухгалтера">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Кабинет бухгалтера</a>
+
+
+							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-3">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-3">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Зарплаты</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дополнительные начисления</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Баланс</a>
+								</li>
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Инкассации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Клиенты">
+
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Клиенты</a>
+
+							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-4">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-4">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./clients-individuals.html">Физ.лица</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Юр.лица</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Пользователи">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Пользователи</a>
+
+							<input class="hidden peer" id="menu-item-toggle-5" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-5">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-5" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-5">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./users-employees.html">Сотрудники</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./users-healpers.html">Помощники</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Справочники">
+
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
+								</svg>
+
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Справочники</a>
+
+							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-6">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-6">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Услуги</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Причины обращений</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-workshops.html">Мастерские</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-my-companies.html">Мои компании</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Марки и модели</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы для отзывов</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вопросы при открытии смены</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-roles.html">Роли</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-recommendations.html">Рекомендации клиенту</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Мотивации</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Лояльность">
+
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Лояльность</a>
+
+							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-7">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-7">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Дисконтные карты</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./loyalty-promo-codes.html">Промокоды</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Настройки">
+
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Настройки</a>
+
+							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-8">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-8">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Уведомления</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Сайт</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Обучение">
+
+								<svg class="size-6  stroke-black fill-black" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
+								</svg>
+							</a>
+
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Обучение</a>
+
+							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-9">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-9">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Вики</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="#!">Материалы</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="relative pl-12 min-h-12">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Логи">
+								<svg class="size-6 stroke-black fill-black" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
+								</svg>
+							</a>
+
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Логи</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</aside>
+		<!-- End sidebar -->
+		<div class="w-full mb-6 ">
+			<ul class="flex flex-wrap">
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
+						href="./index.html">Главная&nbsp;-&nbsp;</a>
+				</li>
+
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400" href="#!">
+						Пользователи&nbsp;/&nbsp;
+					</a>
+				</li>
+
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
+						href="./users-employees.html">
+						Сотрудники&nbsp;/&nbsp;
+					</a>
+				</li>
+
+				<li>
+					<a class="text-black text-[0.75rem] pointer-events-none" href="./users-card.html">
+						Пользователь
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
+			<h1 class="mb-6 w-full flex font-bold py-2">
+				<svg class="size-6 stroke-black fill-transparent mr-3.5" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
+				</svg>
+
+				<span class="text-black">Пользователь</span>
+			</h1>
+			<!-- End page name -->
+			<div>
+				<nav class=" mb-3 flex flex-col gap-2.5 sm:flex-row lg:mb-6" aria-label="Tabs" role="tablist"
+					aria-orientation="horizontal">
+					<button type="button"
+						class="inline-block px-2.5 py-2 text-sm text-gray-700 bg-white font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:brightness-95 active:scale-98 hover:ring-pitpos-blue hover:shadow-md hover:ring-pitpos-black disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button disabled:ring-disabled-button hs-tab-active:ring-pitpos-blue hs-tab-active:bg-pitpos-blue hs-tab-active:text-white active"
+						id="user-tab-item-1" aria-selected="true" data-hs-tab="#user-tab-1" aria-controls="user-tab-1" role="tab">
+						Основная информация
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 text-sm text-gray-700 bg-white font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:brightness-95 active:scale-98 hover:ring-pitpos-blue hover:shadow-md hover:ring-pitpos-black disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button disabled:ring-disabled-button hs-tab-active:ring-pitpos-blue hs-tab-active:bg-pitpos-blue hs-tab-active:text-white"
+						id="user-tab-item-2" aria-selected="false" data-hs-tab="#user-tab-2" aria-controls="user-tab-2" role="tab">
+						Зарплата
+					</button>
+					<button type="button"
+						class="inline-block px-2.5 py-2 text-sm text-gray-700 bg-white font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:brightness-95 active:scale-98 hover:ring-pitpos-blue hover:shadow-md hover:ring-pitpos-black disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button disabled:ring-disabled-button hs-tab-active:ring-pitpos-blue hs-tab-active:bg-pitpos-blue hs-tab-active:text-white "
+						id="user-tab-item-3" aria-selected="false" data-hs-tab="#user-tab-3" aria-controls="user-tab-3" role="tab">
+						Мастерские
+					</button>
+				</nav>
+				<!-- End tab navigation -->
+				<div class="mt-3">
+					<div id="user-tab-1" role="tabpanel" aria-labelledby="user-tab-item-1">
+						<form class="mb-6 flex flex-col gap-3 sm:gap-6" id="basic-user-data">
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-second-name">Фамилия*</label>
+								<input class="
+									w-full
+									px-3 
+									py-[0.6939rem] 
+									text-sm
+									leading-[1.2]
+									rounded-md 
+									outline-0 
+									ring-1 
+									ring-gray-300 
+									not-placeholder-shown:ring-gray-600 
+									duration-300 
+									placeholder:text-gray-500 
+									focus:ring-blue-focus-input 
+									focus:ring-2 
+									invalid:focus:ring-error
+									invalid:focus:text-error
+									disabled:text-gray-700
+									disabled:placeholder:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
+									" id="user-second-name" name="user-second-name" type="text" placeholder="Иванова" value="Иванов" required
+									disabled>
+							</div>
+
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-name">Имя*</label>
+								<input class="
+									w-full
+									px-3 
+									py-[0.6939rem] 
+									text-sm
+									leading-[1.2] 
+									rounded-md 
+									outline-0 
+									ring-1 
+									ring-gray-300 
+									not-placeholder-shown:ring-gray-600 
+									duration-300 
+									placeholder:text-gray-500 
+									focus:ring-blue-focus-input 
+									focus:ring-2 
+									invalid:focus:ring-error
+									invalid:focus:text-error
+									disabled:text-gray-700
+									disabled:placeholder:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
+									" id="user-name" name="user-name" type="text" placeholder="Иван" value="Иван" required disabled>
+							</div>
+
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-surname">Отчество</label>
+								<input class="
+									w-full
+									px-3 
+									py-[0.6939rem] 
+									text-sm
+									leading-[1.2]
+									rounded-md 
+									outline-0 
+									ring-1 
+									ring-gray-300 
+									not-placeholder-shown:ring-gray-600 
+									duration-300 
+									placeholder:text-gray-500 
+									focus:ring-blue-focus-input 
+									focus:ring-2 
+									invalid:focus:ring-error
+									invalid:focus:text-error
+									disabled:text-gray-700
+									disabled:placeholder:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
+									" id="user-surname" name="user-surname" type="text" placeholder="Ивановна" value="Иванович" disabled>
+							</div>
+
+							<div
+								class="max-w-134.5 w-full flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black has-[select[disabled]]:[&_button>span]:text-gray-700!">
+								<label class="text-sm text-gray-700" for="user-role">Роль*</label>
+
+								<select disabled id="user-role" name="user-role" data-hs-select='{
+							"toggleTag": "<button class=\"pr-10 h-11.5 text-gray-500 text-sm leading-[2.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input! \" type=\"button\" aria-expanded=\"false\"></button>",
+							"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+							"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+							"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+							"optionTemplate": 
+							"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+							"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+						}' class="hidden">
+									<option value="all">Все</option>
+									<option value="owner">Владелец</option>
+									<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
+									<option value="workshop-admin">Администратор&nbsp;мастерской</option>
+									<option value="carwash-admin">Администратор&nbsp;мойки</option>
+									<option value="service-admin">Администратор&nbsp;сервиса</option>
+									<option value="master" selected>Мастер</option>
+									<option value="service-advisor">Мастер-приемщик</option>
+									<option value="shiftController">Контролер&nbsp;смен</option>
+									<option value="technical-inspector">Мастер&nbsp;ТО</option>
+									<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
+									<option value="wheel-alignment-master">Мастер развал-схождения</option>
+									<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
+									<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
+									<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
+									<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
+									<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
+									<option value="cashierTireFitting">Кассир-шиномонтаж</option>
+									<option value="washer">Мойщик</option>
+									<option value="locksmith">Слесарь</option>
+								</select>
+							</div>
+
+							<div>
+								<label class="inline-flex items-center gap-3" for="user-collection-permit">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="user-collection-permit" name="user-collection-permit" disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-pitpos-blue
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-pitpos-blue
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-pitpos-blue
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+
+									<span class="text-dark-text font-semibold text-[0.8125rem]">Разрешать инкассацию</span>
+								</label>
+							</div>
+
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-phone">Телефон*</label>
+								<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="user-phone" name="user-phone" type="tel" placeholder="+7(111) 111-11-11" value="+79991234567" required
+									disabled pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
+							</div>
+
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-email">E-mail&nbsp;(только gmail)*</label>
+								<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="user-email" name="user-email" type="email" placeholder="info@gmail.com" value="info@gmail.com"
+									pattern="[a-zA-Z0-9._%+\-]+@gmail\.com$" required disabled>
+							</div>
+
+							<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-telegram">@telegram</label>
+								<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="user-telegram" name="user-telegram" type="text" placeholder="@admin_moika" value="@admin_moika"
+									disabled>
+							</div>
+
+							<div>
+								<label class="inline-flex items-center gap-3" for="user-messenger-communication">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="user-messenger-communication" name="user-messenger-communication" disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-pitpos-blue
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-pitpos-blue
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-pitpos-blue
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+
+									<span class="text-dark-text font-semibold text-[0.8125rem]">Использовать Telegram вместо SMS</span>
+								</label>
+							</div>
+
+							<div class="flex flex-col gap-y-2 max-w-134.5 w-full">
+								<label class="text-sm text-gray-700" for="user-image">Изображение</label>
+								<input class="text-gray-700 text-[0.8125rem] block
+								outline-0 
+								focus:file:ring-2 
+								rounded-sm
+								file:px-5 
+								file:mr-6
+								file:my-[0.1875rem]
+								file:ml-[0.1875rem]
+								file:py-[0.4rem] 
+								file:rounded-sm 
+								file:ring-1 
+								file:ring-accent 
+								file:text-accent 
+								file:text-sm 
+								file:font-bold 
+								file:cursor-pointer 
+								file:duration-300 
+								file:will-change-transform 
+								hover:file:bg-white 
+								hover:file:shadow-md 
+								hover:file:shadow-md 
+								hover:file:ring-2 
+								active:file:scale-98 
+								active:file:brightness-95 
+								disabled:file:bg-disabled-button 
+								disabled:file:ring-disabled-button 
+								disabled:file:text-gray-500 
+								disabled:text-gray-500 
+								disabled:pointer-events-none
+								" type="file" name="user-image" id="user-image" accept="image/*" capture="environment" disabled>
+							</div>
+
+							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-6 max-w-134.5 w-full"
+								data-hs-toggle-password-group="">
+								<div class="w-full">
+									<label for="user-password" class="text-sm text-gray-700 mb-1">Пароль</label>
+									<div class="relative">
+										<input class="
+															w-full
+															px-3 
+															py-[0.6939rem] 
+															text-sm
+															leading-[1.2]
+															rounded-md 
+															outline-0 
+															ring-1 
+															ring-gray-300 
+															not-placeholder-shown:ring-gray-600 
+															duration-300 
+															placeholder:text-gray-500 
+															placeholder:text-sm 
+															focus:ring-blue-focus-input 
+															focus:ring-2 
+															invalid:focus:ring-error
+															invalid:focus:text-error
+															disabled:text-gray-700
+															disabled:placeholder:text-disabled-input
+															disabled:ring-disabled-input
+															disabled:bg-disabled-input
+															bg-default-input" id="user-password" name="user-password" type="password" placeholder="Введите пароль"
+											value="qwerty" disabled>
+										<button type="button" data-hs-toggle-password='{
+												"target": ["#user-password", "#user-repeated-password"]
+											}' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-hidden focus:text-gray-700">
+											<svg class="shrink-0 size-3.5" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+												<path class="hs-password-active:hidden"
+													d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+												<path class="hs-password-active:hidden"
+													d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+												<line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+												<path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z">
+												</path>
+												<circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<!-- End Form Group -->
+
+								<!-- Form Group -->
+								<div class="w-full">
+									<label for="user-repeated-password" class="text-sm text-gray-700 mb-1">Подтвердите
+										пароль</label>
+									<div class="relative">
+										<input class="w-full
+																	px-3 
+																	py-[0.6939rem] 
+																	text-sm
+																	leading-[1.2]
+																	rounded-md 
+																	outline-0 
+																	ring-1 
+																	ring-gray-300 
+																	not-placeholder-shown:ring-gray-600 
+																	duration-300 
+																	placeholder:text-gray-500 
+																	placeholder:text-sm 
+																	focus:ring-blue-focus-input 
+																	focus:ring-2 
+																	invalid:focus:ring-error
+																	invalid:focus:text-error
+																	disabled:text-gray-700
+																	disabled:placeholder:text-disabled-input
+																	disabled:ring-disabled-input
+																	disabled:bg-disabled-input
+																	bg-default-input" id="user-repeated-password" name="user-repeated-password" type="password"
+											placeholder="Введите пароль еще раз" disabled>
+										<button type="button" data-hs-toggle-password='{
+												"target": ["#user-password", "#user-repeated-password"]
+											}' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-hidden focus:text-gray-700">
+											<svg class="shrink-0 size-3.5" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+												<path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+												<path class="hs-password-active:hidden"
+													d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+												<path class="hs-password-active:hidden"
+													d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+												<line class="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"></line>
+												<path class="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z">
+												</path>
+												<circle class="hidden hs-password-active:block" cx="12" cy="12" r="3"></circle>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<!-- End Form Group -->
+							</div>
+
+							<div class="w-full flex items-center gap-x-2 sm:gap-x-6" data-button-group>
+								<button
+									class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+									type="button"
+									onclick="this.closest('[data-button-group]').querySelectorAll('[data-edit-action]').forEach(btn => btn.classList.remove('hidden')), this.classList.add('hidden')">Редактировать</button>
+
+								<button
+									class="hidden px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+									type="button"
+									onclick="this.closest('[data-button-group]').querySelectorAll('[data-edit-action]').forEach(btn => btn.classList.add('hidden')), this.closest('[data-button-group]').querySelector('button:not([data-edit-action])').classList.remove('hidden')"
+									data-edit-action>
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+									</svg>
+
+									<span class=" text-sm font-medium">Отменить</span>
+								</button>
+
+								<button
+									class="hidden px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+									type="submit" data-edit-action>Coхранить</button>
+							</div>
+						</form>
+					</div>
+
+					<div id="user-tab-2" class="hidden" role="tabpanel" aria-labelledby="user-tab-item-2">
+						<div>
+							<div class="p-2.5 lg:p-5 max-w-145 w-full mb-3 lg:mb-6">
+								<div class="flex flex-col sm:flex-row gap-3 lg:gap-6 mb-3 lg:mb-6">
+									<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+										<label class="text-sm text-gray-700" for="passport_series">Серия&nbsp;паспорта</label>
+										<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="passport_series" name="passport_series" form="basic-user-data" type="text" placeholder="4013"
+											maxlength="4" value="1234" disabled>
+									</div>
+
+									<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+										<label class="text-sm text-gray-700" for="passport_number">Номер&nbsp;паспорта</label>
+										<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="passport_number" name="passport_number" form="basic-user-data" type="text" placeholder="123456"
+											maxlength="6" value="123456" disabled>
+									</div>
+								</div>
+
+								<div class="mb-3 lg:mb-6">
+									<label class="inline-flex items-center gap-3" for="salory-with-small-revenue">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="salory-with-small-revenue" name="salory-with-small-revenue" form="basic-user-data" disabled>
+										<span class="
+											w-4.5 
+											h-4.5 
+											border-1 
+											border-gray-600 
+											bg-default-checkbox 
+											rounded-sm 
+											peer-checked:bg-pitpos-blue
+											flex items-center 
+											justify-center 
+											cursor-pointer 
+											duration-300 
+											will-change-transform 
+											peer-checked:[&>svg]:stroke-white 
+											peer-checked:border-pitpos-blue
+											peer-disabled:pointer-events-none 
+											peer-disabled:cursor-default 
+											peer-disabled:border-disabled-border-checkbox 
+											peer-disabled:[&>svg]:stroke-disabled-checkbox 
+											peer-disabled:bg-disabled-checkbox 
+											hover:border-pitpos-blue
+											hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Начислять ЗП&nbsp;за&nbsp;выход при маленькой выручке
+										</span>
+									</label>
+								</div>
+
+								<div class="mb-3 lg:mb-6">
+									<label class="inline-flex items-center gap-3" for="final-plan-salory">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="final-plan-salory" name="final-plan-salory" form="basic-user-data" disabled>
+										<span class="
+											w-4.5 
+											h-4.5 
+											border-1 
+											border-gray-600 
+											bg-default-checkbox 
+											rounded-sm 
+											peer-checked:bg-pitpos-blue
+											flex items-center 
+											justify-center 
+											cursor-pointer 
+											duration-300 
+											will-change-transform 
+											peer-checked:[&>svg]:stroke-white 
+											peer-checked:border-pitpos-blue
+											peer-disabled:pointer-events-none 
+											peer-disabled:cursor-default 
+											peer-disabled:border-disabled-border-checkbox 
+											peer-disabled:[&>svg]:stroke-disabled-checkbox 
+											peer-disabled:bg-disabled-checkbox 
+											hover:border-pitpos-blue
+											hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Начислять доп&nbsp;ЗП (за&nbsp;фин.план)
+										</span>
+									</label>
+								</div>
+
+								<div class="flex flex-col sm:flex-row sm:items-center gap-3 lg:gap-6">
+									<div>
+										<label class="inline-flex items-center gap-3" for="tipping-permis">
+											<input type="checkbox"
+												class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+												id="tipping-permis" name="tipping-permis" form="basic-user-data" disabled>
+											<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+												<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block"
+													viewBox="0 0 12 10">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+												</svg>
+											</span>
+
+											<span class="text-dark-text font-semibold text-[0.8125rem]">
+												Разрешать&nbsp;чаевые
+											</span>
+										</label>
+									</div>
+
+									<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+										<label class="text-sm text-gray-700" for="tips_url">Ссылка на чаевые</label>
+										<input class="
+										w-full
+										px-3 
+										py-[0.6939rem] 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										invalid:focus:ring-error
+										invalid:focus:text-error
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										bg-default-input
+										" id="tips_url" name="tips_url" form="basic-user-data" type="text" placeholder="https://..." maxlength="6"
+											value="123456" disabled>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-6 flex flex-col gap-2.5 max-w-260.5 w-full sm:grid sm:grid-cols-2" data-motivity-block>
+								<h2 class="text-lg font-bold leading-[1.1] mb-2.5 sm:col-span-2">Участвует в&nbsp;мотивити</h2>
+
+								<div
+									class="p-2.5 rounded-md border-1 border-gray-300 has-disabled:pointer-events-none has-disabled:opacity-50 disabled"
+									data-editable-section>
+									<div class="flex flex-col items-center justify-between gap-3 mb-2.5 xs:flex-row">
+										<h3 class="font-base font-semibold leading-[1.5]">Все мотивити</h3>
+
+										<button
+											class="px-5 py-1.5 rounded-xs text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:text-gray-500 disabled:ring-disabled-button disabled:pointer-events-none"
+											type="button">
+											Выбрать все (<span id="result-count">9</span>)
+										</button>
+									</div>
+
+									<div class="relative mb-2.5">
+										<input class="
+										w-full
+										pl-3 
+										pr-10.5 
+										py-2 
+										text-sm
+										leading-[1.2]
+										rounded-md 
+										outline-0 
+										ring-1 
+										ring-gray-300 
+										not-placeholder-shown:ring-gray-600 
+										duration-300 
+										placeholder:text-gray-500 
+										focus:ring-blue-focus-input 
+										focus:ring-2 
+										disabled:text-gray-700
+										disabled:placeholder:text-disabled-input
+										disabled:ring-disabled-input
+										disabled:bg-disabled-input
+										disabled:pointer-events-none
+										bg-default-input
+										hover:[&~svg]:stroke-black
+										hover:[&~svg]:fill-gray-50
+										disabled:[&~svg]:stroke-gray-500
+										" type="text" id="search-input" autocomplete="off" placeholder="Найти">
+
+										<svg class="absolute inset-y-1.5 right-3 size-5 stroke-gray-700 fill-transparent peer-cheked:block"
+											viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#search-icon"></use>
+										</svg>
+									</div>
+
+									<div
+										class="h-53 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-50 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb:hover]:bg-pitpos-blue [&::-webkit-scrollbar-thumb:hover]:cursor-pointer">
+										<ul class="space-y-1 pr-1" id="items-container">
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Ремонт литого диска">
+													Ремонт литого диска
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Прокатка стального диска">
+													Прокатка стального диска
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Ремонт холодной вулканизацией">
+													Ремонт холодной вулканизацией
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Ремонт горячей вулканизацией">
+													Ремонт горячей вулканизацией
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Средний чек смены">
+													Средний чек смены
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Ошиповка">
+													Ошиповка
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Срчек ТЕСТ">
+													Срчек ТЕСТ
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Кондиционеры">
+													Кондиционеры
+												</button>
+											</li>
+
+											<li>
+												<button
+													class="search-item w-full py-[0.4288rem] px-2.5 text-left text-sm text-gray-900 leading-[1.2] border-1 border-gray-300 rounded-sm cursor-pointer duration-300 will-change-transform disabled:pointer-events-none disabled:border-disabled-button disabled:bg-disabled-button disabled:text-gray-550 hover:bg-gray-100 active:scale-99"
+													type="button" data-search-text="Сезонное хранение">
+													Сезонное хранение
+												</button>
+											</li>
+										</ul>
+
+										<div id="no-results" class="hidden text-center py-3">
+											<svg class="mx-auto size-12 stroke-gray-300 fill-none mb-2" viewBox="0 0 24 24">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#sad-smile"></use>
+											</svg>
+											<p class="text-gray-500 text-md">Ничего не найдено</p>
+											<p class="text-gray-400 text-sm mt-2">Попробуйте изменить поисковый запрос</p>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="p-2.5 rounded-md border-1 border-gray-300 has-disabled:pointer-events-none has-disabled:opacity-50 disabled"
+									data-editable-section>
+									<div class="flex flex-col items-center justify-between gap-3 mb-2.5 xs:flex-row">
+										<h3 class="font-base font-semibold leading-[1.5]">Добавленные мотивити</h3>
+
+										<button
+											class="px-5 py-1.5 rounded-xs text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:text-gray-500 disabled:ring-disabled-button disabled:pointer-events-none"
+											type="button"
+											onclick="document.querySelectorAll('[data-motivity-item]').forEach(el => el.remove())">
+											Удалить все
+										</button>
+									</div>
+
+									<form id="user-motivity-involement"
+										class="space-y-1 h-62  overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-50 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb:hover]:bg-pitpos-blue [&::-webkit-scrollbar-thumb:hover]:cursor-pointer">
+
+										<div class="relative flex flex-col gap-y-1" data-motivity-item>
+											<label class="hidden" for="motivity-1">Средний чек смен</label>
+											<input class="
+												w-full
+												px-3 
+												py-[0.4757rem] 
+												text-sm
+												leading-[1.2]
+												rounded-md 
+												outline-0 
+												duration-300 
+												focus:ring-blue-focus-input 
+												focus:ring-2 
+												text-gray-700
+												ring-disabled-input
+												bg-disabled-input
+												pointer-events-none
+												" id="motivity-1" name="motivity-1" type="text" value="Средний чек смены">
+
+											<button
+												class="absolute right-2.5 inset-y-1 size-6 flex items-center rounded-xs cursor-pointer duration-300 will-change-transform hover:bg-gray-300 active:scale-98 active:opacity-80 disabled:opacity-30 disabled:pointer-events-none"
+												type="button" aria-label="delete-input-button" title="Удалить из списка"
+												onclick="this.closest('.relative').remove()">
+												<svg class="inline-block size-6 stroke-gray-700 fill-transparent" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="relative flex flex-col gap-y-1" data-motivity-item>
+											<label class="hidden" for="motivity-2">Ремонт литого диска</label>
+											<input class="
+												w-full
+												px-3 
+												py-[0.4757rem] 
+												text-sm
+												leading-[1.2]
+												rounded-md 
+												outline-0 
+												duration-300 
+												focus:ring-blue-focus-input 
+												focus:ring-2 
+												text-gray-700
+												ring-disabled-input
+												bg-disabled-input
+												pointer-events-none
+												" id="motivity-2" name="motivity-2" type="text" value="Ремонт литого диска">
+
+											<button
+												class="absolute right-2.5 inset-y-1 size-6 flex items-center rounded-xs cursor-pointer duration-300 will-change-transform hover:bg-gray-300 active:scale-98 active:opacity-80 disabled:opacity-30 disabled:pointer-events-none"
+												type="button" aria-label="delete-input-button" title="Удалить из списка"
+												onclick="this.closest('.relative').remove()">
+												<svg class="inline-block size-6 stroke-gray-700 fill-transparent" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="relative flex flex-col gap-y-1" data-motivity-item>
+											<label class="hidden" for="motivity-3">Ошиповка</label>
+											<input class="
+												w-full
+												px-3 
+												py-[0.4757rem] 
+												text-sm
+												leading-[1.2]
+												rounded-md 
+												outline-0 
+												duration-300 
+												focus:ring-blue-focus-input 
+												focus:ring-2 
+												text-gray-700
+												ring-disabled-input
+												bg-disabled-input
+												pointer-events-none
+												" id="motivity-3" name="motivity-3" type="text" value="Ошиповка">
+
+											<button
+												class="absolute right-2.5 inset-y-1 size-6 flex items-center rounded-xs cursor-pointer duration-300 will-change-transform hover:bg-gray-300 active:scale-98 active:opacity-80 disabled:opacity-30 disabled:pointer-events-none"
+												type="button" aria-label="delete-input-button" title="Удалить из списка"
+												onclick="this.closest('.relative').remove()">
+												<svg class="inline-block size-6 stroke-gray-700 fill-transparent" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="w-full flex items-center gap-x-2 sm:gap-x-6" data-button-group>
+									<button
+										class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+										type="button"
+										onclick="this.closest('[data-button-group]').querySelectorAll('[data-edit-action]').forEach(btn => btn.classList.remove('hidden')), this.classList.add('hidden'), this.closest('[data-motivity-block]').querySelectorAll('[data-editable-section]').forEach(section => section.classList.remove('disabled'))">Редактировать</button>
+
+									<button
+										class="hidden px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+										type="button"
+										onclick="this.closest('[data-button-group]').querySelectorAll('[data-edit-action]').forEach(btn => btn.classList.add('hidden')), this.closest('[data-button-group]').querySelector('button:not([data-edit-action])').classList.remove('hidden'), this.closest('[data-motivity-block]').querySelectorAll('[data-editable-section]').forEach(section => section.classList.add('disabled'))"
+										data-edit-action>
+										<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+										</svg>
+
+										<span class=" text-sm font-medium">Отменить</span>
+									</button>
+
+									<button
+										class="hidden px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+										type="submit" form="user-motivity-involement" data-edit-action>Coхранить</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="user-tab-3" class="hidden" role="tabpanel" aria-labelledby="user-tab-item-3">
+						<div class="mb-6 flex flex-col gap-3 sm:gap-6">
+							<h2 class="text-xl font-bold leading-[1.3] ">Мастерские</h2>
+
+							<ul class="flex flex-col gap-3 sm:gap-5">
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_1">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_1" name="workshop_1" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Пулковское ш., д. 19
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_2">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_2" name="workshop_2" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ул. Софьи Ковалевской, д. 22
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_3">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_3" name="workshop_3" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Металлистов, д. 116
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_4">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_4" name="workshop_4" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											НЕсофьяНЕ
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_5">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_5" name="workshop_5" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Муринка
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_6">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_6" name="workshop_6" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Шафировский
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_7">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_7" name="workshop_7" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Кудрово, Ленинградская ул., д. 9/8
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_8">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_8" name="workshop_8" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Испытателей
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_9">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_9" name="workshop_9" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Дундича
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_10">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_10" name="workshop_10" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Фермское
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_11">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_11" name="workshop_11" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Сизова д. 2
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_12">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_12" name="workshop_12" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Сизова д. 2
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_13">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_13" name="workshop_13" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Кудровский
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_14">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_14" name="workshop_14" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ул. Васенко, д. 12
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_15">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_15" name="workshop_15" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Просвещения д. 74 корп. 2 лит. А
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_16">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_16" name="workshop_16" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ул. Руставели д. 43 лит. А
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_17">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_17" name="workshop_17" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ул. Савушкина д. 116 лит. А
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_18">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_18" name="workshop_18" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ПО
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_19">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_19" name="workshop_19" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ТЕСТ
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_20">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_20" name="workshop_20" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Мурманское
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_21">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_21" name="workshop_21" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Пулковское ш., д. 43/1
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_22">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_22" name="workshop_22" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Зеленогорск, пр. Ленина, д. 88
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_23">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_23" name="workshop_23" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Мойка, Пулковское шоссе, д. 19А
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_24">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_24" name="workshop_24" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Московское ш., 25/1В
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_25">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_25" name="workshop_25" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Ветеранов, 167/2
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_26">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_26" name="workshop_26" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Шушары, Московское ш., д. 16/7
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_27">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_27" name="workshop_27" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											ТО Зеленогорск, пр. Ленина, д. 88И
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_28">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_28" name="workshop_28" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											Парковка
+										</span>
+									</label>
+								</li>
+
+								<li>
+									<label class="inline-flex items-center gap-3" for="workshop_29">
+										<input type="checkbox"
+											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+											id="workshop_29" name="workshop_29" form="basic-user-data" disabled>
+										<span class="
+												w-4.5 
+												h-4.5 
+												border-1 
+												border-gray-600 
+												bg-default-checkbox 
+												rounded-sm 
+												peer-checked:bg-pitpos-blue
+												flex items-center 
+												justify-center 
+												cursor-pointer 
+												duration-300 
+												will-change-transform 
+												peer-checked:[&>svg]:stroke-white 
+												peer-checked:border-pitpos-blue
+												peer-disabled:pointer-events-none 
+												peer-disabled:cursor-default 
+												peer-disabled:border-disabled-border-checkbox 
+												peer-disabled:[&>svg]:stroke-disabled-checkbox 
+												peer-disabled:bg-disabled-checkbox 
+												hover:border-pitpos-blue
+												hover:shadow-md">
+											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+											</svg>
+										</span>
+
+										<span class="text-dark-text font-semibold text-[0.8125rem]">
+											пр. Испытателей, д. 5 корп. 2 лит. А
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 		Недостоющий функционал :
+					1. В блоке выбора мотивити перенос мотивации в правый блое (создание шаблона input с выбранным мотивити
+					пользователем )
+					2. В блоке выбора мотивити перенос всех мотиваций в правый блок по клику
+					3. В первом табе снятие disabled со всех input на странице для возможности редактирования полей соответственно
+					и обратный функционал по клику на кнопку отмена
+					4. В скрипте поиска указать изначальный счётчик мотиваций.
+
+					====
+					Убрал из кнопки "удалить все выбраные мотивации" счётчик. Не вижу смысла в счётчике если кнопка всё равно
+					удаляет все. Но если нужно её так же можно добавить но с js. -->
+				</div>
+			</div>
+		</div>
+		</div>
+	</main>
+
+	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
+
+	<script>
+		const searchInput = document.getElementById('search-input');
+		const itemsContainer = document.getElementById('items-container');
+		const noResults = document.getElementById('no-results');
+		const resultCount = document.getElementById('result-count');
+		const searchItems = document.querySelectorAll('.search-item');
+
+		function performSearch() {
+			const searchTerm = searchInput.value.toLowerCase().trim();
+			let visibleCount = 0;
+
+			searchItems.forEach(item => {
+				const searchText = item.getAttribute('data-search-text').toLowerCase();
+
+				if (searchText.includes(searchTerm)) {
+					item.classList.remove('hidden');
+					visibleCount++;
+
+					item.style.animation = 'fadeIn 0.3s ease-in';
+				} else {
+					item.classList.add('hidden');
+				}
+			});
+
+			resultCount.textContent = visibleCount;
+
+			if (visibleCount === 0) {
+				noResults.classList.remove('hidden');
+				itemsContainer.classList.add('hidden');
+			} else {
+				noResults.classList.add('hidden');
+				itemsContainer.classList.remove('hidden');
+			}
+		}
+
+		searchInput.addEventListener('input', performSearch);
+
+		const style = document.createElement('style');
+		style.textContent = `
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    `;
+		document.head.appendChild(style);
+	</script>
+</body>
+
+</html>

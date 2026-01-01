@@ -614,7 +614,7 @@
 			type="button" disabled>Акцентная прозрачная высокая</button>
 
 		<!-- Главная кнопка h-38 через ссылку -->
-		<a class="px-5 py-[0.5625rem] rounded-sm bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button disabled"
+		<a class="px-5 py-[0.6625rem] rounded-sm bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button disabled"
 			href="./users-create-employer.html">
 			Добавить&nbsp;пользователя
 		</a>
@@ -625,7 +625,9 @@
 			<input class="
 				w-full
 				px-3 
-				py-[0.439rem] 
+				py-[0.6629rem] 
+				text-sm
+				leading-[1.2]
 				rounded-md 
 				outline-0 
 				ring-1 
@@ -651,7 +653,9 @@
 				min-h-30
 				w-full
 				px-3 
-				py-2.5 
+				py-2.5
+				text-sm
+				leading-[1.2]
 				rounded-md 
 				outline-0 
 				ring-1 
@@ -671,13 +675,78 @@
 				" id="note" name="note" placeholder="Оставьте заметку"></textarea>
 			</input>
 		</div>
+		<!-- email с патерном только gmail -->
+		<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+			<label class="text-sm text-gray-700" for="user-email">E-mail&nbsp;(только gmail)*</label>
+			<input class="
+					w-full
+					px-3 
+					py-[0.6629rem] 
+					text-sm
+					leading-[1.2]
+					rounded-md 
+					outline-0 
+					ring-1 
+					ring-gray-300 
+					not-placeholder-shown:ring-gray-600 
+					duration-300 
+					placeholder:text-gray-500 
+					focus:ring-blue-focus-input 
+					focus:ring-2 
+					invalid:focus:ring-error
+					invalid:focus:text-error
+					disabled:text-gray-700
+					disabled:placeholder:text-disabled-input
+					disabled:ring-disabled-input
+					disabled:bg-disabled-input
+					bg-default-input
+					" id="user-email" name="user-email" type="email" placeholder="info@gmail.com" value="info@gmail.com"
+				pattern="[a-zA-Z0-9._%+\-]+@gmail\.com$" required>
+		</div>
+		<!-- Поле file изображение с прозрачной кнопкой -->
+
+		<div class="flex flex-col gap-y-2 max-w-134.5 w-full">
+			<label class="text-sm text-gray-700" for="user-image">Изображение</label>
+			<input class="text-gray-700 text-[0.8125rem] block
+			outline-0 
+			focus:file:ring-2 
+			rounded-sm
+			file:px-5 
+			file:mr-6
+			file:my-[0.1875rem]
+			file:ml-[0.1875rem]
+			file:py-[0.4rem] 
+			file:rounded-sm 
+			file:ring-1 
+			file:ring-accent 
+			file:text-accent 
+			file:text-sm 
+			file:font-bold 
+			file:cursor-pointer 
+			file:duration-300 
+			file:will-change-transform 
+			hover:file:bg-white 
+			hover:file:shadow-md 
+			hover:file:shadow-md 
+			hover:file:ring-2 
+			active:file:scale-98 
+			active:file:brightness-95 
+			disabled:file:bg-disabled-button 
+			disabled:file:ring-disabled-button 
+			disabled:file:text-gray-500 
+			disabled:text-gray-500 
+			disabled:pointer-events-none
+			" type="file" name="user-image" id="user-image" accept="image/*" capture="environment">
+		</div>
 		<!-- телефон -->
 		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="phone">Телефон</label>
 			<input class="
 					w-full
 					px-3 
-					py-[0.439rem] 
+					py-[0.6629rem] 
+					text-sm
+					leading-[1.2]
 					rounded-md 
 					outline-0 
 					ring-1 
@@ -703,7 +772,9 @@
 			<input class="
 				w-full
 				px-3 
-				py-[0.439rem] 
+				py-[0.6629rem] 
+				text-sm
+				leading-[1.2]
 				rounded-md 
 				outline-0 
 				ring-1 
@@ -728,7 +799,9 @@
 			<input class="
 				w-full
 				px-3 
-				py-[0.439rem] 
+				py-[0.6629rem] 
+				text-sm
+				leading-[1.2]
 				rounded-md 
 				outline-0 
 				ring-1 
@@ -749,11 +822,11 @@
 		</div>
 		<!-- мастерские(просто селект одиночный) -->
 		<div
-			class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
+			class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black has-[select[disabled]]:[&_button>span]:text-gray-700!">
 			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
 
 			<select id="workshop_id" name="workshop_id" data-hs-select='{
-			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-1.2 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
 			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
@@ -857,7 +930,7 @@
 			<label class="text-sm text-gray-700" for="workshop_state">Статус</label>
 
 			<select id="workshop_state" name="workshop_state" data-hs-select='{
-		"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
+		"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
 		"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 		"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 		"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
@@ -878,7 +951,7 @@
 					flex-col 
 					gap-y-1 
 					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black
+					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black 
 					">
 			<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="seal">
 				Введите номер пломбы <span class="hidden xs:inline">сезонного хранения</span>
@@ -891,12 +964,12 @@
 				"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
 				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 				"placeholder": "&#8470",
-				"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+				"toggleTag": "<button  class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
 				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
 				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 			}' class="hidden">
 				<option value="">Все</option>
 				<option value="43434">43434</option>
@@ -947,7 +1020,7 @@
 				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 				"placeholder": "Все",
 				"searchPlaceholder": "Роль",
-				"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
+				"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
 				"toggleSeparators": {
 					"betweenItemsAndCounter": ""
 				},
@@ -960,7 +1033,7 @@
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 			}'>
 				<option value="all" disabled>Все</option>
 				<option value="owner">Владелец</option>
@@ -991,7 +1064,7 @@
 			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
 
 			<select id="workshop_id" name="workshop_id" data-hs-select='{
-			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
 			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
@@ -1103,8 +1176,8 @@
 				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
 				id="user_role" name="user_role" multiple="" data-hs-select='{
 	"placeholder": "Все",
-	"toggleTag": "<button class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"></button>",
-	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+	"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
+	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input! bg-default-input! hs-select-disabled:bg-disabled-input! rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
 	"toggleSeparators": {
 		"betweenItemsAndCounter": ""
 	},
@@ -1143,10 +1216,11 @@
 		<!-- Поле с выбором даты -->
 		<div class="flex flex-col justify-end gap-y-1 w-full">
 			<label class="text-sm text-gray-700" for="register_date">Дата записи клиента</label>
-			<input disabled class="
+			<input class="
 							w-full
 							px-3 
-							py-[0.439rem] 
+							py-[0.563rem] 
+							text-sm
 							rounded-md 
 							outline-0 
 							border-0
@@ -1186,12 +1260,12 @@
 	"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
 	"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
 	"placeholder": "Все",
-	"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
+	"toggleTag": "<button  class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
 	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
 	"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 	"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
 	"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
 }'>
 				<option value="all">Все</option>
 				<option value="1">Андрей Никишин Никишин</option>
