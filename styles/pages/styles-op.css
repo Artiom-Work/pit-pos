@@ -1678,6 +1678,9 @@
   .stroke-white {
     stroke: var(--color-white);
   }
+  .stroke-2 {
+    stroke-width: 2;
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -1967,14 +1970,6 @@
   .leading-\[2\.2\] {
     --tw-leading: 2.2;
     line-height: 2.2;
-  }
-  .leading-\[2\] {
-    --tw-leading: 2;
-    line-height: 2;
-  }
-  .leading-\[25\] {
-    --tw-leading: 25;
-    line-height: 25;
   }
   .\!font-medium {
     --tw-font-weight: var(--font-weight-medium) !important;
@@ -5235,6 +5230,13 @@
     & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:nth-child(n+2) {
         border-color: var(--color-gray-300);
+      }
+    }
+  }
+  .prose-th\:\[\&\:nth-child\(n\+2\)\]\:text-accent {
+    & :is(:where(th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:nth-child(n+2) {
+        color: var(--color-accent);
       }
     }
   }

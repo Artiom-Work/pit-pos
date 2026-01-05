@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Заявка №12</title>
+	<title>PitPos | Помощники </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -48,7 +48,7 @@
 				</a>
 
 				<div class="hidden flex flex-col items-end sm:flex">
-					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
 					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
@@ -552,134 +552,93 @@
 		</aside>
 		<!-- End sidebar -->
 		<div class="w-full mb-6 ">
-			<nav>
-				<ul class="flex flex-wrap">
-					<li>
-						<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-gray-800 active:text-gray-500"
-							href="./index.html">Главная&nbsp;-&nbsp;</a>
-					</li>
+			<ul class="flex flex-wrap">
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
+						href="./index.html">Главная&nbsp;-&nbsp;</a>
+				</li>
 
-					<li>
-						<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-gray-800 active:text-gray-500"
-							href="./op-control.html">
-							Оперативный контроль&nbsp;/&nbsp;
-						</a>
-					</li>
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400" href="#!">
+						Пользователи&nbsp;/&nbsp;
+					</a>
+				</li>
 
-					<li>
-						<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-gray-800 active:text-gray-500"
-							href="./op-control-storage-applications.html">
-							Заявки на&nbsp;выдачу сезонных хранений&nbsp;/&nbsp;
-						</a>
-					</li>
-
-					<li>
-						<a class="text-black text-[0.75rem] pointer-events-none" href="./op-control-application-storage-card.html">
-							Заявка &#8470;&nbsp;12
-						</a>
-					</li>
-				</ul>
-			</nav>
+				<li>
+					<a class="text-black text-[0.75rem] pointer-events-none" href="./users-assistants.html">
+						Помощники
+					</a>
+				</li>
+			</ul>
 		</div>
 		<!-- End breadcrumbs -->
 		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
-			<h1 class="flex items-center font-semibold mb-6 py-2">
-				<svg class="shrink-0 size-6 stroke-black fill-transparent mr-3.5" viewBox="0 0 24 24">
-					<use xlink:href="./public/images/icons/sprite-icons.svg#file-plus-icon"></use>
-				</svg>
+			<div class="flex items-center flex-wrap justify-between gap-3 mb-6 w-full">
+				<h1 class="flex font-bold">
+					<svg class="size-6 stroke-black mr-3.5 fill-none stroke-2" viewBox="0 0 24 24">
+						<use xlink:href="./public/images/icons/sprite-icons.svg#user-plus-icon"></use>
+					</svg>
 
-				<span class="font-semibold">Заявка на&nbsp;выдачу сезонных хранений &#8470;&nbsp;12</span>
-			</h1>
+					<span class="text-black">Помощники</span>
+				</h1>
+
+				<a class="px-5 py-[0.6625rem] rounded-sm bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button"
+					href="./users-create-assistant.html">
+					Добавить&nbsp;помощника
+				</a>
+			</div>
 			<!-- End page name -->
+
 			<div
 				class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
-				<table class="prose max-w-screen min-w-313 w-full text-dark-text 
-				prose-thead:border-0 
-				[&>tbody>tr]:h-13
-				prose-th:px-2.5 
-				prose-th:py-[0.4rem]
-				prose-th:bg-gray-50 
-				prose-th:align-middle 
-				prose-th:text-[0.81rem] 
-				prose-th:font-semibold
-				prose-th:[&:nth-child(n+3)]:border-l-1
-				prose-th:[&:nth-child(n+3)]:border-gray-300
-				prose-th:[&:nth-child(2)]:text-accent 
-				prose-td:leading-none
-				prose-td:px-2.5 
-				prose-td:text-sm
-				prose-td:py-0.5 
-				prose-td:align-middle 
-				prose-td:has-[a]:py-0 
-				prose-tr:even:bg-gray-50 
-				prose-tr:min-w-6 
-				prose-tr:border-white 
-				prose-tr:border-b-2 
-				prose-td:[&>span[data-seal]]:text-accent
-				prose-td:[&>span[data-seal_data-disabled]]:text-accent
-				prose-tr:[&>td>div]:w-full 
-				prose-tr:[&>td>div]:flex 
-				prose-tr:[&>td>div]:items-center 
-				prose-tr:[&>td>div]:gap-x-2.5
-				prose-td:[&>div>button]:px-3.5
-				prose-td:[&>div>button]:cursor-pointer
-				prose-td:[&>div>button]:rounded-sm
-				prose-td:[&>div>button]:font-bold
-				prose-td:[&>div>button]:py-[0.69rem]
-				prose-td:[&>div>button]:bg-transparent
-				prose-td:[&>div>button]:text-accent
-				prose-td:[&>div>button]:ring-1
-				prose-td:[&>div>button]:duration-300
-				prose-td:[&>div>button]:will-change-transform
-				prose-td:[&>div>button]:hover:bg-white
-				prose-td:[&>div>button]:hover:shadow-md
-				prose-td:[&>div>button]:hover:ring-2
-				prose-td:[&>div>button]:active:brightness-95
-				prose-td:[&>div>button]:active:scale-96
-				prose-td:[&>div>button]:disabled:pointer-events-none
-				prose-td:[&>div>button]:disabled:bg-disabled-button
-				prose-td:[&>div>button]:disabled:ring-disabled-button
-				prose-td:[&>div>button]:disabled:text-gray-500
+				<table class="prose 
+											max-w-screen
+											w-full
+											leading-[1.2]
+											text-dark-text 
+											prose-thead:border-0 
+											prose-th:bg-gray-50 
+											prose-th:p-2.5 
+											prose-th:align-middle 
+											prose-th:text-[0.81rem] 
+											prose-th:font-semibold
+											prose-th:[&:nth-child(n+2)]:border-l-1
+											prose-th:[&:nth-child(n+2)]:border-gray-300
+											prose-th:[&:nth-child(n+2)]:text-accent 
+											prose-td:text-sm
+											prose-td:px-2.5 
+											prose-td:py-2 
+											prose-td:align-middle 
+											prose-td:has-[a]:py-0 
+											prose-td:[&:first-child]:w-5
+											prose-td:[&:nth-child(2)]:leading-none
+											prose-td:[&_a.disabled]:text-gray-500!
+											prose-td:[&_a.disabled]:pointer-events-none!
+											prose-td:[&_a.disabled]:no-underline!
+											prose-td:[&>a]:whitespace-nowrap
+											prose-td:[&>a]:underline
+											prose-td:[&>a]:text-accent
+											prose-td:[&>a]:flex
+											prose-td:[&>a]:items-center
+											prose-td:[&>a]:gap-x-1
+											prose-td:[&>a]:duration-300
+											prose-td:[&>a]:hover:brightness-70
+											prose-td:[&>a]:hover:no-underline
+											prose-td:[&>a]:active:opacity-70
+											prose-td:[&>a>svg]:opacity-0
+											prose-td:[&>a]:hover:[&>svg]:opacity-100 
+											prose-tr:even:bg-gray-50
+											prose-tr:h-9.5 
+											prose-tr:border-white 
+											prose-tr:border-b-2
 					">
-
 					<thead>
 						<tr>
-							<th></th>
 							<th>
-								<span>&#8470;&nbsp;пломбы</span>
+								#
 							</th>
 							<th>
-								Номер а/м
-							</th>
-							<th>
-								Марка авто
-							</th>
-							<th>
-								Телефоны
-							</th>
-							<th>
-								Клиент
-							</th>
-							<th>
-								Мастерская
-							</th>
-							<th>
-								Комментарий
-							</th>
-							<th>
-								Время записи
-							</th>
-							<th>
-								Время заказа
-							</th>
-							<th>
-								Заказ&nbsp;&#8470;
-							</th>
-							<th>
-								Кем&nbsp;заказана
-							</th>
-							<th>
-								Статус
+								Имя
 							</th>
 						</tr>
 					</thead>
@@ -687,675 +646,700 @@
 					<tbody>
 						<tr>
 							<td>
-								<label class="inline-flex items-center cursor-pointer" for="seal-865774">
-									<input type="checkbox"
-										class="sr-only peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon" id="seal-865774">
-									<span class="
-										w-5 
-										h-5 
-										border-1 
-										border-gray-600 
-										bg-default-checkbox 
-										rounded-sm 
-										peer-checked:bg-accent 
-										flex items-center 
-										justify-center 
-										cursor-pointer 
-										duration-300 
-										will-change-transform 
-										peer-checked:[&>svg]:stroke-white 
-										peer-checked:border-accent 
-										peer-disabled:pointer-events-none 
-										peer-disabled:cursor-default 
-										peer-disabled:border-disabled-border-checkbox 
-										peer-disabled:[&>svg]:stroke-disabled-checkbox 
-										peer-disabled:bg-disabled-checkbox 
-										hover:border-accent 
-										hover:shadow-md">
-										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-										</svg>
-									</span>
-								</label>
+								1
 							</td>
 							<td>
-								<span data-seal>865774</span>
-							</td>
-							<td>
-								М678ИМ799
-							</td>
-							<td>
-								Land Rover
-							</td>
-							<td>
-								9111992345
-							</td>
-							<td>
-								Евгений Присяжнюк
-							</td>
-							<td>
-								ул. Софьи Ковалевской
-							</td>
-							<td>
-								-
-							</td>
-							<td>
-								23.10.2025 14:00
-							</td>
-							<td>
-								2025-10-19 21:44:07
-							</td>
-							<td>
-								358474
-							</td>
-							<td>
-								Иван Иванов
-							</td>
-							<td>
-								<div>
-									<time class="hidden" datetime="2025-11-13T14:00">23.11.2025 14:00</time>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>ТЕСТ</span>
 
-									<button class="" type="button">
-										Заказать
-									</button>
-								</div>
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								2
+							</td>
+							<td>
+								<a class="disabled" href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>ТЕСТ2</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								3
+							</td>
+							<td>
+								<a class="disabled" href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Татарников Станислав</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								4
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Ульянов Влад</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								5
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Барсуков Михаил</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								6
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Куцек Валентин</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								7
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Бритвин Даниил</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								8
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Грибинюк Артём</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								9
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Погоняйлов Роман</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								10
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Строганов Александр</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								11
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Постников</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								12
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Кочуров</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								13
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Сорокин</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								14
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Магамед Васенко</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								15
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Демент Марсель</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								16
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Санников Илья</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								17
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Евтюков Василий</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								18
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Денисенко Александр</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								19
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span> Вахрин Иван</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								20
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Елкулов Константин</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								21
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Счастный Антон</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								22
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Емелин Денис</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								23
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Казымов Ариф</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								24
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Герц Артур</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								25
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Павлов Вячеслав</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								26
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Машарипов Акбар</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								27
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Скворцов Виктор</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								28
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span> Мастюгин Дмитрийв</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								29
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Деревянко Станислав</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								30
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Борюшкин Сергей</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								31
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Кишов Максим</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								32
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Алиев Артем</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								33
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Павлов Лев</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								34
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Апенов Василий</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								35
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Машков Денис</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								36
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Ласков Дмитрий</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								37
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Хан Николай</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								38
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Твердохлебов Иван</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								39
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Козырев Александр</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								40
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Дорохин Кирилл</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								41
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Орлов Алексей</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								44
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Вертиков Артем</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								45
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Тарасенко Никита</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								46
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Богдановский Алексей</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								47
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Кудашев Дамир</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								48
+							</td>
+							<td>
+								<a href="./users-assistant-card.html" title="Подробнее о&nbsp;помощнике">
+									<span>Аксенов Никита</span>
+
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 25 24">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#report-icon"></use>
+									</svg>
+								</a>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<!-- End info of an application of seosonal storage (table)-->
-			<form class="mb-6 w-full flex flex-col gap-3 md:gap-6">
-				<div class="w-full max-w-164.5 flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="ssr-comment">Комментарий</label>
-					<textarea class="
-						min-h-15
-						w-full
-						px-3 
-						py-2.5 
-						rounded-md 
-						outline-0 
-						ring-1 
-						ring-gray-300 
-						not-placeholder-shown:ring-gray-600 
-						duration-300 
-						placeholder:text-gray-500 
-						focus:ring-blue-focus-input 
-						focus:ring-2 
-						invalid:focus:ring-error
-						invalid:focus:text-error
-						disabled:text-gray-700
-						disabled:placeholder:text-disabled-input
-						disabled:ring-disabled-input
-						disabled:bg-disabled-input
-						bg-default-input
-						" id="ssr-comment" name="comment" placeholder="Введите комментарий" disabled></textarea>
-				</div>
-
-				<button
-					class="self-start px-5 py-[0.5625rem] rounded-md text-sm text-accent font-bold cursor-pointer ring-1 ring-accent whitespace-nowrap duration-300 will-change-transform hover:bg-white hover:ring-2 hover:shadow-md active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:text-gray-500 disabled:ring-disabled-button disabled:pointer-events-none"
-					type="submit">Сохранить комментарий</button>
-			</form>
-			<!-- End from for create comment of application -->
-			<form class="w-full flex flex-col justify-start gap-3 md:gap-6 md:flex-row">
-				<div class="w-full 
-					max-w-81 
-					flex 
-					flex-col 
-					gap-y-1 
-					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black
-					">
-					<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="seal">
-						Введите номер пломбы <span class="hidden xs:inline">сезонного хранения</span>
-					</label>
-					<select
-						class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input  [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
-						id="seal" name="seal" data-hs-select='{
-							"hasSearch": true,
-							"searchPlaceholder": "&#8470",
-							"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-							"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-							"placeholder": "&#8470",
-							"toggleTag": "<button  class=\"pr-10 h-9.5 \" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-							"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-							"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-							"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-							"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-							"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 stroke-gray-700 text-gray-500 hover:stroke-3 active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-						}'>
-						<option value="">Все</option>
-						<option value="43434">43434</option>
-						<option value="565456">565456</option>
-						<option value="787899">787899</option>
-						<option value="787878">787878</option>
-						<option value="676767">676767</option>
-						<option value="878787">878787</option>
-						<option value="854578">854578</option>
-						<option value="777665">777665</option>
-						<option value="116131">116131</option>
-						<option value="02652">02652</option>
-						<option value="116353">116353</option>
-						<option value="116140">116140</option>
-						<option value="116179">116179</option>
-						<option value="116179">116179</option>
-						<option value="119501">119501</option>
-						<option value="119727">119727</option>
-						<option value="102063">102063</option>
-						<option value="115004">115004</option>
-						<option value="116351">116351</option>
-						<option value="119726">119726</option>
-						<option value="119725">119725</option>
-						<option value="119725">119725</option>
-						<option value="101728">101728</option>
-						<option value="116059">116059</option>
-						<option value="115313">115313</option>
-					</select>
-				</div>
-
-				<button
-					class="px-2.5 py-[0.44rem] self-start justify-self-end flex items-center gap-x-2.5 rounded-md whitespace-nowrap duration-300 will-change-transform cursor-pointer text-accent ring-1 ring-accent hover:bg-white hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none disabled:ring-disabled-button disabled:bg-disabled-button disabled:text-gray-500 md:self-end"
-					type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-seasonal-storages-list-modal"
-					data-hs-overlay="#hs-seasonal-storages-list-modal">
-
-					<span>Выбрать из&nbsp;списка</span>
-
-					<svg class="size-6 stroke-accent fill-transparent" viewBox="0 0 24 24">
-						<use xlink:href="./public/images/icons/sprite-icons.svg#external-link-icon"></use>
-					</svg>
-				</button>
-
-				<button
-					class="inline-flex self-start justify-self-end px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none md:self-end"
-					type="submit">Прикрепить</button>
-			</form>
-
-			<div id="hs-seasonal-storages-list-modal"
-				class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none bg-black-opacity-30 z-80"
-				role="dialog" tabindex="-1" aria-labelledby="hs-seasonal-storages-list-modal-label">
-				<div
-					class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
-					<div
-						class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
-						<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200 ">
-							<h3 id="hs-seasonal-storages-list-modal-label" class="font-bold text-dark-text">
-								Выбор сезонного хранения
-							</h3>
-							<button type="button"
-								class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-200 active:scale-95 active:bg-gray-300"
-								aria-label="Close" data-hs-overlay="#hs-seasonal-storages-list-modal">
-								<svg class="inline-block size-6 stroke-gray-900 fill-transparent" viewBox="0 0 25 24">
-									<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
-								</svg>
-							</button>
-						</div>
-
-						<div class="pt-2.5 px-5 pb-5 overflow-y-auto">
-							<div class="pb-3 space-y-4">
-								<form class="w-full mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
-									<div class="flex flex-col gap-y-1">
-										<label class="text-sm text-gray-700" for="f-seal">Номер пломбы</label>
-										<input disabled class="
-											w-full
-											px-3 
-											py-[0.439rem] 
-											rounded-md 
-											outline-0 
-											ring-1 
-											ring-gray-300 
-											not-placeholder-shown:ring-gray-600 
-											duration-300 
-											placeholder:text-gray-500 
-											focus:ring-blue-focus-input 
-											focus:ring-2 
-											invalid:focus:ring-error
-											invalid:focus:text-error
-											disabled:text-gray-700
-											disabled:placeholder:text-disabled-input
-											disabled:ring-disabled-input
-											disabled:bg-disabled-input
-											bg-default-input
-											" id="f-seal" type="text" placeholder="#">
-									</div>
-
-									<div class="flex flex-col gap-y-1">
-										<label class="text-sm text-gray-700" for="f-name">Имя/Фамилия</label>
-										<input disabled class="
-											w-full
-											px-3 
-											py-[0.439rem] 
-											rounded-md 
-											outline-0 
-											ring-1 
-											ring-gray-300 
-											not-placeholder-shown:ring-gray-600 
-											duration-300 
-											placeholder:text-gray-500 
-											focus:ring-blue-focus-input 
-											focus:ring-2 
-											invalid:focus:ring-error
-											invalid:focus:text-error
-											disabled:text-gray-700
-											disabled:placeholder:text-disabled-input
-											disabled:ring-disabled-input
-											disabled:bg-disabled-input
-											bg-default-input
-											" id="f-name" type="text" placeholder="Олег Петров">
-									</div>
-
-									<div class="flex flex-col gap-y-1">
-										<label class="text-sm text-gray-700" for="f-phone">Телефон</label>
-										<input class="
-											w-full
-											px-3 
-											py-[0.439rem] 
-											rounded-md 
-											outline-0 
-											ring-1 
-											ring-gray-300 
-											not-placeholder-shown:ring-gray-600 
-											duration-300 
-											placeholder:text-gray-500 
-											focus:ring-blue-focus-input 
-											focus:ring-2 
-											invalid:focus:ring-error
-											invalid:focus:text-error
-											disabled:text-gray-700
-											disabled:placeholder:text-disabled-input
-											disabled:ring-disabled-input
-											disabled:bg-disabled-input
-											bg-default-input
-											" id="f-phone" name="f-phone" type="tel" placeholder="+7(111) 111-11-11"
-											pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
-									</div>
-
-									<button
-										class="inline-flex self-end justify-self-end px-5 py-[0.5625rem] rounded-sm ring-1 ring-pitpos-blue bg-pitpos-blue text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-80 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
-										type="submit">Поиск</button>
-								</form>
-								<!-- End form for search storage -->
-								<div
-									class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
-									<table class="prose max-w-screen w-full text-dark-text 
-										prose-thead:border-0 
-										prose-th:p-2.5 
-										prose-th:bg-gray-50 
-										prose-th:align-middle 
-										prose-th:text-[0.81rem] 
-										prose-th:font-semibold
-										prose-th:[&:nth-child(2)]:min-w-116 
-										prose-th:[&:nth-child(3)]:min-w-45.5
-										prose-td:leading-none
-										prose-td:px-2.5 
-										prose-td:py-0.5 
-										prose-td:align-middle 
-										prose-tr:even:bg-gray-50 
-										prose-tr:min-w-6 
-										prose-tr:h-9.5 
-										prose-tr:border-white 
-										prose-tr:border-b-2 
-										prose-tr:will-change-transform
-										prose-tr:hover:bg-gray-75
-										prose-tr:hover:shadow-md
-										prose-td:[&>button]:cursor-pointer
-										prose-td:[&>button]:text-accent
-										prose-td:[&>button]:font-bold	
-										prose-td:[&>button]:ring-1
-										prose-td:[&>button]:ring-accent
-										prose-td:[&>button]:px-2
-										prose-td:[&>button]:py-1
-										prose-td:[&>button]:rounded-sm
-										prose-td:[&>button]:will-change-transform
-										prose-td:[&>button]:duration-300
-										prose-td:[&>button]:hover:bg-white
-										prose-td:[&>button]:hover:shadow-md
-										prose-td:[&>button]:hover:ring-2
-										prose-td:[&>button]:active:scale-95
-										prose-td:[&>button]:active:brightness-95
-										prose-td:[&>button[disabled]]:bg-disabled-button
-										prose-td:[&>button[disabled]]:ring-disabled-button
-										prose-td:[&>button[disabled]]:text-gray-500
-										prose-td:[&>button[disabled]]:pointer-events-none
-									">
-
-										<thead>
-											<tr>
-												<th>&#8470;&nbsp;Пломбы</th>
-												<th>Клиент</th>
-												<th>Телефон</th>
-												<th></th>
-											</tr>
-										</thead>
-
-										<tbody id="ssr-results">
-											<tr>
-												<td>43434</td>
-												<td>423423423 432423423</td>
-												<td>+7(423) 423-42-34</td>
-												<td>
-													<button type="button" data-seal="43434" disabled>
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>565456</td>
-												<td>Присяжнюк Евгений</td>
-												<td>+7(911) 734-01-64</td>
-												<td>
-													<button type="button" data-seal="565456">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>787899</td>
-												<td>345345 435</td>
-												<td>+7(534) 543-64-53</td>
-												<td>
-													<button type="button" data-seal="787899">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>787878</td>
-												<td>Богданов Юрий</td>
-												<td>+7(965) 073-46-56</td>
-												<td>
-													<button type="button" data-seal="787878">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>676767</td>
-												<td>676767 676767</td>
-												<td>+7(676) 767-67-67</td>
-												<td>
-													<button type="button" data-seal="676767">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>878787</td>
-												<td>Никишин (Взять Только Зп Мастера И Админа) Андрей</td>
-												<td>+7(962) 697-24-64</td>
-												<td>
-													<button type="button" data-seal="878787">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>854578</td>
-												<td>NIKISHIN ANDREY</td>
-												<td>+7(962) 697-24-64</td>
-												<td>
-													<button type="button" data-seal="854578">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>777665</td>
-												<td>Никишин (Взять Только Зп Мастера И Админа) Андрей</td>
-												<td>+7(962) 697-24-64</td>
-												<td>
-													<button type="button" data-seal="777665">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116131</td>
-												<td>Шумов Станислав</td>
-												<td>+7(911) 238-44-55</td>
-												<td>
-													<button type="button" data-seal="116131">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>02652</td>
-												<td>Шульга Наталья</td>
-												<td>+7(995) 597-05-77</td>
-												<td>
-													<button type="button" data-seal="02652">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116353</td>
-												<td>Рыжов Павел</td>
-												<td>+7(965) 798-84-66</td>
-												<td>
-													<button type="button" data-seal="116353">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116140</td>
-												<td>Пульянчинова Елена</td>
-												<td>+7(952) 241-05-43</td>
-												<td>
-													<button type="button" data-seal="116140">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116179</td>
-												<td>грабов андрей</td>
-												<td>+7(981) 833-83-31</td>
-												<td>
-													<button type="button" data-seal="116179">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>119501</td>
-												<td>Парамонов Дмитрий</td>
-												<td>+7(931) 383-45-05</td>
-												<td>
-													<button type="button" data-seal="119501">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>119727</td>
-												<td>Рыбина Екатерина</td>
-												<td>+7(950) 047-56-85</td>
-												<td>
-													<button type="button" data-seal="119727">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>102063</td>
-												<td>Таташвили Виктория</td>
-												<td>+7(931) 296-55-59</td>
-												<td>
-													<button type="button" data-seal="102063">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>115004</td>
-												<td>Варченков Кирилл</td>
-												<td>+7(916) 707-03-14</td>
-												<td>
-													<button type="button" data-seal="115004">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>102062</td>
-												<td>Кайсаров Артем</td>
-												<td>+7(931) 982-29-28</td>
-												<td>
-													<button type="button" data-seal="102062">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116352</td>
-												<td>Наймович Владислава</td>
-												<td>+7(914) 174-61-23</td>
-												<td>
-													<button type="button" data-seal="116352">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116351</td>
-												<td>Бодин Богдан</td>
-												<td>+7(909) 436-82-22</td>
-												<td>
-													<button type="button" data-seal="116351">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>119726</td>
-												<td>Мурзинов Кирилл</td>
-												<td>+7(981) 690-46-25</td>
-												<td>
-													<button type="button" data-seal="119726">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>119725</td>
-												<td>Васильева Ольга</td>
-												<td>+7(911) 005-92-35</td>
-												<td>
-													<button type="button" data-seal="119725">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>101728</td>
-												<td>Фролов Евгений</td>
-												<td>+7(981) 900-49-29</td>
-												<td>
-													<button type="button" data-seal="101728">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>116059</td>
-												<td>Москаленко Наталия</td>
-												<td>+7(960) 235-61-50</td>
-												<td>
-													<button type="button" data-seal="116059">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>115313</td>
-												<td>Соболев Алексей</td>
-												<td>+7(921) 900-16-29</td>
-												<td>
-													<button type="button" data-seal="115313">
-														Выбрать
-													</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<!-- End table of storages -->
-								<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
-
-									<nav class="w-full grow-1 -order-2 md:order-0 md:grow-0 md:w-auto">
-										<ul class="flex gap-x-1.5 sm:gap-x-2.5">
-											<li class="shrink-0 h-8 w-8">
-												<a class="flex items-center justify-center w-full h-full rounded-full will-change-transform duration-300 hover:ring-1 hover:ring-black active:scale-95 has-disabled:bg-gray-100 has-disabled:[&>svg]:stroke-gray-300 has-disabled:pointer-events-none disabled"
-													href="#!" rel="prev" aria-label="« Назад">
-													<svg class="shrink-0 size-6 stroke-black fill-transparent rotate-90" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-													</svg>
-												</a>
-											</li>
-
-											<li>
-												<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white active"
-													href="#!">1</a>
-											</li>
-
-											<li>
-												<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white"
-													href="#!">2</a>
-											</li>
-
-											<li>
-												<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white"
-													href="#!">3</a>
-											</li>
-
-											<li class="hidden sm:block">
-												<a class=" h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white"
-													href="#!">4</a>
-											</li>
-
-											<li class="hidden sm:block">
-												<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white"
-													href="#!">5</a>
-											</li>
-
-											<li aria-disabled="true">
-												<span class="cursor-default">...</span>
-											</li>
-
-											<li>
-												<a class="h-8 min-w-8 px-2.5 flex items-center justify-center rounded-full duration-300 will-change-transform hover:bg-black hover:text-white active:scale-95 has-active:bg-black has-active:text-white"
-													href="#!">3214</a>
-											</li>
-
-											<li class=" h-8">
-												<a class="peer h-8 flex items-center justify-center gap-x-2.5 rounded-xs will-change-transform duration-300 active:scale-98 hover:[&>svg]:ring-1 hover:[&>svg]:ring-black hover:opacity-80 has-disabled:[&>svg]:bg-gray-100 has-disabled:[&>svg]:stroke-gray-300 has-disabled:pointer-events-none"
-													href="#!" rel="next" aria-label="Вперёд »">
-													<span class="hidden xs:block">Дальше</span>
-
-													<svg class="duration-300 rounded-full -rotate-90 size-6 stroke-black fill-transparent"
-														viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-								<!-- End pagination block -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End form for attach seasonal storage application  -->
+			<!-- End table of assistents -->
 		</div>
-
 	</main>
 
-	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
 </body>
 
 </html>
