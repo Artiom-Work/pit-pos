@@ -303,9 +303,6 @@
   .inset-y-1\.5 {
     inset-block: calc(var(--spacing) * 1.5);
   }
-  .inset-y-4 {
-    inset-block: calc(var(--spacing) * 4);
-  }
   .start-0 {
     inset-inline-start: calc(var(--spacing) * 0);
   }
@@ -1011,6 +1008,9 @@
   }
   .h-62 {
     height: calc(var(--spacing) * 62);
+  }
+  .h-\[2\.4375rem\] {
+    height: 2.4375rem;
   }
   .h-\[60vh\] {
     height: 60vh;
@@ -1777,35 +1777,8 @@
   .py-\[0\.4288rem\] {
     padding-block: 0.4288rem;
   }
-  .py-\[0\.4588rem\] {
-    padding-block: 0.4588rem;
-  }
-  .py-\[0\.4728rem\] {
-    padding-block: 0.4728rem;
-  }
-  .py-\[0\.4738rem\] {
-    padding-block: 0.4738rem;
-  }
-  .py-\[0\.4748rem\] {
-    padding-block: 0.4748rem;
-  }
-  .py-\[0\.4756rem\] {
-    padding-block: 0.4756rem;
-  }
   .py-\[0\.4757rem\] {
     padding-block: 0.4757rem;
-  }
-  .py-\[0\.4758rem\] {
-    padding-block: 0.4758rem;
-  }
-  .py-\[0\.4768rem\] {
-    padding-block: 0.4768rem;
-  }
-  .py-\[0\.4778rem\] {
-    padding-block: 0.4778rem;
-  }
-  .py-\[0\.4788rem\] {
-    padding-block: 0.4788rem;
   }
   .py-\[0\.5625rem\] {
     padding-block: 0.5625rem;
@@ -1818,18 +1791,6 @@
   }
   .py-\[0\.6939rem\] {
     padding-block: 0.6939rem;
-  }
-  .py-\[0\.47565rem\] {
-    padding-block: 0.47565rem;
-  }
-  .py-\[0\.47568rem\] {
-    padding-block: 0.47568rem;
-  }
-  .py-\[0\.47569rem\] {
-    padding-block: 0.47569rem;
-  }
-  .py-\[0\.47575rem\] {
-    padding-block: 0.47575rem;
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -1983,6 +1944,10 @@
     --tw-leading: 1.6;
     line-height: 1.6;
   }
+  .leading-\[1\.7\] {
+    --tw-leading: 1.7;
+    line-height: 1.7;
+  }
   .leading-\[1\.24\] {
     --tw-leading: 1.24;
     line-height: 1.24;
@@ -1995,9 +1960,21 @@
     --tw-leading: 1.71429;
     line-height: 1.71429;
   }
+  .leading-\[1\] {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-\[2\.2\] {
     --tw-leading: 2.2;
     line-height: 2.2;
+  }
+  .leading-\[2\] {
+    --tw-leading: 2;
+    line-height: 2;
+  }
+  .leading-\[25\] {
+    --tw-leading: 25;
+    line-height: 25;
   }
   .\!font-medium {
     --tw-font-weight: var(--font-weight-medium) !important;
@@ -2531,13 +2508,6 @@
       }
     }
   }
-  .hover\:bg-gray-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-500);
-      }
-    }
-  }
   .hover\:bg-pitpos-blue {
     &:hover {
       @media (hover: hover) {
@@ -2825,14 +2795,6 @@
       --tw-scale-x: 95%;
       --tw-scale-y: 95%;
       --tw-scale-z: 95%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .active\:scale-96 {
-    &:active {
-      --tw-scale-x: 96%;
-      --tw-scale-y: 96%;
-      --tw-scale-z: 96%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
