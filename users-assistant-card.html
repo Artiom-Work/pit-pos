@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos</title>
+	<title>PitPos | Помощник</title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -27,7 +27,7 @@
 				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
 					href="#!">
 					<div
-						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-black">
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-blue">
 						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
 					</div>
 
@@ -48,15 +48,14 @@
 				</a>
 
 				<div class="hidden flex flex-col items-end sm:flex">
-					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
 					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
-
 	</header>
 
-	<main class="relative min-h-screen pl-15 pt-18 pr-3 md:pl-18">
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
 		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
 			<div class="max-w-80 h-full relative">
 				<input class="hidden peer" id="menu-toggle" type="checkbox">
@@ -552,273 +551,96 @@
 			</div>
 		</aside>
 		<!-- End sidebar -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
+		<div class="w-full mb-6 ">
+			<ul class="flex flex-wrap">
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
+						href="./index.html">Главная&nbsp;-&nbsp;</a>
+				</li>
 
-			<h1 class="text-center text-3xl font-bold">Готовые страницы "PitPos"</h1>
-			<p class="mb-5 text-2xl text-center">
-				(<i>демонстрация вёрстки</i>)
-			</p>
-
-			<div class="mb-6 max-w-200 mx-auto">
-				<ul class="flex flex-col gap-y-3 ">
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-success"></span>
-						<span class="font-semibold">&mdash;&nbsp;запущено в&nbsp;производство</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-success-035"></span>
-						<span class="font-semibold">&mdash;&nbsp;готово к запуску в&nbsp;производство</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-orange-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;на рассмотрении перед запуском в&nbsp;производство</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs"></span>
-						<span class="font-semibold">&mdash;&nbsp;готово, но никем не подтверждено</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-yellow-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;В&nbsp;процессе верстания</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-red-500"></span>
-						<span class="font-semibold">&mdash;&nbsp;переделать полностью</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-red-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;нуждается в&nbsp;правках</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-gray-300"></span>
-						<span class="font-semibold">&mdash;&nbsp;это тут не надо</span>
-					</li>
-				</ul>
-			</div>
-
-			<ul class="mb-12 mx-auto max-w-200">
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./sign-in.html">
-						Форма для вхождения
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400" href="#!">
+						Пользователи&nbsp;/&nbsp;
 					</a>
 				</li>
 
-				<li class="mb-2 border-1 rounded-md border-black bg-success">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shifts.html">
-						Смены(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shift-details.html">
-						Смена детально(оперативный контроль).<i>1-3 TABы</i>
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-work-order.html">
-						Заказ-наряд(оперативный контроль).<i>1-й TAB</i>
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-seasonal-storage.html">
-						Сезонные хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80 has-disabled:opacity-20 has-disabled:pointer-events-none"
-						href="./op-control-storage-applications.html">
-						Заявки на выдачу сезонных хранений(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80 has-disabled:opacity-20 has-disabled:pointer-events-none"
-						href="./op-control-application-storage-card.html">
-						Заявка на выдачу сезонного хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-storage-card.html">
-						Сезонное хранение детально(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-red-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-disks-painting.html">
-						Покраска дисков(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantees.html">
-						Гарантии(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantee.html">
-						Гарантия детально(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-red-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-individuals.html">
-						Физлица(клиенты)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-workshops.html">
-						Мастерские(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-error bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-workshop.html">
-						Мастерская(Справочник).<i>1-2 TABы</i>
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-recommendations.html">
-						Рекомендации(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-error bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-roles.html">
-						Роли(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-red-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-my-companies.html">
-						Мои&nbsp;компании(Справочник).
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-red-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./loyalty-promo-codes.html">
-						Промокоды(Лояльность)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-employees.html">
-						Сотрудники(Пользователи)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./user-card.html">
-						Карточка пользователя(сотрудника)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-employer.html">
-						Создать карточку пользователя(сотрудника)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+				<li>
+					<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
 						href="./users-assistants.html">
-						Помощники(Пользователи)
+						Помощники&nbsp;/&nbsp;
 					</a>
 				</li>
 
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-assistant-card.html">
-						Карточка помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-assistant-card-edit.html">
-						Редактировать карточку помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-assistant.html">
-						Создать помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-5 rounded-md border-error bg-red-500 text-white">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./dashboard.html">
-						Dashboard(1-й TAB)
-						<span class="font-bold italic">(ПЕРЕДАЛАТЬ)</span>
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-owners.html">
-						Владельцы(Пользователи)
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-owner.html">
-						Карточка владельца(Пользователи)
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-new-owner.html">
-						Создание владельца(Пользователи)
+				<li>
+					<a class="text-black text-[0.75rem] pointer-events-none" href="./users-assistants.html">
+						Татарников Станислав
 					</a>
 				</li>
 			</ul>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
+			<h1 class="mb-6 w-full flex items-center font-bold">
+				<svg class="size-6 stroke-black mr-3.5 fill-none stroke-2 shrink-0" viewBox="0 0 24 24">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#user-plus-icon"></use>
+				</svg>
 
-			<ol class="mx-auto max-w-200 list-decimal px-7">
-				<li class="text-pink-500 font-bold italic border-b-2 border-pink-200">
-					На страницу справочника "роли" нужна ли модалка или другая страница для добовления новой роли?
-				</li>
-			</ol>
+				<span class="text-black">Основные данные ассистента</span>
+			</h1>
+			<!-- End page name -->
+			<form class="mb-6 flex flex-col gap-3 sm:gap-6" id="basic-assistant-data">
+				<div class="flex flex-col gap-y-1 max-w-134.5 w-full">
+					<label class="text-sm text-gray-700" for="assistant-name">Имя</label>
+					<input class="
+						w-full
+						px-3 
+						py-[0.6939rem] 
+						text-sm
+						leading-[1.2] 
+						rounded-md 
+						outline-0 
+						ring-1 
+						ring-gray-300 
+						not-placeholder-shown:ring-gray-600 
+						duration-300 
+						placeholder:text-gray-500 
+						focus:ring-blue-focus-input 
+						focus:ring-2 
+						invalid:focus:ring-error
+						invalid:focus:text-error
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="assistant-name" name="assistant-name" type="text" placeholder="Иван" value="Татарников Станислав" disabled>
+				</div>
+			</form>
+			<!-- END of assistant form -->
+			<div class="flex items-center xs:justify-end flex-wrap gap-3 max-w-134.5">
+				<form method="POST" action="/backoffice/assistants/X">
+					<input type="hidden" name="_method" value="DELETE">
+					<input type="hidden" name="_token" value="qwerty">
+					<button
+						class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-error rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-error active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+						type="submit" disabled>
+						<svg class="size-4 stroke-error fill-transparent" viewBox="0 0 17 16">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+						</svg>
+
+						<span class="text-sm font-medium">Удалить</span>
+					</button>
+				</form>
+				<!-- END of delete assistant form -->
+
+				<a class="px-5 py-[0.5625rem] rounded-sm bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button self-end"
+					href="./users-assistant-card-edit.html">
+					Редактировать
+				</a>
+			</div>
 		</div>
 	</main>
 
-	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
 </body>
 
 </html>

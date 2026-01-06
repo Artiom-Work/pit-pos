@@ -1651,6 +1651,9 @@
   .stroke-dark-red {
     stroke: var(--color-dark-red);
   }
+  .stroke-error {
+    stroke: var(--color-error);
+  }
   .stroke-gray-300 {
     stroke: var(--color-gray-300);
   }
@@ -2015,6 +2018,9 @@
   }
   .text-dark-text {
     color: var(--color-dark-text);
+  }
+  .text-error {
+    color: var(--color-error);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -2639,6 +2645,13 @@
       }
     }
   }
+  .hover\:ring-error {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-error);
+      }
+    }
+  }
   .hover\:ring-pitpos-blue {
     &:hover {
       @media (hover: hover) {
@@ -3118,6 +3131,11 @@
   .xs\:items-center {
     @media (width >= 29.99rem) {
       align-items: center;
+    }
+  }
+  .xs\:justify-end {
+    @media (width >= 29.99rem) {
+      justify-content: flex-end;
     }
   }
   .xs\:gap-3 {
