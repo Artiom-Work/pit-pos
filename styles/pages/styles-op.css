@@ -896,6 +896,9 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .inline-block {
     display: inline-block;
   }
@@ -1294,6 +1297,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .gap-x-1 {
@@ -3700,11 +3710,6 @@
       max-width: calc(var(--spacing) * 450);
     }
   }
-  .\33 xl\:max-w-470 {
-    @media (width >= 102.44rem) {
-      max-width: calc(var(--spacing) * 470);
-    }
-  }
   .\33 xl\:grid-cols-5 {
     @media (width >= 102.44rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -4457,11 +4462,18 @@
       }
     }
   }
-  .prose-td\:\[\&_button\]\:outline-1 {
+  .prose-td\:\[\&_button\]\:ring-1 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & button {
-        outline-style: var(--tw-outline-style);
-        outline-width: 1px;
+        --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:ring-pitpos-blue {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        --tw-ring-color: var(--color-pitpos-blue);
       }
     }
   }
@@ -4480,12 +4492,12 @@
       }
     }
   }
-  .prose-td\:\[\&_button\]\:hover\:text-white {
+  .prose-td\:\[\&_button\]\:hover\:bg-white {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & button {
         &:hover {
           @media (hover: hover) {
-            color: var(--color-white);
+            background-color: var(--color-white);
           }
         }
       }
@@ -4497,6 +4509,18 @@
         &:hover {
           @media (hover: hover) {
             --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:hover\:ring-2 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
             box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
           }
         }
@@ -4515,6 +4539,52 @@
       }
     }
   }
+  .prose-td\:\[\&_button\]\:active\:brightness-95 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:active {
+          --tw-brightness: brightness(95%);
+          filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:disabled\:pointer-events-none\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:disabled {
+          pointer-events: none !important;
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:disabled\:bg-disabled-button\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:disabled {
+          background-color: var(--color-disabled-button) !important;
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:disabled\:text-gray-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:disabled {
+          color: var(--color-gray-500) !important;
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&_button\]\:disabled\:ring-disabled-button\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      & button {
+        &:disabled {
+          --tw-ring-color: var(--color-disabled-button) !important;
+        }
+      }
+    }
+  }
   .has-\[select\[disabled\]\]\:\[\&_button\>span\]\:text-gray-700\! {
     &:has(*:is(select[disabled])) {
       & button>span {
@@ -4529,32 +4599,10 @@
       }
     }
   }
-  .prose-td\:\[\&_button\[data-hs-overlay\=\'\#delete-legal-entity\'\]\]\:outline-accent {
+  .prose-td\:\[\&_button\[data-hs-overlay\=\'\#delete-legal-entity\'\]\]\:ring-accent {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       & button[data-hs-overlay='#delete-legal-entity'] {
-        outline-color: var(--color-accent);
-      }
-    }
-  }
-  .prose-td\:\[\&_button\[data-hs-overlay\=\'\#delete-legal-entity\'\]\]\:hover\:bg-accent {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & button[data-hs-overlay='#delete-legal-entity'] {
-        &:hover {
-          @media (hover: hover) {
-            background-color: var(--color-accent);
-          }
-        }
-      }
-    }
-  }
-  .prose-td\:\[\&_button\[data-hs-overlay\=\'\#delete-legal-entity\'\]\]\:hover\:text-white {
-    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-      & button[data-hs-overlay='#delete-legal-entity'] {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-white);
-          }
-        }
+        --tw-ring-color: var(--color-accent);
       }
     }
   }

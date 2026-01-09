@@ -27,7 +27,7 @@
 				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
 					href="#!">
 					<div
-						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-700">
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-blue">
 						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
 					</div>
 
@@ -48,7 +48,7 @@
 				</a>
 
 				<div class="hidden flex flex-col items-end sm:flex">
-					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
 					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
@@ -56,6 +56,7 @@
 	</header>
 
 	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
+		<h1 class="sr-only">Компании PitPos</h1>
 		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
 			<div class="max-w-80 h-full relative">
 				<input class="hidden peer" id="menu-toggle" type="checkbox">
@@ -81,36 +82,36 @@
 				</label>
 
 				<nav
-					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
+					class="w-12 bg-white shadow-lg h-full overflow-hidden duration-300 peer-checked:w-80 peer-checked:overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-black">
 					<ul>
 						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="./dashboard.html" title="Дашборд">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#statistics-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="./dashboard.html">Дашборд</a>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="./op-control.html" title="Оперативный контроль">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#monitoring-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="./op-control.html">Оперативный контроль</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-1" type="radio" name="submenu">
 
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-1">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -119,50 +120,50 @@
 
 							<input class="hidden" id="close-submenu-1" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-1">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-64 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-shifts.html">Смены</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-seasonal-storage.html">Сезонные хранения</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-16 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-storage-applications.html">Заявки на&nbsp;выдачу сезонных хранений</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-disks-painting.html">Покраска дисков</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./op-control-guarantees.html">Гарантии</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Ключевые показатели эффективности">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#meter-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">KPI</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-2" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-2">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -171,50 +172,50 @@
 
 							<input class="hidden" id="close-submenu-2" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-2">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-60 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Финансовые планы</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Ночные смены</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Отчеты по мотивации</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Средние чеки</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Выгрузка услуг</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Кабинет бухгалтера">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#calculation-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Кабинет бухгалтера</a>
 
 
 							<input class="hidden peer" id="menu-item-toggle-3" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-3">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -223,46 +224,46 @@
 
 							<input class="hidden" id="close-submenu-3" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-3">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-48 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Зарплаты</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Дополнительные начисления</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Баланс</a>
 								</li>
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Инкассации</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Клиенты">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#car-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Клиенты</a>
 
 							<input class="hidden peer" id="menu-item-toggle-4" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-4">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -271,52 +272,80 @@
 
 							<input class="hidden" id="close-submenu-4" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-4">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./clients-individuals.html">Физ.лица</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Юр.лица</a>
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./clients-legals.html">Юр.лица</a>
 								</li>
 							</ul>
 						</li>
 
-						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
-								href="./users.html" title="Пользователи">
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								href="#!" title="Пользователи">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#user-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-								href="./users.html">Пользователи</a>
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+								href="#!">Пользователи</a>
+
+							<input class="hidden peer" id="menu-item-toggle-5" type="radio" name="submenu">
+							<label
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
+								for="menu-item-toggle-5">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
+									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
+								</svg>
+							</label>
+
+							<input class="hidden" id="close-submenu-5" type="radio" name="submenu">
+							<label
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
+								for="close-submenu-5">
+							</label>
+
+							<ul
+								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./users-employees.html">Сотрудники</a>
+								</li>
+
+								<li class="w-full min-h-12 inline-flex items-center">
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./users-assistants.html">Помощники</a>
+								</li>
+							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Справочники">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#catalog-icon"></use>
 								</svg>
 
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Справочники</a>
 
 							<input class="hidden peer" id="menu-item-toggle-6" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-6">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -325,79 +354,79 @@
 
 							<input class="hidden" id="close-submenu-6" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-6">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-120 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Услуги</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Причины обращений</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-workshops.html">Мастерские</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./reference-my-companies.html">Мои компании</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Марки и модели</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вопросы для отзывов</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вопросы при открытии смены</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Роли</a>
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-roles.html">Роли</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
-										href="#!">Рекомендации клиенту</a>
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+										href="./reference-recommendations.html">Рекомендации клиенту</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Мотивации</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Лояльность">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#discount-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Лояльность</a>
 
 							<input class="hidden peer" id="menu-item-toggle-7" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-7">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -406,39 +435,39 @@
 
 							<input class="hidden" id="close-submenu-7" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-7">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Дисконтные карты</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="./loyalty-promo-codes.html">Промокоды</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Настройки">
 
-								<svg class="size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Настройки</a>
 
 							<input class="hidden peer" id="menu-item-toggle-8" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-8">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -447,39 +476,39 @@
 
 							<input class="hidden" id="close-submenu-8" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-8">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Уведомления</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Сайт</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12 grid grid-cols-[1fr_auto]">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Обучение">
 
-								<svg class="size-6  stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+								<svg class="size-6  stroke-black fill-black" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#education-icon"></use>
 								</svg>
 							</a>
 
-							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="px-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Обучение</a>
 
 							<input class="hidden peer" id="menu-item-toggle-9" type="radio" name="submenu">
 							<label
-								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+								class="size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								for="menu-item-toggle-9">
 								<svg class="size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
@@ -488,33 +517,33 @@
 
 							<input class="hidden" id="close-submenu-9" type="radio" name="submenu">
 							<label
-								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40 peer-checked:z-0"
+								class="absolute -z-1 right-0 size-12 flex items-center justify-center cursor-pointer peer-checked:rotate-180 border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40 peer-checked:z-0"
 								for="close-submenu-9">
 							</label>
 
 							<ul
 								class="top-12 left-12 h-0 opacity-0 col-span-2 duration-300 peer-checked:h-24 peer-checked:opacity-100">
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Вики</a>
 								</li>
 
 								<li class="w-full min-h-12 inline-flex items-center">
-									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+									<a class="pl-6 pr-2 w-full min-h-12 inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 										href="#!">Материалы</a>
 								</li>
 							</ul>
 						</li>
 
 						<li class="relative pl-12 min-h-12">
-							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-pitpos-700 active:brightness-40"
+							<a class="absolute left-0 size-12 flex items-center justify-center border-3 border-white rounded-md duration-300 hover:border-black active:brightness-40"
 								href="#!" title="Логи">
-								<svg class="size-6 stroke-pitpos-700 fill-pitpos-700" viewBox="0 0 24 24">
+								<svg class="size-6 stroke-black fill-black" viewBox="0 0 24 24">
 									<use xlink:href="./public/images/icons/sprite-icons.svg#log-file-icon"></use>
 								</svg>
 							</a>
 
-							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-pitpos-700 hover:text-white hover:rounded-md active:brightness-80"
+							<a class="pl-2 min-h-12 w-full inline-flex items-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
 								href="#!">Логи</a>
 						</li>
 					</ul>
@@ -524,21 +553,21 @@
 		</aside>
 		<!-- End sidebar -->
 		<div class="w-full mb-6 ">
-			<nav class="xl:container 3xl:max-w-470">
+			<nav>
 				<ul class="flex flex-wrap">
 					<li>
-						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500"
+						<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400"
 							href="./index.html">Главная&nbsp;-&nbsp;</a>
 					</li>
 
 					<li>
-						<a class="text-gray-500 text-[0.75rem] duration-300 hover:text-pitpos-700 active:text-pitpos-500" href="#!">
+						<a class="text-gray-550 text-[0.75rem] duration-300 hover:text-black active:text-gray-400" href="#!">
 							Справочники&nbsp;/&nbsp;
 						</a>
 					</li>
 
 					<li>
-						<a class="text-pitpos-700 text-[0.75rem] pointer-events-none" href="./users-owners.html">
+						<a class="text-black text-[0.75rem] pointer-events-none" href="./reference-my-companies.html">
 							Мои&nbsp;компании
 						</a>
 					</li>
@@ -546,18 +575,18 @@
 			</nav>
 		</div>
 		<!-- End breadcrumbs -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container 3xl:max-w-470">
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
 			<div class="mb-6 flex items-center justify-between gap-3 flex-wrap">
-				<h1 class="flex font-bold py-2">
-					<svg class="size-6 stroke-transparent mr-3.5 fill-pitpos-700" viewBox="-2 0 19 19">
+				<h2 class="flex font-bold py-2">
+					<svg class="size-6 stroke-transparent mr-3.5 fill-black" viewBox="-2 0 19 19">
 						<use xlink:href="./public/images/icons/sprite-icons.svg#legal-list-icon"></use>
 					</svg>
 
-					<span class="text-pitpos-700">Юридические лица</span>
-				</h1>
+					<span class="text-black">Юридические лица</span>
+				</h2>
 
 				<button
-					class="px-5 py-2 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100 self-end"
+					class="px-5 py-3 rounded-md bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-80 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-buttonself-end"
 					type="button" data-hs-overlay="#create-legal-entity">Добавить</button>
 
 				<div id="create-legal-entity"
@@ -567,110 +596,309 @@
 						class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-56px)] min-h-[calc(100%-56px)] flex items-center">
 						<div
 							class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
-							<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200 ">
+							<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200">
 								<h3 id="create-legal-entity-label" class="font-bold text-dark-text">
 									Основные данные юридического лица
 								</h3>
 								<button type="button"
-									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-200 active:scale-95 active:bg-gray-300"
+									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-100 active:scale-85 will-change-transform active:bg-gray-200"
 									aria-label="Close" data-hs-overlay="#create-legal-entity">
-									<svg class="inline-block size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 25 24">
+									<svg class="inline-block size-6 stroke-black fill-transparent" viewBox="0 0 25 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
 									</svg>
 								</button>
 							</div>
 
-							<div class="pt-2.5 px-5 pb-5 overflow-y-auto">
+							<div
+								class="pt-2.5 px-5 pb-5 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 								<div class="space-y-4">
 									<div>
 										<form class="w-full flex flex-col gap-3 md:gap-6">
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="title">Название*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="title" name="title" type="text" placeholder="Название или ФИО" required>
+												<input class="
+															w-full
+															px-3 
+															py-[0.6629rem] 
+															text-sm
+															leading-[1.2]
+															rounded-md 
+															outline-0 
+															ring-1 
+															ring-gray-300 
+															not-placeholder-shown:ring-gray-600 
+															duration-300 
+															placeholder:text-gray-500 
+															focus:ring-blue-focus-input 
+															focus:ring-2 
+															invalid:focus:ring-error
+															invalid:focus:text-error
+															disabled:text-gray-700
+															disabled:placeholder:text-disabled-input
+															disabled:ring-disabled-input
+															disabled:bg-disabled-input
+															bg-default-input
+															" id="title" name="title" type="text" placeholder="Название или ФИО" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="form">Форма собственности*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="form" name="form" type="text" placeholder="ИП" required>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="form" name="form" type="text" placeholder="ИП" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="inn">ИНН*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="inn" name="inn" type="text" placeholder="000000000000" required>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="inn" name="inn" type="text" placeholder="000000000000" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="kpp">КПП</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="kpp" name="kpp" type="text" placeholder="000000">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="kpp" name="kpp" type="text" placeholder="000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="ogrn">ОГРН</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="ogrn" name="ogrn" type="text" placeholder="000000000000000">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="ogrn" name="ogrn" type="text" placeholder="000000000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="legal_address">Юридический адрес</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="legal_address" name="legal_address" type="text"
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="legal_address" name="legal_address" type="text"
 													placeholder="Поч.индекс, город, улица, №дома, №кв.">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="bank">Банк</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="bank" name="bank" type="text" placeholder="Банк">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="bank" name="bank" type="text" placeholder="Банк">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="bik">БИК</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="bik" name="bik" type="text" placeholder="000000000">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="bik" name="bik" type="text" placeholder="000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="rs">Р/с</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="rs" name="rs" type="text" placeholder="00000000000000000000">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="rs" name="rs" type="text" placeholder="00000000000000000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
 												<label class="text-sm text-gray-700" for="ks">К/с</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="ks" name="ks" type="text" placeholder="00000000000000000000">
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="ks" name="ks" type="text" placeholder="00000000000000000000">
 											</div>
 
 											<div class="flex justify-end items-center gap-3 w-full md:gap-6">
 												<button
-													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-													type="submit">
-													Сохранить
-												</button>
-
-												<button
-													class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+													class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
 													type="reset" data-hs-overlay="#create-legal-entity">
-													<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+													<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 														<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 													</svg>
 
-													<span class="text-dark-red text-sm font-medium">Отмена</span>
+													<span class="text-sm font-medium">Сбросить</span>
 												</button>
+
+												<button
+													class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+													type="submit">Применить</button>
 											</div>
 										</form>
 									</div>
@@ -685,7 +913,7 @@
 			<!-- End page name -->
 			<div class="overflow-x-auto xl:w-full mb-6">
 				<div
-					class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-700">
+					class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 					<table class="prose 
 											max-w-screen
 											min-w-395
@@ -693,6 +921,8 @@
 											leading-[1.2]
 											text-dark-text 
 											prose-thead:border-0 
+											prose-th:[&:nth-child(n+2)]:border-l-1
+											prose-th:[&:nth-child(n+2)]:border-gray-300
 											prose-th:p-2.5 
 											prose-th:bg-gray-50 
 											prose-th:align-middle 
@@ -700,7 +930,7 @@
 											prose-th:[&:nth-child(6)]:min-w-55 
 											prose-th:[&:nth-child(7)]:min-w-55 
 											prose-th:font-semibold 
-											prose-td:text-[0.93rem]
+											prose-td:text-sm
 											prose-td:leading-none
 											prose-td:p-2.5 
 											prose-td:align-middle 
@@ -718,20 +948,23 @@
 											prose-td:[&_button]:tracking-[0.01em]
 											prose-td:[&_button]:py-1
 											prose-td:[&_button]:px-2.5
-											prose-td:[&_button]:outline-1
-											prose-td:[&_button]:outline-pitpos-700
-											prose-td:[&_button[data-hs-overlay='#delete-legal-entity']]:outline-accent
+											prose-td:[&_button]:ring-1
+											prose-td:[&_button]:ring-pitpos-blue
+											prose-td:[&_button[data-hs-overlay='#delete-legal-entity']]:ring-accent
 											prose-td:[&_button[data-hs-overlay='#delete-legal-entity']]:text-accent
-											prose-td:[&_button[data-hs-overlay='#delete-legal-entity']]:hover:bg-accent
-											prose-td:[&_button[data-hs-overlay='#delete-legal-entity']]:hover:text-white
 											prose-td:[&_button]:rounded-sm
 											prose-td:[&_button]:cursor-pointer
 											prose-td:[&_button]:duration-300
 											prose-td:[&_button]:will-change-transform
-											prose-td:[&_button]:hover:bg-pitpos-700
+											prose-td:[&_button]:hover:ring-2
+											prose-td:[&_button]:hover:bg-white
 											prose-td:[&_button]:hover:shadow-sm
-											prose-td:[&_button]:hover:text-white
 											prose-td:[&_button]:active:scale-95
+											prose-td:[&_button]:active:brightness-95
+											prose-td:[&_button]:disabled:pointer-events-none!
+											prose-td:[&_button]:disabled:bg-disabled-button!
+											prose-td:[&_button]:disabled:ring-disabled-button!
+											prose-td:[&_button]:disabled:text-gray-500!
 				">
 						<thead>
 							<tr>
@@ -815,11 +1048,11 @@
 
 								<td>
 									<div>
-										<button type="button" data-hs-overlay="#edit-legal-entity">
+										<button disabled type="button" data-hs-overlay="#edit-legal-entity">
 											Редактировать
 										</button>
 
-										<button type="button" data-hs-overlay="#delete-legal-entity">
+										<button disabled type="button" data-hs-overlay="#delete-legal-entity">
 											Удалить
 										</button>
 									</div>
@@ -998,113 +1231,312 @@
 						class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-56px)] min-h-[calc(100%-56px)] flex items-center">
 						<div
 							class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
-							<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200 ">
+							<div class="flex justify-between items-center pb-2.5 px-5 pt-5 border-b border-gray-200">
 								<h3 id="edit-legal-entity-label" class="font-bold text-dark-text">
 									Основные данные юридического лица
 								</h3>
 								<button type="button"
-									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-200 active:scale-95 active:bg-gray-300"
+									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-100 active:scale-85 will-change-transform active:bg-gray-200"
 									aria-label="Close" data-hs-overlay="#edit-legal-entity">
-									<svg class="inline-block size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 25 24">
+									<svg class="inline-block size-6 stroke-black fill-transparent" viewBox="0 0 25 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
 									</svg>
 								</button>
 							</div>
 
-							<div class="pt-2.5 px-5 pb-5 overflow-y-auto">
+							<div
+								class="pt-2.5 px-5 pb-5 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 								<div class="space-y-4">
 									<div>
 										<form class="w-full flex flex-col gap-3 md:gap-6">
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="title">Название*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="title" name="title" type="text" placeholder="Название или ФИО"
+												<label class="text-sm text-gray-700" for="title-1">Название*</label>
+												<input class="
+														w-full
+														px-3 
+														py-[0.6629rem] 
+														text-sm
+														leading-[1.2]
+														rounded-md 
+														outline-0 
+														ring-1 
+														ring-gray-300 
+														not-placeholder-shown:ring-gray-600 
+														duration-300 
+														placeholder:text-gray-500 
+														focus:ring-blue-focus-input 
+														focus:ring-2 
+														invalid:focus:ring-error
+														invalid:focus:text-error
+														disabled:text-gray-700
+														disabled:placeholder:text-disabled-input
+														disabled:ring-disabled-input
+														disabled:bg-disabled-input
+														bg-default-input
+														" id="title-1" name="title-1" type="text" placeholder="Название или ФИО"
 													value="БАРАКОВ ВСЕВОЛОД ВЛАДИМИРОВИЧ" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="form">Форма собственности*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="form" name="form" type="text" placeholder="ИП" value="ИП" required>
+												<label class="text-sm text-gray-700" for="form-1">Форма собственности*</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="form-1" name="form-1" type="text" placeholder="ИП" value="ИП" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="inn">ИНН*</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="inn" name="inn" type="text" placeholder="000000000000" value="780428113778" required>
+												<label class="text-sm text-gray-700" for="inn-1">ИНН*</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="inn-1" name="inn-1" type="text" placeholder="000000000000" value="780428113778" required>
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="kpp">КПП</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="kpp" name="kpp" type="text" placeholder="000000" value="000000">
+												<label class="text-sm text-gray-700" for="kpp-1">КПП</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="kpp-1" name="kpp-1" type="text" placeholder="000000" value="000000">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="ogrn">ОГРН</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="ogrn" name="ogrn" type="text" placeholder="000000000000000" value="321784700270866">
+												<label class="text-sm text-gray-700" for="ogrn-1">ОГРН</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="ogrn-1" name="ogrn-1" type="text" placeholder="000000000000000" value="321784700270866">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="legal_address">Юридический адрес</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="legal_address" name="legal_address" type="text"
+												<label class="text-sm text-gray-700" for="legal_address-1">Юридический адрес</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="legal_address-1" name="legal_address-1" type="text"
 													placeholder="Поч.индекс, город, улица, №дома, №кв."
 													value="195252, Санкт-Петербург, Северный пр., д. 87, корп. 1, кв. 329">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="bank">Банк</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="bank" name="bank" type="text" placeholder="Банк"
+												<label class="text-sm text-gray-700" for="bank-1">Банк</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="bank-1" name="bank-1" type="text" placeholder="Банк"
 													value="СЕВЕРО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК г. Санкт-Петербург">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="bik">БИК</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="bik" name="bik" type="text" placeholder="000000000" value="044030653">
+												<label class="text-sm text-gray-700" for="bik-1">БИК</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="bik-1" name="bik-1" type="text" placeholder="000000000" value="044030653">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="rs">Р/с</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="rs" name="rs" type="text" placeholder="00000000000000000000" value="40802810355000071217">
+												<label class="text-sm text-gray-700" for="rs-1">Р/с</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="rs-1" name="rs-1" type="text" placeholder="00000000000000000000" value="40802810355000071217">
 											</div>
 
 											<div class="w-full max-w-125 flex flex-col gap-y-1">
-												<label class="text-sm text-gray-700" for="ks">К/с</label>
-												<input
-													class="px-3 py-[0.439rem] outline-0 ring-1 ring-gray-550 rounded-md w-full duration-300 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error disabled:bg-pitpos-200"
-													id="ks" name="ks" type="text" placeholder="00000000000000000000" value="30101810500000000653">
+												<label class="text-sm text-gray-700" for="ks-1">К/с</label>
+												<input class="
+																w-full
+																px-3 
+																py-[0.6629rem] 
+																text-sm
+																leading-[1.2]
+																rounded-md 
+																outline-0 
+																ring-1 
+																ring-gray-300 
+																not-placeholder-shown:ring-gray-600 
+																duration-300 
+																placeholder:text-gray-500 
+																focus:ring-blue-focus-input 
+																focus:ring-2 
+																invalid:focus:ring-error
+																invalid:focus:text-error
+																disabled:text-gray-700
+																disabled:placeholder:text-disabled-input
+																disabled:ring-disabled-input
+																disabled:bg-disabled-input
+																bg-default-input
+																" id="ks-1" name="ks-1" type="text" placeholder="00000000000000000000" value="30101810500000000653">
 											</div>
 
 											<div class="flex justify-end items-center gap-3 w-full md:gap-6">
 												<button
-													class="px-5 py-[0.563rem] bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
-													type="submit">
-													Сохранить
-												</button>
-
-												<button
-													class="px-2.5 py-1.5 flex items-center gap-x-2.5 rounded-md duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-dark-red active:scale-98"
+													class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
 													type="reset" data-hs-overlay="#edit-legal-entity">
-													<svg class="size-4 stroke-dark-red fill-transparent" viewBox="0 0 17 16">
+													<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 														<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 													</svg>
 
-													<span class="text-dark-red text-sm font-medium">Отмена</span>
+													<span class="text-sm font-medium">Сбросить</span>
 												</button>
+
+												<button
+													class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+													type="submit">Применить</button>
 											</div>
 										</form>
 									</div>
@@ -1117,16 +1549,16 @@
 				<!-- End modal window from editing legal entitiy -->
 				<div id="delete-legal-entity"
 					class="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto pointer-events-none bg-black-opacity-30"
-					role="dialog" tabindex="-1" aria-labelledby="delete-legal-entity-label">
+					role="dialog" tabindex="-1" aria-labelledby="delete-legal-entity">
 					<div
 						class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-56px)] min-h-[calc(100%-56px)] flex items-center">
 						<div
 							class="w-full max-h-full overflow-hidden flex flex-col bg-white shadow-lg rounded-md pointer-events-auto">
 							<div class="flex justify-end items-center pb-2.5 px-5 pt-5">
 								<button type="button"
-									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-200 active:scale-95 active:bg-gray-300"
+									class="inline-flex items-center justify-center duration-300 rounded-sm cursor-pointer size-6 disabled:opacity-50 disabled:pointer-events-none hover:bg-gray-100 active:scale-85 will-change-transform active:bg-gray-200"
 									aria-label="Close" data-hs-overlay="#delete-legal-entity">
-									<svg class="inline-block size-6 stroke-pitpos-700 fill-transparent" viewBox="0 0 25 24">
+									<svg class="inline-block size-6 stroke-black fill-transparent" viewBox="0 0 25 24">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
 									</svg>
 								</button>
@@ -1137,7 +1569,7 @@
 									<p class="font-semibold text-center py-2 tracking-[1.5]">Вы действительно хотите удалить лицо?</p>
 
 									<button
-										class="px-5 py-3 bg-pitpos-700 rounded-md text-white text-sm font-bold cursor-pointer duration-300 will-change-transform hover:brightness-85 hover:ring-1 hover:ring-pitpos-700 active:scale-98 disabled:bg-gray-400 disabled:text-gray-500   disabled:hover:ring-0 disabled:hover:brightness-100 disabled:active:scale-100"
+										class="px-5 py-3 rounded-md bg-pitpos-blue font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-pitpos-blue hover:shadow-md active:scale-98 active:brightness-80 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button"
 										type="button">Удалить</button>
 								</div>
 							</div>
