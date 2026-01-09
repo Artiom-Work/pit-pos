@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Физлица </title>
+	<title>PitPos | Юрлица </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -566,8 +566,8 @@
 					</li>
 
 					<li>
-						<a class="text-black text-[0.75rem] pointer-events-none" href="./clients-individuals.html">
-							Физлица
+						<a class="text-black text-[0.75rem] pointer-events-none" href="./clients-legals.html">
+							Юрлица
 						</a>
 					</li>
 				</ul>
@@ -577,16 +577,16 @@
 		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
 			<h1 class="flex font-bold mb-6 py-2">
 				<svg class="size-6 stroke-black mr-3.5 fill-black" viewBox="0 0 24 24">
-					<use xlink:href="./public/images/icons/sprite-icons.svg#team-icon"></use>
+					<use xlink:href="./public/images/icons/sprite-icons.svg#list-icon"></use>
 				</svg>
 
-				<span class="text-black">Физлица</span>
+				<span class="text-black">Юрлица</span>
 			</h1>
 			<!-- End page name -->
 			<form class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_id">ID</label>
+					<label class="text-sm text-gray-700" for="legal_id">ID</label>
 					<input class="
 						w-full
 						px-3 
@@ -609,11 +609,11 @@
 						disabled:ring-disabled-input
 						disabled:bg-disabled-input
 						bg-default-input
-						" id="client_id" name="client_id" type="text" placeholder="#">
+						" id="legal_id" name="legal_id" type="text" placeholder="#">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_last_name">Фамилия</label>
+					<label class="text-sm text-gray-700" for="legal_last_name">Фамилия</label>
 					<input class="
 						w-full
 						px-3 
@@ -636,11 +636,11 @@
 						disabled:ring-disabled-input
 						disabled:bg-disabled-input
 						bg-default-input
-						" id="client_last_name" name="client_last_name" type="text" placeholder="Иванов">
+						" id="legal_last_name" name="legal_last_name" type="text" placeholder="Иванов">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_name">Имя</label>
+					<label class="text-sm text-gray-700" for="legal_name">Имя</label>
 					<input class="
 						w-full
 						px-3 
@@ -663,11 +663,11 @@
 						disabled:ring-disabled-input
 						disabled:bg-disabled-input
 						bg-default-input
-						" id="client_name" name="client_name" type="text" placeholder="Иван">
+						" id="legal_name" name="legal_name" type="text" placeholder="Иван">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_middle_name">Отчество</label>
+					<label class="text-sm text-gray-700" for="legal_middle_name">Отчество</label>
 					<input class="
 						w-full
 						px-3 
@@ -690,11 +690,11 @@
 						disabled:ring-disabled-input
 						disabled:bg-disabled-input
 						bg-default-input
-						" id="client_middle_name" name="client_middle_name" type="text" placeholder="Иванович">
+						" id="legal_middle_name" name="legal_middle_name" type="text" placeholder="Иванович">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_phone">Телефон</label>
+					<label class="text-sm text-gray-700" for="legal_phone">Телефон</label>
 					<input class="
 							w-full
 							px-3 
@@ -717,12 +717,12 @@
 							disabled:ring-disabled-input
 							disabled:bg-disabled-input
 							bg-default-input
-							" id="client_phone" name="client_phone" type="tel" placeholder="+71111111111"
+							" id="legal_phone" name="legal_phone" type="tel" placeholder="+71111111111"
 						pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_birthday">Дата рождения</label>
+					<label class="text-sm text-gray-700" for="legal_birthday">Дата рождения</label>
 					<input class="
 									w-full
 									px-3 
@@ -749,16 +749,16 @@
 									date-picker-auto
 									data-[filled=true]:ring-gray-600
 									data-[filled=true]:text-black
-					" type="date" id="client_birthday" name="client_birthday"
+					" type="date" id="legal_birthday" name="legal_birthday"
 						oninput="this.dataset.filled = this.value ? 'true' : 'false'">
 				</div>
 
 				<div
 					class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Выберите']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Выберите']).selected]:[&>div>button>span]:text-black has-[select[disabled]]:[&_button>span]:text-gray-700!">
-					<label class="text-sm text-gray-700" for="client_src">
+					<label class="text-sm text-gray-700" for="legal_src">
 						Источник
 					</label>
-					<select class="hidden" id="client_src" name="client_src" data-hs-select='{
+					<select class="hidden" id="legal_src" name="legal_src" data-hs-select='{
 						"toggleTag": "<button class=\"pr-10 h-[2.4375rem] text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
 						"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 						"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
@@ -776,7 +776,7 @@
 				</div>
 
 				<div class="flex flex-col gap-y-1">
-					<label class="text-sm text-gray-700" for="client_first_cvs">Дата первого обращения</label>
+					<label class="text-sm text-gray-700" for="legal_first_cvs">Дата первого обращения</label>
 					<input class="
 									w-full
 									px-3 
@@ -803,18 +803,18 @@
 									date-picker-auto
 									data-[filled=true]:ring-gray-600
 									data-[filled=true]:text-black
-					" type="date" id="client_first_cvs" name="client_first_cvs"
+					" type="date" id="legal_first_cvs" name="legal_first_cvs"
 						oninput="this.dataset.filled = this.value ? 'true' : 'false'">
 				</div>
 
 				<div class="w-full flex justify-end items-end gap-x-2 sm:col-span-2 lg:col-span-1 xl:gap-x-6 xl:col-span-4">
 					<a class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
-						href="./clients-individuals.html">
+						href="./clients-legals.html">
 						<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 							<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 						</svg>
 
-						<span class=" text-sm font-medium">Сбросить</span>
+						<span class="text-sm font-medium">Сбросить</span>
 					</a>
 
 					<button
@@ -822,9 +822,56 @@
 						type="submit">Применить</button>
 				</div>
 			</form>
-			<!-- End MAIN filter clients -->
+			<!-- End MAIN filter clients-legals -->
+			<div class="mb-6 w-full flex flex-col justify-between gap-3 flex-wrap sm:items-center sm:flex-row sm:gap-6">
+				<form class="flex flex-col gap-3 flex-wrap xs:grid xs:grid-cols-2 sm:flex sm:flex-row">
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-legals-all" checked>
+						<label
+							class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
+							for="filter-legals-all">Все</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-legals-active">
+						<label
+							class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
+							for="filter-legals-active">Действует</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-legals-no-active">
+						<label
+							class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
+							for="filter-legals-no-active">Неактивный</label>
+					</div>
+					<div>
+						<input class="hidden peer" type="checkbox" id="filter-legals-stopped">
+						<label
+							class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
+							for="filter-legals-stopped">Приостановлен</label>
+					</div>
+				</form>
+
+				<div
+					class="w-full flex justify-center flex-col items-center xs:items-end gap-2.5 xs:flex-row xs:justify-end lg:w-auto">
+					<button
+						class="px-2.5 py-[0.4375rem] flex items-center gap-x-2.5 text-accent rounded-md ring-accent ring-1 duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md  active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+						type="reset">
+						<svg class="size-6 stroke-accent fill-transparent" viewBox="0 0 24 24">
+							<use xlink:href="./public/images/icons/sprite-icons.svg#settings-icon"></use>
+						</svg>
+
+						<span class="text-sm font-bold tracking-[0.01em]">Настройки&nbsp;грида</span>
+					</button>
+
+					<a class="px-5 py-[0.5635rem] rounded-sm bg-accent font-bold text-sm ring-accent ring-1 tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button"
+						href="./users-create-legal.html">
+						Добавить&nbsp;клиента
+					</a>
+				</div>
+			</div>
+			<!-- End additional table filter -->
 			<div
-				class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
+				class="pb-28 overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
 				<table class="
 							prose 
 							max-w-screen 
@@ -842,16 +889,19 @@
 							prose-th:[&:nth-child(n+3)]:border-l-1
 							prose-th:[&:nth-child(n+3)]:border-gray-300
 							prose-th:[&:nth-child(2)]:text-accent 
+							prose-th:[&:nth-child(6)]:w-35 
+							prose-th:[&:nth-child(9)]:w-75 
 							prose-td:text-sm
-							prose-td:p-2.5 
+							prose-td:px-2.5 
+							prose-td:py-0 
 							prose-td:align-middle 
-							prose-td:has-[a]:py-0 
-							prose-td:leading-[1.2]
+							prose-td:leading-none
 							prose-tr:min-w-6 
 							prose-tr:h-13.5 
 							prose-tr:border-white 
 							prose-tr:border-b-2 
 							prose-tr:[&>td:first-child]:max-w-8.5
+							prose-tr:[&>td:last-child]:w-30
 							prose-td:[&>a]:text-accent
 							prose-td:[&>a]:underline
 							prose-td:[&>a]:duration-300
@@ -861,6 +911,19 @@
 							prose-td:[&>a.disabled]:pointer-events-none
 							prose-td:[&>a.disabled]:text-gray-500
 							prose-td:[&>a.disabled]:no-underline
+							prose-td:[&[data-lagal-status]]:w-40
+							prose-td:[&>div>button]:h-11
+							prose-td:[&>div>button]:px-1
+							prose-td:[&>div>button:first-child]:px-2
+							prose-td:[&>div>button]:rounded-md
+							prose-td:[&>div>button]:cursor-pointer
+							prose-td:[&>div>button]:duration-300
+							prose-td:[&>div>button]:will-change-transform
+							prose-td:[&>div>button]:hover:shadow-md
+							prose-td:[&>div>button]:hover:bg-gray-200
+							prose-td:[&>div>button]:active:bg-gray-300
+							prose-td:[&>div>button]:disabled:pointer-events-none
+							prose-td:[&>div>button]:disabled:[&>svg]:stroke-gray-300
 					">
 					<thead>
 						<tr>
@@ -869,34 +932,32 @@
 								ID
 							</th>
 							<th>
-								Фамилия
+								Название
 							</th>
 							<th>
-								Имя
+								Полное название
 							</th>
 							<th>
-								Отчество
+								Контактное лицо
 							</th>
 							<th>
-								Телефон
+								Телефон<br>
+								(без +7, без 8)
 							</th>
 							<th>
-								Телефон&nbsp;2
+								Номер карты
 							</th>
 							<th>
-								Дата рождения
+								Скидка
 							</th>
 							<th>
-								Email
+								Комментарий
 							</th>
 							<th>
-								Автомобиль
+								Статус
 							</th>
 							<th>
-								Источник
-							</th>
-							<th>
-								Дата&nbsp;первого обращения
+								Действия
 							</th>
 						</tr>
 					</thead>
@@ -904,9 +965,9 @@
 					<tbody>
 						<tr>
 							<td>
-								<label class="inline-flex items-center" for="client-30135">
+								<label class="inline-flex items-center" for="legal-123">
 									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-30135">
+										id="legal-123">
 									<span class="
 										w-5 
 										h-5 
@@ -937,139 +998,83 @@
 							</td>
 
 							<td>
-								<a href="#!" data-user title="Подробности">
-									30135
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									123
 								</a>
 							</td>
 
 							<td>
-								Иванов
+								Прогресс Моторс
 							</td>
 
 							<td>
-								Иван
+								ООО “Прогресс Моторс”
 							</td>
 
 							<td>
-								Иванович
+								Иванов Иван
 							</td>
 
 							<td>
-								+7(900)1234567
+								9088777687
 							</td>
 
 							<td>
-								+7(901)1234567
+								40988777
 							</td>
 
 							<td>
-								07.04.1973
+								20%
 							</td>
 
 							<td>
-								ivanov@mail.ru
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-123">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-123" name="legal-status-123" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active" selected>Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
 							</td>
 
 							<td>
-								Volkswagen Polo
-							</td>
-
-							<td>
-								Яндекс.Карты
-							</td>
-
-							<td>
-								19.03.2018
-							</td>
-
-						</tr>
-
-						<tr>
-							<td>
-								<label class="inline-flex items-center" for="client-12345">
-									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-12345">
-									<span class="
-										w-5 
-										h-5 
-										border-1 
-										border-gray-600 
-										bg-default-checkbox 
-										rounded-sm 
-										peer-checked:bg-accent 
-										flex items-center 
-										justify-center 
-										cursor-pointer 
-										duration-300 
-										will-change-transform 
-										peer-checked:[&>svg]:stroke-white 
-										peer-checked:border-accent 
-										peer-disabled:pointer-events-none 
-										peer-disabled:cursor-default 
-										peer-disabled:border-disabled-border-checkbox 
-										peer-disabled:[&>svg]:stroke-disabled-checkbox 
-										peer-disabled:bg-disabled-checkbox 
-										hover:border-accent 
-										hover:shadow-md">
-										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
 										</svg>
-									</span>
-								</label>
-							</td>
+									</button>
 
-							<td>
-								<a href="#!" data-user title="Подробности">
-									12345
-								</a>
-							</td>
-
-							<td>
-								Петров
-							</td>
-
-							<td>
-								Алексей
-							</td>
-
-							<td>
-								Сергеевич
-							</td>
-
-							<td>
-								+7(912)3456789
-							</td>
-
-							<td>
-								+7(913)3456789
-							</td>
-
-							<td>
-								15.05.1985
-							</td>
-
-							<td>
-								alexey.sidorov@example.com
-							</td>
-
-							<td>
-								Nissan Micra
-							</td>
-
-							<td>
-								Рекомендация
-							</td>
-
-							<td>
-								15.05.2023
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								<label class="inline-flex items-center" for="client-67890">
+								<label class="inline-flex items-center" for="legal-321">
 									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-67890">
+										id="legal-321">
 									<span class="
 										w-5 
 										h-5 
@@ -1100,57 +1105,83 @@
 							</td>
 
 							<td>
-								<a href="#!" data-user title="Подробности">
-									67890
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									321
 								</a>
 							</td>
 
 							<td>
-								Сидоров
+								Прогресс Моторс
 							</td>
 
 							<td>
-								Дмитрий
+								ООО “Прогресс Моторс”
 							</td>
 
 							<td>
-								Алексеевич
+								Иванов Иван
 							</td>
 
 							<td>
-								+7(914)3456789
+								9088777687
 							</td>
 
 							<td>
-								+7(915)3456789
+								40988777
 							</td>
 
 							<td>
-								22.11.1990
+								20%
 							</td>
 
 							<td>
-								maria.kuznetsova@example.com
+								Связаться с Юлей!
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-321">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-321" name="legal-status-321" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active">Действует</option>
+										<option value="stoped" selected>Приостановлен</option>
+									</select>
+								</div>
 							</td>
 
 							<td>
-								Toyota Yaris
-							</td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
 
-							<td>
-								На местности
-							</td>
-
-							<td>
-								15.07.2024
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								<label class="inline-flex items-center" for="client-54321">
+								<label class="inline-flex items-center" for="legal-456">
 									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-54321">
+										id="legal-456">
 									<span class="
 										w-5 
 										h-5 
@@ -1181,57 +1212,83 @@
 							</td>
 
 							<td>
-								<a href="#!" data-user title="Подробности">
-									54321
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									456
 								</a>
 							</td>
 
 							<td>
-								Кузнецов
+								Прогресс Моторс
 							</td>
 
 							<td>
-								Сергей
+								ООО “Прогресс Моторс”
 							</td>
 
 							<td>
-								Дмитриевич
+								Иванов Иван
 							</td>
 
 							<td>
-								+7(916)3456789
+								9088777687
 							</td>
 
 							<td>
-								+7(917)3456789
+								40988777
 							</td>
 
 							<td>
-								30.01.1988
+								20%
 							</td>
 
 							<td>
-								dmitry.ivanov@example.com
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-456">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-456" name="legal-status-456" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active" selected>Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
 							</td>
 
 							<td>
-								Ford Fiesta
-							</td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
 
-							<td>
-								Поиск
-							</td>
-
-							<td>
-								01.01.2023
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								<label class="inline-flex items-center" for="client-98765">
+								<label class="inline-flex items-center" for="legal-999">
 									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-98765" disabled>
+										id="legal-999">
 									<span class="
 										w-5 
 										h-5 
@@ -1262,57 +1319,83 @@
 							</td>
 
 							<td>
-								<a class="disabled" href="#!" data-user title="Подробности">
-									98765
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									999
 								</a>
 							</td>
 
 							<td>
-								Смирнов
+								Прогресс Моторс
 							</td>
 
 							<td>
-								Максим
+								ООО “Прогресс Моторс”
 							</td>
 
 							<td>
-								Николаевич
+								Иванов Иван
 							</td>
 
 							<td>
-								+7(918)3456789
+								9088777687
 							</td>
 
 							<td>
-								+7(919)3456789
+								40988777
 							</td>
 
 							<td>
-								12.06.1995
+								20%
 							</td>
 
 							<td>
-								olga.petrovna@example.com
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-999">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-999" name="legal-status-999" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active" selected>Не&nbsp;активный</option>
+										<option value="active">Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
 							</td>
 
 							<td>
-								Hyundai i20
-							</td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
 
-							<td>
-								Яндекс.Карты
-							</td>
-
-							<td>
-								09.05.2023
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
 							</td>
 						</tr>
 
 						<tr>
 							<td>
-								<label class="inline-flex items-center" for="client-13579">
+								<label class="inline-flex items-center" for="legal-888">
 									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
-										id="client-13579" checked disabled>
+										id="legal-888" disabled>
 									<span class="
 										w-5 
 										h-5 
@@ -1343,55 +1426,513 @@
 							</td>
 
 							<td>
-								<a href="#!" data-user title="Подробности">
-									13579
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									888
 								</a>
 							</td>
 
 							<td>
-								Попов
+								Прогресс Моторс
 							</td>
 
 							<td>
-								Николай
+								ООО “Прогресс Моторс”
 							</td>
 
 							<td>
-								Петрович
+								Иванов Иван
 							</td>
 
 							<td>
-								+7(920)3456789
+								9088777687
 							</td>
 
 							<td>
-								+7(921)3456789
+								40988777
 							</td>
 
 							<td>
-								04.09.1982
+								20%
 							</td>
 
 							<td>
-								sergey.popov@example.com
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-888">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-888" name="legal-status-888" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active" selected>Не&nbsp;активный</option>
+										<option value="active">Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
 							</td>
 
 							<td>
-								Kia Rio
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
+
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="inline-flex items-center" for="legal-777">
+									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+										id="legal-777" disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
 							</td>
 
 							<td>
-								Поиск
+								<a class="disabled" href="./clients-legal-card.html" data-legal aria-label="details"
+									title="Подробности">
+									777
+								</a>
 							</td>
 
 							<td>
-								08.07.2025
+								Прогресс Моторс
+							</td>
+
+							<td>
+								ООО “Прогресс Моторс”
+							</td>
+
+							<td>
+								Иванов Иван
+							</td>
+
+							<td>
+								9088777687
+							</td>
+
+							<td>
+								40988777
+							</td>
+
+							<td>
+								20%
+							</td>
+
+							<td>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus deleniti consectetur, provident
+								mollitia, impedit voluptatem exercitationem
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-777">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-777" name="legal-status-777" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active" selected>Не&nbsp;активный</option>
+										<option value="active">Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
+							</td>
+
+							<td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
+
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="inline-flex items-center" for="legal-666">
+									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+										id="legal-666" disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+
+							<td>
+								<a class="disabled" href="./clients-legal-card.html" data-legal aria-label="details"
+									title="Подробности">
+									666
+								</a>
+							</td>
+
+							<td>
+								Прогресс Моторс
+							</td>
+
+							<td>
+								ООО “Прогресс Моторс”
+							</td>
+
+							<td>
+								Иванов Иван
+							</td>
+
+							<td>
+								9088777687
+							</td>
+
+							<td>
+								40988777
+							</td>
+
+							<td>
+								20%
+							</td>
+
+							<td>
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-666">
+										статус юрлица
+									</label>
+									<select disabled class="hidden" id="legal-status-666" name="legal-status-666" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active" selected>Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
+							</td>
+
+							<td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
+
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="inline-flex items-center" for="legal-555">
+									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+										id="legal-555" disabled>
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+
+							<td>
+								<a class="disabled" href="./clients-legal-card.html" data-legal aria-label="details"
+									title="Подробности">
+									555
+								</a>
+							</td>
+
+							<td>
+								Прогресс Моторс
+							</td>
+
+							<td>
+								ООО “Прогресс Моторс”
+							</td>
+
+							<td>
+								Иванов Иван
+							</td>
+
+							<td>
+								9088777687
+							</td>
+
+							<td>
+								40988777
+							</td>
+
+							<td>
+								20%
+							</td>
+
+							<td>
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-555">
+										статус юрлица
+									</label>
+									<select disabled class="hidden" id="legal-status-555" name="legal-status-555" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active">Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
+							</td>
+
+							<td>
+								<div>
+									<button disabled aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
+
+									<button disabled type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label class="inline-flex items-center" for="legal-444">
+									<input type="checkbox" class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon"
+										id="legal-444">
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-accent 
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-accent 
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-accent 
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+								</label>
+							</td>
+
+							<td>
+								<a href="./clients-legal-card.html" data-legal aria-label="details" title="Подробности">
+									444
+								</a>
+							</td>
+
+							<td>
+								Прогресс Моторс
+							</td>
+
+							<td>
+								ООО “Прогресс Моторс”
+							</td>
+
+							<td>
+								Иванов Иван
+							</td>
+
+							<td>
+								9088777687
+							</td>
+
+							<td>
+								40988777
+							</td>
+
+							<td>
+								20%
+							</td>
+
+							<td>
+								-
+							</td>
+
+							<td data-lagal-status>
+								<div class="has-[[data-title-value='Действует'].selected]:[&>div>button>span]:text-success
+									has-[[data-title-value='Приостановлен'].selected]:[&>div>button>span]:text-ready">
+									<label class="hidden" for="legal-status-444">
+										статус юрлица
+									</label>
+									<select class="hidden" id="legal-status-444" name="legal-status-444" data-hs-select='{
+										"toggleTag": "<button class=\"pr-9.5 h-8 text-gray-700 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+										"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+										"dropdownClasses": "mt-2 z-50 w-48 max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+										"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+										"optionTemplate": 
+										"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+										"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+									}'>
+										<option value="no-active">Не&nbsp;активный</option>
+										<option value="active" selected>Действует</option>
+										<option value="stoped">Приостановлен</option>
+									</select>
+								</div>
+							</td>
+
+							<td>
+								<div>
+									<button aria-label="edit-legal" title="Принять изменение" type="button">
+										<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
+										</svg>
+									</button>
+
+									<button type="button" aria-label="delete" title="Удалить">
+										<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+										</svg>
+									</button>
+								</div>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<!-- End table of clients -->
+			<!-- End table of legals -->
 			<div class="flex flex-wrap items-center justify-center gap-10 sm:gap-15 sm:justify-end">
 				<div>
 					Записи
@@ -1400,40 +1941,40 @@
 					<span>256</span>
 				</div>
 
-				<label class="relative inline-block z-0 h-8 self-start" for="individuals-lists-select">
+				<label class="relative inline-block z-0 h-8 self-start" for="legals-lists-select">
 					<svg class="absolute right-2.5 top-1 -z-1 size-6 stroke-black fill-transparent" viewBox="0 0 24 24">
 						<use xlink:href="./public/images/icons/sprite-icons.svg#toggle-arrow-icon"></use>
 					</svg>
 
 					<select
 						class="px-2.5 pl-2 pr-11 h-8 text-[0.8125rem] text-black font-semibold ring-2 ring-gray-300 rounded-xs cursor-pointer duration-300 hover:ring-black  focus:outline-0 focus:outline-0 no-number-spinner"
-						id="individuals-lists-select">
-						<option value="individuals-list-1-10" selected>10</option>
-						<option value="individuals-list-10-20">20</option>
-						<option value="individuals-list-20-30">30</option>
-						<option value="individuals-list-30-40">40</option>
-						<option value="individuals-list-40-50">50</option>
-						<option value="individuals-list-50-60">60</option>
-						<option value="individuals-list-60-70">70</option>
-						<option value="individuals-list-70-80">80</option>
-						<option value="individuals-list-80-90">90</option>
-						<option value="individuals-list-90-100">100</option>
-						<option value="individuals-list-100-110">110</option>
-						<option value="individuals-list-110-120">120</option>
-						<option value="individuals-list-120-130">130</option>
-						<option value="individuals-list-130-140">140</option>
-						<option value="individuals-list-140-150">150</option>
-						<option value="individuals-list-150-160">160</option>
-						<option value="individuals-list-160-170">170</option>
-						<option value="individuals-list-170-180">180</option>
-						<option value="individuals-list-180-190">190</option>
-						<option value="individuals-list-190-200">200</option>
-						<option value="individuals-list-200-210">210</option>
-						<option value="individuals-list-210-220">220</option>
-						<option value="individuals-list-220-230">230</option>
-						<option value="individuals-list-230-240">240</option>
-						<option value="individuals-list-240-250">250</option>
-						<option value="individuals-list-250-256">256</option>
+						id="legals-lists-select">
+						<option value="legals-list-1-10" selected>10</option>
+						<option value="legals-list-10-20">20</option>
+						<option value="legals-list-20-30">30</option>
+						<option value="legals-list-30-40">40</option>
+						<option value="legals-list-40-50">50</option>
+						<option value="legals-list-50-60">60</option>
+						<option value="legals-list-60-70">70</option>
+						<option value="legals-list-70-80">80</option>
+						<option value="legals-list-80-90">90</option>
+						<option value="legals-list-90-100">100</option>
+						<option value="legals-list-100-110">110</option>
+						<option value="legals-list-110-120">120</option>
+						<option value="legals-list-120-130">130</option>
+						<option value="legals-list-130-140">140</option>
+						<option value="legals-list-140-150">150</option>
+						<option value="legals-list-150-160">160</option>
+						<option value="legals-list-160-170">170</option>
+						<option value="legals-list-170-180">180</option>
+						<option value="legals-list-180-190">190</option>
+						<option value="legals-list-190-200">200</option>
+						<option value="legals-list-200-210">210</option>
+						<option value="legals-list-210-220">220</option>
+						<option value="legals-list-220-230">230</option>
+						<option value="legals-list-230-240">240</option>
+						<option value="legals-list-240-250">250</option>
+						<option value="legals-list-250-256">256</option>
 					</select>
 				</label>
 
@@ -1498,7 +2039,6 @@
 			</div>
 			<!-- End pagination block -->
 		</div>
-
 	</main>
 
 	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
