@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos</title>
+	<title>PitPos | Добавление нового авто </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -27,7 +27,7 @@
 				<a class="flex flex-row-reverse items-center gap-x-3.5 hover:brightness-80 duration-300 active:brightness-70 sm:flex-row"
 					href="#!">
 					<div
-						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-black">
+						class="flex items-center shrink-0 w-12 aspect-square border border-gray-150 border-3 rounded-full bg-pitpos-blue">
 						<span class="font-third uppercase text-xl font-semibold text-white text-center w-full">аи</span>
 					</div>
 
@@ -48,15 +48,14 @@
 				</a>
 
 				<div class="hidden flex flex-col items-end sm:flex">
-					<time class="text-xl font-bold" datetime="10:38:22">10:38:22</time>
+					<time class="text-xl font-bold max-w-17.5 mr-2.5" datetime="10:38:22">10:38:22</time>
 					<time class="text-[0.9375rem]" datetime="2025-09-03">3 сентября 2025 г.</time>
 				</div>
 			</div>
 		</div>
-
 	</header>
 
-	<main class="relative min-h-screen pl-15 pt-18 pr-3 md:pl-18">
+	<main class="relative min-h-screen pl-15 pt-18 pb-4 pr-3 md:pl-18">
 		<aside class="absolute h-full top-15 left-0 md:left-3 z-1">
 			<div class="max-w-80 h-full relative">
 				<input class="hidden peer" id="menu-toggle" type="checkbox">
@@ -552,333 +551,175 @@
 			</div>
 		</aside>
 		<!-- End sidebar -->
-		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg xl:container">
-
-			<h1 class="text-center text-3xl font-bold">Готовые страницы "PitPos"</h1>
-			<p class="mb-5 text-2xl text-center">
-				(<i>демонстрация вёрстки</i>)
-			</p>
-
-			<div class="mb-6 max-w-200 mx-auto">
-				<ul class="flex flex-col gap-y-3 ">
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-success"></span>
-						<span class="font-semibold">&mdash;&nbsp;запущено в&nbsp;производство</span>
+		<div class="w-full mb-6 ">
+			<nav>
+				<ul class="flex flex-wrap">
+					<li>
+						<a class="text-gray-550 text-xs duration-300 hover:text-black active:text-gray-400"
+							href="./index.html">Главная&nbsp;-&nbsp;</a>
 					</li>
 
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-success-035"></span>
-						<span class="font-semibold">&mdash;&nbsp;готово к запуску в&nbsp;производство</span>
+					<li>
+						<a class="text-gray-550 text-xs duration-300 hover:text-black active:text-gray-400" href="#!">
+							Клиенты&nbsp;/&nbsp;
+						</a>
 					</li>
 
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-orange-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;на рассмотрении перед запуском в&nbsp;производство</span>
+					<li>
+						<a class="text-gray-550 text-xs duration-300 hover:text-black active:text-gray-400"
+							href="./clients-legals.html">
+							Юрлица&nbsp;/&nbsp;
+						</a>
 					</li>
 
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs"></span>
-						<span class="font-semibold">&mdash;&nbsp;готово, но никем не подтверждено</span>
+
+					<li>
+						<a class="text-black text-xs pointer-events-none" href="./clients-create-legal-car.html">
+							Новый автомобиль
+						</a>
 					</li>
 
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-indigo-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;Готово, но требуется техническое уточнение(<i>Антон...</i>)</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-yellow-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;В&nbsp;процессе верстания</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-red-500"></span>
-						<span class="font-semibold">&mdash;&nbsp;переделать полностью</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-red-200"></span>
-						<span class="font-semibold">&mdash;&nbsp;нуждается в&nbsp;правках</span>
-					</li>
-
-					<li class="flex items-center gap-x-2">
-						<span class="size-6 border-2 border-gray-700 rounded-xs bg-gray-300"></span>
-						<span class="font-semibold">&mdash;&nbsp;это тут не надо</span>
-					</li>
 				</ul>
-			</div>
+			</nav>
+		</div>
+		<!-- End breadcrumbs -->
+		<div class="bg-white h-full rounded-md py-5 px-5 shadow-lg">
+			<h1 class="flex items-center font-bold py-2.5 mb-3 text-sm sm:text-base lg:mb-6">
+				<svg class="size-6 mr-3.5 fill-black shrink-0" viewBox="0 0 16 16">
+					<use xlink:href="./public/images/icons/sprite-icons.svg#organization-icon"></use>
+				</svg>
 
-			<ul class="mb-12 mx-auto max-w-200">
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./sign-in.html">
-						Форма для вхождения
-					</a>
-				</li>
+				<span>
+					<span class="text-black">Прогресс Моторс</span>
+					<span class="text-black">(ООО&nbsp;“Прогресс&nbsp;Моторс”)</span>
+					<span class="text-black">&mdash;&nbsp;Новый&nbsp;автомобиль</span>
+				</span>
+			</h1>
+			<!-- End page name -->
+			<form class="flex flex-col gap-y-6 xs:p-5 max-w-144.5 w-full">
+				<div class="flex flex-col gap-y-1 w-full">
+					<label class="text-sm text-gray-700" for="car-brand">Марка*</label>
+					<input class="
+						w-full
+						px-3 
+						py-[0.6939rem] 
+						text-sm
+						leading-[1.2]
+						rounded-md 
+						outline-0 
+						ring-1 
+						ring-gray-300 
+						not-placeholder-shown:ring-gray-600 
+						duration-300 
+						placeholder:text-gray-500 
+						focus:ring-blue-focus-input 
+						focus:ring-2 
+						invalid:focus:ring-error
+						invalid:focus:text-error
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="car-brand" name="car-brand" type="text" placeholder="Bentley" required>
+				</div>
 
-				<li class="mb-2 border-1 rounded-md border-black bg-success">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shifts.html">
-						Смены(оперативный контроль)
-					</a>
-				</li>
+				<div class="flex flex-col gap-y-1 w-full">
+					<label class="text-sm text-gray-700" for="car-model">Модель*</label>
+					<input class="
+						w-full
+						px-3 
+						py-[0.6939rem] 
+						text-sm
+						leading-[1.2]
+						rounded-md 
+						outline-0 
+						ring-1 
+						ring-gray-300 
+						not-placeholder-shown:ring-gray-600 
+						duration-300 
+						placeholder:text-gray-500 
+						focus:ring-blue-focus-input 
+						focus:ring-2 
+						invalid:focus:ring-error
+						invalid:focus:text-error
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="car-model" name="car-model" type="text" placeholder="Mulsanne" required>
+				</div>
 
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-shift-details.html">
-						Смена детально(оперативный контроль).<i>1-3 TABы</i>
-					</a>
-				</li>
+				<div class="flex flex-col gap-y-1 w-full">
+					<label class="text-sm text-gray-700" for="car-register-number">Госномер</label>
+					<input class="
+						w-full
+						px-3 
+						py-[0.6939rem] 
+						text-sm
+						leading-[1.2]
+						rounded-md 
+						outline-0 
+						ring-1 
+						ring-gray-300 
+						not-placeholder-shown:ring-gray-600 
+						duration-300 
+						placeholder:text-gray-500 
+						focus:ring-blue-focus-input 
+						focus:ring-2 
+						invalid:focus:ring-error
+						invalid:focus:text-error
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="car-register-number" name="car-register-number" type="text" placeholder="А123АА123">
+				</div>
 
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-work-order.html">
-						Заказ-наряд(оперативный контроль).<i>1-й TAB</i>
-					</a>
-				</li>
+				<div class="flex flex-col gap-y-1 w-full">
+					<label class="text-sm text-gray-700" for="car-comment">Комментарий</label>
+					<input class="
+						w-full
+						px-3 
+						py-[0.6939rem] 
+						text-sm
+						leading-[1.2]
+						rounded-md 
+						outline-0 
+						ring-1 
+						ring-gray-300 
+						not-placeholder-shown:ring-gray-600 
+						duration-300 
+						placeholder:text-gray-500 
+						focus:ring-blue-focus-input 
+						focus:ring-2 
+						invalid:focus:ring-error
+						invalid:focus:text-error
+						disabled:text-gray-700
+						disabled:placeholder:text-disabled-input
+						disabled:ring-disabled-input
+						disabled:bg-disabled-input
+						bg-default-input
+						" id="car-comment" name="car-comment" type="text" placeholder="лоорр">
+				</div>
 
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-seasonal-storage.html">
-						Сезонные хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80 has-disabled:opacity-20 has-disabled:pointer-events-none"
-						href="./op-control-storage-applications.html">
-						Заявки на выдачу сезонных хранений(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80 has-disabled:opacity-20 has-disabled:pointer-events-none"
-						href="./op-control-application-storage-card.html">
-						Заявка на выдачу сезонного хранения(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-storage-card.html">
-						Сезонное хранение детально(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-disks-painting.html">
-						Покраска дисков(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantees.html">
-						Гарантии(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success-035">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./op-control-guarantee.html">
-						Гарантия детально(оперативный контроль)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-individuals.html">
-						Физлица(клиенты)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-legals.html">
-						Юр.лица(клиенты)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-legal-card.html">
-						Карточка Юр.лица(клиенты)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-create-legal.html">
-						Добавление Юр.лица(клиенты)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
+				<div class="w-full flex gap-x-6">
+					<a class="inline-block px-4 py-1.5 rounded-sm ring-1 ring-accent text-accent text-sm font-bold tracking-[0.01em] cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 has-disabled:bg-disabled-button has-disabled:ring-disabled-button has-disabled:text-gray-500 has-disabled:pointer-events-none"
 						href="./clients-create-legal-car.html">
-						Добавления автомобиля к карточке клиента(клиенты/юрлица)
+
+						<span class="text-sm font-medium">Отменить</span>
 					</a>
-				</li>
 
-				<li class="mb-2 border-1 rounded-md border-black bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-legal-car.html">
-						Просмотр автомобиля в карточке клиента(клиенты/юрлица)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./clients-legal-car-edit.html">
-						Редактирование автомобиля в карточке клиента(клиенты/юрлица)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-success">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-workshops.html">
-						Мастерские(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-error bg-yellow-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-workshop.html">
-						Мастерская(Справочник).<i>1-2 TABы</i>
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-recommendations.html">
-						Рекомендации(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-indigo-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-roles.html">
-						Роли(Справочник)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./reference-my-companies.html">
-						Мои&nbsp;компании(Справочник).
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-red-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./loyalty-promo-codes.html">
-						Промокоды(Лояльность)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-employees.html">
-						Сотрудники(Пользователи)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-indigo-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./user-card.html">
-						Карточка пользователя(сотрудника)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black bg-indigo-200">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-employer.html">
-						Создать карточку пользователя(сотрудника)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-assistants.html">
-						Помощники(Пользователи)
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-assistant-card.html">
-						Карточка помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-assistant-card-edit.html">
-						Редактировать карточку помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-assistant.html">
-						Создать помощника
-					</a>
-				</li>
-
-				<li class="mb-2 border-5 rounded-md border-error bg-red-500 text-white">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./dashboard.html">
-						Dashboard(1-й TAB)
-						<span class="font-bold italic">(ПЕРЕДАЛАТЬ)</span>
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-owners.html">
-						Владельцы(Пользователи)
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-owner.html">
-						Карточка владельца(Пользователи)
-					</a>
-				</li>
-
-				<li class="bg-gray-300 mb-2 border-1 rounded-md border-black">
-					<a class="text-xs xs:text-base px-2 w-full min-h-12 text-center inline-flex items-center justify-center duration-300 hover:bg-black hover:text-white hover:rounded-md active:brightness-80"
-						href="./users-create-new-owner.html">
-						Создание владельца(Пользователи)
-					</a>
-				</li>
-			</ul>
-
-			<ol class="mx-auto max-w-200 list-decimal px-7 space-y-6">
-				<li class="text-pink-500 font-bold italic border-b-2 border-pink-200">
-					На страницу справочника "роли" нужна ли модалка или другая страница для добовления новой роли?
-				</li>
-
-				<li class="text-pink-500 font-bold italic border-b-2 border-pink-200">
-					Как именно нужно реализовать настройку таблицы на странице "роли" , уточнить бы...
-				</li>
-
-				<li class="text-pink-500 font-bold italic border-b-2 border-pink-200">
-					Антон, просмотри пожалуйста код на странице карточки пользователя(script для реализации поиска, в блоке с
-					мотивити а так же js inline в html для удаления мотиваций и прочие такие штуки), если такой простой код прямо
-					в элементе подойдёт могу доделать до конца (в общем обсудить нужно...)
-				</li>
-
-				<li class="text-pink-500 font-bold italic border-b-2 border-pink-200">
-					На странице со списком Юрлиц, что должно происходить при нажатии на кнопку "Настройки гриида", может какая-то
-					модалка должна быть ?
-				</li>
-			</ol>
+					<button
+						class="px-4 py-1.5 rounded-sm ring-1 ring-accent text-accent text-sm font-bold tracking-[0.01em] cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+						type="submit">Сохранить</button>
+				</div>
+			</form>
+			<!-- End form from create new legal car -->
 		</div>
 	</main>
-
 	<!-- <script src="./node_modules/preline/dist/preline.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/preline@3.2.1/dist/preline.js"></script>
 </body>
