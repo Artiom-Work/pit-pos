@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Карточка юрлица </title>
+	<title>PitPos | Новое юрлицо </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -573,8 +573,8 @@
 					</li>
 
 					<li>
-						<a class="text-black text-xs pointer-events-none" href="./clients-legal-card.html">
-							Юрлицо
+						<a class="text-black text-xs pointer-events-none" href="./clients-create-legal-card.html">
+							Новое юрлицо
 						</a>
 					</li>
 
@@ -588,10 +588,7 @@
 					<use xlink:href="./public/images/icons/sprite-icons.svg#organization-icon"></use>
 				</svg>
 
-				<span>
-					<span class="text-black">Прогресс Моторс</span>
-					<span class="text-black">(ООО&nbsp;“Прогресс&nbsp;Моторс”)</span>
-				</span>
+				<span class="text-black">Новое юрлицо</span>
 			</h1>
 			<!-- End page name -->
 			<div>
@@ -613,30 +610,6 @@
 				<!-- End tab navigation -->
 				<div class="mt-3">
 					<div id="legal-card-tab-1" role="tabpanel" aria-labelledby="legal-card-tab-item-1">
-						<div class="relative">
-							<button
-								class="block ml-auto right-0 -top-12.5 px-5 py-[0.5625rem] rounded-md bg-accent font-bold text-sm tracking-[0.01em] text-white cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-1 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button md:absolute lg:-top-15.5"
-								type="button"
-								onclick="this.classList.add('hidden'), this.closest('#legal-card-tab-1').querySelector('[data-button-group]').classList.remove('hidden'), this.closest('#legal-card-tab-1').querySelectorAll('[disabled]').forEach(function(el) { el.removeAttribute('disabled') })">Редактировать</button>
-
-							<div
-								class="hidden right-0 -top-12.5 w-full flex justify-end items-end gap-x-2 sm:col-span-2   md:absolute md:w-min lg:-top-15.5 lg:col-span-1 xl:gap-x-6 xl:col-span-4"
-								data-button-group>
-								<a class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
-									href="./clients-legal-card.html">
-									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
-										<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
-									</svg>
-
-									<span class="text-sm font-medium">Отменить</span>
-								</a>
-
-								<button
-									class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
-									type="submit" form="basic-legal-form-data">Сохранить</button>
-							</div>
-						</div>
-
 						<form class="w-full max-w-144.5 mb-6 flex flex-col gap-3 sm:gap-6 p-5" id="basic-legal-form-data">
 							<div class="flex flex-col gap-y-1 w-full">
 								<label class="text-sm text-gray-700" for="name">Название*</label>
@@ -662,7 +635,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="name" name="name" type="text" placeholder="Имя организации" value="Прогресс Моторс" required disabled>
+									" id="name" name="name" type="text" placeholder="Имя организации" required>
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full">
@@ -689,8 +662,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="full-name" name="full-name" type="text" placeholder="ООО “Имя организации”"
-									value="ООО “Прогресс Моторс”" required disabled>
+									" id="full-name" name="full-name" type="text" placeholder="ООО “Имя организации”">
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full 
@@ -701,7 +673,7 @@
 								<label class="text-sm text-gray-700" for="legal-status">
 									Статус
 								</label>
-								<select disabled class="hidden" id="legal-status" name="legal-status" data-hs-select='{
+								<select class="hidden" id="legal-status" name="legal-status" data-hs-select='{
 									"toggleTag": "<button class=\"pr-9.5 h-10 text-gray-700 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
 									"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 									"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
@@ -710,51 +682,39 @@
 									"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 									"extraMarkup": "<div class=\"absolute cursor-pointer top-1/2 end-2 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 								}'>
-									<option value="choose">Выберите</option>
+									<option value="choose" selected>Выберите</option>
 									<option value="no-active">Неактивный</option>
 									<option value="active">Действует</option>
-									<option value="stoped" selected>Приостановлен</option>
+									<option value="stoped">Приостановлен</option>
 								</select>
 							</div>
 
-							<div class="
-							w-full 
-							flex 
-							flex-col 
-							gap-y-1 
-							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black 
-							">
-								<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="comment">
-									Комментарий
-								</label>
-								<select disabled
-									class="hidden [&[disabled]~div>svg]:stroke-gray-500! [&[disabled]~button>span]:text-gray-700! [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none"
-									id="comment" name="comment" data-hs-select='{
-						"hasSearch": true,
-						"searchPlaceholder": "Текст комметария",
-						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-						"placeholder": "Текст комметария",
-						"toggleTag": "<button  class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-						"toggleClasses": "[&>span:]text-start! [&>span]:whitespace-normal! [&>span]:overflow-visible! h-full relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input! bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-						"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-					}'>
-									<option value="">Все</option>
-									<option value="comment-1" selected>Связаться с Юлей!</option>
-									<option value="comment-2">!Не обслуживать, ЗАДОЛЖЕННОСТЬ!!! - ЮниРент - менеджеру связаться с Юлией
-										8
-										965 769 39-19</option>
-									<option value="comment-3">Связаться с Юлей! Прошу!</option>
-									<option value="comment-4">Связаться с Юлей!Прошу пожалуйста!!!</option>
-									<option value="comment-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt
-										aperiam aliquam in error accusantium deserunt, quod voluptas impedit libero suscipit asperiores,
-										doloremque ratione at repellendus voluptatibus quasi vero culpa.
-									</option>
-								</select>
+							<div class="flex flex-col gap-y-1 w-full">
+								<label class="text-sm text-gray-700" for="comment">Комментарий</label>
+								<textarea class="
+									min-h-15
+									w-full
+									px-3 
+									py-2.5
+									text-sm
+									leading-[1.2]
+									rounded-md 
+									outline-0 
+									ring-1 
+									ring-gray-300 
+									not-placeholder-shown:ring-gray-600 
+									duration-300 
+									placeholder:text-gray-500 
+									focus:ring-blue-focus-input 
+									focus:ring-2 
+									invalid:focus:ring-error
+									invalid:focus:text-error
+									disabled:text-gray-700
+									disabled:placeholder:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
+									" id="comment" name="comment" placeholder="Оставьте комментарий"></textarea>
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full">
@@ -781,8 +741,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="contact-person" name="contact-person" type="text" placeholder="Иван Иванов" value="Иван Иванов"
-									disabled>
+									" id="contact-person" name="contact-person" type="text" placeholder="Иван Иванов">
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full">
@@ -809,7 +768,7 @@
 										disabled:ring-disabled-input
 										disabled:bg-disabled-input
 										bg-default-input
-										" id="phone" name="phone" type="tel" placeholder="1111111111" maxlength="10" value="9879887666" disabled>
+										" id="phone" name="phone" type="tel" placeholder="2553123888" maxlength="10">
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full">
@@ -836,7 +795,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="card-number" name="card-number" type="text" placeholder="123" value="987" disabled>
+									" id="card-number" name="card-number" type="text" placeholder="123">
 							</div>
 
 							<div class="flex flex-col gap-y-1 w-full">
@@ -863,7 +822,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="discount" name="discount" type="text" placeholder="5%" value="20%" disabled>
+									" id="discount" name="discount" type="text" placeholder="5%">
 							</div>
 
 							<div class="flex flex-col gap-y-1">
@@ -890,15 +849,15 @@
 												disabled:ring-disabled-input
 												disabled:bg-disabled-input
 												bg-default-input
-												" id="actual-address" name="actual-address" type="text" placeholder="Поч.индекс, город, улица, №дома, №кв."
-									value="13001, Marseille, Rue de la République, 87, Appartement 329" disabled>
+												" id="actual-address" name="actual-address" type="text"
+									placeholder="Поч.индекс, город, улица, №дома, №кв.">
 							</div>
 
 							<div>
 								<label class="inline-flex items-center gap-3" for="include-cash-display">
 									<input type="checkbox"
 										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-										id="include-cash-display" name="include-cash-display" checked disabled>
+										id="include-cash-display" name="include-cash-display">
 									<span class="
 										w-5 
 										h-5 
@@ -955,8 +914,7 @@
 												disabled:ring-disabled-input
 												disabled:bg-disabled-input
 												bg-default-input
-												" id="legal-address" name="legal-address" type="text" placeholder="Поч.индекс, город, улица, №дома, №кв."
-									value="195252, Санкт-Петербург, Северный пр., д. 87, корп. 1, кв. 329" disabled>
+												" id="legal-address" name="legal-address" type="text" placeholder="Поч.индекс, город, улица, №дома, №кв.">
 							</div>
 
 							<div class="flex flex-col gap-y-1">
@@ -983,7 +941,7 @@
 												disabled:ring-disabled-input
 												disabled:bg-disabled-input
 												bg-default-input
-												" id="ogrn" name="ogrn" type="text" placeholder="000000000000000" value="321784700270866" disabled>
+												" id="ogrn" name="ogrn" type="text" placeholder="000000000000000">
 							</div>
 
 							<div class="flex flex-col gap-y-1">
@@ -1010,7 +968,7 @@
 												disabled:ring-disabled-input
 												disabled:bg-disabled-input
 												bg-default-input
-												" id="inn-1" name="inn-1" type="text" placeholder="000000000000" value="780428113778" disabled>
+												" id="inn-1" name="inn-1" type="text" placeholder="000000000000">
 							</div>
 
 							<div class="flex flex-col gap-y-1">
@@ -1037,58 +995,30 @@
 												disabled:ring-disabled-input
 												disabled:bg-disabled-input
 												bg-default-input
-												" id="kpp" name="kpp" type="text" placeholder="000000" value="000000" disabled>
+												" id="kpp" name="kpp" type="text" placeholder="000000">
+							</div>
+
+							<div class="w-full flex justify-end items-end gap-x-2 xl:gap-x-6" data-button-group>
+								<a class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none"
+									href="./clients-create-legal-card.html">
+									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
+										<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
+									</svg>
+
+									<span class="text-sm font-medium">Отменить</span>
+								</a>
+
+								<button
+									class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+									type="submit">Сохранить</button>
 							</div>
 						</form>
 					</div>
 
 					<div id="legal-card-tab-2" class="hidden" role="tabpanel" aria-labelledby="legal-card-tab-item-2">
-						<form class="mb-6 gap-3 grid md:grid-cols-2 lg:grid-cols-4 xl:gap-6 xl:flex xl:items-end">
-							<div class="
-							w-full 
-							flex 
-							flex-col 
-							gap-y-1 
-							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-							has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black 
-							sm:max-w-full
-							xl:max-w-73.5
-							">
-								<label class="whitespace-nowrap text-sm text-gray-700 inline-block" for="legal-search-car">
-									Поиск
-								</label>
-								<select
-									class="hidden [&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none"
-									id="legal-search-car" name="legal-search-car" data-hs-select='{
-						"hasSearch": true,
-						"searchPlaceholder": "Бренд/марка/госномер",
-						"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-						"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-						"placeholder": "Все",
-						"toggleTag": "<button  class=\"pr-10 h-[2.4375rem] text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-						"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-						"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-						"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-						"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-						"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-					}'>
-									<option value="all">Все</option>
-									<option value="legal-car-1">Volkswagen Mustang А123БВ78</option>
-									<option value="legal-car-2">Lada Enzo Е001КХ77</option>
-									<option value="legal-car-3">Ford Kalina Х777ОМ88</option>
-									<option value="legal-car-4">Toyota Granta А123УС69</option>
-									<option value="legal-car-5">BMW Vesta М001АВ01</option>
-									<option value="legal-car-6">Mercedes XRay Т777ТТ77</option>
-									<option value="legal-car-7">Audi Niva В888ОР66</option>
-									<option value="legal-car-8">Honda Priora С999СР99</option>
-									<option value="legal-car-9">Chevrolet Largus К666КХ33</option>
-									<option value="legal-car-10">Nissan 4x4 О555ОМ44</option>
-
-								</select>
-							</div>
-
-							<div class="flex flex-col gap-y-1 w-full sm:max-w-full xl:max-w-73.5">
-								<label class="text-sm text-gray-700" for="car-brand">Марка</label>
+						<form class="mb-6 flex flex-col gap-y-6 xs:px-5 max-w-144.5 w-full">
+							<div class="flex flex-col gap-y-1 w-full">
+								<label class="text-sm text-gray-700" for="car-brand">Марка*</label>
 								<input class="
 									w-full
 									px-3 
@@ -1111,11 +1041,11 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="car-brand" name="car-brand" type="text" placeholder="Volkswagen">
+									" id="car-brand" name="car-brand" type="text" placeholder="Bentley" required>
 							</div>
 
-							<div class="flex flex-col gap-y-1 w-full sm:max-w-full xl:max-w-73.5">
-								<label class="text-sm text-gray-700" for="car-model">Модель</label>
+							<div class="flex flex-col gap-y-1 w-full">
+								<label class="text-sm text-gray-700" for="car-model">Модель*</label>
 								<input class="
 									w-full
 									px-3 
@@ -1138,10 +1068,10 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="car-model" name="car-model" type="text" placeholder="mustang">
+									" id="car-model" name="car-model" type="text" placeholder="Mulsanne" required>
 							</div>
 
-							<div class="flex flex-col gap-y-1 w-full sm:max-w-full xl:max-w-73.5">
+							<div class="flex flex-col gap-y-1 w-full">
 								<label class="text-sm text-gray-700" for="car-register-number">Госномер</label>
 								<input class="
 									w-full
@@ -1165,74 +1095,68 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="car-register-number" name="car-register-number" type="text" placeholder="А123БВ78">
+									" id="car-register-number" name="car-register-number" type="text" placeholder="А123АА123">
 							</div>
 
-							<div class="w-full flex items-end justify-end gap-x-2 sm:col-span-full xl:justify-start xl:gap-x-6">
-								<a class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 has-disabled:ring-gray-200 has-disabled:text-gray-500 has-disabled:[&>svg]:stroke-gray-500 has-disabled:pointer-events-none"
-									href="./clients-legal-card.html">
-									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
-										<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
-									</svg>
+							<div class="flex flex-col gap-y-1 w-full">
+								<label class="text-sm text-gray-700" for="car-comment">Комментарий</label>
+								<input class="
+									w-full
+									px-3 
+									py-[0.6939rem] 
+									text-sm
+									leading-[1.2]
+									rounded-md 
+									outline-0 
+									ring-1 
+									ring-gray-300 
+									not-placeholder-shown:ring-gray-600 
+									duration-300 
+									placeholder:text-gray-500 
+									focus:ring-blue-focus-input 
+									focus:ring-2 
+									invalid:focus:ring-error
+									invalid:focus:text-error
+									disabled:text-gray-700
+									disabled:placeholder:text-disabled-input
+									disabled:ring-disabled-input
+									disabled:bg-disabled-input
+									bg-default-input
+									" id="car-comment" name="car-comment" type="text" placeholder="Оставьте комментарий">
+							</div>
 
-									<span class="text-sm font-medium">Сбросить</span>
-								</a>
+							<div class="w-full flex gap-x-6">
+								<button
+									class=" px-4 py-1.5 rounded-sm ring-1 ring-accent text-accent text-sm font-bold tracking-[0.01em] cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 has-disabled:bg-disabled-button has-disabled:ring-disabled-button has-disabled:text-gray-500 has-disabled:pointer-events-none"
+									type="reset">
+
+									<span class="text-sm font-medium">Отменить</span>
+								</button>
 
 								<button
-									class="px-5 py-[0.5625rem] rounded-sm ring-1 ring-accent text-accent text-sm font-bold cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
-									type="submit">Применить</button>
+									class="px-4 py-1.5 rounded-sm ring-1 ring-accent text-accent text-sm font-bold tracking-[0.01em] cursor-pointer duration-300 will-change-transform hover:bg-white hover:shadow-md hover:shadow-md hover:ring-2 active:scale-98 active:brightness-95 disabled:bg-disabled-button disabled:ring-disabled-button disabled:text-gray-500 disabled:pointer-events-none"
+									type="button">Добавить</button>
 							</div>
 						</form>
-						<!-- End MAIN filter of legal cars table -->
-						<div
-							class="mb-6 w-full flex flex-col justify-between gap-3 flex-wrap sm:items-center sm:flex-row sm:gap-6 max-w-382">
-							<form class="flex flex-col gap-3 sm:flex-row">
-								<div>
-									<input class="hidden peer" type="checkbox" id="filter-legals-cars-all" checked>
-									<label
-										class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
-										for="filter-legals-cars-all">Все</label>
-								</div>
-								<div>
-									<input class="hidden peer" type="checkbox" id="filter-legals-cars-active">
-									<label
-										class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
-										for="filter-legals-cars-active">Действует</label>
-								</div>
-								<div>
-									<input class="hidden peer" type="checkbox" id="filter-legals-cars-deleted">
-									<label
-										class="w-full text-center inline-block px-2.5 py-2.5 leading-[1.3] text-sm text-gray-700 font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:scale-98 active:brightness-95 hover:bg-white hover:ring-pitpos-blue hover:ring-2 peer-checked:ring-pitpos-blue peer-checked:bg-pitpos-blue peer-checked:hover:bg-pitpos-blue peer-checked:text-white"
-										for="filter-legals-cars-deleted">Удаленные</label>
-								</div>
-							</form>
-							<!-- End additional table filter -->
-
-							<a class="px-5 py-[0.5635rem] rounded-sm bg-accent font-bold text-sm ring-accent ring-1 tracking-[0.01em] text-white self-end cursor-pointer duration-300 will-change-transform cursor-pointer hover:ring-2 hover:ring-accent hover:shadow-md active:scale-98 active:brightness-90 has-disabled:pointer-events-none has-disabled:text-gray-500 has-disabled:bg-disabled-button"
-								href="./clients-create-legal-car.html">
-								Добавить&nbsp;автомобиль
-							</a>
-						</div>
 
 						<div
-							class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue">
+							class="overflow-x-auto xl:w-full mb-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue xs:px-5">
 							<table class="
 									prose 
 									max-w-screen 
 									w-full 
-									min-w-175
+									min-w-255
 									text-dark-text 
 									prose-thead:border-0 
-									prose-th:leading-[1.2]
+									prose-th:leading-none
 									prose-th:p-2.5 
 									prose-th:bg-gray-50 
 									prose-th:align-middle 
 									prose-th:text-[0.81rem] 
 									prose-th:font-semibold 
 									prose-th:last:max-w-40.5
-									prose-th:[&:nth-child(n+3)]:border-l-1
-									prose-th:[&:nth-child(n+3)]:border-gray-300
-									prose-th:[&:first-child]:text-accent 
+									prose-th:[&:nth-child(n+2)]:border-l-1
+									prose-th:[&:nth-child(n+2)]:border-gray-300
 									prose-td:text-sm
 									prose-td:px-2.5 
 									prose-td:py-0! 
@@ -1246,46 +1170,18 @@
 									prose-tr:[&>td:nth-child(2)]:w-50
 									prose-tr:[&>td:nth-child(3)]:w-50
 									prose-tr:[&>td:nth-child(4)]:w-50
+									prose-tr:[&>td:nth-child(5)]:w-80
 									prose-tr:[&>td:last-child]:min-w-35
-									prose-tr:has-[a[data-legal-car='deleted']]:pointer-events-none
-									prose-tr:has-[a[data-legal-car='deleted']]:text-gray-500
-									prose-tr:has-[a[data-legal-car='deleted']]:line-through
-									prose-tr:has-[a[data-legal-car='deleted']]:[&_a]:text-gray-500
-									prose-tr:has-[a[data-legal-car='deleted']]:[&_a]:no-underline
-									prose-tr:has-[a[data-legal-car='deleted']]:[&_a>svg]:stroke-gray-500
-									prose-tr:has-[a[data-legal-car='deleted']]:[&_button>svg]:stroke-gray-500
-									prose-td:[&>a]:text-accent
-									prose-td:[&>a]:underline
-									prose-td:[&>a]:duration-300
-									prose-td:[&>a]:hover:brightness-80
-									prose-td:[&>a]:hover:no-underline
-									prose-td:[&>a]:active:brightness-60
-									prose-td:[&_a.disabled]:pointer-events-none
-									prose-td:[&_a.disabled]:text-gray-500
-									prose-td:[&>a.disabled]:no-underline
-									prose-td:[&>div]:flex
-									prose-td:[&>div]:items-center
-									prose-td:[&>div>button]:h-10.5
-									prose-td:[&>div>button]:p-2
-									prose-td:[&>div>button]:rounded-md
-									prose-td:[&>div>button]:cursor-pointer
-									prose-td:[&>div>button]:duration-300
-									prose-td:[&>div>button]:will-change-transform
-									prose-td:[&>div>button]:hover:shadow-md
-									prose-td:[&>div>button]:hover:bg-gray-200
-									prose-td:[&>div>button]:active:bg-gray-300
-									prose-td:[&>div>button]:disabled:pointer-events-none
-									prose-td:[&>div>button]:disabled:[&>svg]:stroke-gray-300
-									prose-td:[&>div>a]:inline-block
-									prose-td:[&>div>a]:h-10.5
-									prose-td:[&>div>a]:p-2.5
-									prose-td:[&>div>a]:rounded-md
-									prose-td:[&>div>a]:cursor-pointer
-									prose-td:[&>div>a]:duration-300
-									prose-td:[&>div>a]:hover:shadow-md
-									prose-td:[&>div>a]:hover:bg-gray-200
-									prose-td:[&>div>a]:active:bg-gray-300
-									prose-td:[&>div>a.disabled]:[&>svg]:stroke-gray-300
+									prose-td:[&>button]:h-10.5
+									prose-td:[&>button]:p-2
+									prose-td:[&>button]:rounded-md
+									prose-td:[&>button]:cursor-pointer
+									prose-td:[&>button]:duration-300
+									prose-td:[&>button]:will-change-transform
+									prose-td:[&>button]:hover:shadow-md
+									prose-td:[&>button]:hover:bg-gray-200
+									prose-td:[&>button]:active:bg-gray-300
+									prose-td:[&>input]:hidden
 							">
 								<thead>
 									<tr>
@@ -1302,203 +1198,162 @@
 											Госномер
 										</th>
 										<th>
-											Действия
+											Комментарий
+										</th>
+										<th>
+											Отменить добавление
 										</th>
 									</tr>
 								</thead>
 
 								<tbody>
-									<tr>
+									<tr data-car-description-row>
 										<td>
-											<a href="./clients-legal-car.html" aria-label="details" title="Подробнее об авто">
-												123
-											</a>
+											<label for="car-id-1">001</label>
+											<input type="text" id="car-id-1" name="#car-id-1" value="001" form="basic-legal-form-data">
 										</td>
 										<td>
-											Bentley
+											<label for="car-brand-1">Bentley</label>
+											<input type="text" id="car-brand-1" name="#car-brand-1" value="Bentley"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											Mulsanne
+											<label for="car-model-1">Mulsanne</label>
+											<input type="text" id="car-model-1" name="#car-model-1" value="Mulsanne"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											A123AA123
+											<label for="car-register-number-1">A123AA123</label>
+											<input type="text" id="car-register-number-1" name="#car-register-number-1" value="A123AA123"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											<div>
-												<a class="disabled" href="./clients-legal-car-edit.html" aria-label="edit-legal"
-													title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
+											<label for="car-comment-1">Роскошный британский седан с мощным двигателем ручной сборки.</label>
+											<input type="text" id="car-comment-1" name="#car-comment-1"
+												value="Роскошный британский седан с мощным двигателем ручной сборки."
+												form="basic-legal-form-data">
 
-												<button disabled type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
+										</td>
+										<td>
+											<button type="button" aria-label="delete" title="Удалить"
+												onclick="this.closest('[data-car-description-row]').remove('[data-car-description-row]')">
+												<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+												</svg>
+											</button>
 										</td>
 									</tr>
 
-									<tr>
+									<tr data-car-description-row>
 										<td>
-											<a href="./clients-legal-car.html" aria-label="details" title="Подробнее об авто">
-												456
-											</a>
+											<label for="car-id-2">002</label>
+											<input type="text" id="car-id-2" name="#car-id-2" value="002" form="basic-legal-form-data">
 										</td>
 										<td>
-											Volkswagen
+											<label for="car-brand-2">Bentley</label>
+											<input type="text" id="car-brand-2" name="#car-brand-2" value="Bentley"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											Mustang
+											<label for="car-model-2">Mulsanne</label>
+											<input type="text" id="car-model-2" name="#car-model-2" value="Mulsanne"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											А123БВ78
+											<label for="car-register-number-2">A124AA123</label>
+											<input type="text" id="car-register-number-2" name="#car-register-number-2" value="A123AA123"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											<div>
-												<a href="./clients-legal-car-edit.html" aria-label="edit-legal" title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
+											<label for="car-comment-2">Роскошный британский седан с мощным двигателем ручной сборки.Роскошный
+												британский седан с мощным двигателем ручной сборки.Роскошный британский седан с мощным
+												двигателем ручной сборки.</label>
+											<input type="text" id="car-comment-2" name="#car-comment-2"
+												value="Роскошный британский седан с мощным двигателем ручной сборки."
+												form="basic-legal-form-data">
 
-												<button type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
+										</td>
+										<td>
+											<button type="button" aria-label="delete" title="Удалить"
+												onclick="this.closest('[data-car-description-row]').remove('[data-car-description-row]')">
+												<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+												</svg>
+											</button>
 										</td>
 									</tr>
 
-									<tr>
+									<tr data-car-description-row>
 										<td>
-											<a href="./clients-legal-car.html" aria-label="details" title="Подробнее об авто">
-												789
-											</a>
+											<label for="car-id-3">003</label>
+											<input type="text" id="car-id-3" name="#car-id-3" value="001" form="basic-legal-form-data">
 										</td>
 										<td>
-											Toyota
+											<label for="car-brand-3">Bentley</label>
+											<input type="text" id="car-brand-3" name="#car-brand-3" value="Bentley"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											Granta
+											<label for="car-model-3">Mulsanne</label>
+											<input type="text" id="car-model-3" name="#car-model-3" value="Mulsanne"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											А123УС69
+											<label for="car-register-number-3">A125AA123</label>
+											<input type="text" id="car-register-number-3" name="#car-register-number-3" value="A123AA123"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											<div>
-												<a href="./clients-legal-car-edit.html" aria-label="edit-legal" title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
+											<label for="car-comment-3">Роскошный британский седан с мощным двигателем ручной сборки.</label>
+											<input type="text" id="car-comment-3" name="#car-comment-3"
+												value="Роскошный британский седан с мощным двигателем ручной сборки."
+												form="basic-legal-form-data">
 
-												<button type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
+										</td>
+										<td>
+											<button type="button" aria-label="delete" title="Удалить"
+												onclick="this.closest('[data-car-description-row]').remove('[data-car-description-row]')">
+												<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+												</svg>
+											</button>
 										</td>
 									</tr>
 
-									<tr>
+									<tr data-car-description-row>
 										<td>
-											<a href="./clients-legal-car.html" aria-label="details" title="Подробнее об авто">
-												321
-											</a>
+											<label for="car-id-4">004</label>
+											<input type="text" id="car-id-4" name="#car-id-4" value="004" form="basic-legal-form-data">
 										</td>
 										<td>
-											Lada
+											<label for="car-brand-4">Bentley</label>
+											<input type="text" id="car-brand-4" name="#car-brand-4" value="Bentley"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											Enzo
+											<label for="car-model-4">Mulsanne</label>
+											<input type="text" id="car-model-4" name="#car-model-4" value="Mulsanne"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											Е001КХ77
+											<label for="car-register-number-4">A127AA123</label>
+											<input type="text" id="car-register-number-4" name="#car-register-number-4" value="A123AA123"
+												form="basic-legal-form-data">
 										</td>
 										<td>
-											<div>
-												<a href="./clients-legal-car-edit.html" aria-label="edit-legal" title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
+											<label for="car-comment-4">Роскошный британский седан с мощным двигателем ручной сборки.</label>
+											<input type="text" id="car-comment-4" name="#car-comment-4"
+												value="Роскошный британский седан с мощным двигателем ручной сборки."
+												form="basic-legal-form-data">
 
-												<button type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<a href="./clients-legal-car.html" aria-label="details" title="Подробнее об авто">
-												654
-											</a>
 										</td>
 										<td>
-											Ford
-										</td>
-										<td>
-											Kalina
-										</td>
-										<td>
-											Х777ОМ88
-										</td>
-										<td>
-											<div>
-												<a href="./clients-legal-car-edit.html" aria-label="edit-legal" title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
-
-												<button type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
-										</td>
-									</tr>
-
-									<tr>
-										<td>
-											<a href="./clients-legal-car.html" data-legal-car="deleted" aria-label="details"
-												title="Подробнее об авто">
-												007
-											</a>
-										</td>
-										<td>
-											Aston Martin
-										</td>
-										<td>
-											DBS
-										</td>
-										<td>
-											Э007OYF123
-										</td>
-										<td>
-											<div>
-												<a href="./clients-legal-car-edit.html" aria-label="edit-legal" title="Редактировать">
-													<svg class="size-5.5 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 25">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#edit-icon"></use>
-													</svg>
-												</a>
-
-												<button type="button" aria-label="delete" title="Удалить">
-													<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
-														<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
-													</svg>
-												</button>
-											</div>
+											<button type="button" aria-label="delete" title="Удалить"
+												onclick="this.closest('[data-car-description-row]').remove('[data-car-description-row]')">
+												<svg class="size-7 stroke-accent fill-transparent shrink-0" viewBox="0 0 24 24">
+													<use xlink:href="./public/images/icons/sprite-icons.svg#trash-icon"></use>
+												</svg>
+											</button>
 										</td>
 									</tr>
 								</tbody>

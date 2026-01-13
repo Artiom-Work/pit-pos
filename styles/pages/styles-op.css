@@ -1039,9 +1039,6 @@
   .h-full {
     height: 100%;
   }
-  .h-min {
-    height: min-content;
-  }
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
   }
@@ -1053,12 +1050,6 @@
   }
   .max-h-full {
     max-height: 100%;
-  }
-  .min-h-5 {
-    min-height: calc(var(--spacing) * 5);
-  }
-  .min-h-10 {
-    min-height: calc(var(--spacing) * 10);
   }
   .min-h-12 {
     min-height: calc(var(--spacing) * 12);
@@ -1254,6 +1245,9 @@
   }
   .min-w-244 {
     min-width: calc(var(--spacing) * 244);
+  }
+  .min-w-255 {
+    min-width: calc(var(--spacing) * 255);
   }
   .min-w-279 {
     min-width: calc(var(--spacing) * 279);
@@ -2121,6 +2115,9 @@
   }
   .text-pitpos-blue {
     color: var(--color-pitpos-blue);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-red-600 {
     color: var(--color-red-600);
@@ -3231,6 +3228,11 @@
   .xs\:px-1 {
     @media (width >= 29.99rem) {
       padding-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .xs\:px-5 {
+    @media (width >= 29.99rem) {
+      padding-inline: calc(var(--spacing) * 5);
     }
   }
   .xs\:text-base {
@@ -6332,6 +6334,13 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:h-10\.5 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        height: calc(var(--spacing) * 10.5);
+      }
+    }
+  }
   .prose-td\:\[\&\>button\]\:cursor-pointer {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
@@ -6339,10 +6348,24 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:rounded-md {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        border-radius: var(--radius-md);
+      }
+    }
+  }
   .prose-td\:\[\&\>button\]\:rounded-sm {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
         border-radius: var(--radius-sm);
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\]\:p-2 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        padding: calc(var(--spacing) * 2);
       }
     }
   }
@@ -6444,6 +6467,17 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:hover\:bg-gray-200 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        &:hover {
+          @media (hover: hover) {
+            background-color: var(--color-gray-200);
+          }
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>button\]\:hover\:bg-white {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
@@ -6514,12 +6548,30 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:active\:bg-gray-300 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        &:active {
+          background-color: var(--color-gray-300);
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>button\]\:active\:brightness-95 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>button {
         &:active {
           --tw-brightness: brightness(95%);
           filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\]\:disabled\:pointer-events-none {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        &:disabled {
+          pointer-events: none;
         }
       }
     }
@@ -7163,6 +7215,20 @@
     &:has(*:is([data-title-value]:not([data-title-value='Выберите']).selected)) {
       &>div>button>span {
         color: var(--color-black);
+      }
+    }
+  }
+  .prose-td\:\[\&\>input\]\:hidden {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>input {
+        display: none;
+      }
+    }
+  }
+  .prose-td\:\[\&\>label\]\:hidden {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>label {
+        display: none;
       }
     }
   }
@@ -7912,6 +7978,17 @@
       }
     }
   }
+  .prose-td\:\[\&\>button\]\:disabled\:\[\&\>svg\]\:stroke-gray-300 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button {
+        &:disabled {
+          &>svg {
+            stroke: var(--color-gray-300);
+          }
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>div\>a\.disabled\]\:\[\&\>svg\]\:stroke-gray-300 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>div>a.disabled {
@@ -8186,10 +8263,24 @@
       }
     }
   }
+  .prose-tr\:\[\&\>td\:nth-child\(4\)\]\:w-80 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(4) {
+        width: calc(var(--spacing) * 80);
+      }
+    }
+  }
   .prose-tr\:\[\&\>td\:nth-child\(4\)\]\:whitespace-nowrap {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>td:nth-child(4) {
         white-space: nowrap;
+      }
+    }
+  }
+  .prose-tr\:\[\&\>td\:nth-child\(5\)\]\:w-80 {
+    & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>td:nth-child(5) {
+        width: calc(var(--spacing) * 80);
       }
     }
   }
