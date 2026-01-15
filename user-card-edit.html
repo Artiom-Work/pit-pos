@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./public/images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./public/images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/favicon.svg">
-	<title>PitPos | Новый пользователь </title>
+	<title>PitPos | Редактировать пользователя </title>
 	<link href="./styles/pages/styles-op.css" rel="stylesheet">
 </head>
 
@@ -572,8 +572,8 @@
 				</li>
 
 				<li>
-					<a class="text-black text-xs pointer-events-none" href="./users-create-employer.html">
-						Новый пользователь
+					<a class="text-black text-xs pointer-events-none" href="./users-card.html">
+						Редактировать&nbsp;пользователя
 					</a>
 				</li>
 			</ul>
@@ -589,7 +589,7 @@
 			</h1>
 			<!-- End page name -->
 			<div>
-				<nav class=" mb-3 flex flex-col gap-2.5 sm:flex-row lg:mb-6" aria-label="Tabs" role="tablist"
+				<nav class="mb-3 flex flex-col gap-2.5 sm:flex-row lg:mb-6" aria-label="Tabs" role="tablist"
 					aria-orientation="horizontal">
 					<button type="button"
 						class="inline-block px-2.5 py-2 text-sm text-gray-700 bg-white font-semibold ring-1 ring-gray-300 rounded-md cursor-pointer will-change-transform duration-300 active:brightness-95 active:scale-98 hover:ring-pitpos-blue hover:shadow-md hover:ring-pitpos-black disabled:pointer-events-none disabled:text-gray-500 disabled:bg-disabled-button disabled:ring-disabled-button hs-tab-active:ring-pitpos-blue hs-tab-active:bg-pitpos-blue hs-tab-active:text-white active"
@@ -635,7 +635,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="user-second-name" name="user-second-name" type="text" placeholder="Иванов" required>
+									" id="user-second-name" name="user-second-name" type="text" placeholder="Иванова" value="Иванов" required>
 							</div>
 
 							<div class="flex flex-col gap-y-1  w-full">
@@ -662,7 +662,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="user-name" name="user-name" type="text" placeholder="Иван" required>
+									" id="user-name" name="user-name" type="text" placeholder="Иван" value="Иван" required>
 							</div>
 
 							<div class="flex flex-col gap-y-1  w-full">
@@ -689,7 +689,7 @@
 									disabled:ring-disabled-input
 									disabled:bg-disabled-input
 									bg-default-input
-									" id="user-surname" name="user-surname" type="text" placeholder="Ивановна">
+									" id="user-surname" name="user-surname" type="text" placeholder="Ивановна" value="Иванович">
 							</div>
 
 							<div
@@ -697,8 +697,7 @@
 								<label class="text-sm text-gray-700" for="user-role">Роль*</label>
 
 								<select required class="hidden" id="user-role" name="user-role" data-hs-select='{
-									"placeholder": "Выберите",
-							"toggleTag": "<button class=\"pr-10 h-[2.4375rem] text-gray-500 text-sm leading-[1.7] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input! \" type=\"button\" aria-expanded=\"false\"></button>",
+							"toggleTag": "<button class=\"pr-10 h-11.5 text-gray-500 text-sm leading-[2.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input! \" type=\"button\" aria-expanded=\"false\"></button>",
 							"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 							"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 							"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
@@ -706,13 +705,13 @@
 							"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 							"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
 						}'>
-									<option value="">Все</option>
+									<option value="all">Все</option>
 									<option value="owner">Владелец</option>
 									<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
 									<option value="workshop-admin">Администратор&nbsp;мастерской</option>
 									<option value="carwash-admin">Администратор&nbsp;мойки</option>
 									<option value="service-admin">Администратор&nbsp;сервиса</option>
-									<option value="master">Мастер</option>
+									<option value="master" selected>Мастер</option>
 									<option value="service-advisor">Мастер-приемщик</option>
 									<option value="shiftController">Контролер&nbsp;смен</option>
 									<option value="technical-inspector">Мастер&nbsp;ТО</option>
@@ -727,6 +726,42 @@
 									<option value="washer">Мойщик</option>
 									<option value="locksmith">Слесарь</option>
 								</select>
+							</div>
+
+							<div>
+								<label class="inline-flex items-center gap-3" for="user-collection-permit">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="user-collection-permit" name="user-collection-permit">
+									<span class="
+										w-5 
+										h-5 
+										border-1 
+										border-gray-600 
+										bg-default-checkbox 
+										rounded-sm 
+										peer-checked:bg-pitpos-blue
+										flex items-center 
+										justify-center 
+										cursor-pointer 
+										duration-300 
+										will-change-transform 
+										peer-checked:[&>svg]:stroke-white 
+										peer-checked:border-pitpos-blue
+										peer-disabled:pointer-events-none 
+										peer-disabled:cursor-default 
+										peer-disabled:border-disabled-border-checkbox 
+										peer-disabled:[&>svg]:stroke-disabled-checkbox 
+										peer-disabled:bg-disabled-checkbox 
+										hover:border-pitpos-blue
+										hover:shadow-md">
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
+
+									<span class="text-dark-text font-semibold text-[0.8125rem]">Разрешать инкассацию</span>
+								</label>
 							</div>
 
 							<div class="flex flex-col gap-y-1  w-full">
@@ -753,7 +788,7 @@
 										disabled:ring-disabled-input
 										disabled:bg-disabled-input
 										bg-default-input
-										" id="user-phone" name="user-phone" type="tel" placeholder="+71111111111" required
+										" id="user-phone" name="user-phone" type="tel" placeholder="+71111111111" value="+79991234567" required
 									pattern="[\+]\d{1,3}\s?[\(]{0,1}\d{1,4}[\)]{0,1}\s?\d{1,4}[\-]?\d{1,4}">
 							</div>
 
@@ -781,7 +816,7 @@
 										disabled:ring-disabled-input
 										disabled:bg-disabled-input
 										bg-default-input
-										" id="user-email" name="user-email" type="email" placeholder="info@gmail.com"
+										" id="user-email" name="user-email" type="email" placeholder="info@gmail.com" value="info@gmail.com"
 									pattern="[a-zA-Z0-9._%+\-]+@gmail\.com$" required>
 							</div>
 
@@ -809,11 +844,11 @@
 										disabled:ring-disabled-input
 										disabled:bg-disabled-input
 										bg-default-input
-										" id="user-telegram" name="user-telegram" type="text" placeholder="@admin_moika">
+										" id="user-telegram" name="user-telegram" type="text" placeholder="@admin_moika" value="@admin_moika">
 							</div>
 
 							<div>
-								<label class="flex items-center gap-3" for="user-messenger-communication">
+								<label class="inline-flex items-center gap-3" for="user-messenger-communication">
 									<input type="checkbox"
 										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
 										id="user-messenger-communication" name="user-messenger-communication">
@@ -849,9 +884,43 @@
 								</label>
 							</div>
 
+							<div class="flex flex-col gap-y-2  w-full">
+								<label class="text-sm text-gray-700" for="user-image">Изображение</label>
+								<input class="text-gray-700 text-[0.8125rem] block
+								outline-0 
+								focus:file:ring-2 
+								rounded-sm
+								file:px-5 
+								file:mr-6
+								file:my-[0.1875rem]
+								file:ml-[0.1875rem]
+								file:py-[0.4rem] 
+								file:rounded-sm 
+								file:ring-1 
+								file:ring-accent 
+								file:text-accent 
+								file:text-sm 
+								file:font-bold 
+								file:cursor-pointer 
+								file:duration-300 
+								file:will-change-transform 
+								hover:file:bg-white 
+								hover:file:shadow-md 
+								hover:file:shadow-md 
+								hover:file:ring-2 
+								active:file:scale-98 
+								active:file:brightness-95 
+								disabled:file:bg-disabled-button 
+								disabled:file:ring-disabled-button 
+								disabled:file:text-gray-500 
+								disabled:text-gray-500 
+								disabled:pointer-events-none
+								" type="file" name="user-image" id="user-image" accept="image/*" capture="environment">
+							</div>
+
 							<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-6  w-full" data-hs-toggle-password-group="">
 								<div class="w-full">
-									<label for="user-password" class="text-sm text-gray-700 leading-[1] mb-1">Пароль</label>
+									<label for="user-password" class="text-sm text-gray-700 mb-1">Пароль</label>
 									<div class="relative">
 										<input class="
 															w-full
@@ -875,7 +944,8 @@
 															disabled:placeholder:text-disabled-input
 															disabled:ring-disabled-input
 															disabled:bg-disabled-input
-															bg-default-input" id="user-password" name="user-password" type="password" placeholder="Введите пароль">
+															bg-default-input" id="user-password" name="user-password" type="password" placeholder="Введите пароль"
+											value="qwerty">
 										<button type="button" data-hs-toggle-password='{
 												"target": ["#user-password", "#user-repeated-password"]
 											}' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-hidden focus:text-gray-700">
@@ -946,13 +1016,13 @@
 							</div>
 
 							<div class="w-full flex items-center gap-x-2 sm:gap-x-6">
-								<a href="./users-create-employer.html"
+								<a href="./user-card-edit.html"
 									class="px-2.5 py-[0.5625rem] flex items-center gap-x-2.5 text-accent rounded-md duration-300 will-change-transform cursor-pointer hover:bg-white hover:ring-2 hover:shadow-md hover:ring-accent active:scale-98 active:brightness-95 disabled:ring-gray-200 disabled:text-gray-500 disabled:[&>svg]:stroke-gray-500 disabled:pointer-events-none">
 									<svg class="size-4 stroke-accent fill-transparent" viewBox="0 0 17 16">
 										<use xlink:href="./public/images/icons/sprite-icons.svg#reset-icon"></use>
 									</svg>
 
-									<span class=" text-sm font-medium">Отменить</span>
+									<span class="text-sm font-medium">Отменить</span>
 								</a>
 
 								<button
@@ -991,7 +1061,7 @@
 										disabled:bg-disabled-input
 										bg-default-input
 										" id="passport_series" name="passport_series" form="basic-user-data" type="text" placeholder="4013"
-											maxlength="4">
+											maxlength="4" value="1234">
 									</div>
 
 									<div class="flex flex-col gap-y-1  w-full">
@@ -1019,7 +1089,7 @@
 										disabled:bg-disabled-input
 										bg-default-input
 										" id="passport_number" name="passport_number" form="basic-user-data" type="text" placeholder="123456"
-											maxlength="6">
+											maxlength="6" value="123456">
 									</div>
 								</div>
 
@@ -1163,13 +1233,14 @@
 										disabled:ring-disabled-input
 										disabled:bg-disabled-input
 										bg-default-input
-										" id="tips_url" name="tips_url" form="basic-user-data" type="text" placeholder="https://...">
+										" id="tips_url" name="tips_url" form="basic-user-data" type="text" placeholder="https://..." maxlength="6"
+											value="123456">
 									</div>
 								</div>
 							</div>
 
 							<div
-								class="mb-6 flex flex-col gap-2.5 max-w-260.5 w-full md:grid md:grid-cols-2 has-disabled:pointer-events-none has-disabled:opacity-60"
+								class="mb-4 flex flex-col gap-2.5 max-w-260.5 w-full md:grid md:grid-cols-2 has-disabled:pointer-events-none has-disabled:opacity-70"
 								data-motivity-block>
 								<h2 class="text-lg font-bold leading-[1.1] mb-2.5 md:col-span-2">Участвует в&nbsp;мотивити</h2>
 
@@ -1304,7 +1375,7 @@
 									</div>
 								</div>
 
-								<div class="p-2.5 rounded-md border-1 border-gray-300">
+								<div class="p-2.5 rounded-md border-1 border-gray-300 has-disabled:pointer-events-none">
 									<div class="flex flex-col items-center justify-between gap-3 mb-2.5 xs:flex-row">
 										<h3 class="font-base font-semibold leading-[1.5]">Добавленные мотивити</h3>
 
@@ -1318,7 +1389,8 @@
 
 									<div
 										class="space-y-1 h-62  overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-50 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb:hover]:bg-pitpos-blue [&::-webkit-scrollbar-thumb:hover]:cursor-pointer">
-										<!-- <div class="relative flex flex-col gap-y-1" data-motivity-item>
+
+										<div class="relative flex flex-col gap-y-1" data-motivity-item>
 											<label class="hidden" for="motivity-1">Средний чек смен</label>
 											<input class="
 												w-full
@@ -1403,24 +1475,25 @@
 													<use xlink:href="./public/images/icons/sprite-icons.svg#close-icon"></use>
 												</svg>
 											</button>
-										</div> -->
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div id="user-tab-3" class="hidden" role="tabpanel" aria-labelledby="user-tab-item-3">
-						<div class="mb-6 flex flex-col gap-3 sm:gap-6">
-							<h2 class="text-xl font-bold leading-[1.3] ">Мастерские</h2>
+				<div id="user-tab-3" class="hidden" role="tabpanel" aria-labelledby="user-tab-item-3">
+					<div class="mb-6 flex flex-col gap-3 sm:gap-6">
+						<h2 class="text-xl font-bold leading-[1.3]">Мастерские</h2>
 
-							<ul class="flex flex-col gap-3 sm:gap-5">
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_1">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_1" name="workshop_1" form="basic-user-data">
-										<span class="
+						<ul class="flex flex-col gap-3 sm:gap-5">
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_1">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_1" name="workshop_1" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1442,23 +1515,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Пулковское ш., д. 19
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Пулковское ш., д. 19
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_2">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_2" name="workshop_2" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_2">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_2" name="workshop_2" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1480,23 +1553,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ул. Софьи Ковалевской, д. 22
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ул. Софьи Ковалевской, д. 22
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_3">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_3" name="workshop_3" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_3">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_3" name="workshop_3" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1518,23 +1591,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Металлистов, д. 116
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Металлистов, д. 116
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_4">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_4" name="workshop_4" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_4">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_4" name="workshop_4" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1556,23 +1629,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											НЕсофьяНЕ
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										НЕсофьяНЕ
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_5">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_5" name="workshop_5" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_5">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_5" name="workshop_5" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1594,23 +1667,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Муринка
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Муринка
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_6">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_6" name="workshop_6" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_6">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_6" name="workshop_6" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1632,23 +1705,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Шафировский
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Шафировский
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_7">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_7" name="workshop_7" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_7">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_7" name="workshop_7" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1670,23 +1743,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Кудрово, Ленинградская ул., д. 9/8
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Кудрово, Ленинградская ул., д. 9/8
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_8">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_8" name="workshop_8" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_8">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_8" name="workshop_8" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1708,23 +1781,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Испытателей
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Испытателей
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_9">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_9" name="workshop_9" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_9">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_9" name="workshop_9" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1746,23 +1819,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Дундича
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Дундича
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_10">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_10" name="workshop_10" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_10">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_10" name="workshop_10" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1784,23 +1857,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Фермское
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Фермское
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_11">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_11" name="workshop_11" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_11">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_11" name="workshop_11" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1822,23 +1895,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Сизова д. 2
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Сизова д. 2
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_12">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_12" name="workshop_12" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_12">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_12" name="workshop_12" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1860,23 +1933,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Сизова д. 2
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Сизова д. 2
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_13">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_13" name="workshop_13" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_13">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_13" name="workshop_13" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1898,23 +1971,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Кудровский
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Кудровский
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_14">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_14" name="workshop_14" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_14">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_14" name="workshop_14" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1936,23 +2009,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ул. Васенко, д. 12
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ул. Васенко, д. 12
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_15">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_15" name="workshop_15" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_15">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_15" name="workshop_15" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -1974,23 +2047,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Просвещения д. 74 корп. 2 лит. А
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Просвещения д. 74 корп. 2 лит. А
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_16">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_16" name="workshop_16" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_16">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_16" name="workshop_16" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2012,23 +2085,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ул. Руставели д. 43 лит. А
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ул. Руставели д. 43 лит. А
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_17">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_17" name="workshop_17" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_17">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_17" name="workshop_17" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2050,23 +2123,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ул. Савушкина д. 116 лит. А
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ул. Савушкина д. 116 лит. А
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_18">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_18" name="workshop_18" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_18">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_18" name="workshop_18" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2088,23 +2161,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ПО
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ПО
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_19">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_19" name="workshop_19" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_19">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_19" name="workshop_19" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2126,23 +2199,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ТЕСТ
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ТЕСТ
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_20">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_20" name="workshop_20" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_20">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_20" name="workshop_20" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2164,23 +2237,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Мурманское
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Мурманское
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_21">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_21" name="workshop_21" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_21">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_21" name="workshop_21" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2202,23 +2275,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Пулковское ш., д. 43/1
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Пулковское ш., д. 43/1
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_22">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_22" name="workshop_22" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_22">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_22" name="workshop_22" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2240,23 +2313,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Зеленогорск, пр. Ленина, д. 88
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Зеленогорск, пр. Ленина, д. 88
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_23">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_23" name="workshop_23" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_23">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_23" name="workshop_23" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2278,23 +2351,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Мойка, Пулковское шоссе, д. 19А
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Мойка, Пулковское шоссе, д. 19А
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_24">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_24" name="workshop_24" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_24">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_24" name="workshop_24" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2316,23 +2389,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Московское ш., 25/1В
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Московское ш., 25/1В
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_25">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_25" name="workshop_25" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_25">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_25" name="workshop_25" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2354,23 +2427,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Ветеранов, 167/2
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Ветеранов, 167/2
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_26">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_26" name="workshop_26" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_26">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_26" name="workshop_26" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2392,23 +2465,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Шушары, Московское ш., д. 16/7
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Шушары, Московское ш., д. 16/7
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_27">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_27" name="workshop_27" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_27">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_27" name="workshop_27" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2430,23 +2503,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											ТО Зеленогорск, пр. Ленина, д. 88И
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										ТО Зеленогорск, пр. Ленина, д. 88И
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_28">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_28" name="workshop_28" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_28">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_28" name="workshop_28" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2468,23 +2541,23 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											Парковка
-										</span>
-									</label>
-								</li>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										Парковка
+									</span>
+								</label>
+							</li>
 
-								<li>
-									<label class="inline-flex items-center gap-3" for="workshop_29">
-										<input type="checkbox"
-											class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
-											id="workshop_29" name="workshop_29" form="basic-user-data">
-										<span class="
+							<li>
+								<label class="inline-flex items-center gap-3" for="workshop_29">
+									<input type="checkbox"
+										class="hidden peer checked:disabled:[&~span>svg]:stroke-disabled-checkbox-icon disabled:[&~span:last-child]:text-gray-600"
+										id="workshop_29" name="workshop_29" form="basic-user-data">
+									<span class="
 												w-4.5 
 												h-4.5 
 												border-1 
@@ -2506,21 +2579,31 @@
 												peer-disabled:bg-disabled-checkbox 
 												hover:border-pitpos-blue
 												hover:shadow-md">
-											<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
-												<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
-											</svg>
-										</span>
+										<svg class="w-3 h-2.5 stroke-transpartent fill-transparent peer-cheked:block" viewBox="0 0 12 10">
+											<use xlink:href="./public/images/icons/sprite-icons.svg#check-flag"></use>
+										</svg>
+									</span>
 
-										<span class="text-dark-text font-semibold text-[0.8125rem]">
-											пр. Испытателей, д. 5 корп. 2 лит. А
-										</span>
-									</label>
-								</li>
-							</ul>
-						</div>
+									<span class="text-dark-text font-semibold text-[0.8125rem]">
+										пр. Испытателей, д. 5 корп. 2 лит. А
+									</span>
+								</label>
+							</li>
+						</ul>
 					</div>
 				</div>
+
+				<!-- 	Недостоющий функционал :
+					1. В блоке выбора мотивити перенос одной мотивации в правый блое (создание шаблона input с выбранным мотивити
+					пользователем )
+					2. В блоке выбора мотивити перенос всех мотиваций в правый блок по клику
+					3. В скрипте поиска указать изначальный счётчик мотиваций.
+					4. Добавить влидацию  на совподение паролей (совподение в полях если это необходимо)
+					====
+					Убрал из кнопки "удалить все выбраные мотивации" счётчик. Не вижу смысла в счётчике если кнопка всё равно
+					удаляет все. Но если нужно её так же можно добавить но с js. -->
 			</div>
+		</div>
 		</div>
 	</main>
 
