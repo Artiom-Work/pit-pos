@@ -646,6 +646,34 @@
 				bg-default-input
 				" id="seal" name="seal" type="text" placeholder="#">
 		</div>
+		<!-- поле type number -->
+		<div class="flex flex-col gap-y-1">
+			<label class="text-sm text-gray-700" for="shift_id">&#8470;&nbsp;смены</label>
+			<input class="
+			w-full
+			px-3 
+			py-[0.6939rem] 
+			text-sm
+			leading-[1.2]
+			rounded-md 
+			outline-0 
+			ring-1 
+			ring-gray-300 
+			not-placeholder-shown:ring-gray-600 
+			duration-300 
+			placeholder:text-gray-500 
+			focus:ring-blue-focus-input 
+			focus:ring-2 
+			invalid:focus:ring-error
+			invalid:focus:text-error
+			disabled:text-gray-700
+			disabled:placeholder:text-disabled-input
+			disabled:ring-disabled-input
+			disabled:bg-disabled-input
+			bg-default-input
+			no-number-spinner
+			" id="shift_id" name="shift_id" type="number" min="1" placeholder="#...">
+		</div>
 		<!-- textarea с min-h -->
 		<div class="flex flex-col gap-y-1">
 			<label class="text-sm text-gray-700" for="note">Заметка</label>
@@ -820,18 +848,18 @@
 		</div>
 		<!-- мастерские(просто селект одиночный) -->
 		<div
-			class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black has-[select[disabled]]:[&_button>span]:text-gray-700!">
+			class="w-full flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black [&_select[disabled]~button>span]:text-gray-700!">
 			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
 
-			<select id="workshop_id" name="workshop_id" data-hs-select='{
-			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.2] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
+			<select id="workshop_id" name="workshop_id" class="hidden" data-hs-select='{
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 hs-select-disabled:[&~div_svg]:cursor-default bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
 			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 			"optionTemplate": 
 			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
-		}' class="hidden">
+			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+		}'>
 				<option value="all">Все</option>
 				<option value="workshop_1">
 					Пулковское ш., д. 19
@@ -924,349 +952,96 @@
 		</div>
 		<!-- статус(просто селект одиночный) -->
 		<div
-			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
-			<label class="text-sm text-gray-700" for="workshop_state">Статус</label>
+			class="w-full flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black [&_select[disabled]~button>span]:text-gray-700!">
+			<label class="text-sm text-gray-700" for="workshop_status">Статус</label>
 
-			<select id="workshop_state" name="workshop_state" data-hs-select='{
-		"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:ring-disabled-input hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
-		"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
-		"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-		"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
-		"optionTemplate": 
-		"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-		"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
-	}' class="hidden">
+			<select id="workshop_status" name="workshop_status" class="hidden" data-hs-select='{
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input hs-select-disabled:[&~div_svg]:cursor-default hs-select-disabled:ring-disabled-input! hs-select-disabled:text-disabled-input\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+			"optionTemplate": 
+			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+		}'>
 				<option value="all">Все</option>
 				<option value="open">Открыта</option>
 				<option value="close">Закрыта</option>
 			</select>
 		</div>
-		<!-- ПОле-поиск select с одиночным выбором -->
-		<div class="
-					w-full 
-					max-w-81 
-					flex 
-					flex-col 
-					gap-y-1 
-					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-					has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black 
-					">
-			<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="seal">
-				Введите номер пломбы <span class="hidden xs:inline">сезонного хранения</span>
-			</label>
-			<select
-				class="hidden [&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none"
-				id="seal" name="seal" data-hs-select='{
-				"hasSearch": true,
-				"searchPlaceholder": "&#8470",
-				"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-				"placeholder": "&#8470",
-				"toggleTag": "<button  class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-			}'>
-				<option value="">Все</option>
-				<option value="43434">43434</option>
-				<option value="565456">565456</option>
-				<option value="787899">787899</option>
-				<option value="787878">787878</option>
-				<option value="676767">676767</option>
-				<option value="878787">878787</option>
-				<option value="854578">854578</option>
-				<option value="777665">777665</option>
-				<option value="116131">116131</option>
-				<option value="02652">02652</option>
-				<option value="116353">116353</option>
-				<option value="116140">116140</option>
-				<option value="116179">116179</option>
-				<option value="116179">116179</option>
-				<option value="119501">119501</option>
-				<option value="119727">119727</option>
-				<option value="102063">102063</option>
-				<option value="115004">115004</option>
-				<option value="116351">116351</option>
-				<option value="119726">119726</option>
-				<option value="119725">119725</option>
-				<option value="119725">119725</option>
-				<option value="101728">101728</option>
-				<option value="116059">116059</option>
-				<option value="115313">115313</option>
-			</select>
-		</div>
-		<!-- Поле-поиск multiple -->
-		<div class="
-		w-full 
-		max-w-81 
-		flex 
-		flex-col 
-		gap-y-1 
-		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
-		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
-		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:max-w-61
-		">
-			<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="seal-1">Название</span>
-			</label>
-			<select
-				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
-				id="seal-1" name="seal-1" multiple="" data-hs-select='{
-				"hasSearch": true,
-				"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-				"placeholder": "Все",
-				"searchPlaceholder": "Роль",
-				"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
-				"toggleSeparators": {
-					"betweenItemsAndCounter": ""
-				},
-				"toggleCountText": "+",
-				"toggleCountTextPlacement": "prefix-no-space",
-				"toggleCountTextMinItems": 2,
-				"toggleCountTextMode": "nItemsAndCount",
-				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap text-gray-700 px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 noinner in-number-spvalid:ring-error invalid:focus:ring-error",
-				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-			}'>
-				<option value="all" disabled>Все</option>
-				<option value="owner">Владелец</option>
-				<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
-				<option value="workshop-admin">Администратор&nbsp;мастерской</option>
-				<option value="carwash-admin">Администратор&nbsp;мойки</option>
-				<option value="service-admin">Администратор&nbsp;сервиса</option>
-				<option value="master">Мастер</option>
-				<option value="service-advisor">Мастер-приемщик</option>
-				<option value="shiftController">Контролер&nbsp;смен</option>
-				<option value="technical-inspector">Мастер&nbsp;ТО</option>
-				<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
-				<option value="wheel-alignment-master">Мастер развал-схождения</option>
-				<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
-				<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
-				<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
-				<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
-				<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
-				<option value="cashierTireFitting">Кассир-шиномонтаж</option>
-				<option value="washer">Мойщик</option>
-				<option value="locksmith">Слесарь</option>
-			</select>
-			<!-- End Select -->
-		</div>
-		<!-- Поле с выбором мастерской (одиночнй select) -->
+		<!-- поле plaseholder Выберите -->
 		<div
-			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
-			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
-
-			<select id="workshop_id" name="workshop_id" data-hs-select='{
-			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+			class="flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Выберите']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Выберите']).selected]:[&>div>button>span]:text-black has-[select[disabled]]:[&_button>span]:text-gray-700!">
+			<label class="text-sm text-gray-700" for="legal_src">
+				Источник
+			</label>
+			<select class="hidden" id="legal_src" name="legal_src" data-hs-select='{
+			"toggleTag": "<button class=\"pr-10 h-[2.4375rem] text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-disabled-input! hs-select-disabled:ring-disabled-input!\" type=\"button\" aria-expanded=\"false\"></button>",
 			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
 			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
 			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
 			"optionTemplate": 
 			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
 			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
-		}' class="hidden">
-				<option value="all">Все</option>
-				<option value="workshop_1">
-					Пулковское ш., д. 19
-				</option>
-				<option value="workshop_2">
-					ул. Софьи Ковалевской, д. 22
-				</option>
-				<option value="workshop_3">
-					пр. Металлистов, д. 116
-				</option>
-				<option value="workshop_4">
-					НЕсофьяНЕ
-				</option>
-				<option value="workshop_5">
-					Муринка
-				</option>
-				<option value="workshop_6">
-					Шафировский
-				</option>
-				<option value="workshop_7">
-					Кудрово, Ленинградская ул., д. 9/8
-				</option>
-				<option value="workshop_8">
-					Испытателей
-				</option>
-				<option value="workshop_9">
-					Дундича
-				</option>
-				<option value="workshop_10">
-					Фермское
-				</option>
-				<option value="workshop_11">
-					пр. Сизова д. 2
-				</option>
-				<option value="workshop_12">
-					пр. Сизова д. 2
-				</option>
-				<option value="workshop_13">
-					Кудровский
-				</option>
-				<option value="workshop_14">
-					ул. Васенко, д. 12
-				</option>
-				<option value="workshop_15">
-					пр. Просвещения д. 74 корп. 2 лит. А
-				</option>
-				<option value="workshop_16">
-					ул. Руставели д. 43 лит. А
-				</option>
-				<option value="workshop_17">
-					ул. Савушкина д. 116 лит. А
-				</option>
-				<option value="workshop_18">
-					ПО
-				</option>
-				<option value="workshop_19">
-					ТЕСТ
-				</option>
-				<option value="workshop_20">
-					Мурманское
-				</option>
-				<option value="workshop_21">
-					Пулковское ш., д. 43/1
-				</option>
-				<option value="workshop_22">
-					Зеленогорск, пр. Ленина, д. 88
-				</option>
-				<option value="workshop_23">
-					Мойка, Пулковское шоссе, д. 19А
-				</option>
-				<option value="workshop_24">
-					Московское ш., 25/1В
-				</option>
-				<option value="workshop_25">
-					пр. Ветеранов, 167/2
-				</option>
-				<option value="workshop_26">
-					Шушары, Московское ш., д. 16/7
-				</option>
-				<option value="workshop_27">
-					ТО Зеленогорск, пр. Ленина, д. 88И
-				</option>
-				<option value="workshop_28">
-					Парковка
-				</option>
-				<option value="workshop_29">
-					пр. Испытателей, д. 5 корп. 2 лит. А
-				</option>
+		}'>
+				<option value="all">Выберите</option>
+				<option value="src-yandex">Яндекс.Карты</option>
+				<option value="src-local">На&nbsp;местности</option>
+				<option value="src-search">Поиск</option>
+				<option value="src-advice">Рекомендация</option>
 			</select>
 		</div>
-		<!-- select multiple (роли)-->
-		<div class="
-		flex 
-		flex-col 
-		gap-y-1
-		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
-		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
-		">
-			<label class="text-sm text-gray-700" for="user_role">Роль</label>
-			<select
+		<!-- задержки(селект multiple) -->
+		<div
+			class="w-full flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black [&_select[disabled]~button>span]:text-gray-700!">
+			<label class="text-sm text-gray-700" for="delays">Задержки</label>
+
+			<select id="delays" name="delays" multiple=""
 				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
-				id="user_role" name="user_role" multiple="" data-hs-select='{
-	"placeholder": "Все",
-	"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
-	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input! bg-default-input! hs-select-disabled:bg-disabled-input! rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-	"toggleSeparators": {
-		"betweenItemsAndCounter": ""
-	},
-	"toggleCountText": "+",
-	"toggleCountTextPlacement": "prefix-no-space",
-	"toggleCountTextMinItems": 2,
-	"toggleCountTextMode": "nItemsAndCount",
-	"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-	"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-	"optionTemplate": 
-	"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-blue hover:text-white\"></span> </div>",
-	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-blue hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#131216\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
-}'>
-				<option value="all">Все</option>
-				<option value="owner">Владелец</option>
-				<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
-				<option value="workshop-admin">Администратор&nbsp;мастерской</option>
-				<option value="carwash-admin">Администратор&nbsp;мойки</option>
-				<option value="service-admin">Администратор&nbsp;сервиса</option>
-				<option value="master">Мастер</option>
-				<option value="service-advisor">Мастер-приемщик</option>
-				<option value="shiftController">Контролер&nbsp;смен</option>
-				<option value="technical-inspector">Мастер&nbsp;ТО</option>
-				<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
-				<option value="wheel-alignment-master">Мастер развал-схождения</option>
-				<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
-				<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
-				<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
-				<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
-				<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
-				<option value="cashierTireFitting">Кассир-шиномонтаж</option>
-				<option value="washer">Мойщик</option>
-				<option value="locksmith">Слесарь</option>
+				data-hs-select='{
+				"placeholder": "Все",
+				"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
+				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input! bg-default-input! hs-select-disabled:bg-disabled-input! hs-select-disabled:[&~div_svg]:cursor-default rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+				"toggleSeparators": {
+					"betweenItemsAndCounter": ""
+				},
+				"toggleCountText": "+",
+				"toggleCountTextPlacement": "prefix-no-space",
+				"toggleCountTextMinItems": 3,
+				"toggleCountTextMode": "nItemsAndCount",
+				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+				"optionTemplate": 
+				"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-700 hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+			}'>
+				<option value="">Все</option>
+				<option value="delays_only">Только с&nbsp;задержкой</option>
+				<option value="delays_only_start">Только задержки старта</option>
+				<option value="delays_only_issuance">Только задержки выдачи</option>
 			</select>
 		</div>
-		<!-- Поле с выбором даты -->
-		<div class="flex flex-col justify-end gap-y-1 w-full">
-			<label class="text-sm text-gray-700" for="register_date">Дата записи клиента</label>
-			<input class="
-							w-full
-							px-3 
-							py-[0.563rem] 
-							text-sm
-							leading-[1.2]
-							rounded-md 
-							outline-0 
-							border-0
-							cursor-pointer
-							ring-1 
-							ring-gray-300
-							text-gray-500 
-							duration-300 
-							focus:ring-blue-focus-input 
-							focus:ring-2 
-							invalid:focus:ring-error
-							invalid:focus:text-error
-							disabled:text-disabled-input
-							disabled:ring-disabled-input
-							disabled:bg-disabled-input
-							disabled:pointer-events-none
-							bg-default-input
-							date-picker-auto
-							data-[filled=true]:ring-gray-600
-							data-[filled=true]:text-black
-			" type="datetime-local" id="register_date" name="register_date"
-				oninput="this.dataset.filled = this.value ? 'true' : 'false'">
-		</div>
-		<!-- Поле-поиск multiple (имена пользователей PitPos)-->
-		<div class="
-		flex 
-		flex-col 
-		gap-y-1
-		has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 
-		has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black
-		">
-			<label class="text-sm text-gray-700" for="employee_id">Имя</label>
-			<select
+		<!-- ПОле-поиск select с одиночным выбором -->
+		<div
+			class="w-full flex flex-col gap-y-1 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black [&_select[disabled]~button>span]:text-gray-700!">
+			<label class="text-sm text-gray-700" for="employee_id">Мастер</label>
+			<select id="employee_id" name="employee_id"
 				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
-				id="employee_id" name="employee_id" data-hs-select='{
-	"hasSearch": true,
-	"searchLimit": 5,
-	"searchPlaceholder": "Имя пользователя...",
-	"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
-	"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
-	"placeholder": "Все",
-	"toggleTag": "<button  class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"><span class=\"me-2\" data-icon></span><span class=\"text-gray-500 \" data-title></span></button>",
-	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
-	"dropdownClasses": " p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
-	"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
-	"optionTemplate": "<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-700 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-700 hover:text-white\"></span> </div>",
-	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 text-gray-500 hover:stroke-3 active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#1b0939\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
-}'>
+				data-hs-select='{
+				"hasSearch": true,
+				"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+				"placeholder": "Имя мастера",
+				"searchPlaceholder": "Имя...",
+				"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
+				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap text-gray-500 px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input! bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 noinner in-number-spvalid:ring-error invalid:focus:ring-error",
+				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+			}'>
 				<option value="all">Все</option>
 				<option value="1">Андрей Никишин Никишин</option>
 				<option value="8">Исмаилов Марат </option>
@@ -1685,6 +1460,282 @@
 				<option value="424">Федор Конюхофф </option>
 				<option value="425">Артем Межейников </option>
 			</select>
+		</div>
+		<!-- Поле-поиск multiple -->
+		<div class="
+		w-full 
+		max-w-81 
+		flex 
+		flex-col 
+		gap-y-1 
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:max-w-61
+		">
+			<label class="whitespace-nowrap text-sm text-gray-700 inline-block xs:mb-1" for="seal-1">Название</span>
+			</label>
+			<select
+				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+				id="seal-1" name="seal-1" multiple="" data-hs-select='{
+				"hasSearch": true,
+				"searchClasses": "block w-full sm:text-sm border-gray-200 rounded-lg duration-300 focus:ring-2 focus:outline-0 focus:border-0 focus:ring-blue-500 before:absolute before:inset-0 before:z-1 py-1.5 sm:py-2 px-3",
+				"searchWrapperClasses": "bg-white p-2 -mx-1 sticky z-50 top-0 shadow-xs rounded-lg",
+				"placeholder": "Все",
+				"searchPlaceholder": "Роль",
+				"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
+				"toggleSeparators": {
+					"betweenItemsAndCounter": ""
+				},
+				"toggleCountText": "+",
+				"toggleCountTextPlacement": "prefix-no-space",
+				"toggleCountTextMinItems": 2,
+				"toggleCountTextMode": "nItemsAndCount",
+				"toggleClasses": "truncate relative flex gap-x-2 text-nowrap text-gray-700 px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 hs-select-disabled:ring-disabled-input bg-default-input hs-select-disabled:bg-disabled-input rounded-md w-full cursor-pointer duration-300 noinner in-number-spvalid:ring-error invalid:focus:ring-error",
+				"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+				"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+				"optionTemplate": "<div class=\"w-full relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+				"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-4.5 stroke-gray-700 text-gray-500 hover:stroke-black active:opacity-70 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\"/><path d=\"M21.0004 20.9999L16.6504 16.6499\"</svg></div>"
+			}'>
+				<option value="all" disabled>Все</option>
+				<option value="owner">Владелец</option>
+				<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
+				<option value="workshop-admin">Администратор&nbsp;мастерской</option>
+				<option value="carwash-admin">Администратор&nbsp;мойки</option>
+				<option value="service-admin">Администратор&nbsp;сервиса</option>
+				<option value="master">Мастер</option>
+				<option value="service-advisor">Мастер-приемщик</option>
+				<option value="shiftController">Контролер&nbsp;смен</option>
+				<option value="technical-inspector">Мастер&nbsp;ТО</option>
+				<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
+				<option value="wheel-alignment-master">Мастер развал-схождения</option>
+				<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
+				<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
+				<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
+				<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
+				<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
+				<option value="cashierTireFitting">Кассир-шиномонтаж</option>
+				<option value="washer">Мойщик</option>
+				<option value="locksmith">Слесарь</option>
+			</select>
+			<!-- End Select -->
+		</div>
+		<!-- Поле с выбором мастерской (одиночнй select) -->
+		<div
+			class="flex flex-col gap-y-1 xl:col-span-3 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button]:ring-gray-600 has-[[data-title-value]:not([data-title-value='Все']).selected]:[&>div>button>span]:text-black">
+			<label class="text-sm text-gray-700" for="workshop_id">Мастерская</label>
+
+			<select id="workshop_id" name="workshop_id" data-hs-select='{
+			"toggleTag": "<button class=\"pr-10 h-9.5 text-gray-500 text-sm leading-[1.6] hs-select-disabled:[&~div_svg]:stroke-gray-500 bg-default-input hs-select-disabled:bg-gray-200\" type=\"button\" aria-expanded=\"false\"></button>",
+			"toggleClasses": "truncate hs-select-disabled:pointer-events-none relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 rounded-md w-full cursor-pointer duration-300 selected:ring-gray-600 focus:ring-blue-focus-input focus:ring-2 invalid:ring-error invalid:focus:ring-error focus:outline-0",
+			"dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+			"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden ",
+			"optionTemplate": 
+			"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full hs-select-disabled:opacity-20 hs-select-disabled:pointer-events-none\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-black \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+			"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 \"><svg class=\"shrink-0 size-6 stroke-gray-700 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+		}' class="hidden">
+				<option value="all">Все</option>
+				<option value="workshop_1">
+					Пулковское ш., д. 19
+				</option>
+				<option value="workshop_2">
+					ул. Софьи Ковалевской, д. 22
+				</option>
+				<option value="workshop_3">
+					пр. Металлистов, д. 116
+				</option>
+				<option value="workshop_4">
+					НЕсофьяНЕ
+				</option>
+				<option value="workshop_5">
+					Муринка
+				</option>
+				<option value="workshop_6">
+					Шафировский
+				</option>
+				<option value="workshop_7">
+					Кудрово, Ленинградская ул., д. 9/8
+				</option>
+				<option value="workshop_8">
+					Испытателей
+				</option>
+				<option value="workshop_9">
+					Дундича
+				</option>
+				<option value="workshop_10">
+					Фермское
+				</option>
+				<option value="workshop_11">
+					пр. Сизова д. 2
+				</option>
+				<option value="workshop_12">
+					пр. Сизова д. 2
+				</option>
+				<option value="workshop_13">
+					Кудровский
+				</option>
+				<option value="workshop_14">
+					ул. Васенко, д. 12
+				</option>
+				<option value="workshop_15">
+					пр. Просвещения д. 74 корп. 2 лит. А
+				</option>
+				<option value="workshop_16">
+					ул. Руставели д. 43 лит. А
+				</option>
+				<option value="workshop_17">
+					ул. Савушкина д. 116 лит. А
+				</option>
+				<option value="workshop_18">
+					ПО
+				</option>
+				<option value="workshop_19">
+					ТЕСТ
+				</option>
+				<option value="workshop_20">
+					Мурманское
+				</option>
+				<option value="workshop_21">
+					Пулковское ш., д. 43/1
+				</option>
+				<option value="workshop_22">
+					Зеленогорск, пр. Ленина, д. 88
+				</option>
+				<option value="workshop_23">
+					Мойка, Пулковское шоссе, д. 19А
+				</option>
+				<option value="workshop_24">
+					Московское ш., 25/1В
+				</option>
+				<option value="workshop_25">
+					пр. Ветеранов, 167/2
+				</option>
+				<option value="workshop_26">
+					Шушары, Московское ш., д. 16/7
+				</option>
+				<option value="workshop_27">
+					ТО Зеленогорск, пр. Ленина, д. 88И
+				</option>
+				<option value="workshop_28">
+					Парковка
+				</option>
+				<option value="workshop_29">
+					пр. Испытателей, д. 5 корп. 2 лит. А
+				</option>
+			</select>
+		</div>
+		<!-- select multiple (роли)-->
+		<div class="
+		flex 
+		flex-col 
+		gap-y-1
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button]:ring-gray-600 
+		has-[[data-title-value]:not([data-title-value='all']).selected]:[&>div>button>span]:text-black
+		">
+			<label class="text-sm text-gray-700" for="user_role">Роль</label>
+			<select
+				class="[&[disabled]~div>svg]:stroke-gray-500 [&[disabled]~button>span]:text-disabled-input [&[disabled]~div]:pointer-events-none [&[disabled]~button]:pointer-events-none hidden"
+				id="user_role" name="user_role" multiple="" data-hs-select='{
+	"placeholder": "Все",
+	"toggleTag": "<button class=\"pr-10 h-9.5 text-sm leading-[1.6]\" type=\"button\" aria-expanded=\"false\"></button>",
+	"toggleClasses": "truncate relative flex gap-x-2 text-nowrap px-3 py-[0.49rem] outline-0 ring-1 ring-gray-300 text-gray-600 hs-select-disabled:ring-disabled-input! bg-default-input! hs-select-disabled:bg-disabled-input! rounded-md w-full cursor-pointer duration-300 no-number-spinner invalid:ring-error invalid:focus:ring-error",
+	"toggleSeparators": {
+		"betweenItemsAndCounter": ""
+	},
+	"toggleCountText": "+",
+	"toggleCountTextPlacement": "prefix-no-space",
+	"toggleCountTextMinItems": 2,
+	"toggleCountTextMode": "nItemsAndCount",
+	"dropdownClasses": "p-1 mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-pitpos-blue",
+	"optionClasses": "px-4 w-full cursor-pointer rounded-md focus:outline-hidden",
+	"optionTemplate": 
+	"<div class=\"relative pl-6 flex justify-start items-center gap-x-1.5 w-full\"><span class=\"absolute -left-2 hidden hs-selected:block\"><svg class=\"shrink-0 size-6 text-pitpos-blue \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span><span data-title class=\"h-full py-2 px-2.5 rounded-md w-full truncate hover:bg-pitpos-blue hover:text-white\"></span> </div>",
+	"extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2 cursor-pointer\"><svg class=\"shrink-0 size-6 text-gray-500 stroke-gray-blue hover:stroke-black active:opacity-70\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5e5a67\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9.5L12 14.5L18 9.5\"/></svg></div>"
+}'>
+				<option value="all">Все</option>
+				<option value="owner">Владелец</option>
+				<option value="viewFinStats">Просмотр фин.&nbsp;статистики</option>
+				<option value="workshop-admin">Администратор&nbsp;мастерской</option>
+				<option value="carwash-admin">Администратор&nbsp;мойки</option>
+				<option value="service-admin">Администратор&nbsp;сервиса</option>
+				<option value="master">Мастер</option>
+				<option value="service-advisor">Мастер-приемщик</option>
+				<option value="shiftController">Контролер&nbsp;смен</option>
+				<option value="technical-inspector">Мастер&nbsp;ТО</option>
+				<option value="tire-fitting-zelenogorsk-master">Мастер&nbsp;шиномонтажа Зеленогорск</option>
+				<option value="wheel-alignment-master">Мастер развал-схождения</option>
+				<option value="questionnaire-master">Мастер&nbsp;по&nbsp;анкетам</option>
+				<option value="discountCardManager">Менеджер дисконтных&nbsp;карт</option>
+				<option value="filling-questionnaires">Заполнение&nbsp;анкет</option>
+				<option value="cashier-zelenogorsk">Кассир&nbsp;Зеленогорск</option>
+				<option value="cashier-pulkovo">Кассир&nbsp;Пулково</option>
+				<option value="cashierTireFitting">Кассир-шиномонтаж</option>
+				<option value="washer">Мойщик</option>
+				<option value="locksmith">Слесарь</option>
+			</select>
+		</div>
+		<!-- Поле с выбором даты -->
+		<div class="flex flex-col justify-end gap-y-1 w-full">
+			<label class="text-sm text-gray-700" for="register_date">Дата записи клиента</label>
+			<input class="
+							w-full
+							px-3 
+							py-[0.563rem] 
+							text-sm
+							leading-[1.2]
+							rounded-md 
+							outline-0 
+							border-0
+							cursor-pointer
+							ring-1 
+							ring-gray-300
+							text-gray-500 
+							duration-300 
+							focus:ring-blue-focus-input 
+							focus:ring-2 
+							invalid:focus:ring-error
+							invalid:focus:text-error
+							disabled:text-disabled-input
+							disabled:ring-disabled-input
+							disabled:bg-disabled-input
+							disabled:pointer-events-none
+							bg-default-input
+							date-picker-auto
+							data-[filled=true]:ring-gray-600
+							data-[filled=true]:text-black
+			" type="datetime-local" id="register_date" name="register_date"
+				oninput="this.dataset.filled = this.value ? 'true' : 'false'">
+		</div>
+		<!-- Поле-поиск multiple (имена пользователей PitPos)-->
+		<div class="flex flex-col gap-y-1">
+			<label class="text-sm text-gray-700" for="opened_since">Открыта&nbsp;с</label>
+			<input class="
+							w-full
+							px-3 
+							py-[0.657rem] 
+							text-sm
+							leading-[1.2]
+							rounded-md 
+							outline-0 
+							border-0
+							ring-1 
+							ring-gray-300
+							text-gray-500 
+							cursor-pointer
+							duration-300 
+							focus:ring-blue-focus-input 
+							focus:ring-2 
+							invalid:focus:ring-error
+							invalid:focus:text-error
+							disabled:text-disabled-input
+							disabled:ring-disabled-input
+							disabled:bg-disabled-input
+							disabled:pointer-events-none
+							bg-default-input
+							date-picker-auto
+							data-[filled=true]:ring-gray-600
+							data-[filled=true]:text-black
+			" type="date" id="opened_since" name="opened_since" oninput="this.dataset.filled = this.value ? 'true' : 'false'">
 		</div>
 		<!-- checkbox -->
 		<label class="inline-flex items-center" for="storage-30135">

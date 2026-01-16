@@ -12,6 +12,7 @@
     --color-red-200: oklch(88.5% 0.062 18.334);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-red-700: oklch(50.5% 0.213 27.518);
     --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-green-600: oklch(62.7% 0.194 149.214);
@@ -319,6 +320,9 @@
   .end-3 {
     inset-inline-end: calc(var(--spacing) * 3);
   }
+  .-top-12 {
+    top: calc(var(--spacing) * -12);
+  }
   .-top-12\.5 {
     top: calc(var(--spacing) * -12.5);
   }
@@ -342,6 +346,9 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
   }
   .right-2\.5 {
     right: calc(var(--spacing) * 2.5);
@@ -414,6 +421,9 @@
   }
   .\!ms-auto {
     margin-inline-start: auto !important;
+  }
+  .ms-0 {
+    margin-inline-start: calc(var(--spacing) * 0);
   }
   .ms-0\.5 {
     margin-inline-start: calc(var(--spacing) * 0.5);
@@ -851,8 +861,14 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mr-2\.5 {
     margin-right: calc(var(--spacing) * 2.5);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
   }
   .mr-3\.5 {
     margin-right: calc(var(--spacing) * 3.5);
@@ -967,8 +983,14 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
   }
   .h-4\.5 {
     height: calc(var(--spacing) * 4.5);
@@ -982,11 +1004,17 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-9\.5 {
     height: calc(var(--spacing) * 9.5);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
   }
   .h-11\.5 {
     height: calc(var(--spacing) * 11.5);
@@ -1018,6 +1046,9 @@
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
   }
+  .max-h-88 {
+    max-height: calc(var(--spacing) * 88);
+  }
   .max-h-88\.5 {
     max-height: calc(var(--spacing) * 88.5);
   }
@@ -1032,6 +1063,9 @@
   }
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
+  }
+  .min-h-21 {
+    min-height: calc(var(--spacing) * 21);
   }
   .min-h-21\.5 {
     min-height: calc(var(--spacing) * 21.5);
@@ -1050,6 +1084,9 @@
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
   }
   .w-4\.5 {
     width: calc(var(--spacing) * 4.5);
@@ -1084,6 +1121,9 @@
   .w-min {
     width: min-content;
   }
+  .max-w-17 {
+    max-width: calc(var(--spacing) * 17);
+  }
   .max-w-17\.5 {
     max-width: calc(var(--spacing) * 17.5);
   }
@@ -1096,8 +1136,14 @@
   .max-w-81 {
     max-width: calc(var(--spacing) * 81);
   }
+  .max-w-87 {
+    max-width: calc(var(--spacing) * 87);
+  }
   .max-w-87\.5 {
     max-width: calc(var(--spacing) * 87.5);
+  }
+  .max-w-107 {
+    max-width: calc(var(--spacing) * 107);
   }
   .max-w-107\.5 {
     max-width: calc(var(--spacing) * 107.5);
@@ -1105,11 +1151,20 @@
   .max-w-125 {
     max-width: calc(var(--spacing) * 125);
   }
+  .max-w-130 {
+    max-width: calc(var(--spacing) * 130);
+  }
   .max-w-130\.5 {
     max-width: calc(var(--spacing) * 130.5);
   }
+  .max-w-134 {
+    max-width: calc(var(--spacing) * 134);
+  }
   .max-w-134\.5 {
     max-width: calc(var(--spacing) * 134.5);
+  }
+  .max-w-144 {
+    max-width: calc(var(--spacing) * 144);
   }
   .max-w-144\.5 {
     max-width: calc(var(--spacing) * 144.5);
@@ -1117,11 +1172,17 @@
   .max-w-145 {
     max-width: calc(var(--spacing) * 145);
   }
+  .max-w-164 {
+    max-width: calc(var(--spacing) * 164);
+  }
   .max-w-164\.5 {
     max-width: calc(var(--spacing) * 164.5);
   }
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
+  }
+  .max-w-260 {
+    max-width: calc(var(--spacing) * 260);
   }
   .max-w-260\.5 {
     max-width: calc(var(--spacing) * 260.5);
@@ -1144,8 +1205,14 @@
   .min-w-28 {
     min-width: calc(var(--spacing) * 28);
   }
+  .min-w-42 {
+    min-width: calc(var(--spacing) * 42);
+  }
   .min-w-42\.5 {
     min-width: calc(var(--spacing) * 42.5);
+  }
+  .min-w-87 {
+    min-width: calc(var(--spacing) * 87);
   }
   .min-w-87\.5 {
     min-width: calc(var(--spacing) * 87.5);
@@ -1186,11 +1253,17 @@
   .min-w-279 {
     min-width: calc(var(--spacing) * 279);
   }
+  .min-w-291 {
+    min-width: calc(var(--spacing) * 291);
+  }
   .min-w-291\.5 {
     min-width: calc(var(--spacing) * 291.5);
   }
   .min-w-301 {
     min-width: calc(var(--spacing) * 301);
+  }
+  .min-w-307 {
+    min-width: calc(var(--spacing) * 307);
   }
   .min-w-307\.5 {
     min-width: calc(var(--spacing) * 307.5);
@@ -1198,24 +1271,49 @@
   .min-w-313 {
     min-width: calc(var(--spacing) * 313);
   }
+  .min-w-337 {
+    min-width: calc(var(--spacing) * 337);
+  }
   .min-w-337\.5 {
     min-width: calc(var(--spacing) * 337.5);
   }
   .min-w-395 {
     min-width: calc(var(--spacing) * 395);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow-1 {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-rotate-45 {
+    rotate: calc(45deg * -1);
+  }
   .-rotate-90 {
     rotate: calc(90deg * -1);
+  }
+  .-rotate-180 {
+    rotate: calc(180deg * -1);
+  }
+  .rotate-45 {
+    rotate: 45deg;
   }
   .rotate-90 {
     rotate: 90deg;
@@ -1274,6 +1372,9 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
@@ -1285,6 +1386,13 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .space-y-0 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-0\.5 {
     :where(& > :not(:last-child)) {
@@ -1298,6 +1406,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-2\.5 {
@@ -1332,6 +1447,9 @@
   }
   .gap-x-2\.5 {
     column-gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
   }
   .gap-x-3\.5 {
     column-gap: calc(var(--spacing) * 3.5);
@@ -1598,6 +1716,9 @@
   .stroke-gray-500 {
     stroke: var(--color-gray-500);
   }
+  .stroke-gray-600 {
+    stroke: var(--color-gray-600);
+  }
   .stroke-gray-700 {
     stroke: var(--color-gray-700);
   }
@@ -1625,6 +1746,9 @@
   .stroke-2 {
     stroke-width: 2;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
   }
@@ -1639,6 +1763,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
   }
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
@@ -1678,6 +1805,9 @@
   }
   .\!py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5) !important;
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -1742,6 +1872,9 @@
   .py-\[0\.6939rem\] {
     padding-block: 0.6939rem;
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
   }
@@ -1763,6 +1896,9 @@
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
+  .pr-9 {
+    padding-right: calc(var(--spacing) * 9);
+  }
   .pr-9\.5 {
     padding-right: calc(var(--spacing) * 9.5);
   }
@@ -1777,6 +1913,9 @@
   }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
@@ -1946,6 +2085,9 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -2072,6 +2214,10 @@
   }
   .ring-pitpos-blue {
     --tw-ring-color: var(--color-pitpos-blue);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -3014,6 +3160,31 @@
       pointer-events: none;
     }
   }
+  .has-\[select\[disabled\]\]\:text-disabled-input\! {
+    &:has(*:is(select[disabled])) {
+      color: var(--color-disabled-input) !important;
+    }
+  }
+  .has-\[select\[disabled\]\]\:text-gray-700\! {
+    &:has(*:is(select[disabled])) {
+      color: var(--color-gray-700) !important;
+    }
+  }
+  .has-\[select\[disabled\]\]\:text-red-500 {
+    &:has(*:is(select[disabled])) {
+      color: var(--color-red-500);
+    }
+  }
+  .has-\[select\[disabled\]\]\:text-red-500\! {
+    &:has(*:is(select[disabled])) {
+      color: var(--color-red-500) !important;
+    }
+  }
+  .has-\[select\[disabled\]\]\:text-red-700\! {
+    &:has(*:is(select[disabled])) {
+      color: var(--color-red-700) !important;
+    }
+  }
   .data-\[filled\=true\]\:text-black {
     &[data-filled="true"] {
       color: var(--color-black);
@@ -3042,6 +3213,11 @@
   .xs\:block {
     @media (width >= 29.99rem) {
       display: block;
+    }
+  }
+  .xs\:flex {
+    @media (width >= 29.99rem) {
+      display: flex;
     }
   }
   .xs\:grid {
@@ -4266,6 +4442,13 @@
       }
     }
   }
+  .prose-td\:has-\[button\]\:py-0 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:has(*:is(button)) {
+        padding-block: calc(var(--spacing) * 0);
+      }
+    }
+  }
   .hs-tooltip-shown\:visible {
     &.hs-tooltip-content.show {
       visibility: visible;
@@ -4377,6 +4560,22 @@
       pointer-events: none;
     }
   }
+  .hs-select-disabled\:cursor-text {
+    &.disabled {
+      cursor: text;
+    }
+    .disabled & {
+      cursor: text;
+    }
+  }
+  .hs-select-disabled\:cursor-text\! {
+    &.disabled {
+      cursor: text !important;
+    }
+    .disabled & {
+      cursor: text !important;
+    }
+  }
   .hs-select-disabled\:bg-disabled-input {
     &.disabled {
       background-color: var(--color-disabled-input);
@@ -4407,6 +4606,62 @@
     }
     .disabled & {
       color: var(--color-disabled-input);
+    }
+  }
+  .hs-select-disabled\:text-disabled-input\! {
+    &.disabled {
+      color: var(--color-disabled-input) !important;
+    }
+    .disabled & {
+      color: var(--color-disabled-input) !important;
+    }
+  }
+  .hs-select-disabled\:text-gray-500\! {
+    &.disabled {
+      color: var(--color-gray-500) !important;
+    }
+    .disabled & {
+      color: var(--color-gray-500) !important;
+    }
+  }
+  .hs-select-disabled\:text-gray-600\! {
+    &.disabled {
+      color: var(--color-gray-600) !important;
+    }
+    .disabled & {
+      color: var(--color-gray-600) !important;
+    }
+  }
+  .hs-select-disabled\:text-gray-700 {
+    &.disabled {
+      color: var(--color-gray-700);
+    }
+    .disabled & {
+      color: var(--color-gray-700);
+    }
+  }
+  .hs-select-disabled\:text-gray-700\! {
+    &.disabled {
+      color: var(--color-gray-700) !important;
+    }
+    .disabled & {
+      color: var(--color-gray-700) !important;
+    }
+  }
+  .hs-select-disabled\:text-red-500 {
+    &.disabled {
+      color: var(--color-red-500);
+    }
+    .disabled & {
+      color: var(--color-red-500);
+    }
+  }
+  .hs-select-disabled\:text-red-500\! {
+    &.disabled {
+      color: var(--color-red-500) !important;
+    }
+    .disabled & {
+      color: var(--color-red-500) !important;
     }
   }
   .hs-select-disabled\:opacity-20 {
@@ -4996,6 +5251,36 @@
       }
     }
   }
+  .\[\&_select\[disabled\]\]\:text-red-500\! {
+    & select[disabled] {
+      color: var(--color-red-500) !important;
+    }
+  }
+  .\[\&_select\[disabled\]\~button\]\:text-red-500\! {
+    & select[disabled]~button {
+      color: var(--color-red-500) !important;
+    }
+  }
+  .\[\&_select\[disabled\]\~button\>span\]\:text-disabled-input\! {
+    & select[disabled]~button>span {
+      color: var(--color-disabled-input) !important;
+    }
+  }
+  .\[\&_select\[disabled\]\~button\>span\]\:text-gray-700\! {
+    & select[disabled]~button>span {
+      color: var(--color-gray-700) !important;
+    }
+  }
+  .\[\&_select\[disabled\]\~button\>span\]\:text-red-500 {
+    & select[disabled]~button>span {
+      color: var(--color-red-500);
+    }
+  }
+  .\[\&_select\[disabled\]\~button\>span\]\:text-red-500\! {
+    & select[disabled]~button>span {
+      color: var(--color-red-500) !important;
+    }
+  }
   .prose-tr\:has-\[span\[data-code-confirm\]\]\:\[\&_span\[data-code-confirm\=false\]\]\:bg-error {
     & :is(:where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &:has(*:is(span[data-code-confirm])) {
@@ -5133,6 +5418,34 @@
   .\[\&_span\[data-storage-state\]\]\:text-white {
     & span[data-storage-state] {
       color: var(--color-white);
+    }
+  }
+  .has-\[\&_select\[disabled\]\]\:\[\&_svg\]\:pointer-events-none\! {
+    &:has(* select[disabled]) {
+      & svg {
+        pointer-events: none !important;
+      }
+    }
+  }
+  .has-\[\&_select\[disabled\]\]\:\[\&_svg\]\:cursor-text\! {
+    &:has(* select[disabled]) {
+      & svg {
+        cursor: text !important;
+      }
+    }
+  }
+  .has-\[\[disabled\]\]\:\[\&_svg\]\:pointer-events-none\! {
+    &:has(*:is([disabled])) {
+      & svg {
+        pointer-events: none !important;
+      }
+    }
+  }
+  .has-\[\[disabled\]\]\:\[\&_svg\]\:cursor-text\! {
+    &:has(*:is([disabled])) {
+      & svg {
+        cursor: text !important;
+      }
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:h-2 {
@@ -5283,6 +5596,27 @@
           --tw-content: ',и';
           content: var(--tw-content);
         }
+      }
+    }
+  }
+  .prose-td\:\[\[data-delays\]_span\]\:stroke-red-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:is([data-delays] span) {
+        stroke: var(--color-red-500) !important;
+      }
+    }
+  }
+  .prose-td\:\[\[data-delays\]_span\>svg\]\:stroke-red-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:is([data-delays] span>svg) {
+        stroke: var(--color-red-500) !important;
+      }
+    }
+  }
+  .prose-td\:\[\[data-delays\]_svg\]\:stroke-red-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &:is([data-delays] svg) {
+        stroke: var(--color-red-500) !important;
       }
     }
   }
@@ -5790,6 +6124,35 @@
       }
     }
   }
+  .prose-td\:\[\&\>a\[data-checklist\]\>svg\]\:inline-block {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-checklist]>svg {
+        display: inline-block;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-checklist\]\>svg\]\:size-4\.5 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-checklist]>svg {
+        width: calc(var(--spacing) * 4.5);
+        height: calc(var(--spacing) * 4.5);
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-checklist\]\>svg\]\:shrink-0 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-checklist]>svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-checklist\]\>svg\]\:fill-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-checklist]>svg {
+        fill: var(--color-accent);
+      }
+    }
+  }
   .prose-td\:\[\&\>a\[data-disabled\]\]\:pointer-events-none {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-disabled] {
@@ -5929,11 +6292,25 @@
       }
     }
   }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:text-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        color: var(--color-accent);
+      }
+    }
+  }
   .prose-td\:\[\&\>a\[data-shift\]\]\:duration-300 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-shift] {
         --tw-duration: 300ms;
         transition-duration: 300ms;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:will-change-transform {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        will-change: transform;
       }
     }
   }
@@ -5948,6 +6325,110 @@
       }
     }
   }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:hover\:no-underline {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:hover {
+          @media (hover: hover) {
+            text-decoration-line: none;
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:hover\:brightness-70 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(70%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:hover\:brightness-80 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(80%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:hover\:brightness-90 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-brightness: brightness(90%);
+            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:active\:scale-20 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:active {
+          --tw-scale-x: 20%;
+          --tw-scale-y: 20%;
+          --tw-scale-z: 20%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:active\:scale-80 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:active {
+          --tw-scale-x: 80%;
+          --tw-scale-y: 80%;
+          --tw-scale-z: 80%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:active\:scale-90 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:active {
+          --tw-scale-x: 90%;
+          --tw-scale-y: 90%;
+          --tw-scale-z: 90%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:active\:scale-98 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:active {
+          --tw-scale-x: 98%;
+          --tw-scale-y: 98%;
+          --tw-scale-z: 98%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\]\:active\:opacity-90 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift] {
+        &:active {
+          opacity: 90%;
+        }
+      }
+    }
+  }
   .prose-td\:\[\&\>a\[data-shift\]\]\:active\:brightness-80 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &>a[data-shift] {
@@ -5955,6 +6436,35 @@
           --tw-brightness: brightness(80%);
           filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
         }
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\>svg\]\:inline-block {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift]>svg {
+        display: inline-block;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\>svg\]\:size-6 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift]>svg {
+        width: calc(var(--spacing) * 6);
+        height: calc(var(--spacing) * 6);
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\>svg\]\:fill-transparent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift]>svg {
+        fill: transparent;
+      }
+    }
+  }
+  .prose-td\:\[\&\>a\[data-shift\]\>svg\]\:stroke-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>a[data-shift]>svg {
+        stroke: var(--color-accent);
       }
     }
   }
@@ -6427,6 +6937,296 @@
           --tw-brightness: brightness(95%);
           filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
         }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:flex {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        display: flex;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:min-h-11 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        min-height: calc(var(--spacing) * 11);
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:w-full {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        width: 100%;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:items-center {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        align-items: center;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:justify-center {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        justify-content: center;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:rounded-md {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        border-radius: var(--radius-md);
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:bg-transparent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        background-color: transparent;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:duration-300 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        --tw-duration: 300ms;
+        transition-duration: 300ms;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:will-change-transform {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        will-change: transform;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:scale-50 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-scale-x: 50%;
+            --tw-scale-y: 50%;
+            --tw-scale-z: 50%;
+            scale: var(--tw-scale-x) var(--tw-scale-y);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:scale-90 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-scale-x: 90%;
+            --tw-scale-y: 90%;
+            --tw-scale-z: 90%;
+            scale: var(--tw-scale-x) var(--tw-scale-y);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:scale-95 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-scale-x: 95%;
+            --tw-scale-y: 95%;
+            --tw-scale-z: 95%;
+            scale: var(--tw-scale-x) var(--tw-scale-y);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:cursor-pointer {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:rounded-md {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            border-radius: var(--radius-md);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:border-1 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            border-style: var(--tw-border-style);
+            border-width: 1px;
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:border-gray-400 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            border-color: var(--color-gray-400);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:border-pitpos-400 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            border-color: var(--color-pitpos-400);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:bg-gray-50 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            background-color: var(--color-gray-50);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:bg-white {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            background-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:shadow-md {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:ring-1 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:hover\:ring-gray-400 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-color: var(--color-gray-400);
+          }
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:active\:scale-50 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:active {
+          --tw-scale-x: 50%;
+          --tw-scale-y: 50%;
+          --tw-scale-z: 50%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:active\:scale-90 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:active {
+          --tw-scale-x: 90%;
+          --tw-scale-y: 90%;
+          --tw-scale-z: 90%;
+          scale: var(--tw-scale-x) var(--tw-scale-y);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:active\:bg-gray-200 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:active {
+          background-color: var(--color-gray-200);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\]\:active\:bg-pitpos-200 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist] {
+        &:active {
+          background-color: var(--color-pitpos-200);
+        }
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\>svg\]\:inline-block {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist]>svg {
+        display: inline-block;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\>svg\]\:size-4\.5 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist]>svg {
+        width: calc(var(--spacing) * 4.5);
+        height: calc(var(--spacing) * 4.5);
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\>svg\]\:shrink-0 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist]>svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+  .prose-td\:\[\&\>button\[data-checklist\]\>svg\]\:fill-accent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &>button[data-checklist]>svg {
+        fill: var(--color-accent);
       }
     }
   }
@@ -7062,6 +7862,13 @@
     &:has(*:is([data-title-value]:not([data-title-value='Все']).selected)) {
       &>div>button>span {
         color: var(--color-black);
+      }
+    }
+  }
+  .has-\[\[data-title-value\]\:not\(\[data-title-value\=\'Все\'\]\)\.selected\]\:\[\&\>div\>button\>span\]\:text-black\! {
+    &:has(*:is([data-title-value]:not([data-title-value='Все']).selected)) {
+      &>div>button>span {
+        color: var(--color-black) !important;
       }
     }
   }
@@ -8114,6 +8921,49 @@
       }
     }
   }
+  .prose-td\:\[\&\[data-delays\]_span\]\:stroke-red-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] span {
+        stroke: var(--color-red-500) !important;
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-delays\]_svg\]\:size-6 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] svg {
+        width: calc(var(--spacing) * 6);
+        height: calc(var(--spacing) * 6);
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-delays\]_svg\]\:fill-transparent {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] svg {
+        fill: transparent;
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-delays\]_svg\]\:stroke-gray-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] svg {
+        stroke: var(--color-gray-500);
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-delays\]_svg\]\:stroke-red-500 {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] svg {
+        stroke: var(--color-red-500);
+      }
+    }
+  }
+  .prose-td\:\[\&\[data-delays\]_svg\]\:stroke-red-500\! {
+    & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      &[data-delays] svg {
+        stroke: var(--color-red-500) !important;
+      }
+    }
+  }
   .prose-td\:\[\&\[data-lagal-status\]\]\:w-40 {
     & :is(:where(td):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       &[data-lagal-status] {
@@ -8178,6 +9028,18 @@
       }
     }
   }
+  .hs-select-disabled\:\[\&\~div_svg\]\:pointer-events-none {
+    &.disabled {
+      &~div svg {
+        pointer-events: none;
+      }
+    }
+    .disabled & {
+      &~div svg {
+        pointer-events: none;
+      }
+    }
+  }
   .hs-select-disabled\:\[\&\~div_svg\]\:cursor-default {
     &.disabled {
       &~div svg {
@@ -8190,6 +9052,30 @@
       }
     }
   }
+  .hs-select-disabled\:\[\&\~div_svg\]\:cursor-default\! {
+    &.disabled {
+      &~div svg {
+        cursor: default !important;
+      }
+    }
+    .disabled & {
+      &~div svg {
+        cursor: default !important;
+      }
+    }
+  }
+  .hs-select-disabled\:\[\&\~div_svg\]\:cursor-text\! {
+    &.disabled {
+      &~div svg {
+        cursor: text !important;
+      }
+    }
+    .disabled & {
+      &~div svg {
+        cursor: text !important;
+      }
+    }
+  }
   .hs-select-disabled\:\[\&\~div_svg\]\:stroke-gray-500 {
     &.disabled {
       &~div svg {
@@ -8199,6 +9085,26 @@
     .disabled & {
       &~div svg {
         stroke: var(--color-gray-500);
+      }
+    }
+  }
+  .hs-select-disabled\:\[\&\~div_svg\]\:hover\:cursor-default\! {
+    &.disabled {
+      &~div svg {
+        &:hover {
+          @media (hover: hover) {
+            cursor: default !important;
+          }
+        }
+      }
+    }
+    .disabled & {
+      &~div svg {
+        &:hover {
+          @media (hover: hover) {
+            cursor: default !important;
+          }
+        }
       }
     }
   }
